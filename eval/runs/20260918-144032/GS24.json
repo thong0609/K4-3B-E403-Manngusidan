@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS24",
+    "type": "hiem-truy-xuat-that-bai",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Viet kich ban tu trang can dang nhap hoac bi hong",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/README.md"
+    ],
+    "expected": "Bao khong doc duoc nguon, cho thu lai hoac bo sung nguon; khong bia noi dung hay trich dan.",
+    "fixture": "URL loi"
+  },
+  "error": "TimeoutError: Timed out waiting for session 25144296-916a-4414-a7fb-ab5de9f7f676"
+}

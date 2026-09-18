@@ -1,0 +1,737 @@
+{
+  "case": {
+    "case_id": "GS12",
+    "type": "thuong",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Giai thich cho sinh vien lam do an",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co gioi han pham vi va ngay nguon; khong tron ban quyen, quyen rieng tu va dao van."
+  },
+  "session_id": "a1835a09-6809-46ec-a5e0-9b2306e471cc",
+  "result": {
+    "id": 5,
+    "session_id": "a1835a09-6809-46ec-a5e0-9b2306e471cc",
+    "version": 1,
+    "json_content": {
+      "id": "a1835a09-6809-46ec-a5e0-9b2306e471cc",
+      "tieuDe": "Bản quyền đối với nội dung do trí tuệ nhân tạo tạo ra trong đồ án",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Đặt vấn đề về bản quyền nội dung AI"
+        },
+        {
+          "so": 2,
+          "ten": "Quy định pháp lý và vai trò con người"
+        },
+        {
+          "so": 3,
+          "ten": "Đóng góp sáng tạo và ứng dụng trong đồ án"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào các bạn sinh viên đang làm đồ án.",
+          "chuTrenManHinh": "Chào các bạn sinh viên làm đồ án",
+          "yDoHinh": "Giảng viên mỉm cười chào sinh viên trong không gian giảng đường.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn đã bao giờ thắc mắc liệu nội dung do trí tuệ nhân tạo tạo ra có được bảo hộ bản quyền hay không?",
+          "chuTrenManHinh": "Nội dung AI có được bảo hộ bản quyền?",
+          "yDoHinh": "Hình ảnh dấu hỏi lớn bên cạnh biểu tượng AI và đồ án.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trí tuệ nhân tạo có thể giúp chúng ta tạo ra tài liệu làm điểm khởi đầu rất nhanh chóng.",
+          "chuTrenManHinh": "AI giúp tạo điểm khởi đầu nhanh chóng",
+          "yDoHinh": "Màn hình hiển thị AI tự động tạo dòng văn bản tức thì.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.vtiger.com/vi/blog/is-ai-generated-content-a-trend-or-is-it-the-future",
+              "title": "Nội dung do AI tạo ra là gì? Cách thức hoạt động và ...",
+              "excerpt": "1. Tạo nội dung nhanh hơn\n\nKhi có yêu cầu cần thiết từ người tạo nội dung, trình tạo văn bản AI có thể cung cấp ngay các bản sao chứa đầy thông tin chi tiết có giá trị. Tài liệu được tạo ra cung cấp điểm khởi đầu tuyệt vời cho các bài viết hoặc bài đăng trên blog, giúp bạn có lợi thế trong quá trình tạo nội dung. Điều này giúp loại bỏ nhu cầu nghiên cứu và động não, vì bạn chỉ cần cung cấp cho trình tạo AI một chủ đề.\n\nTuy nhiên, sự tham gia của con người là điều cần thiết để đảm bảo tính chính xác và tăng thêm tính sáng tạo và giọng điệu. Người viết nội dung luôn phải tiếp quản sau khi trình tạo AI đưa ra kết quả đầu ra ban đầu.\n\n1. Giảm chi phí cho nội dung chất lượng [...] Cá nhn hóa ở quy mô: Trí tuệ nhn tạo (AI) đang giúp việc điều chỉnh nội dung cho từng người dùng trở nên dễ dàng hơ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Các công cụ này hỗ trợ kiểm tra ngữ pháp, diễn giải, phát hiện đạo văn và đưa ra gợi ý.",
+          "chuTrenManHinh": "Hỗ trợ kiểm tra ngữ pháp, gợi ý bài viết",
+          "yDoHinh": "Giao diện phần mềm AI hỗ trợ chỉnh sửa bài viết.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://tapchigiaoduc.edu.vn/article/87882/225/tac-dong-cua-cac-cong-cu-viet-su-dung-tri-tue-nhan-tao-toi-noi-dung-va-cach-to-chuc-bai-luan-cua-hoc-vien-quan-diem-cua-giao-vien-day-tieng-anh",
+              "title": "Tác động của các công cụ viết sử dụng trí tuệ nhân tạo tới nội dung và cách tổ chức bài luận của học viên: Quan điểm của giáo viên dạy tiếng Anh",
+              "excerpt": "Tất cả các giáo viên được lựa chọn đều có ít nhất ba năm kinh nghiệm giảng dạy tiếng Anh và tối thiểu một năm kinh nghiệm trong việc áp dụng các công cụ viết AI trong lớp học của họ. Các công cụ AI này đóng vai trò là tài nguyên giảng dạy bổ sung, hỗ trợ kiểm tra ngữ pháp, diễn giải, phát hiện đạo văn, tạo nội dung và đưa ra gợi ý để nng cao tính rõ ràng và mạch lạc trong bài viết của học viên. Điều này đảm bảo trải nghiệm của giáo viên vượt xa kiến thức lý thuyết đơn thuần, gói gọn các ứng dụng thực tế của các công cụ AI trong các tình huống giảng dạy thực tế. [...] Phát hiện thứ hai từ nghiên cứu này đã xem xét tác động của các công cụ viết AI đối với nội dung và cấu trúc của các bài luận do các học viên có tiếng mẹ đẻ không phải là tiếng Anh. Về mặt nội dung, đề cập đến việc tạo ra các ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Tuy nhiên, câu trả lời cho câu hỏi về sở hữu bản quyền đối với sản phẩm từ trí tuệ nhân tạo không đơn giản.",
+          "chuTrenManHinh": "Sở hữu bản quyền AI không đơn giản",
+          "yDoHinh": "Biểu tượng cán cân lý trí và dấu hỏi về pháp lý.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Bản chất pháp lý của các tác phẩm này hiện nay vẫn chưa hoàn toàn rõ ràng.",
+          "chuTrenManHinh": "Bản chất pháp lý chưa rõ ràng",
+          "yDoHinh": "Tài liệu văn bản có dấu hỏi phủ mờ phía trên.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Trí tuệ nhân tạo không có nhân cách độc lập và không có tư cách chủ thể tác giả.",
+          "chuTrenManHinh": "AI không có tư cách chủ thể tác giả",
+          "yDoHinh": "Hình ảnh mô phỏng robot không có giấy chứng nhận tác giả.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Luật bản quyền bảo vệ sự thể hiện ý tưởng chứ không bảo vệ ý tưởng thuần túy.",
+          "chuTrenManHinh": "Bảo vệ sự thể hiện ý tưởng",
+          "yDoHinh": "So sánh giữa ý tưởng bong bóng và bài viết cố định.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Luật cũng yêu cầu bắt buộc phải có tác giả là con người.",
+          "chuTrenManHinh": "Bắt buộc có tác giả là con người",
+          "yDoHinh": "Hình ảnh con người cầm bút viết bài.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 0.85,
+              "reason": "Tìm thấy 85% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Những nội dung được tạo ra hoàn toàn bởi máy móc mà không có đóng góp trí tuệ con người sẽ không được bảo hộ.",
+          "chuTrenManHinh": "Tạo hoàn toàn bởi AI không được bảo hộ",
+          "yDoHinh": "Biểu tượng dấu chéo đỏ trên tác phẩm tự động từ AI.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Các tòa án ở Mỹ và Singapore đã từng bác bỏ bảo hộ cho tác phẩm thiếu đóng góp của con người.",
+          "chuTrenManHinh": "Tòa án Mỹ và Singapore từng bác bỏ bảo hộ",
+          "yDoHinh": "Bản đồ Mỹ và Singapore cùng quyết định của tòa án.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Cơ quan Bản quyền tại Mỹ đưa ra hướng dẫn rằng tác phẩm có hỗ trợ từ trí tuệ nhân tạo vẫn có thể đáp ứng tính nguyên gốc.",
+          "chuTrenManHinh": "Tác phẩm hỗ trợ bởi AI vẫn có thể đáp ứng tính nguyên gốc",
+          "yDoHinh": "Hướng dẫn chính thức từ Cơ quan Bản quyền Mỹ.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Có quan điểm cho rằng nhà thiết kế và người sử dụng công cụ là chủ sở hữu bản quyền.",
+          "chuTrenManHinh": "Người sử dụng có thể là chủ sở hữu",
+          "yDoHinh": "Người sử dụng máy tính làm việc với AI.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Một phó giáo sư nhận định nội dung có tính nguyên bản trên vật mang cố định có thể xác định chủ sở hữu.",
+          "chuTrenManHinh": "Tính nguyên bản trên vật mang cố định",
+          "yDoHinh": "Văn bản in trên giấy hoặc lưu trên ổ cứng.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người đó có thể được xác định là chủ sở hữu quyền tác giả.\n\nTuy nhiên, không phải mọi nội dung liên quan đến AI đều mặc nhiên được bảo hộ.\n\nTrong một vụ án khác do Tòa án Nhn dn quận Hoàng Phố, Thành phố Thượng Hải (Trung Quốc) xét xử, một công ty sáng tạo mỹ thuật cho rằng các cu lệnh (prompt) AI do họ biên soạn đã bị người khác sử dụng trực tiếp để tạo ảnh từ văn bản.\n\nDù vậy, tòa án nhận định các prompt này chỉ là sự liệt kê đơn giản các yếu tố, thiếu liên kết logic về mặt ngữ pháp và chưa thể hiện rõ dấu ấn sáng tạo mang tính cá nhn của tác giả. Vì vậy, phần nội dung này không được xem là tác phẩm và không được hưởng quyền tác giả. [...] Ngoài ra, người dùng cũng cần c",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Tuy nhiên không phải mọi nội dung liên quan đến trí tuệ nhân tạo đều mặc nhiên được bảo hộ.",
+          "chuTrenManHinh": "Không mặc nhiên được bảo hộ",
+          "yDoHinh": "Cảnh báo bảo hộ pháp lý có điều kiện.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người đó có thể được xác định là chủ sở hữu quyền tác giả.\n\nTuy nhiên, không phải mọi nội dung liên quan đến AI đều mặc nhiên được bảo hộ.\n\nTrong một vụ án khác do Tòa án Nhn dn quận Hoàng Phố, Thành phố Thượng Hải (Trung Quốc) xét xử, một công ty sáng tạo mỹ thuật cho rằng các cu lệnh (prompt) AI do họ biên soạn đã bị người khác sử dụng trực tiếp để tạo ảnh từ văn bản.\n\nDù vậy, tòa án nhận định các prompt này chỉ là sự liệt kê đơn giản các yếu tố, thiếu liên kết logic về mặt ngữ pháp và chưa thể hiện rõ dấu ấn sáng tạo mang tính cá nhn của tác giả. Vì vậy, phần nội dung này không được xem là tác phẩm và không được hưởng quyền tác giả. [...] Ngoài ra, người dùng cũng cần c",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Tòa án quận Hoàng Phố tại Thượng Hải từng xét xử một vụ án về câu lệnh tạo ảnh.",
+          "chuTrenManHinh": "Vụ án câu lệnh tại Thượng Hải",
+          "yDoHinh": "Hình ảnh tòa án tại Thượng Hải Trung Quốc.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người đó có thể được xác định là chủ sở hữu quyền tác giả.\n\nTuy nhiên, không phải mọi nội dung liên quan đến AI đều mặc nhiên được bảo hộ.\n\nTrong một vụ án khác do Tòa án Nhn dn quận Hoàng Phố, Thành phố Thượng Hải (Trung Quốc) xét xử, một công ty sáng tạo mỹ thuật cho rằng các cu lệnh (prompt) AI do họ biên soạn đã bị người khác sử dụng trực tiếp để tạo ảnh từ văn bản.\n\nDù vậy, tòa án nhận định các prompt này chỉ là sự liệt kê đơn giản các yếu tố, thiếu liên kết logic về mặt ngữ pháp và chưa thể hiện rõ dấu ấn sáng tạo mang tính cá nhn của tác giả. Vì vậy, phần nội dung này không được xem là tác phẩm và không được hưởng quyền tác giả. [...] Ngoài ra, người dùng cũng cần c",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Công ty mỹ thuật cho rằng câu lệnh của họ bị người khác trực tiếp sử dụng.",
+          "chuTrenManHinh": "Tranh chấp việc dùng lại câu lệnh",
+          "yDoHinh": "Tranh chấp giữa hai bên về đoạn câu lệnh.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người đó có thể được xác định là chủ sở hữu quyền tác giả.\n\nTuy nhiên, không phải mọi nội dung liên quan đến AI đều mặc nhiên được bảo hộ.\n\nTrong một vụ án khác do Tòa án Nhn dn quận Hoàng Phố, Thành phố Thượng Hải (Trung Quốc) xét xử, một công ty sáng tạo mỹ thuật cho rằng các cu lệnh (prompt) AI do họ biên soạn đã bị người khác sử dụng trực tiếp để tạo ảnh từ văn bản.\n\nDù vậy, tòa án nhận định các prompt này chỉ là sự liệt kê đơn giản các yếu tố, thiếu liên kết logic về mặt ngữ pháp và chưa thể hiện rõ dấu ấn sáng tạo mang tính cá nhn của tác giả. Vì vậy, phần nội dung này không được xem là tác phẩm và không được hưởng quyền tác giả. [...] Ngoài ra, người dùng cũng cần c",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tòa án bác bỏ vì cho rằng các câu lệnh đó chỉ là sự liệt kê đơn giản và thiếu liên kết logic.",
+          "chuTrenManHinh": "Câu lệnh thiếu liên kết logic bị bác bỏ",
+          "yDoHinh": "Quyết định tòa án bác bỏ yêu cầu của công ty.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người đó có thể được xác định là chủ sở hữu quyền tác giả.\n\nTuy nhiên, không phải mọi nội dung liên quan đến AI đều mặc nhiên được bảo hộ.\n\nTrong một vụ án khác do Tòa án Nhn dn quận Hoàng Phố, Thành phố Thượng Hải (Trung Quốc) xét xử, một công ty sáng tạo mỹ thuật cho rằng các cu lệnh (prompt) AI do họ biên soạn đã bị người khác sử dụng trực tiếp để tạo ảnh từ văn bản.\n\nDù vậy, tòa án nhận định các prompt này chỉ là sự liệt kê đơn giản các yếu tố, thiếu liên kết logic về mặt ngữ pháp và chưa thể hiện rõ dấu ấn sáng tạo mang tính cá nhn của tác giả. Vì vậy, phần nội dung này không được xem là tác phẩm và không được hưởng quyền tác giả. [...] Ngoài ra, người dùng cũng cần c",
+              "verified": true,
+              "overlap_ratio": 0.91,
+              "reason": "Tìm thấy 91% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Vậy bài học rút ra cho sinh viên khi làm đồ án là gì?",
+          "chuTrenManHinh": "Bài học cho sinh viên làm đồ án?",
+          "yDoHinh": "Sinh viên đang ngồi suy nghĩ trước màn hình đồ án.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Sự tham gia của con người là bắt buộc để đảm bảo tính chính xác và sáng tạo.",
+          "chuTrenManHinh": "Sự tham gia của con người là bắt buộc",
+          "yDoHinh": "Bàn tay con người can thiệp và chỉnh sửa văn bản.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.vtiger.com/vi/blog/is-ai-generated-content-a-trend-or-is-it-the-future",
+              "title": "Nội dung do AI tạo ra là gì? Cách thức hoạt động và ...",
+              "excerpt": "1. Tạo nội dung nhanh hơn\n\nKhi có yêu cầu cần thiết từ người tạo nội dung, trình tạo văn bản AI có thể cung cấp ngay các bản sao chứa đầy thông tin chi tiết có giá trị. Tài liệu được tạo ra cung cấp điểm khởi đầu tuyệt vời cho các bài viết hoặc bài đăng trên blog, giúp bạn có lợi thế trong quá trình tạo nội dung. Điều này giúp loại bỏ nhu cầu nghiên cứu và động não, vì bạn chỉ cần cung cấp cho trình tạo AI một chủ đề.\n\nTuy nhiên, sự tham gia của con người là điều cần thiết để đảm bảo tính chính xác và tăng thêm tính sáng tạo và giọng điệu. Người viết nội dung luôn phải tiếp quản sau khi trình tạo AI đưa ra kết quả đầu ra ban đầu.\n\n1. Giảm chi phí cho nội dung chất lượng [...] Cá nhn hóa ở quy mô: Trí tuệ nhn tạo (AI) đang giúp việc điều chỉnh nội dung cho từng người dùng trở nên dễ dàng hơ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Người viết phải tiếp quản bài làm sau khi trình tạo tự động hoàn thành phần thô.",
+          "chuTrenManHinh": "Người viết phải tiếp quản bài làm",
+          "yDoHinh": "Sinh viên chỉnh sửa và viết tiếp phần bài làm.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.vtiger.com/vi/blog/is-ai-generated-content-a-trend-or-is-it-the-future",
+              "title": "Nội dung do AI tạo ra là gì? Cách thức hoạt động và ...",
+              "excerpt": "1. Tạo nội dung nhanh hơn\n\nKhi có yêu cầu cần thiết từ người tạo nội dung, trình tạo văn bản AI có thể cung cấp ngay các bản sao chứa đầy thông tin chi tiết có giá trị. Tài liệu được tạo ra cung cấp điểm khởi đầu tuyệt vời cho các bài viết hoặc bài đăng trên blog, giúp bạn có lợi thế trong quá trình tạo nội dung. Điều này giúp loại bỏ nhu cầu nghiên cứu và động não, vì bạn chỉ cần cung cấp cho trình tạo AI một chủ đề.\n\nTuy nhiên, sự tham gia của con người là điều cần thiết để đảm bảo tính chính xác và tăng thêm tính sáng tạo và giọng điệu. Người viết nội dung luôn phải tiếp quản sau khi trình tạo AI đưa ra kết quả đầu ra ban đầu.\n\n1. Giảm chi phí cho nội dung chất lượng [...] Cá nhn hóa ở quy mô: Trí tuệ nhn tạo (AI) đang giúp việc điều chỉnh nội dung cho từng người dùng trở nên dễ dàng hơ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Công cụ này có thể dùng để tạo dàn ý bài giảng hoặc tạo bài tập.",
+          "chuTrenManHinh": "Dùng AI tạo dàn ý và bài tập",
+          "yDoHinh": "Dàn ý bài giảng được tạo ra trên phần mềm.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "http://thptlonghung.edu.vn/tin-tuc-su-kien/goc-tin-hoc/huong-dan-su-dung-ai-de-thiet-ke-bai-giang-hoan-chinh-tu-a-z.html",
+              "title": "Hướng dẫn sử dụng AI để thiết kế bài giảng hoàn chỉnh từ A",
+              "excerpt": "Bài viết hướng dẫn chi tiết cách dùng AI để soạn dàn ý bài giảng, tạo câu hỏi thảo luận & bài tập về nhà, và biến nội dung thành slide",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Hệ thống hỗ trợ biến nội dung thành các slide trình chiếu trực quan.",
+          "chuTrenManHinh": "Biến nội dung thành slide",
+          "yDoHinh": "Các slide bài giảng đẹp mắt được tự động dàn trang.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "http://thptlonghung.edu.vn/tin-tuc-su-kien/goc-tin-hoc/huong-dan-su-dung-ai-de-thiet-ke-bai-giang-hoan-chinh-tu-a-z.html",
+              "title": "Hướng dẫn sử dụng AI để thiết kế bài giảng hoàn chỉnh từ A",
+              "excerpt": "Bài viết hướng dẫn chi tiết cách dùng AI để soạn dàn ý bài giảng, tạo câu hỏi thảo luận & bài tập về nhà, và biến nội dung thành slide",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Công nghệ giúp cá nhân hóa việc học và phân tích dữ liệu hiệu quả.",
+          "chuTrenManHinh": "Cá nhân hóa và phân tích dữ liệu",
+          "yDoHinh": "Biểu đồ phân tích dữ liệu học tập.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t01",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Các ứng dụng phổ biến như ChatGPT, Grok, Canva hay Kahoot hỗ trợ rất tốt.",
+          "chuTrenManHinh": "ChatGPT, Grok, Canva, Kahoot hỗ trợ",
+          "yDoHinh": "Logo của các ứng dụng công nghệ phổ biến.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh/thuc-hanh-he-co-so-du-lieu/chuyen-de-ung-dung-ai-trong-thiet-ke-bai-giang-rtg/135358366",
+              "title": "CHUYÊN ĐỀ: ỨNG DỤNG AI TRONG THIẾT KẾ BÀI GIẢNG - RTG - Studocu",
+              "excerpt": "cách cân bằng để tối ưu hiệu quả giảng dạy.\nVI. KẾT LUẬN\nỨng dụng trí tuệ nhân tạo vào thiết kế bài giảng là bước tiến quan trọng để nâng cao chất lượng\ngiáo dục và khơi dậy hứng thú học tập cho học sinh. Với các công cụ như ChatGPT, Grok, Canva,\nKahoot.. và nhiều nền tảng khác, giáo viên có thể tạo ra những giờ học sáng tạo, tương tác và hiệu\nquả. Để đạt được thành công, giáo viên cần chủ động học hỏi, kết hợp linh hoạt giữa AI và kinh\nnghiệm giảng dạy, từ đó không chỉ giúp học sinh yêu thích việc học mà còn trang bị cho các em những\nkỹ năng cần thiết trong thời đại số hóa. [...] Dùng AI để tối ưu hóa công việc lặp lại (như tạo câu hỏi trắc nghiệm, trình bày slide), giúp giáo viên\ncó thời gian đầu tư vào phương pháp giảng dạy\n5. Chất lượng nội dung có thể chưa hoàn toàn chính xác\nAI có kh",
+              "verified": true,
+              "overlap_ratio": 0.67,
+              "reason": "Tìm thấy 67% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 26,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Chúng ta cần biết cân bằng giữa công nghệ và năng lực thực tế.",
+          "chuTrenManHinh": "Cân bằng công nghệ và năng lực",
+          "yDoHinh": "Hình ảnh cán cân giữa công nghệ và trí tuệ bản thân.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh/thuc-hanh-he-co-so-du-lieu/chuyen-de-ung-dung-ai-trong-thiet-ke-bai-giang-rtg/135358366",
+              "title": "CHUYÊN ĐỀ: ỨNG DỤNG AI TRONG THIẾT KẾ BÀI GIẢNG - RTG - Studocu",
+              "excerpt": "cách cân bằng để tối ưu hiệu quả giảng dạy.\nVI. KẾT LUẬN\nỨng dụng trí tuệ nhân tạo vào thiết kế bài giảng là bước tiến quan trọng để nâng cao chất lượng\ngiáo dục và khơi dậy hứng thú học tập cho học sinh. Với các công cụ như ChatGPT, Grok, Canva,\nKahoot.. và nhiều nền tảng khác, giáo viên có thể tạo ra những giờ học sáng tạo, tương tác và hiệu\nquả. Để đạt được thành công, giáo viên cần chủ động học hỏi, kết hợp linh hoạt giữa AI và kinh\nnghiệm giảng dạy, từ đó không chỉ giúp học sinh yêu thích việc học mà còn trang bị cho các em những\nkỹ năng cần thiết trong thời đại số hóa. [...] Dùng AI để tối ưu hóa công việc lặp lại (như tạo câu hỏi trắc nghiệm, trình bày slide), giúp giáo viên\ncó thời gian đầu tư vào phương pháp giảng dạy\n5. Chất lượng nội dung có thể chưa hoàn toàn chính xác\nAI có kh",
+              "verified": true,
+              "overlap_ratio": 0.71,
+              "reason": "Tìm thấy 71% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 27,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Các bạn phải chủ động học hỏi và kết hợp linh hoạt công cụ với kinh nghiệm.",
+          "chuTrenManHinh": "Chủ động học hỏi, kết hợp linh hoạt",
+          "yDoHinh": "Sinh viên thảo luận nhóm và ứng dụng máy tính.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh/thuc-hanh-he-co-so-du-lieu/chuyen-de-ung-dung-ai-trong-thiet-ke-bai-giang-rtg/135358366",
+              "title": "CHUYÊN ĐỀ: ỨNG DỤNG AI TRONG THIẾT KẾ BÀI GIẢNG - RTG - Studocu",
+              "excerpt": "cách cân bằng để tối ưu hiệu quả giảng dạy.\nVI. KẾT LUẬN\nỨng dụng trí tuệ nhân tạo vào thiết kế bài giảng là bước tiến quan trọng để nâng cao chất lượng\ngiáo dục và khơi dậy hứng thú học tập cho học sinh. Với các công cụ như ChatGPT, Grok, Canva,\nKahoot.. và nhiều nền tảng khác, giáo viên có thể tạo ra những giờ học sáng tạo, tương tác và hiệu\nquả. Để đạt được thành công, giáo viên cần chủ động học hỏi, kết hợp linh hoạt giữa AI và kinh\nnghiệm giảng dạy, từ đó không chỉ giúp học sinh yêu thích việc học mà còn trang bị cho các em những\nkỹ năng cần thiết trong thời đại số hóa. [...] Dùng AI để tối ưu hóa công việc lặp lại (như tạo câu hỏi trắc nghiệm, trình bày slide), giúp giáo viên\ncó thời gian đầu tư vào phương pháp giảng dạy\n5. Chất lượng nội dung có thể chưa hoàn toàn chính xác\nAI có kh",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 28,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Điều này giúp trang bị những kỹ năng cần thiết trong thời đại số hóa.",
+          "chuTrenManHinh": "Trang bị kỹ năng thời đại số",
+          "yDoHinh": "Mô phỏng không gian kết nối thời đại số.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh/thuc-hanh-he-co-so-du-lieu/chuyen-de-ung-dung-ai-trong-thiet-ke-bai-giang-rtg/135358366",
+              "title": "CHUYÊN ĐỀ: ỨNG DỤNG AI TRONG THIẾT KẾ BÀI GIẢNG - RTG - Studocu",
+              "excerpt": "cách cân bằng để tối ưu hiệu quả giảng dạy.\nVI. KẾT LUẬN\nỨng dụng trí tuệ nhân tạo vào thiết kế bài giảng là bước tiến quan trọng để nâng cao chất lượng\ngiáo dục và khơi dậy hứng thú học tập cho học sinh. Với các công cụ như ChatGPT, Grok, Canva,\nKahoot.. và nhiều nền tảng khác, giáo viên có thể tạo ra những giờ học sáng tạo, tương tác và hiệu\nquả. Để đạt được thành công, giáo viên cần chủ động học hỏi, kết hợp linh hoạt giữa AI và kinh\nnghiệm giảng dạy, từ đó không chỉ giúp học sinh yêu thích việc học mà còn trang bị cho các em những\nkỹ năng cần thiết trong thời đại số hóa. [...] Dùng AI để tối ưu hóa công việc lặp lại (như tạo câu hỏi trắc nghiệm, trình bày slide), giúp giáo viên\ncó thời gian đầu tư vào phương pháp giảng dạy\n5. Chất lượng nội dung có thể chưa hoàn toàn chính xác\nAI có kh",
+              "verified": true,
+              "overlap_ratio": 0.87,
+              "reason": "Tìm thấy 87% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Đồng thời điều này nâng cao tính rõ ràng và mạch lạc trong bài viết.",
+          "chuTrenManHinh": "Nâng cao tính rõ ràng, mạch lạc",
+          "yDoHinh": "Bài luận hoàn chỉnh sạch đẹp và rõ ràng.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://tapchigiaoduc.edu.vn/article/87882/225/tac-dong-cua-cac-cong-cu-viet-su-dung-tri-tue-nhan-tao-toi-noi-dung-va-cach-to-chuc-bai-luan-cua-hoc-vien-quan-diem-cua-giao-vien-day-tieng-anh",
+              "title": "Tác động của các công cụ viết sử dụng trí tuệ nhân tạo tới nội dung và cách tổ chức bài luận của học viên: Quan điểm của giáo viên dạy tiếng Anh",
+              "excerpt": "Tất cả các giáo viên được lựa chọn đều có ít nhất ba năm kinh nghiệm giảng dạy tiếng Anh và tối thiểu một năm kinh nghiệm trong việc áp dụng các công cụ viết AI trong lớp học của họ. Các công cụ AI này đóng vai trò là tài nguyên giảng dạy bổ sung, hỗ trợ kiểm tra ngữ pháp, diễn giải, phát hiện đạo văn, tạo nội dung và đưa ra gợi ý để nng cao tính rõ ràng và mạch lạc trong bài viết của học viên. Điều này đảm bảo trải nghiệm của giáo viên vượt xa kiến thức lý thuyết đơn thuần, gói gọn các ứng dụng thực tế của các công cụ AI trong các tình huống giảng dạy thực tế. [...] Phát hiện thứ hai từ nghiên cứu này đã xem xét tác động của các công cụ viết AI đối với nội dung và cấu trúc của các bài luận do các học viên có tiếng mẹ đẻ không phải là tiếng Anh. Về mặt nội dung, đề cập đến việc tạo ra các ",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 30,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Hãy nhớ rằng đóng góp trí tuệ của con người mới là yếu tố quyết định giá trị tác phẩm.",
+          "chuTrenManHinh": "Đóng góp trí tuệ con người là quyết định",
+          "yDoHinh": "Biểu tượng trí tuệ con người tỏa sáng.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "yd_editorial_ai_ownership_hero \n\n##\n\n \n\nLuật bản quyền bảo vệ sự thể hiện ý tưởng, chứ không bảo vệ ý tưởng thuần túy, và nó yêu cầu phải có tác giả là con người. Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và Cơ quan Bản quyền ở Mỹ và Singapore đã bác bỏ các yêu cầu bảo hộ đối với tác phẩm do AI tạo ra khi không có bằng chứng về đóng góp sáng tạo của con người. [...] Tại Mỹ, Cơ quan Bản quyền đã ban hành Hướng dẫn cho rằng tác phẩm có sự hỗ trợ từ AI có thể đáp ứng ngưỡng tính nguyên gốc và được bảo hộ, nhưng chỉ khi người dùng chứng minh có yếu tố sáng tạo của con người. Ngay cả khi đó, chỉ phần do con người sáng tạo mới được bảo vệ, còn phần do AI tạo ra thì không.\n\n1749589344776 \n\n##\n\n \n\nR",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 31,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Hãy sử dụng công cụ một cách thông minh để hoàn thiện đồ án của mình.",
+          "chuTrenManHinh": "Sử dụng công cụ thông minh",
+          "yDoHinh": "Sinh viên vui mừng hoàn thành đồ án.",
+          "nguon": []
+        },
+        {
+          "n": 32,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Chúc các bạn đạt kết quả thật cao trong kỳ bảo vệ sắp tới.",
+          "chuTrenManHinh": "Chúc các bạn đạt kết quả cao",
+          "yDoHinh": "Hình ảnh điểm mười và lời chúc thành công.",
+          "nguon": []
+        },
+        {
+          "n": 33,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã theo dõi bài giảng hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn đã theo dõi",
+          "yDoHinh": "Giảng viên mỉm cười chào tạm biệt.",
+          "nguon": []
+        },
+        {
+          "n": 34,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Xin chào và hẹn gặp lại các bạn trong những chủ đề tiếp theo.",
+          "chuTrenManHinh": "Xin chào và hẹn gặp lại",
+          "yDoHinh": "Màn hình kết thúc bài giảng.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 27,
+        "verified_count": 26,
+        "unverified_count": 1,
+        "accuracy_rate": 0.96
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t05",
+      "t07",
+      "t01",
+      "t04",
+      "t06",
+      "t08",
+      "t03"
+    ],
+    "created_at": "2026-09-18T08:15:08.308978"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS06",
+    "type": "thuong",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Uoc luong chi phi va biet ba cach giam chi phi",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Gia hoac so lieu co ngay va nguon; khong dung gia cu nhu hien tai; neu cach giam chi phi co can cu."
+  },
+  "error": "TimeoutError: Timed out waiting for session a2a7c12b-6a20-47ac-bf99-a5730ade97c3"
+}

@@ -11,11 +11,15 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
 import httpx
+
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent
 CASES_PATH = ROOT / "golden_set.json"

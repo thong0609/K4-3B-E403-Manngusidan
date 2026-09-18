@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS03",
+    "type": "thuong",
+    "topic": "Du lieu ca nhan khi dung tro ly AI",
+    "learning_goal": "Ke ba viec nen va khong nen lam",
+    "audience": "Nhan vien van phong",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Dung nguon phap ly hoac chinh thuc phu hop; khong khang dinh luat ap dung moi quoc gia; co canh bao pham vi."
+  },
+  "error": "TimeoutError: Timed out waiting for session 8dcc2f6e-0f6e-41d9-b7e0-a5e7d82b469b"
+}

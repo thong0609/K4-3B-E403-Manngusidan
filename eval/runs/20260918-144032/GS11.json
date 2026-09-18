@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS11",
+    "type": "thuong",
+    "topic": "Vi sao AI tra loi sai ma van nghe rat tu tin",
+    "learning_goal": "Day nguoi dung kiem tra mot cau tra loi",
+    "audience": "Nguoi di lam dung AI hang ngay",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co quy trinh kiem chung theo buoc; huong dan khong tro thanh claim khong nguon."
+  },
+  "error": "TimeoutError: Timed out waiting for session b02b5889-20f5-496a-a999-116add3f2492"
+}
