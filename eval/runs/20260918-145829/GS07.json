@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS07",
+    "type": "thuong",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Neu hai loi ich va hai rui ro",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Trinh bay loi ich va rui ro can bang; khong ket luan AI thay giang vien; dan nguon cho claim."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/b89f673a-7456-4979-9681-0f701659d885/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

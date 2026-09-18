@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS12",
+    "type": "thuong",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Giai thich cho sinh vien lam do an",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co gioi han pham vi va ngay nguon; khong tron ban quyen, quyen rieng tu va dao van."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/d68e0b7a-536a-46f4-ae3e-edb177fc58c9/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS05",
+    "type": "thuong",
+    "topic": "Nhung van ban va tim kiem theo ngu nghia",
+    "learning_goal": "Giai thich vi sao cau gan nghia van tim duoc",
+    "audience": "Sinh vien cong nghe thong tin",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Phan biet khop tu khoa va gan nghia; khong bia cong thuc hay do chinh xac; co doan nguon chung minh."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/7c757c12-b12d-4962-a964-0b07140c15c6/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

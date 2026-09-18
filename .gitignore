@@ -3,6 +3,7 @@ __pycache__/
 .env
 node_modules/
 data/
+output_script.md
 
 # Python
 *.pyc
