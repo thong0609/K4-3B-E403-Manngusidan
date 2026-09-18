@@ -3,3 +3,19 @@ __pycache__/
 .env
 node_modules/
 data/
+output_script.md
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
