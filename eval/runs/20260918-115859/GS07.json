@@ -1,0 +1,391 @@
+{
+  "case": {
+    "case_id": "GS07",
+    "type": "thuong",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Neu hai loi ich va hai rui ro",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Trinh bay loi ich va rui ro can bang; khong ket luan AI thay giang vien; dan nguon cho claim."
+  },
+  "session_id": "70509825-4211-4b13-9a36-5b355e943f86",
+  "result": {
+    "id": 5,
+    "session_id": "70509825-4211-4b13-9a36-5b355e943f86",
+    "version": 1,
+    "json_content": {
+      "id": "70509825-4211-4b13-9a36-5b355e943f86",
+      "tieuDe": "AI trong chấm bài và phản hồi cho sinh viên",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Lợi ích và rủi ro của AI trong giáo dục"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chào mừng các giảng viên đến với bài giảng hôm nay.",
+          "chuTrenManHinh": "Chào mừng các giảng viên!",
+          "yDoHinh": "Hình ảnh giảng viên đang chào đón người học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ khám phá lợi ích và rủi ro của AI trong chấm bài và phản hồi cho sinh viên.",
+          "chuTrenManHinh": "Khám phá lợi ích và rủi ro của AI",
+          "yDoHinh": "Hình ảnh minh họa về AI trong giáo dục.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "AI có thể giúp giảng viên tiết kiệm thời gian chấm bài.",
+          "chuTrenManHinh": "AI tiết kiệm thời gian chấm bài",
+          "yDoHinh": "Hình ảnh giảng viên sử dụng AI để chấm bài.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://cesglobal.com.vn/ung-dung-ai-trong-cham-bai-va-soan-giao-an",
+              "title": "Ứng Dụng AI Trong Chấm Bài Và Soạn Giáo Án - CES GLOBAL",
+              "excerpt": "Tiết kiệm thời gian: AI có thể soạn giáo án nhanh hơn nhiều so với giáo viên, giúp giáo viên có thêm thời gian để tập trung vào việc giảng dạy và hỗ trợ học sinh.\n Cải thiện hiệu quả giảng dạy: AI có thể giúp giáo viên tạo ra các bài giảng và bài tập được thiết kế phù hợp với đối tượng học sinh, giúp học sinh tiếp thu kiến thức hiệu quả hơn.\n Cá nhn hóa học tập: AI có thể giúp giáo viên tạo ra các kế hoạch bài học được cá nhn hóa cho từng học sinh, giúp học sinh học hiệu quả hơn và đạt được mục tiêu của mình nhanh hơn.\n\n## Kết Luận\n\nAI có tiềm năng to lớn để cách mạng hóa việc chấm bài và soạn giáo án, giúp giáo viên tiết kiệm thời gian, cải thiện độ chính xác và cá nhn hóa học tập cho học sinh.\n\nTham khảo thêm: \n\n———————————-\n\nCÔNG TY CP CÔNG NGHỆ TRÍ TUỆ NHN TẠO CES GLOBAL [...] Tiết kiệ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nó cũng cải thiện hiệu quả giảng dạy bằng cách tạo ra các bài giảng phù hợp.",
+          "chuTrenManHinh": "Cải thiện hiệu quả giảng dạy",
+          "yDoHinh": "Hình ảnh bài giảng được thiết kế bằng AI.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://cesglobal.com.vn/ung-dung-ai-trong-cham-bai-va-soan-giao-an",
+              "title": "Ứng Dụng AI Trong Chấm Bài Và Soạn Giáo Án - CES GLOBAL",
+              "excerpt": "Tiết kiệm thời gian: AI có thể soạn giáo án nhanh hơn nhiều so với giáo viên, giúp giáo viên có thêm thời gian để tập trung vào việc giảng dạy và hỗ trợ học sinh.\n Cải thiện hiệu quả giảng dạy: AI có thể giúp giáo viên tạo ra các bài giảng và bài tập được thiết kế phù hợp với đối tượng học sinh, giúp học sinh tiếp thu kiến thức hiệu quả hơn.\n Cá nhn hóa học tập: AI có thể giúp giáo viên tạo ra các kế hoạch bài học được cá nhn hóa cho từng học sinh, giúp học sinh học hiệu quả hơn và đạt được mục tiêu của mình nhanh hơn.\n\n## Kết Luận\n\nAI có tiềm năng to lớn để cách mạng hóa việc chấm bài và soạn giáo án, giúp giáo viên tiết kiệm thời gian, cải thiện độ chính xác và cá nhn hóa học tập cho học sinh.\n\nTham khảo thêm: \n\n———————————-\n\nCÔNG TY CP CÔNG NGHỆ TRÍ TUỆ NHN TẠO CES GLOBAL [...] Tiết kiệ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Nhưng liệu AI có thể thay thế hoàn toàn vai trò của giáo viên không?",
+          "chuTrenManHinh": "AI có thay thế giáo viên?",
+          "yDoHinh": "Hình ảnh một giáo viên và một máy tính.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một trong những rủi ro là sinh viên có thể lạm dụng AI để làm bài tập.",
+          "chuTrenManHinh": "Rủi ro lạm dụng AI",
+          "yDoHinh": "Hình ảnh sinh viên sử dụng AI không đúng cách.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://huflit.edu.vn/vi/tin-tuc/loi-ich-cua-ai-trong-hoc-tap",
+              "title": "Lợi ích của AI trong học tập là gì? Vai trò và thách thức",
+              "excerpt": "Lạm dụng công cụ AI: Nhiều sinh viên phụ thuộc quá mức vào AI, sử dụng để làm bài tập thay vì tự tư duy. Việc copy nguyên văn kết quả từ ChatGPT mà không kiểm chứng dẫn đến thiếu tư duy phản biện và kỹ năng giải quyết vấn đề.\n Chi phí cao và khoảng cách số hóa: Đầu tư vào hệ thống AI, đào tạo giáo viên và nng cấp cơ sở hạ tầng công nghệ đòi hỏi nguồn lực tài chính lớn. Điều này tạo ra khoảng cách giữa các trường có điều kiện và các trường vùng su, vùng xa.\n Quyền riêng tư và bảo mật dữ liệu: AI cần thu thập dữ liệu cá nhn, hành vi học tập của sinh viên để hoạt động hiệu quả. Việc lưu trữ, xử lý và bảo vệ dữ liệu này là thách thức lớn. Nếu bị rò rỉ hoặc sử dụng sai mục đích, quyền riêng tư của sinh viên sẽ bị vi phạm. [...] ## AI là gì?\n\nTrí tuệ nhn tạo là công nghệ mô phỏng khả năng tư duy",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Điều này dẫn đến việc thiếu tư duy phản biện và kỹ năng giải quyết vấn đề.",
+          "chuTrenManHinh": "Thiếu tư duy phản biện",
+          "yDoHinh": "Hình ảnh sinh viên không tư duy khi làm bài.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://huflit.edu.vn/vi/tin-tuc/loi-ich-cua-ai-trong-hoc-tap",
+              "title": "Lợi ích của AI trong học tập là gì? Vai trò và thách thức",
+              "excerpt": "Lạm dụng công cụ AI: Nhiều sinh viên phụ thuộc quá mức vào AI, sử dụng để làm bài tập thay vì tự tư duy. Việc copy nguyên văn kết quả từ ChatGPT mà không kiểm chứng dẫn đến thiếu tư duy phản biện và kỹ năng giải quyết vấn đề.\n Chi phí cao và khoảng cách số hóa: Đầu tư vào hệ thống AI, đào tạo giáo viên và nng cấp cơ sở hạ tầng công nghệ đòi hỏi nguồn lực tài chính lớn. Điều này tạo ra khoảng cách giữa các trường có điều kiện và các trường vùng su, vùng xa.\n Quyền riêng tư và bảo mật dữ liệu: AI cần thu thập dữ liệu cá nhn, hành vi học tập của sinh viên để hoạt động hiệu quả. Việc lưu trữ, xử lý và bảo vệ dữ liệu này là thách thức lớn. Nếu bị rò rỉ hoặc sử dụng sai mục đích, quyền riêng tư của sinh viên sẽ bị vi phạm. [...] ## AI là gì?\n\nTrí tuệ nhn tạo là công nghệ mô phỏng khả năng tư duy",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngoài ra, việc sử dụng AI cũng có thể gây ra vấn đề về bảo mật dữ liệu.",
+          "chuTrenManHinh": "Vấn đề bảo mật dữ liệu",
+          "yDoHinh": "Hình ảnh biểu tượng bảo mật dữ liệu.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://vnptai.io/vi/blog/detail/ung-dung-ai-trong-giao-duc",
+              "title": "Ứng dụng AI trong giáo dục: Đổi mới trong giảng dạy và học tập",
+              "excerpt": "Vấn đề bảo mật và quyền riêng tư\n\nViệc hệ thống AI thu thập và xử lý dữ liệu cá nhn của học sinh không đảm bảo có thể gy ra các rủi ro về bảo mật thông tin hoặc sử dụng sai mục đích. Vì vậy, các trường học và tổ chức giáo dục cần đảm bảo tun thủ các quy định về bảo mật để bảo vệ quyền riêng tư của học sinh và giáo viên.\n\nVấn đề đạo đức\n\nMột trong những thách thức lớn của ứng dụng AI trong dạy học là liệu trí tuệ nhn tạo có thay thế vai trò của giáo viên hay không. Mặc dù AI mang lại nhiều lợi ích cho công tác giảng dạy nhưng việc quá phụ thuộc vào công nghệ sẽ làm giảm tương tác giữa thầy cô và học sinh cũng như làm mất đi giá trị nhn văn trong giáo dục. Cần có sự cn bằng giữa công nghệ và vai trò của giáo viên để đảm bảo rằng AI hỗ trợ chứ không thay thế con người. [...] Thiếu hụt nhn lực",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Giảng viên cần hướng dẫn sinh viên sử dụng AI một cách có trách nhiệm.",
+          "chuTrenManHinh": "Hướng dẫn sử dụng AI có trách nhiệm",
+          "yDoHinh": "Hình ảnh giảng viên hướng dẫn sinh viên.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://nghiencuu.tapchikinhtetaichinh.vn/hanh-vi-su-dung-ai-ho-tro-hoc-tap-cua-sinh-vien-vai-tro-dieu-tiet-cua-tinh-doi-moi-ca-nhan-154091.html",
+              "title": "Hành vi sử dụng AI hỗ trợ học tập của sinh viên: Vai trò điều ...",
+              "excerpt": "Đối với giảng viên: Giảng viên cần chủ động kết hợp AI vào thiết kế bài giảng và bài tập, chẳng hạn như yêu cầu sinh viên sử dụng AI để phát triển ý tưởng, sau đó phn tích và phản biện kết quả. Đồng thời, việc định hướng sử dụng AI có trách nhiệm, đưa ra các yêu cầu đa dạng hơn trong hoạt động nghiên cứu sẽ góp phần gia tăng động lực hưởng thụ, thêm niềm tin và thúc đẩy sinh viên thay đổi từ ý định sang hành vi sử dụng AI hiệu quả trong học tập.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cần có các hướng dẫn chính thức về việc sử dụng AI trong học tập.",
+          "chuTrenManHinh": "Hướng dẫn sử dụng AI trong học tập",
+          "yDoHinh": "Hình ảnh tài liệu hướng dẫn.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.quanlynhanuoc.vn/2025/05/27/sinh-vien-viet-nam-voi-viec-su-dung-tri-tue-nhan-tao-thuc-trang-nhan-thuc-va-dinh-huong",
+              "title": "Sinh viên Việt Nam với việc sử dụng trí tuệ nhân tạo",
+              "excerpt": "(1) Với các cơ sở giáo dục đại học:\n\nCần xy dựng các hướng dẫn chính thức về việc sử dụng AI trong học tập, bảo đảm phù hợp với chuẩn mực đạo đức học thuật. Tích hợp các nội dung liên quan đến kỹ năng sử dụng AI, đạo đức số và tư duy phản biện vào chương trình đào tạo hoặc các hoạt động ngoại khóa như các buổi hội thảo, tọa đàm, các cuộc thi sáng tạo …\n\n(2) Với giảng viên và cán bộ quản lý đào tạo:\n\nChủ động cập nhật kiến thức, kỹ năng về AI để đồng hành và hướng dẫn sinh viên hiệu quả hơn trong việc ứng dụng công nghệ mới. Hướng đẫn sinh viên sử dụng AI như một công cụ hỗ trợ học tập chứ không phải thay thế quá trình tư duy cá nhn, có những phương pháp để kiểm tra, đánh giá mức độ trung thực học thuật của sinh viên khi làm bài.\n\n(3) Với sinh viên: [...] Nghiên cứu định tính được thực hiện",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "AI cũng có thể cá nhân hóa trải nghiệm học tập cho từng sinh viên.",
+          "chuTrenManHinh": "Cá nhân hóa trải nghiệm học tập",
+          "yDoHinh": "Hình ảnh sinh viên học tập cá nhân hóa.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://cesglobal.com.vn/ung-dung-ai-trong-cham-bai-va-soan-giao-an",
+              "title": "Ứng Dụng AI Trong Chấm Bài Và Soạn Giáo Án - CES GLOBAL",
+              "excerpt": "Tiết kiệm thời gian: AI có thể soạn giáo án nhanh hơn nhiều so với giáo viên, giúp giáo viên có thêm thời gian để tập trung vào việc giảng dạy và hỗ trợ học sinh.\n Cải thiện hiệu quả giảng dạy: AI có thể giúp giáo viên tạo ra các bài giảng và bài tập được thiết kế phù hợp với đối tượng học sinh, giúp học sinh tiếp thu kiến thức hiệu quả hơn.\n Cá nhn hóa học tập: AI có thể giúp giáo viên tạo ra các kế hoạch bài học được cá nhn hóa cho từng học sinh, giúp học sinh học hiệu quả hơn và đạt được mục tiêu của mình nhanh hơn.\n\n## Kết Luận\n\nAI có tiềm năng to lớn để cách mạng hóa việc chấm bài và soạn giáo án, giúp giáo viên tiết kiệm thời gian, cải thiện độ chính xác và cá nhn hóa học tập cho học sinh.\n\nTham khảo thêm: \n\n———————————-\n\nCÔNG TY CP CÔNG NGHỆ TRÍ TUỆ NHN TẠO CES GLOBAL [...] Tiết kiệ",
+              "verified": true,
+              "overlap_ratio": 0.87,
+              "reason": "Tìm thấy 87% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Tuy nhiên, việc cá nhân hóa này cần phải được thực hiện cẩn thận.",
+          "chuTrenManHinh": "Cần thực hiện cẩn thận",
+          "yDoHinh": "Hình ảnh cảnh báo về việc sử dụng AI.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Vậy, các bạn nghĩ sao về việc sử dụng AI trong giáo dục?",
+          "chuTrenManHinh": "Ý kiến của bạn về AI?",
+          "yDoHinh": "Hình ảnh sinh viên thảo luận.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "AI có thể là công cụ hữu ích, nhưng cũng cần phải thận trọng.",
+          "chuTrenManHinh": "Cần thận trọng với AI",
+          "yDoHinh": "Hình ảnh biểu tượng cảnh báo.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta cần cân nhắc giữa lợi ích và rủi ro khi áp dụng AI.",
+          "chuTrenManHinh": "Cân nhắc lợi ích và rủi ro",
+          "yDoHinh": "Hình ảnh cân bằng giữa lợi ích và rủi ro.",
+          "nguon": []
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Cuối cùng, AI có thể hỗ trợ giáo viên trong việc chấm bài và phản hồi.",
+          "chuTrenManHinh": "AI hỗ trợ chấm bài",
+          "yDoHinh": "Hình ảnh AI đang chấm bài.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vietnamnet.vn/ai-ho-tro-ra-de-thi-cham-diem-soan-bai-giao-vien-lieu-co-nguy-co-bi-thay-the-2328535.html",
+              "title": "AI hỗ trợ ra đề thi, chấm điểm, soạn bài, giáo viên liệu có ...",
+              "excerpt": "Nhờ sự hỗ trợ của công nghệ, giảng viên có thể tạo ra các bài giảng và bài tập, giúp sinh viên tiếp cận với nhiều dạng bài và ví dụ minh họa trực quan, dễ hiểu. Bên cạnh đó, AI còn có thể giúp xác định những kỹ năng, kiến thức mà sinh viên đang gặp khó khăn dựa trên thông tin giảng viên cung cấp, từ đó thầy cô có thể điều chỉnh giáo án để tập trung vào những kỹ năng ấy trong các buổi học tiếp theo. [...] AI không chỉ hỗ trợ việc giảng dạy thông qua các hệ thống gia sư thông minh mà còn cá nhn hóa trải nghiệm học tập, điều chỉnh lộ trình học dựa trên nhu cầu và khả năng của sinh viên. Ngoài ra, AI cũng có thể tự động chấm điểm bài kiểm tra, giúp giảm tải công việc hành chính cho giáo viên và cung cấp phản hồi nhanh chóng tới người học.\n\n“Sử dụng AI để phn tích dữ liệu học tập, giáo viên có ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nhưng chúng ta cần đảm bảo rằng việc sử dụng AI là hợp lý.",
+          "chuTrenManHinh": "Sử dụng AI hợp lý",
+          "yDoHinh": "Hình ảnh giảng viên kiểm tra AI.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau thảo luận về cách sử dụng AI hiệu quả nhé.",
+          "chuTrenManHinh": "Thảo luận về AI",
+          "yDoHinh": "Hình ảnh sinh viên thảo luận về AI.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cảm ơn các bạn đã tham gia bài giảng hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn!",
+          "yDoHinh": "Hình ảnh giảng viên cảm ơn sinh viên.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hãy nhớ rằng, AI chỉ là công cụ hỗ trợ cho chúng ta.",
+          "chuTrenManHinh": "AI là công cụ hỗ trợ",
+          "yDoHinh": "Hình ảnh AI như một công cụ.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta cần sử dụng nó một cách thông minh và có trách nhiệm.",
+          "chuTrenManHinh": "Sử dụng AI thông minh",
+          "yDoHinh": "Hình ảnh sinh viên sử dụng AI một cách thông minh.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau xây dựng một môi trường học tập tốt hơn với AI.",
+          "chuTrenManHinh": "Xây dựng môi trường học tập",
+          "yDoHinh": "Hình ảnh môi trường học tập tích cực.",
+          "nguon": []
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúc các bạn thành công trong việc áp dụng AI vào giảng dạy.",
+          "chuTrenManHinh": "Chúc thành công!",
+          "yDoHinh": "Hình ảnh giảng viên chúc thành công.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hẹn gặp lại trong các bài giảng tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh giảng viên tạm biệt.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 9,
+        "verified_count": 9,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t06",
+      "t03",
+      "t02",
+      "t04",
+      "t07",
+      "t08",
+      "t01",
+      "t05"
+    ],
+    "created_at": "2026-09-18T05:02:26.311150"
+  }
+}

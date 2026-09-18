@@ -1,0 +1,364 @@
+{
+  "case": {
+    "case_id": "GS08",
+    "type": "thuong",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Biet khi nao can ghi nguon va khong duoc dung",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Noi ro phu thuoc quoc gia va giay phep; khong tu van phap ly tuyet doi; dung nguon chinh thuc hoac hoc thuat."
+  },
+  "session_id": "6e023f62-d52a-4c60-aff4-e69c89300dd4",
+  "result": {
+    "id": 6,
+    "session_id": "6e023f62-d52a-4c60-aff4-e69c89300dd4",
+    "version": 1,
+    "json_content": {
+      "id": "6e023f62-d52a-4c60-aff4-e69c89300dd4",
+      "tieuDe": "Bản quyền và nội dung do AI tạo ra",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về bản quyền và AI"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chào mừng các bạn đến với bài giảng hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài giảng",
+          "yDoHinh": "Hình ảnh chào mừng với tiêu đề bài giảng.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ khám phá vấn đề bản quyền liên quan đến nội dung do AI tạo ra.",
+          "chuTrenManHinh": "Khám phá bản quyền và AI",
+          "yDoHinh": "Hình ảnh minh họa về AI và bản quyền.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Bạn có biết rằng AI có thể hỗ trợ giáo viên trong việc tạo nội dung bài giảng không?",
+          "chuTrenManHinh": "AI hỗ trợ giáo viên",
+          "yDoHinh": "Hình ảnh giáo viên sử dụng AI.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t01",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI không chỉ giúp tạo nội dung mà còn có thể cá nhân hóa học tập cho học sinh.",
+          "chuTrenManHinh": "Cá nhân hóa học tập",
+          "yDoHinh": "Hình ảnh học sinh học tập với AI.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t02",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Vậy, khi nào thì chúng ta cần ghi nguồn cho nội dung do AI tạo ra?",
+          "chuTrenManHinh": "Khi nào cần ghi nguồn?",
+          "yDoHinh": "Hình ảnh câu hỏi về ghi nguồn.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Theo một số quy định, nội dung do AI tạo ra có thể không được bảo vệ bản quyền.",
+          "chuTrenManHinh": "Bảo vệ bản quyền",
+          "yDoHinh": "Hình ảnh về bản quyền.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Tuy nhiên, một số luật, như Đạo luật bản quyền của Nam Phi, lại có quy định về tác giả cho nội dung do AI tạo ra.",
+          "chuTrenManHinh": "Quy định về tác giả",
+          "yDoHinh": "Hình ảnh về luật bản quyền.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Nội dung do AI tạo ra không có tác giả là con người, nhưng Đạo luật bản quyền của Nam Phi quy định rằng “tác giả” của tác phẩm do máy tính tạo",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này tạo ra sự mâu thuẫn trong việc xác định quyền sở hữu nội dung do AI sản xuất.",
+          "chuTrenManHinh": "Mâu thuẫn trong quyền sở hữu",
+          "yDoHinh": "Hình ảnh biểu thị sự mâu thuẫn.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngoài ra, việc sử dụng tài liệu có bản quyền để tạo nội dung cũng đặt ra nhiều câu hỏi pháp lý.",
+          "chuTrenManHinh": "Câu hỏi pháp lý",
+          "yDoHinh": "Hình ảnh về các câu hỏi pháp lý.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://plf.vn/vi/phan-mem-su-dung-tri-tue-nhan-tao-va-van-de-ban-quyen-tai-viet-nam",
+              "title": "Phần mềm sử dụng trí tuệ nhân tạo và vấn đề bản quyền tại Việt Nam",
+              "excerpt": "## Bài Viết Chuyên MônTư Vấn Đầu Tư\n\nTrở về trang trước\n\nViệc phát triển phần mềm có sử dụng trí tuệ nhn tạo (“AI”) dựa trên các nội dung có bản quyền nói chung đặt ra các cu hỏi pháp lý liên quan đến quyền tác giả và quyền sở hữu trí tuệ tại Việt Nam. Điển hình cho trường hợp này là việc sử dụng sách giáo khoa hoặc sách bài tập của các Nhà xuất bản tại Việt Nam nhằm tạo ra các bài tập và lời giải cho học sinh, giáo viên. Cần lưu ý rằng khi nhà phát triển phần mềm AI muốn sử dụng các tài liệu có bản quyền làm cơ sở để tạo ra các sản phẩm của AI thì phải hiểu rõ trách nhiệm, nghĩa vụ và rủi ro pháp lý của mình theo quy định của pháp luật Việt Nam. [...] ##### 2.2.\n\n##### Tạo tác phẩm phái sinh\n\nMột trong những quyền tài sản quan trọng của tác giả là quyền tạo ra tác phẩm phái sinh. Khi AI s",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần phải hiểu rõ trách nhiệm và rủi ro khi sử dụng nội dung do AI tạo ra.",
+          "chuTrenManHinh": "Trách nhiệm và rủi ro",
+          "yDoHinh": "Hình ảnh về trách nhiệm.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Vậy, làm thế nào để chúng ta nhận biết nội dung do AI tạo ra?",
+          "chuTrenManHinh": "Nhận biết nội dung AI",
+          "yDoHinh": "Hình ảnh câu hỏi về nhận biết.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Theo quy định, bên cung cấp nội dung do AI tạo ra phải thông báo rõ ràng về nguồn gốc của nó.",
+          "chuTrenManHinh": "Thông báo nguồn gốc",
+          "yDoHinh": "Hình ảnh thông báo nguồn gốc.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://lsvn.vn/thong-bao-va-gan-nhan-nhan-biet-noi-dung-do-ai-tao-ra-the-nao-a172678.html",
+              "title": "Thông báo và gắn nhãn nhận biết nội dung do AI tạo ra thế nào?",
+              "excerpt": "Theo đó, Điều 18 Nghị định 142/2026/NĐ-CP nêu rõ, bên triển khai phải thông báo rõ ràng khi cung cấp ra công cộng nội dung do hệ thống trí tuệ nhn tạo tạo ra hoặc chỉnh sửa có khả năng gy nhầm lẫn về tính xác thực của sự kiện, nhn vật hoặc nguồn gốc nội dung theo quy định tại khoản 3 Điều 11 của Luật Trí tuệ nhn tạo 2025.\n\n> Khoản 3 Điều 11 của Luật Trí tuệ nhn tạo 2025:\n>\n> 3. Bên triển khai có trách nhiệm thông báo rõ ràng khi cung cấp ra công cộng văn bản, m thanh, hình ảnh, video được tạo ra hoặc chỉnh sửa bằng hệ thống trí tuệ nhn tạo nếu nội dung đó có khả năng gy nhầm lẫn về tính xác thực của sự kiện, nhn vật, trừ trường hợp pháp luật có quy định khác. [...] Đối với tác phẩm điện ảnh, chương trình nghệ thuật hoặc nội dung sáng tạo, việc thông báo và gắn nhãn hiển thị do bên triển kh",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này nhằm tránh nhầm lẫn về tính xác thực của nội dung.",
+          "chuTrenManHinh": "Tránh nhầm lẫn",
+          "yDoHinh": "Hình ảnh về tính xác thực.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Vậy, khi nào thì chúng ta không cần ghi nguồn?",
+          "chuTrenManHinh": "Không cần ghi nguồn?",
+          "yDoHinh": "Hình ảnh câu hỏi về ghi nguồn.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nếu nội dung do AI tạo ra không có sự tham gia của con người, có thể không cần ghi nguồn.",
+          "chuTrenManHinh": "Không cần ghi nguồn",
+          "yDoHinh": "Hình ảnh về nội dung không cần ghi nguồn.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://sohuutritue.net.vn/ai-la-nguoi-so-huu-cac-noi-dung-do-ai-san-xuat-d318196.html",
+              "title": "Ai là người sở hữu các nội dung do AI sản xuất?",
+              "excerpt": "Nội dung được tạo ra hoàn toàn bởi hệ thống AI, không có sự tham gia mang tính trí tuệ của con người, thường sẽ không được bảo hộ. Các tòa án và",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nhưng nếu có sự tham gia của con người trong việc chỉnh sửa, thì cần ghi nguồn.",
+          "chuTrenManHinh": "Cần ghi nguồn",
+          "yDoHinh": "Hình ảnh về ghi nguồn.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này giúp bảo vệ quyền lợi của tác giả và người sử dụng.",
+          "chuTrenManHinh": "Bảo vệ quyền lợi",
+          "yDoHinh": "Hình ảnh về quyền lợi.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Có ai có câu hỏi nào không?",
+          "chuTrenManHinh": "Câu hỏi từ giảng viên",
+          "yDoHinh": "Hình ảnh giảng viên hỏi câu hỏi.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Nếu không, chúng ta sẽ tóm tắt lại những điểm chính.",
+          "chuTrenManHinh": "Tóm tắt nội dung",
+          "yDoHinh": "Hình ảnh tóm tắt.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hãy nhớ rằng, việc ghi nguồn là rất quan trọng để bảo vệ bản quyền.",
+          "chuTrenManHinh": "Ghi nguồn là quan trọng",
+          "yDoHinh": "Hình ảnh về tầm quan trọng của ghi nguồn.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Chúng ta cần hiểu rõ về trách nhiệm khi sử dụng nội dung do AI tạo ra.",
+          "chuTrenManHinh": "Hiểu rõ trách nhiệm",
+          "yDoHinh": "Hình ảnh về trách nhiệm.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Cảm ơn các bạn đã tham gia bài giảng hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hy vọng các bạn sẽ áp dụng kiến thức này vào thực tế.",
+          "chuTrenManHinh": "Áp dụng kiến thức",
+          "yDoHinh": "Hình ảnh áp dụng kiến thức.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúc các bạn thành công trong các dự án của mình.",
+          "chuTrenManHinh": "Chúc thành công",
+          "yDoHinh": "Hình ảnh chúc thành công.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại trong các bài giảng sau.",
+          "chuTrenManHinh": "Hẹn gặp lại",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 7,
+        "verified_count": 5,
+        "unverified_count": 2,
+        "accuracy_rate": 0.71
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t03",
+      "t04",
+      "t06",
+      "t07",
+      "t08",
+      "t01",
+      "t05"
+    ],
+    "created_at": "2026-09-18T05:03:41.887766"
+  }
+}
