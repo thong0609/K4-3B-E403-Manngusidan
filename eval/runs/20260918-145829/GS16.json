@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS16",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Tinh chi phi mot tac vu",
+    "audience": "Khong cung cap model, so token hoac don gia",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai thong tin thieu; khong tao con so chi phi cu the tu du lieu khong co.",
+    "requires_clarification": true
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/a72683b5-0547-429b-8328-6ef35ed4e582/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

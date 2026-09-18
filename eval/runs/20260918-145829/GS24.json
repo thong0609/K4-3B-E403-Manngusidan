@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS24",
+    "type": "hiem-truy-xuat-that-bai",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Viet kich ban tu trang can dang nhap hoac bi hong",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/README.md"
+    ],
+    "expected": "Bao khong doc duoc nguon, cho thu lai hoac bo sung nguon; khong bia noi dung hay trich dan.",
+    "fixture": "URL loi"
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/6a9828bc-3e3f-4260-8e9a-73579fde3514/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

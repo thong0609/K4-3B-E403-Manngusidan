@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS04",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Phan biet hoc tu du lieu voi quy tac viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Giai thich bang vi du thu rac; khong danh dong hoc du lieu voi quy tac viet san; co nguon."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/f31c8598-5481-49d7-b29a-68a2a4ae8542/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS02",
+    "type": "thuong",
+    "topic": "Vi sao AI tra loi sai ma van nghe rat tu tin",
+    "learning_goal": "Nhan ra ba dau hieu can kiem chung",
+    "audience": "Nguoi di lam dung AI hang ngay",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Neu dung ba dau hieu co can cu; phan biet loi su that voi van phong tu tin; co huong dan kiem chung."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/e3813ae1-2ecf-4624-97df-0ed806697850/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

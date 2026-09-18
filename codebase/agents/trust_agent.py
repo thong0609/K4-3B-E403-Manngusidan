@@ -78,6 +78,10 @@ Published date (nếu có): {source.get('published_date', 'Không rõ')}
         if result.get("published_date") and not source.get("published_date"):
             source["published_date"] = result["published_date"]
         source["unverified_claims"] = result.get("unverified_claims", [])
+        if source["unverified_claims"]:
+            claims_str = "Cần kiểm chứng: " + "; ".join(source["unverified_claims"])
+            existing = source.get("conflict_note") or ""
+            source["conflict_note"] = f"{existing} | {claims_str}".strip(" |")
 
     except Exception as exc:
         logger.error("trust_agent: failed to score %s: %s", source["url"], exc)
@@ -147,7 +151,11 @@ Nếu không có mâu thuẫn: {{"conflicts": []}}
 
 def score_all_sources(sources: list[dict]) -> list[dict]:
     """Score tất cả sources và phát hiện mâu thuẫn."""
-    scored = [score_source(s) for s in sources]
+    import time
+    scored = []
+    for s in sources:
+        scored.append(score_source(s))
+        time.sleep(0.5)
     scored = detect_conflicts(scored)
     # Sắp xếp theo trust_score giảm dần
     scored.sort(key=lambda s: s.get("trust_score", 0), reverse=True)

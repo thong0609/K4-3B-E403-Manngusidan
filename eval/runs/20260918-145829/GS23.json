@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS23",
+    "type": "hiem-nguon-cu",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Neu gia dich vu hien tai",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Uu tien ban cap nhat; canh bao nguon cu; khong dung so cu nhu hien tai.",
+    "fixture": "ban cu va ban cap nhat"
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/3c1cdb30-bfe9-4aba-ac80-1b4c6c258f9a/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}
