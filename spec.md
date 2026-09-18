@@ -90,8 +90,8 @@ Loại: [x] Tính năng mới
 
 ## §8. Phân công & Kế hoạch
 - **Phân công thành viên:**
-  - **Tô Huy Thông (Đội trưởng):** Evidence & Data mining, khảo sát Studio team, phụ trách nộp form CP và thuyết trình.
-  - **Đinh Văn Bình:** Thiết kế System Prompt, tích hợp Tavily Search & Scrape, tối ưu Rule 11, 12, 13.
+  - **Tô Huy Thông (Đội trưởng):** Evidence & Data mining, thiết kế System Prompt, tích hợp Tavily Search & Scrape, phụ trách nộp form CP.
+  - **Đinh Văn Bình:** Tối ưu Rule 11, 12, 13, khảo sát Studio team và thuyết trình.
   - **Ngô Đinh Minh Nhật:** Xây dựng Golden Set 24 ca, thiết lập script đánh giá `score_results.py`, viết Spec §5, §7.
   - **Trần Gia Khánh:** Backend FastAPI, SQLite database, VerifyAgent (Word Overlap algorithm), API endpoints & Swagger UI.
 - **Willing users (3 người ngoài nhóm đã cam kết thử nghiệm):**
