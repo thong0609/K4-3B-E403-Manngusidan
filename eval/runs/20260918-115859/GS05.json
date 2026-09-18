@@ -1,0 +1,393 @@
+{
+  "case": {
+    "case_id": "GS05",
+    "type": "thuong",
+    "topic": "Nhung van ban va tim kiem theo ngu nghia",
+    "learning_goal": "Giai thich vi sao cau gan nghia van tim duoc",
+    "audience": "Sinh vien cong nghe thong tin",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Phan biet khop tu khoa va gan nghia; khong bia cong thuc hay do chinh xac; co doan nguon chung minh."
+  },
+  "session_id": "3bc2caf7-8d64-4c00-9c07-c0ec1aeef08d",
+  "result": {
+    "id": 3,
+    "session_id": "3bc2caf7-8d64-4c00-9c07-c0ec1aeef08d",
+    "version": 1,
+    "json_content": {
+      "id": "3bc2caf7-8d64-4c00-9c07-c0ec1aeef08d",
+      "tieuDe": "Nhung van ban va tim kiem theo ngu nghia",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về tìm kiếm ngữ nghĩa"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài học!",
+          "yDoHinh": "Hình ảnh chào đón sinh viên.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chủ đề hôm nay là về tìm kiếm ngữ nghĩa và nhúng văn bản.",
+          "chuTrenManHinh": "Chủ đề: Tìm kiếm ngữ nghĩa",
+          "yDoHinh": "Hình ảnh về tìm kiếm ngữ nghĩa.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta sẽ khám phá lý do tại sao câu gần nghĩa vẫn có thể tìm được.",
+          "chuTrenManHinh": "Tại sao câu gần nghĩa?",
+          "yDoHinh": "Hình ảnh minh họa câu gần nghĩa.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Tìm kiếm ngữ nghĩa là một công nghệ quan trọng trong lĩnh vực trí tuệ nhân tạo.",
+          "chuTrenManHinh": "Tìm kiếm ngữ nghĩa trong AI",
+          "yDoHinh": "Hình ảnh về trí tuệ nhân tạo.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.tensorflow.org/hub/tutorials/tf2_semantic_approximate_nearest_neighbors?hl=vi",
+              "title": "Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub",
+              "excerpt": "Title: Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub\n# Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản Sử dụng bộ sưu tập để sắp xếp ngăn nắp các trang Lưu và phân loại nội dung dựa trên lựa chọn ưu tiên của bạn. Xem trên TensorFlow.org | Chạy trong Google Colab | Xem trên GitHub | Tải xuống sổ ghi chép | Xem mô hình TF Hub |. Hướng dẫn này minh họa cách tạo các phần nhúng từ mô-đun TensorFlow Hub (TF-Hub) đã cung cấp dữ liệu đầu vào và xây dựng chỉ mục lân cận gần nhất (ANN) gần đúng bằng cách sử dụng các phần nhúng được trích xuất. Chỉ mục này sau đó có thể được sử dụng để so khớp và truy xuất độ tương tự theo thời gian thực. Khi xử lý một kho dữ liệu lớn, sẽ không hiệu quả khi thực hiện đối sánh chính xác bằng cách quét toàn bộ kho lưu tr",
+              "verified": false,
+              "overlap_ratio": 0.59,
+              "reason": "Chỉ tìm thấy 59% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Công nghệ này giúp máy tính hiểu được ý nghĩa của văn bản.",
+          "chuTrenManHinh": "Máy tính hiểu ý nghĩa văn bản",
+          "yDoHinh": "Hình ảnh máy tính phân tích văn bản.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một trong những phương pháp phổ biến là sử dụng nhúng văn bản.",
+          "chuTrenManHinh": "Nhúng văn bản",
+          "yDoHinh": "Hình ảnh về nhúng văn bản.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.tensorflow.org/hub/tutorials/tf2_semantic_approximate_nearest_neighbors?hl=vi",
+              "title": "Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub",
+              "excerpt": "Title: Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub\n# Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản Sử dụng bộ sưu tập để sắp xếp ngăn nắp các trang Lưu và phân loại nội dung dựa trên lựa chọn ưu tiên của bạn. Xem trên TensorFlow.org | Chạy trong Google Colab | Xem trên GitHub | Tải xuống sổ ghi chép | Xem mô hình TF Hub |. Hướng dẫn này minh họa cách tạo các phần nhúng từ mô-đun TensorFlow Hub (TF-Hub) đã cung cấp dữ liệu đầu vào và xây dựng chỉ mục lân cận gần nhất (ANN) gần đúng bằng cách sử dụng các phần nhúng được trích xuất. Chỉ mục này sau đó có thể được sử dụng để so khớp và truy xuất độ tương tự theo thời gian thực. Khi xử lý một kho dữ liệu lớn, sẽ không hiệu quả khi thực hiện đối sánh chính xác bằng cách quét toàn bộ kho lưu tr",
+              "verified": true,
+              "overlap_ratio": 0.77,
+              "reason": "Tìm thấy 77% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nhúng văn bản giúp chuyển đổi văn bản thành các vector số.",
+          "chuTrenManHinh": "Chuyển đổi văn bản thành vector",
+          "yDoHinh": "Hình ảnh minh họa vector hóa văn bản.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Các vector này có thể được so sánh để tìm kiếm các văn bản tương tự.",
+          "chuTrenManHinh": "So sánh vector",
+          "yDoHinh": "Hình ảnh so sánh các vector.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này giúp cải thiện độ chính xác trong tìm kiếm thông tin.",
+          "chuTrenManHinh": "Cải thiện độ chính xác",
+          "yDoHinh": "Hình ảnh về độ chính xác trong tìm kiếm.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Vậy, tại sao câu gần nghĩa vẫn có thể tìm được?",
+          "chuTrenManHinh": "Tại sao câu gần nghĩa?",
+          "yDoHinh": "Hình ảnh câu hỏi về ngữ nghĩa.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn có biết rằng ngữ nghĩa không chỉ phụ thuộc vào từ ngữ?",
+          "chuTrenManHinh": "Ngữ nghĩa không chỉ từ ngữ",
+          "yDoHinh": "Hình ảnh về ngữ nghĩa.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngữ nghĩa còn phụ thuộc vào ngữ cảnh và cách diễn đạt.",
+          "chuTrenManHinh": "Ngữ cảnh và diễn đạt",
+          "yDoHinh": "Hình ảnh về ngữ cảnh.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này có nghĩa là hai câu khác nhau nhưng có thể mang ý nghĩa tương tự.",
+          "chuTrenManHinh": "Hai câu khác nhau",
+          "yDoHinh": "Hình ảnh minh họa hai câu khác nhau.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ví dụ, câu 'Tôi thích học' và 'Học là sở thích của tôi' có thể được xem là gần nghĩa.",
+          "chuTrenManHinh": "Ví dụ câu gần nghĩa",
+          "yDoHinh": "Hình ảnh về hai câu ví dụ.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Công nghệ tìm kiếm ngữ nghĩa giúp nhận diện những mối quan hệ này.",
+          "chuTrenManHinh": "Nhận diện mối quan hệ",
+          "yDoHinh": "Hình ảnh về mối quan hệ ngữ nghĩa.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.tensorflow.org/hub/tutorials/tf2_semantic_approximate_nearest_neighbors?hl=vi",
+              "title": "Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub",
+              "excerpt": "Title: Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub\n# Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản Sử dụng bộ sưu tập để sắp xếp ngăn nắp các trang Lưu và phân loại nội dung dựa trên lựa chọn ưu tiên của bạn. Xem trên TensorFlow.org | Chạy trong Google Colab | Xem trên GitHub | Tải xuống sổ ghi chép | Xem mô hình TF Hub |. Hướng dẫn này minh họa cách tạo các phần nhúng từ mô-đun TensorFlow Hub (TF-Hub) đã cung cấp dữ liệu đầu vào và xây dựng chỉ mục lân cận gần nhất (ANN) gần đúng bằng cách sử dụng các phần nhúng được trích xuất. Chỉ mục này sau đó có thể được sử dụng để so khớp và truy xuất độ tương tự theo thời gian thực. Khi xử lý một kho dữ liệu lớn, sẽ không hiệu quả khi thực hiện đối sánh chính xác bằng cách quét toàn bộ kho lưu tr",
+              "verified": false,
+              "overlap_ratio": 0.5,
+              "reason": "Chỉ tìm thấy 50% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nhờ đó, người dùng có thể tìm kiếm thông tin một cách hiệu quả hơn.",
+          "chuTrenManHinh": "Tìm kiếm thông tin hiệu quả",
+          "yDoHinh": "Hình ảnh người dùng tìm kiếm thông tin.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Tìm kiếm ngữ nghĩa cũng giúp cải thiện trải nghiệm người dùng.",
+          "chuTrenManHinh": "Cải thiện trải nghiệm người dùng",
+          "yDoHinh": "Hình ảnh về trải nghiệm người dùng.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Người dùng không cần nhớ chính xác từ khóa để tìm kiếm thông tin.",
+          "chuTrenManHinh": "Không cần từ khóa chính xác",
+          "yDoHinh": "Hình ảnh minh họa người dùng tìm kiếm.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hệ thống sẽ tự động tìm ra các văn bản liên quan.",
+          "chuTrenManHinh": "Tìm văn bản liên quan",
+          "yDoHinh": "Hình ảnh hệ thống tìm kiếm.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Đây là một bước tiến lớn trong công nghệ tìm kiếm thông tin.",
+          "chuTrenManHinh": "Bước tiến lớn trong công nghệ",
+          "yDoHinh": "Hình ảnh về công nghệ mới.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Vậy, làm thế nào để áp dụng tìm kiếm ngữ nghĩa vào thực tế?",
+          "chuTrenManHinh": "Áp dụng tìm kiếm ngữ nghĩa",
+          "yDoHinh": "Hình ảnh về ứng dụng thực tế.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta có thể sử dụng các mô hình học sâu để thực hiện điều này.",
+          "chuTrenManHinh": "Mô hình học sâu",
+          "yDoHinh": "Hình ảnh về mô hình học sâu.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.tensorflow.org/hub/tutorials/tf2_semantic_approximate_nearest_neighbors?hl=vi",
+              "title": "Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub",
+              "excerpt": "Title: Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản  |  TensorFlow Hub\n# Tìm kiếm ngữ nghĩa với các hàng xóm gần nhất và nhúng văn bản Sử dụng bộ sưu tập để sắp xếp ngăn nắp các trang Lưu và phân loại nội dung dựa trên lựa chọn ưu tiên của bạn. Xem trên TensorFlow.org | Chạy trong Google Colab | Xem trên GitHub | Tải xuống sổ ghi chép | Xem mô hình TF Hub |. Hướng dẫn này minh họa cách tạo các phần nhúng từ mô-đun TensorFlow Hub (TF-Hub) đã cung cấp dữ liệu đầu vào và xây dựng chỉ mục lân cận gần nhất (ANN) gần đúng bằng cách sử dụng các phần nhúng được trích xuất. Chỉ mục này sau đó có thể được sử dụng để so khớp và truy xuất độ tương tự theo thời gian thực. Khi xử lý một kho dữ liệu lớn, sẽ không hiệu quả khi thực hiện đối sánh chính xác bằng cách quét toàn bộ kho lưu tr",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học sâu giúp cải thiện khả năng hiểu ngữ nghĩa của máy tính.",
+          "chuTrenManHinh": "Cải thiện khả năng hiểu ngữ nghĩa",
+          "yDoHinh": "Hình ảnh máy tính hiểu ngữ nghĩa.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta cũng cần có dữ liệu chất lượng để huấn luyện mô hình.",
+          "chuTrenManHinh": "Dữ liệu chất lượng",
+          "yDoHinh": "Hình ảnh về dữ liệu.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Dữ liệu này cần phải đa dạng và phong phú.",
+          "chuTrenManHinh": "Dữ liệu đa dạng",
+          "yDoHinh": "Hình ảnh về sự đa dạng của dữ liệu.",
+          "nguon": []
+        },
+        {
+          "n": 26,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Khi có đủ dữ liệu, mô hình sẽ học được cách nhận diện ngữ nghĩa.",
+          "chuTrenManHinh": "Mô hình nhận diện ngữ nghĩa",
+          "yDoHinh": "Hình ảnh mô hình học.",
+          "nguon": []
+        },
+        {
+          "n": 27,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cuối cùng, chúng ta sẽ có một hệ thống tìm kiếm thông minh.",
+          "chuTrenManHinh": "Hệ thống tìm kiếm thông minh",
+          "yDoHinh": "Hình ảnh hệ thống tìm kiếm.",
+          "nguon": []
+        },
+        {
+          "n": 28,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Tóm lại, tìm kiếm ngữ nghĩa là một công nghệ quan trọng và hữu ích.",
+          "chuTrenManHinh": "Tóm tắt bài học",
+          "yDoHinh": "Hình ảnh tóm tắt.",
+          "nguon": []
+        },
+        {
+          "n": 29,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Nó giúp chúng ta tìm kiếm thông tin một cách hiệu quả hơn.",
+          "chuTrenManHinh": "Tìm kiếm hiệu quả",
+          "yDoHinh": "Hình ảnh về hiệu quả tìm kiếm.",
+          "nguon": []
+        },
+        {
+          "n": 30,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hy vọng các bạn sẽ áp dụng kiến thức này vào thực tế.",
+          "chuTrenManHinh": "Áp dụng kiến thức",
+          "yDoHinh": "Hình ảnh sinh viên áp dụng kiến thức.",
+          "nguon": []
+        },
+        {
+          "n": 31,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn!",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        },
+        {
+          "n": 32,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hẹn gặp lại trong các bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 4,
+        "verified_count": 2,
+        "unverified_count": 2,
+        "accuracy_rate": 0.5
+      }
+    },
+    "sources_used": [
+      "t08",
+      "t07",
+      "t06",
+      "t01",
+      "t02",
+      "t04",
+      "t05",
+      "t03"
+    ],
+    "created_at": "2026-09-18T05:00:45.901791"
+  }
+}

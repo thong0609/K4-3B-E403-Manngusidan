@@ -1,0 +1,523 @@
+{
+  "case": {
+    "case_id": "GS14",
+    "type": "lop-1-nguon-su-that",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "So sanh gia giua hai model",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Bat buoc co ngay hieu luc va nguon chinh thuc; khong tu suy ra tong chi phi khi thieu token hoac don gia."
+  },
+  "session_id": "6f35d34c-caec-43a9-8793-6d162436f52c",
+  "result": {
+    "id": 12,
+    "session_id": "6f35d34c-caec-43a9-8793-6d162436f52c",
+    "version": 1,
+    "json_content": {
+      "id": "6f35d34c-caec-43a9-8793-6d162436f52c",
+      "tieuDe": "Chi phí khi dùng mô hình ngôn ngữ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "So sánh chi phí giữa hai mô hình"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài học!",
+          "yDoHinh": "Hình ảnh chào mừng với tiêu đề bài học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hôm nay, chúng ta sẽ so sánh chi phí giữa hai loại mô hình ngôn ngữ.",
+          "chuTrenManHinh": "So sánh chi phí mô hình ngôn ngữ",
+          "yDoHinh": "Hình ảnh minh họa về mô hình ngôn ngữ.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Mô hình ngôn ngữ lớn, hay còn gọi là LLM, có chi phí đào tạo rất cao.",
+          "chuTrenManHinh": "Chi phí mô hình ngôn ngữ lớn",
+          "yDoHinh": "Hình ảnh biểu đồ chi phí mô hình LLM.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ví dụ, chi phí huấn luyện mô hình PaLM lên đến tám triệu đô la.",
+          "chuTrenManHinh": "Chi phí huấn luyện PaLM",
+          "yDoHinh": "Hình ảnh mô hình PaLM.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Ngược lại, mô hình ngôn ngữ nhỏ, hay SLM, có chi phí thấp hơn.",
+          "chuTrenManHinh": "Chi phí mô hình ngôn ngữ nhỏ",
+          "yDoHinh": "Hình ảnh mô hình SLM.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "SLM tập trung vào kiến thức chuyên biệt và có thể đưa ra phản hồi chính xác hơn.",
+          "chuTrenManHinh": "Ưu điểm của SLM",
+          "yDoHinh": "Hình ảnh minh họa về SLM.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "LLM yêu cầu hàng ngàn chip xử lý AI để xử lý hàng trăm tỷ tham số.",
+          "chuTrenManHinh": "Công nghệ LLM",
+          "yDoHinh": "Hình ảnh về chip xử lý AI.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này khiến chi phí xây dựng LLM lên đến hàng triệu đô la.",
+          "chuTrenManHinh": "Chi phí xây dựng LLM",
+          "yDoHinh": "Hình ảnh biểu đồ chi phí.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Vậy, bạn có biết chi phí suy luận của LLM đã giảm nhanh chóng không?",
+          "chuTrenManHinh": "Chi phí suy luận LLM",
+          "yDoHinh": "Hình ảnh biểu đồ giảm giá.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Theo một số nguồn, chi phí suy luận đã giảm đến một ngàn lần chỉ trong hai năm.",
+          "chuTrenManHinh": "Giảm giá LLM",
+          "yDoHinh": "Hình ảnh biểu đồ giảm giá LLM.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này cho thấy sự mâu thuẫn về chi phí và hiệu quả của LLM.",
+          "chuTrenManHinh": "Mâu thuẫn chi phí LLM",
+          "yDoHinh": "Hình ảnh biểu đồ mâu thuẫn.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần cân nhắc giữa chi phí và hiệu quả khi lựa chọn mô hình.",
+          "chuTrenManHinh": "Cân nhắc chi phí và hiệu quả",
+          "yDoHinh": "Hình ảnh minh họa về sự cân nhắc.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn nghĩ sao về việc sử dụng mô hình ngôn ngữ lớn?",
+          "chuTrenManHinh": "Ý kiến về LLM",
+          "yDoHinh": "Hình ảnh về ý kiến người dùng.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Mô hình ngôn ngữ lớn có thể xử lý các mối quan hệ ngôn ngữ phức tạp hơn.",
+          "chuTrenManHinh": "Khả năng của LLM",
+          "yDoHinh": "Hình ảnh mô hình LLM.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://web.dev/articles/llm-sizes?hl=vi",
+              "title": "Tìm hiểu về kích thước mô hình ngôn ngữ lớn (LLM)",
+              "excerpt": "LLM lớn có nhiều tham số hơn so với LLM nhỏ, cho phép mô hình này nắm bắt các mối quan hệ ngôn ngữ phức tạp hơn và xử lý các cu lệnh có sắc thái. Các mô hình này cũng thường được huấn luyện trên các tập dữ liệu lớn hơn.\n\nBạn có thể nhận thấy rằng một số kích thước mô hình nhất định, chẳng hạn như 2 tỷ hoặc 7 tỷ, là phổ biến. Ví dụ: Gemma 2B, Gemma 7B hoặc Mistral 7B. Các lớp kích thước mô hình là các nhóm gần đúng. Ví dụ: Gemma 2B có khoảng 2 tỷ tham số, nhưng không chính xác.\n\nCác lớp kích thước mô hình cung cấp một cách thực tế để đánh giá hiệu suất của LLM. Hãy coi các lớp này giống như các hạng cn trong môn quyền anh: các mô hình trong cùng một lớp kích thước sẽ dễ so sánh hơn. Hai mô hình 2B phải mang lại hiệu suất tương tự nhau.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng thường được huấn luyện trên các tập dữ liệu lớn hơn.",
+          "chuTrenManHinh": "Tập dữ liệu LLM",
+          "yDoHinh": "Hình ảnh về tập dữ liệu.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://web.dev/articles/llm-sizes?hl=vi",
+              "title": "Tìm hiểu về kích thước mô hình ngôn ngữ lớn (LLM)",
+              "excerpt": "LLM lớn có nhiều tham số hơn so với LLM nhỏ, cho phép mô hình này nắm bắt các mối quan hệ ngôn ngữ phức tạp hơn và xử lý các cu lệnh có sắc thái. Các mô hình này cũng thường được huấn luyện trên các tập dữ liệu lớn hơn.\n\nBạn có thể nhận thấy rằng một số kích thước mô hình nhất định, chẳng hạn như 2 tỷ hoặc 7 tỷ, là phổ biến. Ví dụ: Gemma 2B, Gemma 7B hoặc Mistral 7B. Các lớp kích thước mô hình là các nhóm gần đúng. Ví dụ: Gemma 2B có khoảng 2 tỷ tham số, nhưng không chính xác.\n\nCác lớp kích thước mô hình cung cấp một cách thực tế để đánh giá hiệu suất của LLM. Hãy coi các lớp này giống như các hạng cn trong môn quyền anh: các mô hình trong cùng một lớp kích thước sẽ dễ so sánh hơn. Hai mô hình 2B phải mang lại hiệu suất tương tự nhau.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Các mô hình này có thể được áp dụng trong nhiều lĩnh vực khác nhau.",
+          "chuTrenManHinh": "Ứng dụng của LLM",
+          "yDoHinh": "Hình ảnh ứng dụng LLM.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có biết rằng LLM có thể tạo ra gia sư ảo không?",
+          "chuTrenManHinh": "Gia sư ảo từ LLM",
+          "yDoHinh": "Hình ảnh gia sư ảo.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chúng giúp học sinh đặt câu hỏi và nhận hỗ trợ tức thì.",
+          "chuTrenManHinh": "Hỗ trợ tức thì từ LLM",
+          "yDoHinh": "Hình ảnh hỗ trợ học tập.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vnptai.io/vi/blog/detail/llm-la-gi",
+              "title": "LLM là gì? Khám phá ứng dụng và xu hướng của mô hình ...",
+              "excerpt": "Cá nhn hóa giáo dục:Mô hình ngôn ngữ lớn hỗ trợ tạo ra các gia sư hoặc giáo viên ảo, giúp học sinh đặt cu hỏi và nhận được hỗ trợ tức thời mà không cần sự hiện diện của người hướng dẫn thực tế. Bên cạnh đó, LLM giúp giáo viên điều chỉnh bài giảng phù hợp với nhu cầu, phong cách, và tốc độ học của từng học sinh. Phương pháp này thay thế cách tiếp cận truyền thống, mang lại trải nghiệm học tập hiệu quả, hấp dẫn và thúc đẩy đam mê học hỏi.\n Theo dõi hiệu suất theo thời gian thực:Bằng cách phn tích dữ liệu học tập ngay lập tức, Large Language Model cung cấp cho giáo viên cái nhìn chi tiết về những khó khăn mà học sinh gặp phải. Điều này cho phép giáo viên điều chỉnh phương pháp giảng dạy kịp thời, đảm bảo việc bổ sung kiến thức bị hổng và cải thiện hiệu suất học tập tổng thể.",
+              "verified": true,
+              "overlap_ratio": 0.85,
+              "reason": "Tìm thấy 85% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Bên cạnh đó, LLM cũng giúp giáo viên điều chỉnh bài giảng.",
+          "chuTrenManHinh": "Điều chỉnh bài giảng từ LLM",
+          "yDoHinh": "Hình ảnh giáo viên điều chỉnh bài giảng.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vnptai.io/vi/blog/detail/llm-la-gi",
+              "title": "LLM là gì? Khám phá ứng dụng và xu hướng của mô hình ...",
+              "excerpt": "Cá nhn hóa giáo dục:Mô hình ngôn ngữ lớn hỗ trợ tạo ra các gia sư hoặc giáo viên ảo, giúp học sinh đặt cu hỏi và nhận được hỗ trợ tức thời mà không cần sự hiện diện của người hướng dẫn thực tế. Bên cạnh đó, LLM giúp giáo viên điều chỉnh bài giảng phù hợp với nhu cầu, phong cách, và tốc độ học của từng học sinh. Phương pháp này thay thế cách tiếp cận truyền thống, mang lại trải nghiệm học tập hiệu quả, hấp dẫn và thúc đẩy đam mê học hỏi.\n Theo dõi hiệu suất theo thời gian thực:Bằng cách phn tích dữ liệu học tập ngay lập tức, Large Language Model cung cấp cho giáo viên cái nhìn chi tiết về những khó khăn mà học sinh gặp phải. Điều này cho phép giáo viên điều chỉnh phương pháp giảng dạy kịp thời, đảm bảo việc bổ sung kiến thức bị hổng và cải thiện hiệu suất học tập tổng thể.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này mang lại trải nghiệm học tập hiệu quả hơn.",
+          "chuTrenManHinh": "Trải nghiệm học tập hiệu quả",
+          "yDoHinh": "Hình ảnh trải nghiệm học tập.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có thấy sự khác biệt giữa LLM và SLM không?",
+          "chuTrenManHinh": "Khác biệt giữa LLM và SLM",
+          "yDoHinh": "Hình ảnh so sánh LLM và SLM.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "LLM có thể cung cấp phản hồi mạch lạc dựa trên đầu vào của người dùng.",
+          "chuTrenManHinh": "Phản hồi từ LLM",
+          "yDoHinh": "Hình ảnh phản hồi từ LLM.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://www.elcom.com.vn/mo-hinh-ngon-ngu-lon-la-gi-ung-dung-llm-1709693828",
+              "title": "Mô hình ngôn ngữ lớn là gì? Ứng dụng LLM",
+              "excerpt": "Trong quá trình huấn luyện, mô hình học hỏi mối quan hệ thống kê giữa từ, cụm từ và cu, cho phép nó tạo ra đoạn văn mạch lạc và có ngữ cảnh liên quan khi được cung cấp một đoạn văn mồi (prompt).\n\nMô hình ngôn ngữ lớn cung cấp phản hồi mạch lạc dựa trên đầu vào của người dùng - Ảnh: Internet\n\n# Ưu điểm, nhược điểm của mô hình ngôn ngữ lớn\n\nCó rất nhiều lợi ích mà LLM mang lại cho tổ chức và người dùng: [...] Chi phí phát triển: Để hoạt động được, LLM thường yêu cầu lượng lớn phần cứng xử lý đồ họa đắt đỏ và bộ dữ liệu khổng lồ.\n Chi phí hoạt động: Sau giai đoạn đào tạo và phát triển, chi phí vận hành LLM của tổ chức chủ quản có thể sẽ tăng lên rất cao.\n Định kiến: Rủi ro cung cấp thông tin sai lệch có thể xảy ra với bất kỳ mô hình AI nào được đào tạo dựa trên dữ liệu không gắn nhãn.\n Khả nă",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Tuy nhiên, chi phí phát triển và vận hành của LLM rất cao.",
+          "chuTrenManHinh": "Chi phí phát triển LLM",
+          "yDoHinh": "Hình ảnh chi phí phát triển.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://www.elcom.com.vn/mo-hinh-ngon-ngu-lon-la-gi-ung-dung-llm-1709693828",
+              "title": "Mô hình ngôn ngữ lớn là gì? Ứng dụng LLM",
+              "excerpt": "Trong quá trình huấn luyện, mô hình học hỏi mối quan hệ thống kê giữa từ, cụm từ và cu, cho phép nó tạo ra đoạn văn mạch lạc và có ngữ cảnh liên quan khi được cung cấp một đoạn văn mồi (prompt).\n\nMô hình ngôn ngữ lớn cung cấp phản hồi mạch lạc dựa trên đầu vào của người dùng - Ảnh: Internet\n\n# Ưu điểm, nhược điểm của mô hình ngôn ngữ lớn\n\nCó rất nhiều lợi ích mà LLM mang lại cho tổ chức và người dùng: [...] Chi phí phát triển: Để hoạt động được, LLM thường yêu cầu lượng lớn phần cứng xử lý đồ họa đắt đỏ và bộ dữ liệu khổng lồ.\n Chi phí hoạt động: Sau giai đoạn đào tạo và phát triển, chi phí vận hành LLM của tổ chức chủ quản có thể sẽ tăng lên rất cao.\n Định kiến: Rủi ro cung cấp thông tin sai lệch có thể xảy ra với bất kỳ mô hình AI nào được đào tạo dựa trên dữ liệu không gắn nhãn.\n Khả nă",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần xem xét kỹ lưỡng trước khi đầu tư vào LLM.",
+          "chuTrenManHinh": "Xem xét đầu tư vào LLM",
+          "yDoHinh": "Hình ảnh xem xét đầu tư.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có nghĩ rằng SLM sẽ là lựa chọn tốt hơn trong một số trường hợp không?",
+          "chuTrenManHinh": "Lựa chọn giữa LLM và SLM",
+          "yDoHinh": "Hình ảnh lựa chọn mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 26,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "SLM có thể đưa ra phản hồi chính xác hơn cho từng vai trò người dùng.",
+          "chuTrenManHinh": "Phản hồi chính xác từ SLM",
+          "yDoHinh": "Hình ảnh phản hồi từ SLM.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 27,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này giúp nâng cao trải nghiệm người dùng trong các lĩnh vực cụ thể.",
+          "chuTrenManHinh": "Nâng cao trải nghiệm người dùng",
+          "yDoHinh": "Hình ảnh trải nghiệm người dùng.",
+          "nguon": []
+        },
+        {
+          "n": 28,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Cuối cùng, sự lựa chọn giữa LLM và SLM phụ thuộc vào nhu cầu cụ thể.",
+          "chuTrenManHinh": "Lựa chọn theo nhu cầu",
+          "yDoHinh": "Hình ảnh lựa chọn theo nhu cầu.",
+          "nguon": []
+        },
+        {
+          "n": 29,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn đã sẵn sàng để áp dụng kiến thức này vào thực tế chưa?",
+          "chuTrenManHinh": "Áp dụng kiến thức vào thực tế",
+          "yDoHinh": "Hình ảnh áp dụng kiến thức.",
+          "nguon": []
+        },
+        {
+          "n": 30,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hãy cân nhắc kỹ lưỡng trước khi quyết định lựa chọn mô hình.",
+          "chuTrenManHinh": "Quyết định lựa chọn mô hình",
+          "yDoHinh": "Hình ảnh quyết định lựa chọn.",
+          "nguon": []
+        },
+        {
+          "n": 31,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn bạn!",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        },
+        {
+          "n": 32,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại trong các bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        },
+        {
+          "n": 33,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúc các bạn có những quyết định đúng đắn trong việc lựa chọn mô hình.",
+          "chuTrenManHinh": "Quyết định đúng đắn",
+          "yDoHinh": "Hình ảnh quyết định đúng đắn.",
+          "nguon": []
+        },
+        {
+          "n": 34,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Chúc các bạn thành công!",
+          "chuTrenManHinh": "Chúc thành công!",
+          "yDoHinh": "Hình ảnh chúc thành công.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 12,
+        "verified_count": 12,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t08",
+      "t01",
+      "t03",
+      "t04",
+      "t05",
+      "t07",
+      "t06"
+    ],
+    "created_at": "2026-09-18T05:09:35.779108"
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "case": {
+    "case_id": "GS03",
+    "type": "thuong",
+    "topic": "Du lieu ca nhan khi dung tro ly AI",
+    "learning_goal": "Ke ba viec nen va khong nen lam",
+    "audience": "Nhan vien van phong",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Dung nguon phap ly hoac chinh thuc phu hop; khong khang dinh luat ap dung moi quoc gia; co canh bao pham vi."
+  },
+  "session_id": "01600981-1ac1-46c5-bd1c-8e36775fb517",
+  "result": {
+    "id": 25,
+    "session_id": "01600981-1ac1-46c5-bd1c-8e36775fb517",
+    "version": 1,
+    "json_content": {
+      "id": "01600981-1ac1-46c5-bd1c-8e36775fb517",
+      "tieuDe": "Dữ liệu cá nhân khi dùng trợ lý AI",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Những điều nên làm"
+        },
+        {
+          "so": 2,
+          "ten": "Những điều không nên làm"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài học!",
+          "yDoHinh": "Hình ảnh chào mừng với tiêu đề bài học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ cùng tìm hiểu về dữ liệu cá nhân khi sử dụng trợ lý AI.",
+          "chuTrenManHinh": "Dữ liệu cá nhân và AI",
+          "yDoHinh": "Hình ảnh minh họa về AI và dữ liệu cá nhân.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Có rất nhiều điều cần lưu ý khi sử dụng AI.",
+          "chuTrenManHinh": "Lưu ý khi sử dụng AI",
+          "yDoHinh": "Hình ảnh biểu tượng lưu ý.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Đầu tiên, bạn nên bảo vệ dữ liệu cá nhân của mình.",
+          "chuTrenManHinh": "Bảo vệ dữ liệu cá nhân",
+          "yDoHinh": "Hình ảnh về bảo mật dữ liệu.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 0.75,
+              "reason": "Tìm thấy 75% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Không nhập thông tin nhạy cảm vào AI công cộng.",
+          "chuTrenManHinh": "Không nhập thông tin nhạy cảm",
+          "yDoHinh": "Hình ảnh cảnh báo về thông tin nhạy cảm.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Sử dụng AI có chính sách bảo mật rõ ràng.",
+          "chuTrenManHinh": "Chính sách bảo mật rõ ràng",
+          "yDoHinh": "Hình ảnh minh họa về chính sách bảo mật.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Áp dụng các biện pháp bảo mật như mã hóa và xác thực.",
+          "chuTrenManHinh": "Biện pháp bảo mật",
+          "yDoHinh": "Hình ảnh về mã hóa và xác thực.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Tiếp theo, hãy kiểm tra tính chính xác thông tin AI cung cấp.",
+          "chuTrenManHinh": "Kiểm tra tính chính xác",
+          "yDoHinh": "Hình ảnh về kiểm tra thông tin.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Luôn đối chiếu với nguồn chính thống và pháp lý.",
+          "chuTrenManHinh": "Đối chiếu với nguồn chính thống",
+          "yDoHinh": "Hình ảnh minh họa về đối chiếu thông tin.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.",
+          "chuTrenManHinh": "AI là công cụ hỗ trợ",
+          "yDoHinh": "Hình ảnh về sự hỗ trợ của AI.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://chuyendoiso.quangngai.gov.vn/news/80/4464/quy-tac-su-dung-ai-an-toan-va-hieu-qua",
+              "title": "Quy tắc sử dụng AI an toàn và hiệu quả",
+              "excerpt": "##### RSS JSON In Gởi cho bạn bè;) Giọng đọc Nữ Giọng đọc Nam .\n\n###### A; \"Phóng to cỡ chữ\") A; \"Phông chữ mặc định\") 12/04/2025 01:38:41 PM\n\n###### \n\n1. Bảo vệ dữ liệu cá nhân và thông tin mật\n\nKhông nhập thông tin nhạy cảm vào AI công cộng.\n\nSử dụng AI có chính sách bảo mật rõ ràng.\n\nÁp dụng các biện pháp bảo mật (mã hóa, xác thực…).\n\n2. Kiểm tra tính chính xác thông tin AI cung cấp\n\nLuôn đối chiếu với nguồn chính thống, pháp lý.\n\nAI chỉ là công cụ hỗ trợ, con người phải kiểm tra và chỉnh lý.\n\n3. Tránh thiên vị và sai lệch trong quyết định\n\nKiểm tra dữ liệu đầu vào để đảm bảo tính khách quan và đầy đủ.\n\nGiám sát và đánh giá kết quả AI tạo ra.\n\n4. Tuân thủ pháp luật khi sử dụng AI\n\nKhông tạo, phát tán nội dung vi phạm pháp luật.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Giờ hãy cùng xem những điều không nên làm khi sử dụng AI.",
+          "chuTrenManHinh": "Những điều không nên làm",
+          "yDoHinh": "Hình ảnh biểu tượng cấm.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tránh nhập thông tin nhạy cảm vào công cụ AI.",
+          "chuTrenManHinh": "Tránh nhập thông tin nhạy cảm",
+          "yDoHinh": "Hình ảnh cảnh báo về thông tin nhạy cảm.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://laodong.vn/cong-nghe/meo-bao-ve-thong-tin-ca-nhan-khi-su-dung-cac-cong-cu-ai-mien-phi-1543357.ldo",
+              "title": "Mẹo bảo vệ thông tin cá nhân khi sử dụng các công cụ AI ...",
+              "excerpt": "1. Tránh nhập thông tin nhạy cảm vào công cụ AI\n\nDù tiện lợi, người dùng tuyệt đối không nên nhập các thông tin như số CMND/CCCD, tài khoản ngn hàng, mật khẩu, địa chỉ nhà hoặc tài liệu công việc mật vào các chatbot AI. Những nền tảng này thường lưu giữ dữ liệu để \"huấn luyện\" mô hình, điều này đồng nghĩa với việc thông tin bạn từng nhập có thể bị sử dụng lại về sau.\n\n2. Đọc kỹ chính sách quyền riêng tư\n\nTrước khi sử dụng một công cụ AI, hãy dành vài phút đọc phần \"Privacy Policy\" hoặc \"Terms of Use\". Một số nền tảng miễn phí có thể chia sẻ dữ liệu với bên thứ ba, hoặc lưu trữ nội dung bạn tạo để phục vụ mục đích thương mại, nghiên cứu.\n\n3. Dùng tài khoản phụ để đăng ký [...] 3. Dùng tài khoản phụ để đăng ký\n\nNếu một công cụ AI yêu cầu bạn đăng nhập bằng email hoặc tài khoản mạng xã hội, h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Không chia sẻ thông tin tài chính hoặc giấy tờ cá nhân.",
+          "chuTrenManHinh": "Không chia sẻ thông tin tài chính",
+          "yDoHinh": "Hình ảnh về thông tin tài chính.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://cellphones.com.vn/sforum/cach-bao-ve-du-lieu-ca-nhan-tren-meta-ai",
+              "title": "Cách bảo vệ dữ liệu cá nhân trên Meta AI hiệu quả",
+              "excerpt": "Không chia sẻ thông tin nhạy cảm: Bạn nên tránh nhập mật khẩu, số tài khoản, mã OTP, thông tin tài chính hoặc giấy tờ cá nhn.\n Cn nhắc trước khi gửi hình ảnh: Không tải lên hình ảnh có chứa thông tin riêng tư hoặc dữ liệu của người khác.\n Kiểm tra prompt trước khi gửi: Xem lại nội dung để tránh vô tình đưa thông tin cá nhn vào cu hỏi.\n Hạn chế chia sẻ thông tin của người khác: Không cung cấp dữ liệu cá nhn của bạn bè, người thn khi không cần thiết.\n Thường xuyên kiểm tra cài đặt quyền riêng tư: Theo dõi các tùy chọn liên quan đến dữ liệu và cách Meta AI sử dụng thông tin.\n Xóa nội dung trò chuyện không cần thiết: Nên chủ động quản lý lịch sử tương tác để hạn chế lưu giữ những thông tin riêng tư.",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Đọc kỹ chính sách quyền riêng tư trước khi sử dụng.",
+          "chuTrenManHinh": "Đọc chính sách quyền riêng tư",
+          "yDoHinh": "Hình ảnh về việc đọc chính sách.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://laodong.vn/cong-nghe/meo-bao-ve-thong-tin-ca-nhan-khi-su-dung-cac-cong-cu-ai-mien-phi-1543357.ldo",
+              "title": "Mẹo bảo vệ thông tin cá nhân khi sử dụng các công cụ AI ...",
+              "excerpt": "1. Tránh nhập thông tin nhạy cảm vào công cụ AI\n\nDù tiện lợi, người dùng tuyệt đối không nên nhập các thông tin như số CMND/CCCD, tài khoản ngn hàng, mật khẩu, địa chỉ nhà hoặc tài liệu công việc mật vào các chatbot AI. Những nền tảng này thường lưu giữ dữ liệu để \"huấn luyện\" mô hình, điều này đồng nghĩa với việc thông tin bạn từng nhập có thể bị sử dụng lại về sau.\n\n2. Đọc kỹ chính sách quyền riêng tư\n\nTrước khi sử dụng một công cụ AI, hãy dành vài phút đọc phần \"Privacy Policy\" hoặc \"Terms of Use\". Một số nền tảng miễn phí có thể chia sẻ dữ liệu với bên thứ ba, hoặc lưu trữ nội dung bạn tạo để phục vụ mục đích thương mại, nghiên cứu.\n\n3. Dùng tài khoản phụ để đăng ký [...] 3. Dùng tài khoản phụ để đăng ký\n\nNếu một công cụ AI yêu cầu bạn đăng nhập bằng email hoặc tài khoản mạng xã hội, h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Cẩn thận với việc chia sẻ dữ liệu cá nhân của bạn.",
+          "chuTrenManHinh": "Cẩn thận với dữ liệu cá nhân",
+          "yDoHinh": "Hình ảnh cảnh báo về dữ liệu cá nhân.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://binhdanhocvuso.lamdong.gov.vn/du-lieu-ca-nhan-cua-ban-dang-troi-di-dau-khi-dung-ai-mien-phi-N96.aspx",
+              "title": "Dữ liệu cá nhân của bạn đang 'trôi' đi đâu khi dùng AI miễn ...",
+              "excerpt": "Khi dùng AI miễn phí, bạn không trả tiền bằng ví mà bằng chính dữ liệu cá nhân. Nhưng dữ liệu ấy đang đi đâu, được dùng thế nào và liệu có",
+              "verified": true,
+              "overlap_ratio": 0.83,
+              "reason": "Tìm thấy 83% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tránh sử dụng AI miễn phí mà không hiểu rõ cách sử dụng dữ liệu.",
+          "chuTrenManHinh": "Tránh sử dụng AI miễn phí",
+          "yDoHinh": "Hình ảnh về việc sử dụng AI miễn phí.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://binhdanhocvuso.lamdong.gov.vn/du-lieu-ca-nhan-cua-ban-dang-troi-di-dau-khi-dung-ai-mien-phi-N96.aspx",
+              "title": "Dữ liệu cá nhân của bạn đang 'trôi' đi đâu khi dùng AI miễn ...",
+              "excerpt": "Khi dùng AI miễn phí, bạn không trả tiền bằng ví mà bằng chính dữ liệu cá nhân. Nhưng dữ liệu ấy đang đi đâu, được dùng thế nào và liệu có",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Cuối cùng, hãy luôn kiểm tra cài đặt quyền riêng tư của bạn.",
+          "chuTrenManHinh": "Kiểm tra cài đặt quyền riêng tư",
+          "yDoHinh": "Hình ảnh về cài đặt quyền riêng tư.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Nhớ rằng, bảo vệ dữ liệu cá nhân là rất quan trọng.",
+          "chuTrenManHinh": "Bảo vệ dữ liệu cá nhân",
+          "yDoHinh": "Hình ảnh nhấn mạnh tầm quan trọng của bảo vệ dữ liệu.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn bạn đã theo dõi!",
+          "yDoHinh": "Hình ảnh kết thúc bài học.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại trong các bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 11,
+        "verified_count": 11,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t07",
+      "t01",
+      "t02",
+      "t05",
+      "t08",
+      "t03",
+      "t04",
+      "t06"
+    ],
+    "created_at": "2026-09-18T05:26:01.876252"
+  }
+}

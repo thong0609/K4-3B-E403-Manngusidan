@@ -1,0 +1,364 @@
+{
+  "case": {
+    "case_id": "GS22",
+    "type": "hiem-nguon-mau-thuan",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Neu tac dong cua AI len ket qua hoc tap",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Neu ro mau thuan, trich ca hai nguon uy tin, khong am tham chon mot ket luan; de nguoi duyet quyet dinh.",
+    "fixture": "hai nguon uy tin trai chieu"
+  },
+  "session_id": "487309b9-e21c-456e-b864-36eda2540a38",
+  "result": {
+    "id": 20,
+    "session_id": "487309b9-e21c-456e-b864-36eda2540a38",
+    "version": 1,
+    "json_content": {
+      "id": "487309b9-e21c-456e-b864-36eda2540a38",
+      "tieuDe": "AI trong chấm bài và phản hồi cho sinh viên",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Tác động của AI đến học tập"
+        },
+        {
+          "so": 2,
+          "ten": "Vai trò của giảng viên"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta sẽ khám phá tác động của AI đến kết quả học tập của sinh viên.",
+          "chuTrenManHinh": "Tác động của AI đến học tập",
+          "yDoHinh": "Hình ảnh minh họa về AI trong giáo dục.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Nghiên cứu cho thấy rằng AI có thể ảnh hưởng tích cực đến khả năng tiếp thu của sinh viên.",
+          "chuTrenManHinh": "AI và khả năng tiếp thu",
+          "yDoHinh": "Biểu đồ thể hiện sự cải thiện khả năng tiếp thu nhờ AI.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://tapchicongthuong.vn/anh-huong-cua-viec-su-dung-ai-den-ket-qua-hoc-tap-cua-hoc-sinh-trung-hoc--bang-chung-thuc-nghiem-tu-mot-quoc-gia-dang-phat-trien-131399.htm",
+              "title": "Ảnh hưởng của việc sử dụng AI đến kết quả học tập của học sinh trung học: bằng chứng thực nghiệm từ một quốc gia đang phát triển",
+              "excerpt": "> TÓM TẮT:\n>\n> Nghiên cứu xem xét tác động của AI đến kết quả học tập của học sinh trung học Việt Nam, sử dụng phương pháp hỗn hợp. Dữ liệu từ 370 phản hồi được phn tích bằng PLS-SEM. Kết quả cho thấy nhận thức hữu ích ảnh hưởng tích cực đến thái độ và ý định sử dụng AI. Việc sử dụng AI tác động tích cực đến khả năng tiếp thu, từ đó ảnh hưởng đến kết quả học tập, nhưng không có tác động trực tiếp. Sự đổi mới cá nhn trong CNTT ảnh hưởng tích cực đến việc sử dụng AI và kết quả học tập. Nghiên cứu cung cấp thông tin về vai trò của AI trong giáo dục trung học Việt Nam.\n>\n> Từ khóa: sử dụng AI, khả năng tiếp thu, thành tích học tập, tính sáng tạo cá nhn.\n\n### 1. Đặt vấn đề [...] SDTT AI trong giáo dục hỗ trợ quá trình dạy và học, trong khi TTHT đo lường kết quả giáo dục của học sinh (Brink & cộ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Tuy nhiên, tác động này không phải lúc nào cũng trực tiếp.",
+          "chuTrenManHinh": "Tác động không trực tiếp",
+          "yDoHinh": "Hình ảnh minh họa về mối quan hệ phức tạp giữa AI và học tập.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Vậy, AI có thể giúp sinh viên như thế nào trong học tập?",
+          "chuTrenManHinh": "AI hỗ trợ sinh viên",
+          "yDoHinh": "Hình ảnh sinh viên sử dụng AI trong học tập.",
+          "nguon": []
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "AI có thể tạo ra các bài tập và phản hồi cá nhân hóa cho sinh viên.",
+          "chuTrenManHinh": "Phản hồi cá nhân hóa",
+          "yDoHinh": "Hình ảnh minh họa về phản hồi từ AI.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://comlink.vn/danh-gia-va-phan-hoi-tu-dong",
+              "title": "Ứng dụng AI đánh giá và phản hồi tự động học sinh - Công ty Comlink",
+              "excerpt": "Dựa trên dữ liệu này, AI có thể tạo ra các đánh giá về năng lực học tập của học sinh một cách tự động và khách quan hơn. Thay vì phải xem xét hàng trăm bài kiểm tra hoặc bài tập của học sinh một cách thủ công, giáo viên có thể sử dụng các công cụ AI để tự động hóa quá trình này. Thay vì áp dụng một phương pháp giảng dạy chung cho toàn bộ lớp, AI có thể phn tích dữ liệu cá nhn và tạo ra các bài tập hoặc tài liệu giảng dạy phù hợp với từng học sinh. Công nghệ AI có thể phn tích dữ liệu về quá trình học tập của từng học sinh và từ đó tạo ra những phản hồi phù hợp với nhu cầu và khả năng riêng của họ. Công nghệ AI có khả năng theo dõi và phn tích dữ liệu liên tục, từ đó tạo ra những phản hồi dựa trên sự hiểu biết su sắc về quá trình học tập của học sinh. Thay vì giáo viên phải dành rất nhiều t",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này giúp sinh viên cải thiện kỹ năng và kiến thức của mình.",
+          "chuTrenManHinh": "Cải thiện kỹ năng",
+          "yDoHinh": "Hình ảnh sinh viên học tập hiệu quả.",
+          "nguon": []
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Giảng viên có thể làm gì để tận dụng AI trong giảng dạy?",
+          "chuTrenManHinh": "Vai trò của giảng viên",
+          "yDoHinh": "Hình ảnh giảng viên sử dụng AI trong lớp học.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Giảng viên cần chủ động kết hợp AI vào thiết kế bài giảng.",
+          "chuTrenManHinh": "Kết hợp AI vào giảng dạy",
+          "yDoHinh": "Hình ảnh giảng viên thiết kế bài giảng với AI.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://nghiencuu.tapchikinhtetaichinh.vn/hanh-vi-su-dung-ai-ho-tro-hoc-tap-cua-sinh-vien-vai-tro-dieu-tiet-cua-tinh-doi-moi-ca-nhan-154091.html",
+              "title": "Hành vi sử dụng AI hỗ trợ học tập của sinh viên: Vai trò điều ...",
+              "excerpt": "Đối với giảng viên: Giảng viên cần chủ động kết hợp AI vào thiết kế bài giảng và bài tập, chẳng hạn như yêu cầu sinh viên sử dụng AI để phát triển ý tưởng, sau đó phn tích và phản biện kết quả. Đồng thời, việc định hướng sử dụng AI có trách nhiệm, đưa ra các yêu cầu đa dạng hơn trong hoạt động nghiên cứu sẽ góp phần gia tăng động lực hưởng thụ, thêm niềm tin và thúc đẩy sinh viên thay đổi từ ý định sang hành vi sử dụng AI hiệu quả trong học tập.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Việc này không chỉ giúp sinh viên phát triển ý tưởng mà còn cải thiện khả năng phản biện.",
+          "chuTrenManHinh": "Phát triển ý tưởng",
+          "yDoHinh": "Hình ảnh sinh viên thảo luận về ý tưởng.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Giảng viên cũng cần định hướng sử dụng AI có trách nhiệm.",
+          "chuTrenManHinh": "Định hướng sử dụng AI",
+          "yDoHinh": "Hình ảnh giảng viên hướng dẫn sinh viên.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Cần có các yêu cầu đa dạng hơn trong hoạt động nghiên cứu.",
+          "chuTrenManHinh": "Yêu cầu đa dạng trong nghiên cứu",
+          "yDoHinh": "Hình ảnh sinh viên nghiên cứu.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Tất cả những điều này sẽ góp phần gia tăng động lực học tập cho sinh viên.",
+          "chuTrenManHinh": "Gia tăng động lực học tập",
+          "yDoHinh": "Hình ảnh sinh viên hăng say học tập.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "AI không chỉ giúp giảng viên tiết kiệm thời gian mà còn cải thiện hiệu quả giảng dạy.",
+          "chuTrenManHinh": "Tiết kiệm thời gian",
+          "yDoHinh": "Hình ảnh giảng viên tiết kiệm thời gian nhờ AI.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://cesglobal.com.vn/ung-dung-ai-trong-cham-bai-va-soan-giao-an",
+              "title": "Ứng Dụng AI Trong Chấm Bài Và Soạn Giáo Án - CES GLOBAL",
+              "excerpt": "Tiết kiệm thời gian: AI có thể soạn giáo án nhanh hơn nhiều so với giáo viên, giúp giáo viên có thêm thời gian để tập trung vào việc giảng dạy và hỗ trợ học sinh.\n Cải thiện hiệu quả giảng dạy: AI có thể giúp giáo viên tạo ra các bài giảng và bài tập được thiết kế phù hợp với đối tượng học sinh, giúp học sinh tiếp thu kiến thức hiệu quả hơn.\n Cá nhn hóa học tập: AI có thể giúp giáo viên tạo ra các kế hoạch bài học được cá nhn hóa cho từng học sinh, giúp học sinh học hiệu quả hơn và đạt được mục tiêu của mình nhanh hơn.\n\n## Kết Luận\n\nAI có tiềm năng to lớn để cách mạng hóa việc chấm bài và soạn giáo án, giúp giáo viên tiết kiệm thời gian, cải thiện độ chính xác và cá nhn hóa học tập cho học sinh.\n\nTham khảo thêm: \n\n———————————-\n\nCÔNG TY CP CÔNG NGHỆ TRÍ TUỆ NHN TẠO CES GLOBAL [...] Tiết kiệ",
+              "verified": true,
+              "overlap_ratio": 0.82,
+              "reason": "Tìm thấy 82% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Công nghệ này giúp tạo ra các bài giảng phù hợp với nhu cầu của sinh viên.",
+          "chuTrenManHinh": "Bài giảng phù hợp",
+          "yDoHinh": "Hình ảnh bài giảng được cá nhân hóa.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vietnamnet.vn/ai-ho-tro-ra-de-thi-cham-diem-soan-bai-giao-vien-lieu-co-nguy-co-bi-thay-the-2328535.html",
+              "title": "AI hỗ trợ ra đề thi, chấm điểm, soạn bài, giáo viên liệu có ...",
+              "excerpt": "Nhờ sự hỗ trợ của công nghệ, giảng viên có thể tạo ra các bài giảng và bài tập, giúp sinh viên tiếp cận với nhiều dạng bài và ví dụ minh họa trực quan, dễ hiểu. Bên cạnh đó, AI còn có thể giúp xác định những kỹ năng, kiến thức mà sinh viên đang gặp khó khăn dựa trên thông tin giảng viên cung cấp, từ đó thầy cô có thể điều chỉnh giáo án để tập trung vào những kỹ năng ấy trong các buổi học tiếp theo. [...] AI không chỉ hỗ trợ việc giảng dạy thông qua các hệ thống gia sư thông minh mà còn cá nhn hóa trải nghiệm học tập, điều chỉnh lộ trình học dựa trên nhu cầu và khả năng của sinh viên. Ngoài ra, AI cũng có thể tự động chấm điểm bài kiểm tra, giúp giảm tải công việc hành chính cho giáo viên và cung cấp phản hồi nhanh chóng tới người học.\n\n“Sử dụng AI để phn tích dữ liệu học tập, giáo viên có ",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Giảng viên có thể điều chỉnh giáo án dựa trên thông tin từ AI.",
+          "chuTrenManHinh": "Điều chỉnh giáo án",
+          "yDoHinh": "Hình ảnh giảng viên điều chỉnh giáo án.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vietnamnet.vn/ai-ho-tro-ra-de-thi-cham-diem-soan-bai-giao-vien-lieu-co-nguy-co-bi-thay-the-2328535.html",
+              "title": "AI hỗ trợ ra đề thi, chấm điểm, soạn bài, giáo viên liệu có ...",
+              "excerpt": "Nhờ sự hỗ trợ của công nghệ, giảng viên có thể tạo ra các bài giảng và bài tập, giúp sinh viên tiếp cận với nhiều dạng bài và ví dụ minh họa trực quan, dễ hiểu. Bên cạnh đó, AI còn có thể giúp xác định những kỹ năng, kiến thức mà sinh viên đang gặp khó khăn dựa trên thông tin giảng viên cung cấp, từ đó thầy cô có thể điều chỉnh giáo án để tập trung vào những kỹ năng ấy trong các buổi học tiếp theo. [...] AI không chỉ hỗ trợ việc giảng dạy thông qua các hệ thống gia sư thông minh mà còn cá nhn hóa trải nghiệm học tập, điều chỉnh lộ trình học dựa trên nhu cầu và khả năng của sinh viên. Ngoài ra, AI cũng có thể tự động chấm điểm bài kiểm tra, giúp giảm tải công việc hành chính cho giáo viên và cung cấp phản hồi nhanh chóng tới người học.\n\n“Sử dụng AI để phn tích dữ liệu học tập, giáo viên có ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Vậy, AI có thể giúp giảng viên như thế nào trong việc chấm bài?",
+          "chuTrenManHinh": "AI trong chấm bài",
+          "yDoHinh": "Hình ảnh giảng viên chấm bài với AI.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "AI có thể tự động hóa quá trình chấm bài và phản hồi cho sinh viên.",
+          "chuTrenManHinh": "Tự động hóa chấm bài",
+          "yDoHinh": "Hình ảnh AI chấm bài tự động.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://comlink.vn/danh-gia-va-phan-hoi-tu-dong",
+              "title": "Ứng dụng AI đánh giá và phản hồi tự động học sinh - Công ty Comlink",
+              "excerpt": "Dựa trên dữ liệu này, AI có thể tạo ra các đánh giá về năng lực học tập của học sinh một cách tự động và khách quan hơn. Thay vì phải xem xét hàng trăm bài kiểm tra hoặc bài tập của học sinh một cách thủ công, giáo viên có thể sử dụng các công cụ AI để tự động hóa quá trình này. Thay vì áp dụng một phương pháp giảng dạy chung cho toàn bộ lớp, AI có thể phn tích dữ liệu cá nhn và tạo ra các bài tập hoặc tài liệu giảng dạy phù hợp với từng học sinh. Công nghệ AI có thể phn tích dữ liệu về quá trình học tập của từng học sinh và từ đó tạo ra những phản hồi phù hợp với nhu cầu và khả năng riêng của họ. Công nghệ AI có khả năng theo dõi và phn tích dữ liệu liên tục, từ đó tạo ra những phản hồi dựa trên sự hiểu biết su sắc về quá trình học tập của học sinh. Thay vì giáo viên phải dành rất nhiều t",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Điều này giúp giáo viên tiết kiệm thời gian và tập trung vào việc hướng dẫn.",
+          "chuTrenManHinh": "Tập trung vào hướng dẫn",
+          "yDoHinh": "Hình ảnh giảng viên hướng dẫn sinh viên.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Cuối cùng, AI có thể tạo ra môi trường học tập tương tác hơn.",
+          "chuTrenManHinh": "Môi trường học tập tương tác",
+          "yDoHinh": "Hình ảnh sinh viên tham gia vào lớp học tương tác.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Điều này khuyến khích sinh viên tham gia chủ động vào quá trình học tập.",
+          "chuTrenManHinh": "Khuyến khích tham gia",
+          "yDoHinh": "Hình ảnh sinh viên tham gia tích cực.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://tamlygiaoduc.com.vn/wp-content/uploads/2026/01/64.-Chi-Nguyet-so-01-ANH-HUONG-CUA-NHAN-THUC-VE-TRI-TUE-NHAN-TAO.pdf",
+              "title": "ảnh hưởng của nhận thức về trí tuệ nhân tạo (ai) đến học ...",
+              "excerpt": "Yếu tố tính tương tác thông qua AI (REL) cũng được chứng minh có ảnh hưởng tích cực và đáng kể (β = 0.323, p < 0.001), nhấn mạnh vai trò của các công cụ AI trong việc tạo ra môi trường học tập tương tác, hỗ trợ giao tiếp và phản hồi nhanh chóng, từ đó khuyến khích học sinh tham gia chủ động vào quá trình học tập.\nCác yếu tố tính hữu ích (PU) và cảm giác có năng lực khi sử dụng AI (COM) tuy có mức ảnh hưởng thấp hơn nhưng vẫn giữ vai trò quan trọng với ý nghĩa thống kê rõ ràng (p < 0.001), cho thấy học sinh không chỉ cần nhận thức được lợi ích thiết thực của AI mà còn phải cảm thấy tự tin và kiểm soát được công nghệ khi sử dụng. [...] Đáng chú ý, kết quả cũng khẳng định mức độ tác động nổi bật của tính dễ sử dụng (β = 0,449) và tương tác xã hội (β = 0,323): học sinh có xu hướng chủ động hơn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tóm lại, AI có thể là một công cụ mạnh mẽ cho giảng viên và sinh viên.",
+          "chuTrenManHinh": "Công cụ mạnh mẽ",
+          "yDoHinh": "Hình ảnh AI trong giáo dục.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau khám phá và ứng dụng AI trong giảng dạy nhé!",
+          "chuTrenManHinh": "Khám phá AI",
+          "yDoHinh": "Hình ảnh giảng viên và sinh viên cùng khám phá AI.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 8,
+        "verified_count": 8,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t03",
+      "t07",
+      "t02",
+      "t01",
+      "t04",
+      "t05",
+      "t06",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:16:03.395272"
+  }
+}

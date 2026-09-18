@@ -1,0 +1,458 @@
+{
+  "case": {
+    "case_id": "GS02",
+    "type": "thuong",
+    "topic": "Vi sao AI tra loi sai ma van nghe rat tu tin",
+    "learning_goal": "Nhan ra ba dau hieu can kiem chung",
+    "audience": "Nguoi di lam dung AI hang ngay",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Neu dung ba dau hieu co can cu; phan biet loi su that voi van phong tu tin; co huong dan kiem chung."
+  },
+  "session_id": "5e3609e7-53e9-4534-9e4c-966a636d7df9",
+  "result": {
+    "id": 24,
+    "session_id": "5e3609e7-53e9-4534-9e4c-966a636d7df9",
+    "version": 1,
+    "json_content": {
+      "id": "5e3609e7-53e9-4534-9e4c-966a636d7df9",
+      "tieuDe": "Vì sao AI trả lời sai mà vẫn nghe rất tự tin",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Nhận diện dấu hiệu sai lệch của AI"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài học!",
+          "yDoHinh": "Hình ảnh chào mừng với tiêu đề bài học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ tìm hiểu về lý do AI có thể trả lời sai nhưng vẫn rất tự tin.",
+          "chuTrenManHinh": "AI có thể sai nhưng tự tin",
+          "yDoHinh": "Hình ảnh minh họa về AI và sự tự tin.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Nhiều người dùng AI hàng ngày mà không nhận ra những dấu hiệu sai lệch.",
+          "chuTrenManHinh": "Dấu hiệu sai lệch của AI",
+          "yDoHinh": "Hình ảnh người dùng AI trong công việc.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI có thể tạo ra phản hồi sai mà không kiểm chứng sự thật.",
+          "chuTrenManHinh": "AI không kiểm chứng sự thật",
+          "yDoHinh": "Hình ảnh minh họa về AI và thông tin sai.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tuoitre.vn/ngay-cang-nhieu-thong-tin-sai-co-nen-tim-kiem-hoi-ai-20250626101350386.htm",
+              "title": "Ngày càng nhiều thông tin sai, có nên tìm kiếm, hỏi AI?",
+              "excerpt": "Đặc biệt, nếu người dùng yêu cầu phản hồi theo hướng khẳng định một điều không đúng, AI có thể \"chiều\" theo vì mục tiêu của nó là sinh ra phản hồi hợp ngữ nghĩa, chứ không phải kiểm chứng sự thật.\n\nĐy cũng là lý do vì sao AI có thể \"nói rất trôi chảy nhưng sai rành rành\". Nó không đánh giá đúng sai như con người, mà chỉ dự đoán từ tiếp theo khả dĩ nhất. Điều này dẫn đến hiện tượng mà các nhà nghiên cứu gọi là hallucination, khi AI tạo ra thông tin giả nhưng nghe rất có lý. Một cái tên, một sự kiện, thậm chí cả một nghiên cứu khoa học có thể được \"bịa ra\" nếu AI không tìm thấy dữ liệu thật phù hợp.\n\n## Khi nào AI \"đúng\" trong biển thông tin sai?\n\n  Khi có quá nhiều thông tin sai, AI liệu có đúng? - Ảnh 2.\n\n  #### AI có đúng có sai, các trường có nên cấm xài?ĐỌC NGAY [...] ## AI không tự biế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này dẫn đến hiện tượng mà các nhà nghiên cứu gọi là hallucination.",
+          "chuTrenManHinh": "Hiện tượng hallucination",
+          "yDoHinh": "Hình ảnh mô tả hiện tượng hallucination.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tuoitre.vn/ngay-cang-nhieu-thong-tin-sai-co-nen-tim-kiem-hoi-ai-20250626101350386.htm",
+              "title": "Ngày càng nhiều thông tin sai, có nên tìm kiếm, hỏi AI?",
+              "excerpt": "Đặc biệt, nếu người dùng yêu cầu phản hồi theo hướng khẳng định một điều không đúng, AI có thể \"chiều\" theo vì mục tiêu của nó là sinh ra phản hồi hợp ngữ nghĩa, chứ không phải kiểm chứng sự thật.\n\nĐy cũng là lý do vì sao AI có thể \"nói rất trôi chảy nhưng sai rành rành\". Nó không đánh giá đúng sai như con người, mà chỉ dự đoán từ tiếp theo khả dĩ nhất. Điều này dẫn đến hiện tượng mà các nhà nghiên cứu gọi là hallucination, khi AI tạo ra thông tin giả nhưng nghe rất có lý. Một cái tên, một sự kiện, thậm chí cả một nghiên cứu khoa học có thể được \"bịa ra\" nếu AI không tìm thấy dữ liệu thật phù hợp.\n\n## Khi nào AI \"đúng\" trong biển thông tin sai?\n\n  Khi có quá nhiều thông tin sai, AI liệu có đúng? - Ảnh 2.\n\n  #### AI có đúng có sai, các trường có nên cấm xài?ĐỌC NGAY [...] ## AI không tự biế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI không đánh giá đúng sai như con người, mà chỉ dự đoán từ tiếp theo khả dĩ nhất.",
+          "chuTrenManHinh": "Dự đoán của AI",
+          "yDoHinh": "Hình ảnh minh họa về cách AI dự đoán.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tuoitre.vn/ngay-cang-nhieu-thong-tin-sai-co-nen-tim-kiem-hoi-ai-20250626101350386.htm",
+              "title": "Ngày càng nhiều thông tin sai, có nên tìm kiếm, hỏi AI?",
+              "excerpt": "Đặc biệt, nếu người dùng yêu cầu phản hồi theo hướng khẳng định một điều không đúng, AI có thể \"chiều\" theo vì mục tiêu của nó là sinh ra phản hồi hợp ngữ nghĩa, chứ không phải kiểm chứng sự thật.\n\nĐy cũng là lý do vì sao AI có thể \"nói rất trôi chảy nhưng sai rành rành\". Nó không đánh giá đúng sai như con người, mà chỉ dự đoán từ tiếp theo khả dĩ nhất. Điều này dẫn đến hiện tượng mà các nhà nghiên cứu gọi là hallucination, khi AI tạo ra thông tin giả nhưng nghe rất có lý. Một cái tên, một sự kiện, thậm chí cả một nghiên cứu khoa học có thể được \"bịa ra\" nếu AI không tìm thấy dữ liệu thật phù hợp.\n\n## Khi nào AI \"đúng\" trong biển thông tin sai?\n\n  Khi có quá nhiều thông tin sai, AI liệu có đúng? - Ảnh 2.\n\n  #### AI có đúng có sai, các trường có nên cấm xài?ĐỌC NGAY [...] ## AI không tự biế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Vậy, làm thế nào để nhận ra những dấu hiệu này?",
+          "chuTrenManHinh": "Nhận ra dấu hiệu sai",
+          "yDoHinh": "Hình ảnh câu hỏi về cách nhận ra dấu hiệu.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Đầu tiên, hãy chú ý đến cách AI trả lời câu hỏi.",
+          "chuTrenManHinh": "Cách AI trả lời",
+          "yDoHinh": "Hình ảnh minh họa về AI trả lời câu hỏi.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nếu AI trả lời rất trôi chảy nhưng không có dẫn chứng, hãy cẩn thận.",
+          "chuTrenManHinh": "Cảnh báo về dẫn chứng",
+          "yDoHinh": "Hình ảnh cảnh báo về thiếu dẫn chứng.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tuoitre.vn/ngay-cang-nhieu-thong-tin-sai-co-nen-tim-kiem-hoi-ai-20250626101350386.htm",
+              "title": "Ngày càng nhiều thông tin sai, có nên tìm kiếm, hỏi AI?",
+              "excerpt": "Đặc biệt, nếu người dùng yêu cầu phản hồi theo hướng khẳng định một điều không đúng, AI có thể \"chiều\" theo vì mục tiêu của nó là sinh ra phản hồi hợp ngữ nghĩa, chứ không phải kiểm chứng sự thật.\n\nĐy cũng là lý do vì sao AI có thể \"nói rất trôi chảy nhưng sai rành rành\". Nó không đánh giá đúng sai như con người, mà chỉ dự đoán từ tiếp theo khả dĩ nhất. Điều này dẫn đến hiện tượng mà các nhà nghiên cứu gọi là hallucination, khi AI tạo ra thông tin giả nhưng nghe rất có lý. Một cái tên, một sự kiện, thậm chí cả một nghiên cứu khoa học có thể được \"bịa ra\" nếu AI không tìm thấy dữ liệu thật phù hợp.\n\n## Khi nào AI \"đúng\" trong biển thông tin sai?\n\n  Khi có quá nhiều thông tin sai, AI liệu có đúng? - Ảnh 2.\n\n  #### AI có đúng có sai, các trường có nên cấm xài?ĐỌC NGAY [...] ## AI không tự biế",
+              "verified": true,
+              "overlap_ratio": 0.87,
+              "reason": "Tìm thấy 87% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Thứ hai, kiểm tra nguồn thông tin mà AI cung cấp.",
+          "chuTrenManHinh": "Kiểm tra nguồn thông tin",
+          "yDoHinh": "Hình ảnh minh họa về việc kiểm tra nguồn.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI có thể 'bịa' ra tài liệu không tồn tại, dẫn đến gian lận học thuật.",
+          "chuTrenManHinh": "Gian lận học thuật",
+          "yDoHinh": "Hình ảnh minh họa về gian lận học thuật.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://troisinh.com/docs/learn-ai/level-1/ai-for-learning/ai-learning-mistakes",
+              "title": "Sai lầm khi dùng AI để học | Trồi Sinh",
+              "excerpt": "### Không kiểm tra nguồn và trích dẫn giả mạo\n\nKhi viết luận văn hoặc báo cáo nghiên cứu, AI thường \"bịa\" ra các bài báo khoa học không tồn tại với tên tác giả và tên tạp chí nghe rất thật. Sinh viên chép vào phần tài liệu tham khảo mà không kiểm tra trên Google Scholar, dẫn đến bị đánh giá là gian lận học thuật nghiêm trọng.\n\n## Ví dụ thực tế\n\nLuận văn tốt nghiệp bị hủy do AI bịa tài liệu\n\nMột sinh viên ngành Kinh tế tại trường đại học ở Hà Nội dùng ChatGPT viết phần tài liệu tham khảo cho luận văn về \"tác động của fintech đến hành vi tiêu dùng\". AI đưa ra 5 bài báo từ các tạp chí như Journal of Financial Economics với tên tác giả nghe rất uy tín. Khi giảng viên kiểm tra, không có bài báo nào tồn tại. Luận văn bị yêu cầu viết lại từ đầu và sinh viên bị cảnh cáo. [...] ### Tin tưởng tuyệt ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nhiều sinh viên đã bị đánh giá gian lận vì không kiểm tra tài liệu tham khảo.",
+          "chuTrenManHinh": "Đánh giá gian lận",
+          "yDoHinh": "Hình ảnh sinh viên bị đánh giá gian lận.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://troisinh.com/docs/learn-ai/level-1/ai-for-learning/ai-learning-mistakes",
+              "title": "Sai lầm khi dùng AI để học | Trồi Sinh",
+              "excerpt": "### Không kiểm tra nguồn và trích dẫn giả mạo\n\nKhi viết luận văn hoặc báo cáo nghiên cứu, AI thường \"bịa\" ra các bài báo khoa học không tồn tại với tên tác giả và tên tạp chí nghe rất thật. Sinh viên chép vào phần tài liệu tham khảo mà không kiểm tra trên Google Scholar, dẫn đến bị đánh giá là gian lận học thuật nghiêm trọng.\n\n## Ví dụ thực tế\n\nLuận văn tốt nghiệp bị hủy do AI bịa tài liệu\n\nMột sinh viên ngành Kinh tế tại trường đại học ở Hà Nội dùng ChatGPT viết phần tài liệu tham khảo cho luận văn về \"tác động của fintech đến hành vi tiêu dùng\". AI đưa ra 5 bài báo từ các tạp chí như Journal of Financial Economics với tên tác giả nghe rất uy tín. Khi giảng viên kiểm tra, không có bài báo nào tồn tại. Luận văn bị yêu cầu viết lại từ đầu và sinh viên bị cảnh cáo. [...] ### Tin tưởng tuyệt ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Thứ ba, hãy chú ý đến ngữ cảnh của câu trả lời.",
+          "chuTrenManHinh": "Chú ý đến ngữ cảnh",
+          "yDoHinh": "Hình ảnh về ngữ cảnh câu trả lời.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI có thể tạo ra câu trả lời nghe rất có lý nhưng lại không chính xác.",
+          "chuTrenManHinh": "Câu trả lời không chính xác",
+          "yDoHinh": "Hình ảnh minh họa về câu trả lời không chính xác.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vnreview.vn/threads/tai-sao-ai-tra-loi-dung-nhung-van-sai-ban-chat.64266",
+              "title": "Tại sao AI trả lời đúng nhưng vẫn sai bản chất?",
+              "excerpt": "### Không phải \"ảo giác\" mà là một lớp diễn khác tinh vi hơn​\n\nTừ trước đến nay, khi AI trả lời sai, người ta gọi đó là “hallucination” (ảo giác). Nhưng hiểu biết Potemkin không phải như vậy. Nó không bịa đặt thông tin sai lệch, mà mô phỏng lại một cu trả lời đúng, chỉ có điều nó không thực sự hiểu. Nó biết “nói đúng”, nhưng không thể làm đúng.  \n   \n Ví dụ: khi được hỏi sơ đồ vần ABAB là gì, GPT-4o trả lời cực kỳ chuẩn mực: “Dòng 1 và 3 vần với nhau, dòng 2 và 4 vần với nhau.” Nghe tưởng như nó nắm được khái niệm. Nhưng ngay sau đó, khi yêu cầu nó điền từ vào một bài thơ sử dụng sơ đồ đó, nó... chọn sai vần. Điều này cho thấy: biết diễn đạt khái niệm ≠ hiểu khái niệm.  \n\n### Những bài kiểm tra hiện tại: Đúng nhưng... sai bản chất​ [...] ### Vì sao \"Potemkin\" lại nguy hiểm?​\n\nBởi vì nó khi",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này xảy ra vì AI không thực sự hiểu nội dung.",
+          "chuTrenManHinh": "AI không hiểu nội dung",
+          "yDoHinh": "Hình ảnh minh họa về AI không hiểu.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vnreview.vn/threads/tai-sao-ai-tra-loi-dung-nhung-van-sai-ban-chat.64266",
+              "title": "Tại sao AI trả lời đúng nhưng vẫn sai bản chất?",
+              "excerpt": "### Không phải \"ảo giác\" mà là một lớp diễn khác tinh vi hơn​\n\nTừ trước đến nay, khi AI trả lời sai, người ta gọi đó là “hallucination” (ảo giác). Nhưng hiểu biết Potemkin không phải như vậy. Nó không bịa đặt thông tin sai lệch, mà mô phỏng lại một cu trả lời đúng, chỉ có điều nó không thực sự hiểu. Nó biết “nói đúng”, nhưng không thể làm đúng.  \n   \n Ví dụ: khi được hỏi sơ đồ vần ABAB là gì, GPT-4o trả lời cực kỳ chuẩn mực: “Dòng 1 và 3 vần với nhau, dòng 2 và 4 vần với nhau.” Nghe tưởng như nó nắm được khái niệm. Nhưng ngay sau đó, khi yêu cầu nó điền từ vào một bài thơ sử dụng sơ đồ đó, nó... chọn sai vần. Điều này cho thấy: biết diễn đạt khái niệm ≠ hiểu khái niệm.  \n\n### Những bài kiểm tra hiện tại: Đúng nhưng... sai bản chất​ [...] ### Vì sao \"Potemkin\" lại nguy hiểm?​\n\nBởi vì nó khi",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI chỉ mô phỏng lại câu trả lời đúng mà không có kiến thức thực sự.",
+          "chuTrenManHinh": "Mô phỏng câu trả lời",
+          "yDoHinh": "Hình ảnh mô phỏng câu trả lời.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vnreview.vn/threads/tai-sao-ai-tra-loi-dung-nhung-van-sai-ban-chat.64266",
+              "title": "Tại sao AI trả lời đúng nhưng vẫn sai bản chất?",
+              "excerpt": "### Không phải \"ảo giác\" mà là một lớp diễn khác tinh vi hơn​\n\nTừ trước đến nay, khi AI trả lời sai, người ta gọi đó là “hallucination” (ảo giác). Nhưng hiểu biết Potemkin không phải như vậy. Nó không bịa đặt thông tin sai lệch, mà mô phỏng lại một cu trả lời đúng, chỉ có điều nó không thực sự hiểu. Nó biết “nói đúng”, nhưng không thể làm đúng.  \n   \n Ví dụ: khi được hỏi sơ đồ vần ABAB là gì, GPT-4o trả lời cực kỳ chuẩn mực: “Dòng 1 và 3 vần với nhau, dòng 2 và 4 vần với nhau.” Nghe tưởng như nó nắm được khái niệm. Nhưng ngay sau đó, khi yêu cầu nó điền từ vào một bài thơ sử dụng sơ đồ đó, nó... chọn sai vần. Điều này cho thấy: biết diễn đạt khái niệm ≠ hiểu khái niệm.  \n\n### Những bài kiểm tra hiện tại: Đúng nhưng... sai bản chất​ [...] ### Vì sao \"Potemkin\" lại nguy hiểm?​\n\nBởi vì nó khi",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cuối cùng, hãy nhớ rằng AI không có khả năng nhận thức về việc mình không biết.",
+          "chuTrenManHinh": "AI không nhận thức",
+          "yDoHinh": "Hình ảnh minh họa về AI không nhận thức.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://cafebiz.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-176260602090143499.chn",
+              "title": "Cảnh báo AI ảo giác: Vì sao không nên tin hoàn toàn vào câu trả lời từ AI?",
+              "excerpt": "Trước hết, AI không thật sự “biết rằng mình không biết”. Nó không có cảm giác nghi ngờ giống con người. Khi nhận được cu hỏi, nhiệm vụ chính của nó là tạo ra một cu trả lời có vẻ phù hợp với ngữ cảnh. Nếu trong dữ liệu huấn luyện, những cu trả lời dài, đầy đủ, tự tin thường được đánh giá cao hơn, AI sẽ có xu hướng tạo ra kiểu cu trả lời như vậy.\n\nBạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một cu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  . [...] Tại sao AI lại bịa thay vì đơn ",
+              "verified": true,
+              "overlap_ratio": 0.75,
+              "reason": "Tìm thấy 75% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nó chỉ tạo ra câu trả lời có vẻ phù hợp với ngữ cảnh.",
+          "chuTrenManHinh": "Tạo câu trả lời phù hợp",
+          "yDoHinh": "Hình ảnh minh họa về việc tạo câu trả lời.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://cafebiz.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-176260602090143499.chn",
+              "title": "Cảnh báo AI ảo giác: Vì sao không nên tin hoàn toàn vào câu trả lời từ AI?",
+              "excerpt": "Trước hết, AI không thật sự “biết rằng mình không biết”. Nó không có cảm giác nghi ngờ giống con người. Khi nhận được cu hỏi, nhiệm vụ chính của nó là tạo ra một cu trả lời có vẻ phù hợp với ngữ cảnh. Nếu trong dữ liệu huấn luyện, những cu trả lời dài, đầy đủ, tự tin thường được đánh giá cao hơn, AI sẽ có xu hướng tạo ra kiểu cu trả lời như vậy.\n\nBạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một cu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  . [...] Tại sao AI lại bịa thay vì đơn ",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Vì vậy, việc AI thường xuyên nói 'tôi không biết' là không phổ biến.",
+          "chuTrenManHinh": "AI không nói 'tôi không biết'",
+          "yDoHinh": "Hình ảnh minh họa về câu trả lời của AI.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://cafebiz.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-176260602090143499.chn",
+              "title": "Cảnh báo AI ảo giác: Vì sao không nên tin hoàn toàn vào câu trả lời từ AI?",
+              "excerpt": "Trước hết, AI không thật sự “biết rằng mình không biết”. Nó không có cảm giác nghi ngờ giống con người. Khi nhận được cu hỏi, nhiệm vụ chính của nó là tạo ra một cu trả lời có vẻ phù hợp với ngữ cảnh. Nếu trong dữ liệu huấn luyện, những cu trả lời dài, đầy đủ, tự tin thường được đánh giá cao hơn, AI sẽ có xu hướng tạo ra kiểu cu trả lời như vậy.\n\nBạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một cu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  . [...] Tại sao AI lại bịa thay vì đơn ",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần phải thận trọng khi sử dụng AI.",
+          "chuTrenManHinh": "Thận trọng khi sử dụng AI",
+          "yDoHinh": "Hình ảnh cảnh báo về việc sử dụng AI.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Nhớ rằng, AI không phải là nguồn đáng tin cậy hoàn toàn.",
+          "chuTrenManHinh": "AI không đáng tin cậy",
+          "yDoHinh": "Hình ảnh cảnh báo về độ tin cậy của AI.",
+          "nguon": [
+            "t05",
+            "t06",
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://cafef.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-188260602143926604.chn",
+              "title": "Cảnh báo: Câu trả lời từ AI không phải là nguồn đáng tin cậy. Vì sao?",
+              "excerpt": "Bạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đâu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một câu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  .\n\nNgoài ra, người dùng cũng thường không thích câu trả lời “tôi không biết”. Nếu AI thường xuyên nói “tôi không biết”, nhiều người sẽ thấy nó vô dụng. Vì thế, trong quá trình phát triển, các mô hình thường được tối ưu để cố gắng trả lời nhiều nhất có thể. Điều này làm AI hữu ích hơn trong nhiều tình huống, nhưng cũng khiến nó dễ bịa hơn khi thiếu thông tin. [...] Tại sao AI lại bịa ",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            },
+            {
+              "code": "t06",
+              "url": "https://genk.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-165260605080321086.chn",
+              "title": "Cảnh báo: Câu trả lời từ AI không phải là nguồn đáng tin cậy. Vì sao?",
+              "excerpt": "Bạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một cu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  .\n\nNgoài ra, người dùng cũng thường không thích cu trả lời “tôi không biết”. Nếu AI thường xuyên nói “tôi không biết”, nhiều người sẽ thấy nó vô dụng. Vì thế, trong quá trình phát triển, các mô hình thường được tối ưu để cố gắng trả lời nhiều nhất có thể. Điều này làm AI hữu ích hơn trong nhiều tình huống, nhưng cũng khiến nó dễ bịa hơn khi thiếu thông tin. [...] Tại sao AI lại bịa tha",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            },
+            {
+              "code": "t07",
+              "url": "https://kenh14.vn/canh-bao-cau-tra-loi-tu-ai-khong-phai-la-nguon-dang-tin-cay-vi-sao-215260602154456769.chn",
+              "title": "Cảnh báo: Câu trả lời từ AI không phải là nguồn đáng tin cậy. Vì sao?",
+              "excerpt": "Bạn có thể so sánh điều này với một bài kiểm tra trắc nghiệm: trả lời đúng thì được điểm, trả lời sai không bị trừ điểm, còn bỏ trống cũng không được điểm, thì cách có lợi nhất là cứ đoán bừa đáp án. Đoán sai thì không mất gì, nhưng biết đu đoán đúng lại được điểm. Thuật toán của AI cũng thường bị khuyến khích theo hướng đó:  đưa ra một cu trả lời nghe có ích thì tốt hơn là im lặng hoặc nói “tôi không biết”  .\n\nNgoài ra, người dùng cũng thường không thích cu trả lời “tôi không biết”. Nếu AI thường xuyên nói “tôi không biết”, nhiều người sẽ thấy nó vô dụng. Vì thế, trong quá trình phát triển, các mô hình thường được tối ưu để cố gắng trả lời nhiều nhất có thể. Điều này làm AI hữu ích hơn trong nhiều tình huống, nhưng cũng khiến nó dễ bịa hơn khi thiếu thông tin. [...] Tại sao AI lại bịa tha",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn đã theo dõi!",
+          "yDoHinh": "Hình ảnh cảm ơn người học.",
+          "nguon": []
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại trong các bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 13,
+        "verified_count": 13,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t01",
+      "t03",
+      "t02",
+      "t05",
+      "t06",
+      "t04",
+      "t07",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:25:12.422718"
+  }
+}

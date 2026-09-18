@@ -1,0 +1,273 @@
+{
+  "case": {
+    "case_id": "GS15",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chu de AI trong giao duc",
+    "learning_goal": "Viet kich ban cho mot nhom nguoi hoc",
+    "audience": "Chua cung cap cap do nguoi hoc",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai cap do va nen tang, hoac neu ro gia dinh va xin xac nhan; khong doan im lang.",
+    "requires_clarification": true
+  },
+  "session_id": "22423fd2-3b03-4625-be28-1b6fa19ae5ad",
+  "result": {
+    "id": 13,
+    "session_id": "22423fd2-3b03-4625-be28-1b6fa19ae5ad",
+    "version": 1,
+    "json_content": {
+      "id": "22423fd2-3b03-4625-be28-1b6fa19ae5ad",
+      "tieuDe": "Ứng dụng AI trong giáo dục",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về AI trong giáo dục"
+        },
+        {
+          "so": 2,
+          "ten": "Lợi ích của AI trong giảng dạy"
+        },
+        {
+          "so": 3,
+          "ten": "Mâu thuẫn trong ứng dụng AI"
+        },
+        {
+          "so": 4,
+          "ten": "Kết luận"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chào mừng các bạn đến với bài giảng về ứng dụng AI trong giáo dục.",
+          "chuTrenManHinh": "Chào mừng đến với bài giảng!",
+          "yDoHinh": "Hình ảnh một lớp học hiện đại với công nghệ AI.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "AI đang trở thành xu hướng tất yếu trong giáo dục hiện đại.",
+          "chuTrenManHinh": "Xu hướng AI trong giáo dục",
+          "yDoHinh": "Hình ảnh biểu đồ thể hiện sự phát triển của AI trong giáo dục.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://tapchigiaoduc.edu.vn/article/89562/211/ung-dung-ai-trong-giao-duc-co-hoi-de-nang-cao-hieu-qua-giang-day",
+              "title": "Ứng dụng AI trong giáo dục: Cơ hội để nâng cao hiệu quả giảng dạy",
+              "excerpt": "Việc ứng dụng AI vào giảng dạy là xu hướng tất yếu. Tại tọa đàm “Tầm nhìn, định hướng tương lai cho giáo dục trong kỷ nguyên AI” diễn ra vào sáng 20/3, các chuyên gia và Thứ trưởng Bộ Giáo dục và đào tạo (GDĐT) đã nhấn mạnh tầm quan trọng của AI trong giáo dục. Theo đó, AI tăng cường cơ hội tiếp cận giáo dục, thúc đẩy giáo dục cá nhn hóa, nng cao tinh thần tự học, đổi mới và nng cao hiệu quả giảng dạy, tạo dựng thói quen học tập suốt đời. AI tác động toàn diện tới 3 trụ cột giáo dục là chương tình học, quá trình dạy và học, kiểm tra đánh giá. Cụ thể, AI hỗ trợ cho giáo viên và cán bộ quản lý trong quá trình dạy học như hỗ trợ xy dựng kế hoạch bài giảng, xy dựng tài liệu phục vụ giảng dạy, thiết kế bài kiểm tra, chấm điểm, phn tích kết quả, hỗ trợ cá nhn hoá phản hồi cho người học. Ngoài [.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Bạn có biết rằng AI có thể giúp cải thiện hiệu quả giảng dạy không?",
+          "chuTrenManHinh": "AI cải thiện hiệu quả giảng dạy",
+          "yDoHinh": "Hình ảnh giáo viên sử dụng AI trong lớp học.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Theo các chuyên gia, AI tăng cường cơ hội tiếp cận giáo dục cho học sinh.",
+          "chuTrenManHinh": "Cơ hội tiếp cận giáo dục",
+          "yDoHinh": "Hình ảnh học sinh sử dụng máy tính với AI.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://tapchigiaoduc.edu.vn/article/89562/211/ung-dung-ai-trong-giao-duc-co-hoi-de-nang-cao-hieu-qua-giang-day",
+              "title": "Ứng dụng AI trong giáo dục: Cơ hội để nâng cao hiệu quả giảng dạy",
+              "excerpt": "Việc ứng dụng AI vào giảng dạy là xu hướng tất yếu. Tại tọa đàm “Tầm nhìn, định hướng tương lai cho giáo dục trong kỷ nguyên AI” diễn ra vào sáng 20/3, các chuyên gia và Thứ trưởng Bộ Giáo dục và đào tạo (GDĐT) đã nhấn mạnh tầm quan trọng của AI trong giáo dục. Theo đó, AI tăng cường cơ hội tiếp cận giáo dục, thúc đẩy giáo dục cá nhn hóa, nng cao tinh thần tự học, đổi mới và nng cao hiệu quả giảng dạy, tạo dựng thói quen học tập suốt đời. AI tác động toàn diện tới 3 trụ cột giáo dục là chương tình học, quá trình dạy và học, kiểm tra đánh giá. Cụ thể, AI hỗ trợ cho giáo viên và cán bộ quản lý trong quá trình dạy học như hỗ trợ xy dựng kế hoạch bài giảng, xy dựng tài liệu phục vụ giảng dạy, thiết kế bài kiểm tra, chấm điểm, phn tích kết quả, hỗ trợ cá nhn hoá phản hồi cho người học. Ngoài [.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "AI cũng thúc đẩy giáo dục cá nhân hóa và nâng cao tinh thần tự học.",
+          "chuTrenManHinh": "Giáo dục cá nhân hóa",
+          "yDoHinh": "Hình ảnh học sinh học tập theo cách riêng của mình.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://tapchigiaoduc.edu.vn/article/89562/211/ung-dung-ai-trong-giao-duc-co-hoi-de-nang-cao-hieu-qua-giang-day",
+              "title": "Ứng dụng AI trong giáo dục: Cơ hội để nâng cao hiệu quả giảng dạy",
+              "excerpt": "Việc ứng dụng AI vào giảng dạy là xu hướng tất yếu. Tại tọa đàm “Tầm nhìn, định hướng tương lai cho giáo dục trong kỷ nguyên AI” diễn ra vào sáng 20/3, các chuyên gia và Thứ trưởng Bộ Giáo dục và đào tạo (GDĐT) đã nhấn mạnh tầm quan trọng của AI trong giáo dục. Theo đó, AI tăng cường cơ hội tiếp cận giáo dục, thúc đẩy giáo dục cá nhn hóa, nng cao tinh thần tự học, đổi mới và nng cao hiệu quả giảng dạy, tạo dựng thói quen học tập suốt đời. AI tác động toàn diện tới 3 trụ cột giáo dục là chương tình học, quá trình dạy và học, kiểm tra đánh giá. Cụ thể, AI hỗ trợ cho giáo viên và cán bộ quản lý trong quá trình dạy học như hỗ trợ xy dựng kế hoạch bài giảng, xy dựng tài liệu phục vụ giảng dạy, thiết kế bài kiểm tra, chấm điểm, phn tích kết quả, hỗ trợ cá nhn hoá phản hồi cho người học. Ngoài [.",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Bạn nghĩ AI có thể giúp học sinh học tập hiệu quả hơn không?",
+          "chuTrenManHinh": "AI và học sinh",
+          "yDoHinh": "Hình ảnh học sinh tương tác với AI.",
+          "nguon": []
+        },
+        {
+          "n": 7,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Một khảo sát cho thấy có tới bảy mươi phần trăm học sinh biết về AI.",
+          "chuTrenManHinh": "Khảo sát về AI",
+          "yDoHinh": "Hình ảnh biểu đồ khảo sát.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://nhandan.vn/can-som-co-mot-chien-luoc-bai-ban-dua-tri-tue-nhan-tao-vao-truong-hoc-post918695.html",
+              "title": "Đưa Trí tuệ nhân tạo vào trường học: Chiến lược cần thiết",
+              "excerpt": "GS, TS Lê Anh Vinh, Viện trưởng Viện Khoa học Giáo dục Việt Nam cho biết đã thực hiện một khảo sát phục vụ cho việc xy dựng Khung năng lực Trí tuệ nhn tạo - AI cho người học với hơn 11 nghìn học sinh trung học cơ sở vào cuối năm 2023. Trong số học sinh tham gia trả lời cu hỏi, có 87% biết về Trí tuệ nhn tạo - AI ở một mức độ nào đó (như tiếp cận, dùng thử trong vui chơi, học tập,…). Tại đy các em cũng đã đưa ra đánh giá là việc sử dụng Trí tuệ nhn tạo - AI rất hiệu quả.\n\n 4027896677822691084.jpg\") \n\nGS, TS Lê Anh Vinh, Viện trưởng Viện Khoa học Giáo dục Việt Nam, Bộ Giáo dục và Đào tạo (Ảnh: HÀ TUẤN) [...] Thống kê cũng cho thấy hiện có khoảng 15% trường học ở các thành phố lớn của Việt Nam đã ứng dụng AI trong giảng dạy, trong đó Hà Nội đạt tỷ lệ khoảng 25% và thành phố Hồ Chí Minh khoảng",
+              "verified": true,
+              "overlap_ratio": 0.81,
+              "reason": "Tìm thấy 81% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "AI hỗ trợ giáo viên trong việc soạn giáo án và tạo bài giảng sinh động.",
+          "chuTrenManHinh": "AI hỗ trợ giáo viên",
+          "yDoHinh": "Hình ảnh giáo viên soạn bài giảng với AI.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://diendandoanhnghiep.vn/dua-ung-dung-ai-vao-giang-day-buoc-dot-pha-trong-giao-duc-thoi-dai-so-10158526.html",
+              "title": "Đưa ứng dụng AI vào giảng dạy: Bước đột phá trong giáo dục thời đại số",
+              "excerpt": "Cô Lê Thị Thủy, giáo viên dạy khối lớp 2 trường Xun Du cho biết, việc được tiếp cận đưa ứng dụng AI cho việc giảng dạy vô cùng tốt. AI hỗ trợ giáo viên chúng tôi tìm kiếm kho dự liệu kiến thức, data dữ liệu bài giảng đa dạng. Hỗ trợ công tác soạn giáo án và chuẩn bị bài giảng trực quan sinh động. Giúp bài giảng sinh động và gy hứng thú cho học sinh bằng các video ngắn.\n\nAI giúp học sinh có cơ hội học tập theo năng lực cá nhn, với tốc độ phù hợp và sự tương tác cao. Thông qua các nền tảng AI, học sinh có thể ôn luyện bài cũ, kiểm tra kiến thức mọi lúc mọi nơi. Nhiều em còn chủ động sử dụng AI để học ngôn ngữ lập trình, tìm hiểu về khoa học, thậm chí là xy dựng các dự án sáng tạo nhỏ. [...] Nhờ có AI, học sinh không chỉ tiếp thu kiến thức theo cách truyền thống, mà còn được tham gia các tiết",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Tuy nhiên, có những mâu thuẫn trong cách hiểu về vai trò của AI.",
+          "chuTrenManHinh": "Mâu thuẫn trong ứng dụng AI",
+          "yDoHinh": "Hình ảnh biểu tượng câu hỏi.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Một số nguồn cho rằng AI chỉ kiểm tra lý thuyết, trong khi nguồn khác khẳng định AI đánh giá kỹ năng thực tế.",
+          "chuTrenManHinh": "Đánh giá AI",
+          "yDoHinh": "Hình ảnh so sánh giữa lý thuyết và thực tế.",
+          "nguon": [
+            "t03",
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://tapchigiaoduc.edu.vn/article/89562/211/ung-dung-ai-trong-giao-duc-co-hoi-de-nang-cao-hieu-qua-giang-day",
+              "title": "Ứng dụng AI trong giáo dục: Cơ hội để nâng cao hiệu quả giảng dạy",
+              "excerpt": "Việc ứng dụng AI vào giảng dạy là xu hướng tất yếu. Tại tọa đàm “Tầm nhìn, định hướng tương lai cho giáo dục trong kỷ nguyên AI” diễn ra vào sáng 20/3, các chuyên gia và Thứ trưởng Bộ Giáo dục và đào tạo (GDĐT) đã nhấn mạnh tầm quan trọng của AI trong giáo dục. Theo đó, AI tăng cường cơ hội tiếp cận giáo dục, thúc đẩy giáo dục cá nhn hóa, nng cao tinh thần tự học, đổi mới và nng cao hiệu quả giảng dạy, tạo dựng thói quen học tập suốt đời. AI tác động toàn diện tới 3 trụ cột giáo dục là chương tình học, quá trình dạy và học, kiểm tra đánh giá. Cụ thể, AI hỗ trợ cho giáo viên và cán bộ quản lý trong quá trình dạy học như hỗ trợ xy dựng kế hoạch bài giảng, xy dựng tài liệu phục vụ giảng dạy, thiết kế bài kiểm tra, chấm điểm, phn tích kết quả, hỗ trợ cá nhn hoá phản hồi cho người học. Ngoài [.",
+              "verified": true,
+              "overlap_ratio": 0.77,
+              "reason": "Tìm thấy 77% từ trong nội dung trang"
+            },
+            {
+              "code": "t04",
+              "url": "https://dotb.vn/news/xu-huong-ung-dung-ai-trong-giao-duc",
+              "title": "Khám Phá 5 Xu Hướng ứng Dụng AI Trong Giáo Dục 2025",
+              "excerpt": "AI không chỉ kiểm tra kiến thức lý thuyết mà còn đánh giá kỹ năng thực tế và giải quyết vấn đề, tạo nên cách tiếp cận toàn diện hơn. Đy là công cụ thay đổi cuộc chơi, giúp các bài kiểm tra trở nên chính xác, hiệu quả và phản ánh chn thực năng lực của học sinh, đặt nền tảng cho một quy trình đánh giá học tập hiện đại.\n\nSử dụng AI tạo nội dung/giáo án trợ giúp cho giáo viên/trợ giảng\n\nSử dụng AI tạo nội dung/giáo án trợ giúp cho giáo viên/trợ giảng\n\n### Sử dụng AI chấm điểm các bài thi Nói – Viết trong kỳ thi ngôn ngữ\n\n AI ngày càng được ứng dụng rộng rãi trong giáo dục, đặc biệt trong các kỳ thi đánh giá năng lực ngôn ngữ như TOEFL, IELTS, PTE, hoặc các bài kiểm tra nội bộ tại các tổ chức giáo dục. [...] Cùng DotB khám phá các xu hướng ứng dụng AI trong giảng dạy và học tập nổi bật nhất 202",
+              "verified": true,
+              "overlap_ratio": 0.91,
+              "reason": "Tìm thấy 91% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Điều này có thể dẫn đến sự khác biệt trong cách hiểu về AI trong giáo dục.",
+          "chuTrenManHinh": "Khác biệt trong hiểu biết",
+          "yDoHinh": "Hình ảnh học sinh thảo luận về AI.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Tóm lại, AI là công cụ quan trọng trong giáo dục hiện đại.",
+          "chuTrenManHinh": "Tóm tắt về AI",
+          "yDoHinh": "Hình ảnh tổng kết bài giảng.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 4,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau khám phá và ứng dụng AI trong giáo dục nhé!",
+          "chuTrenManHinh": "Khám phá AI trong giáo dục",
+          "yDoHinh": "Hình ảnh học sinh vui vẻ học tập.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 6,
+        "verified_count": 6,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t03",
+      "t08",
+      "t01",
+      "t02",
+      "t06",
+      "t07",
+      "t04",
+      "t05"
+    ],
+    "created_at": "2026-09-18T05:10:18.302222"
+  }
+}

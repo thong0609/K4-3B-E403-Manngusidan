@@ -1,0 +1,313 @@
+{
+  "case": {
+    "case_id": "GS16",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Tinh chi phi mot tac vu",
+    "audience": "Khong cung cap model, so token hoac don gia",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai thong tin thieu; khong tao con so chi phi cu the tu du lieu khong co.",
+    "requires_clarification": true
+  },
+  "session_id": "e4027c0b-75a8-4eef-a5cc-688a33595b07",
+  "result": {
+    "id": 14,
+    "session_id": "e4027c0b-75a8-4eef-a5cc-688a33595b07",
+    "version": 1,
+    "json_content": {
+      "id": "e4027c0b-75a8-4eef-a5cc-688a33595b07",
+      "tieuDe": "Chi phí khi dùng mô hình ngôn ngữ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về chi phí"
+        },
+        {
+          "so": 2,
+          "ten": "Chi phí mô hình ngôn ngữ lớn"
+        },
+        {
+          "so": 3,
+          "ten": "Chi phí mô hình ngôn ngữ nhỏ"
+        },
+        {
+          "so": 4,
+          "ten": "Kết luận"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ khám phá chi phí khi sử dụng mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Chi phí mô hình ngôn ngữ",
+          "yDoHinh": "Hình ảnh minh họa mô hình ngôn ngữ.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Mô hình ngôn ngữ đang ngày càng trở nên phổ biến.",
+          "chuTrenManHinh": "Mô hình ngôn ngữ phổ biến",
+          "yDoHinh": "Hình ảnh mô hình ngôn ngữ trong thực tế.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Chi phí để đào tạo mô hình ngôn ngữ lớn rất cao.",
+          "chuTrenManHinh": "Chi phí đào tạo mô hình lớn",
+          "yDoHinh": "Biểu đồ chi phí đào tạo mô hình lớn.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ví dụ, huấn luyện GPT-2 tốn khoảng năm mươi ngàn đô la.",
+          "chuTrenManHinh": "Chi phí GPT-2",
+          "yDoHinh": "Hình ảnh minh họa GPT-2.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.85,
+              "reason": "Tìm thấy 85% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong khi đó, huấn luyện PaLM có thể tốn đến tám triệu đô la.",
+          "chuTrenManHinh": "Chi phí PaLM",
+          "yDoHinh": "Hình ảnh minh họa PaLM.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Megatron-Turing NLG cũng có chi phí khoảng mười một triệu đô la.",
+          "chuTrenManHinh": "Chi phí Megatron-Turing",
+          "yDoHinh": "Hình ảnh minh họa Megatron-Turing.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Chi phí này không chỉ bao gồm phần mềm mà còn cả phần cứng.",
+          "chuTrenManHinh": "Chi phí phần cứng",
+          "yDoHinh": "Hình ảnh phần cứng máy tính.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Vậy, liệu có lựa chọn nào tiết kiệm hơn không?",
+          "chuTrenManHinh": "Lựa chọn tiết kiệm",
+          "yDoHinh": "Hình ảnh mô hình ngôn ngữ nhỏ.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Mô hình ngôn ngữ nhỏ có thể là một lựa chọn tốt.",
+          "chuTrenManHinh": "Mô hình ngôn ngữ nhỏ",
+          "yDoHinh": "Hình ảnh mô hình ngôn ngữ nhỏ.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Chúng tập trung vào kiến thức chuyên biệt và có chi phí thấp hơn.",
+          "chuTrenManHinh": "Chi phí mô hình nhỏ",
+          "yDoHinh": "Hình ảnh minh họa kiến thức chuyên biệt.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Mô hình này có thể đưa ra phản hồi chính xác hơn cho từng vai trò.",
+          "chuTrenManHinh": "Phản hồi chính xác",
+          "yDoHinh": "Hình ảnh minh họa phản hồi chính xác.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Chi phí cho mô hình nhỏ có thể chỉ vài trăm đô la.",
+          "chuTrenManHinh": "Chi phí mô hình nhỏ",
+          "yDoHinh": "Hình ảnh chi phí mô hình nhỏ.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 3,
+          "kieu": "hoi",
+          "loi": "Có phải mô hình nhỏ luôn tốt hơn không?",
+          "chuTrenManHinh": "Mô hình nhỏ tốt hơn?",
+          "yDoHinh": "Hình ảnh so sánh giữa hai mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Tóm lại, chi phí là một yếu tố quan trọng khi chọn mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Tóm tắt chi phí",
+          "yDoHinh": "Hình ảnh tóm tắt chi phí.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Mô hình lớn có chi phí cao nhưng mang lại nhiều lợi ích.",
+          "chuTrenManHinh": "Lợi ích mô hình lớn",
+          "yDoHinh": "Hình ảnh lợi ích mô hình lớn.",
+          "nguon": []
+        },
+        {
+          "n": 16,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Mô hình nhỏ lại tiết kiệm chi phí hơn và phù hợp với nhiều nhu cầu.",
+          "chuTrenManHinh": "Lợi ích mô hình nhỏ",
+          "yDoHinh": "Hình ảnh lợi ích mô hình nhỏ.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Hãy cân nhắc kỹ trước khi đưa ra quyết định.",
+          "chuTrenManHinh": "Cân nhắc quyết định",
+          "yDoHinh": "Hình ảnh người ra quyết định.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 7,
+        "verified_count": 7,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t01",
+      "t03",
+      "t04",
+      "t05",
+      "t07",
+      "t06",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:10:56.129855"
+  }
+}

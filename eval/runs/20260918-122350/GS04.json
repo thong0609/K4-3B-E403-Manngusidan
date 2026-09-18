@@ -1,0 +1,401 @@
+{
+  "case": {
+    "case_id": "GS04",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Phan biet hoc tu du lieu voi quy tac viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Giai thich bang vi du thu rac; khong danh dong hoc du lieu voi quy tac viet san; co nguon."
+  },
+  "session_id": "744d69b7-f64a-4bc4-a45c-70ab2d957b0c",
+  "result": {
+    "id": 26,
+    "session_id": "744d69b7-f64a-4bc4-a45c-70ab2d957b0c",
+    "version": 1,
+    "json_content": {
+      "id": "744d69b7-f64a-4bc4-a45c-70ab2d957b0c",
+      "tieuDe": "Cách Mô Hình Học Từ Ví Dụ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về mô hình học"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Hôm nay, chúng ta sẽ khám phá cách mô hình học từ ví dụ.",
+          "chuTrenManHinh": "Khám phá mô hình học",
+          "yDoHinh": "Hình ảnh minh họa về mô hình học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học là một phương pháp dạy học hiện đại, giúp học sinh áp dụng kiến thức vào thực tiễn.",
+          "chuTrenManHinh": "Mô hình học hiện đại",
+          "yDoHinh": "Hình ảnh học sinh làm việc nhóm.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Các bạn có biết rằng mô hình học tập dự án rất phổ biến hiện nay không?",
+          "chuTrenManHinh": "Mô hình học tập dự án",
+          "yDoHinh": "Hình ảnh dự án học tập.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học tập dự án cho phép học sinh giải quyết các vấn đề thực tế.",
+          "chuTrenManHinh": "Giải quyết vấn đề thực tế",
+          "yDoHinh": "Hình ảnh học sinh thảo luận về dự án.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có biết sự khác biệt giữa học từ dữ liệu và quy tắc viết sẵn không?",
+          "chuTrenManHinh": "Học từ dữ liệu vs Quy tắc viết",
+          "yDoHinh": "Hình ảnh so sánh hai phương pháp.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Học từ dữ liệu là quá trình sử dụng thông tin để đưa ra quyết định.",
+          "chuTrenManHinh": "Học từ dữ liệu",
+          "yDoHinh": "Hình ảnh dữ liệu và phân tích.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://aws.amazon.com/vi/compare/the-difference-between-data-science-and-ai",
+              "title": "Điểm khác biệt giữa khoa học dữ liệu và trí tuệ nhân tạo là ...",
+              "excerpt": "### Mục tiêu\n\nMục tiêu của khoa học dữ liệu là áp dụng các mô hình và phương pháp thống kê và điện toán hiện có để hiểu các điểm quan tâm hoặc mẫu trong dữ liệu thu thập được. Kết quả được xác định trước và dễ xác định ngay từ đầu. Ví dụ: bạn có thể sử dụng dữ liệu để dự đoán doanh số trong tương lai hoặc xác định thời điểm cần sửa chữa một bộ phận máy móc.\n\nMục tiêu của AI là sử dụng máy tính để tạo ra kết quả từ dữ liệu mới phức tạp mà giống hệt với suy luận thông minh của con người. Kết quả có tính tổng quát và khó xác định, ví dụ như tạo văn bản sáng tạo hoặc tạo hình ảnh từ văn bản. Các chi tiết của tập vấn đề quá lớn để xác định chính xác và hệ thống AI tự diễn giải vấn đề.\n\n### Phạm vi [...] ### Phạm vi\n\nKhoa học dữ liệu có phạm vi nhỏ hơn vì kết quả được xác định trước. Quy trình b",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Ngược lại, quy tắc viết sẵn là những hướng dẫn cụ thể mà bạn phải tuân theo.",
+          "chuTrenManHinh": "Quy tắc viết sẵn",
+          "yDoHinh": "Hình ảnh quy tắc viết.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học từ ví dụ giúp học sinh hiểu rõ hơn về cách áp dụng kiến thức.",
+          "chuTrenManHinh": "Áp dụng kiến thức",
+          "yDoHinh": "Hình ảnh học sinh áp dụng kiến thức.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau tìm hiểu thêm về các mô hình học tập khác nhé!",
+          "chuTrenManHinh": "Tìm hiểu mô hình học tập",
+          "yDoHinh": "Hình ảnh học sinh tìm hiểu.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một trong những mô hình học tập phổ biến là học tự giám sát.",
+          "chuTrenManHinh": "Học tự giám sát",
+          "yDoHinh": "Hình ảnh mô hình học tự giám sát.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Họ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Học tự giám sát không cần gán nhãn dữ liệu, mà sử dụng cấu trúc dữ liệu để huấn luyện.",
+          "chuTrenManHinh": "Cấu trúc dữ liệu",
+          "yDoHinh": "Hình ảnh mô hình học tự giám sát.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Họ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này giúp tiết kiệm thời gian và chi phí trong quá trình học.",
+          "chuTrenManHinh": "Tiết kiệm thời gian",
+          "yDoHinh": "Hình ảnh tiết kiệm thời gian.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn có biết mô hình học máy là gì không?",
+          "chuTrenManHinh": "Mô hình học máy",
+          "yDoHinh": "Hình ảnh mô hình học máy.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học máy giúp máy tính học từ dữ liệu và cải thiện theo thời gian.",
+          "chuTrenManHinh": "Học máy",
+          "yDoHinh": "Hình ảnh máy học.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học - ELCOM",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Nó có thể được áp dụng trong nhiều lĩnh vực khác nhau như y tế, tài chính và giáo dục.",
+          "chuTrenManHinh": "Ứng dụng học máy",
+          "yDoHinh": "Hình ảnh ứng dụng học máy.",
+          "nguon": []
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học máy có thể giúp dự đoán và phân tích dữ liệu hiệu quả hơn.",
+          "chuTrenManHinh": "Dự đoán dữ liệu",
+          "yDoHinh": "Hình ảnh phân tích dữ liệu.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học - ELCOM",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hãy cùng nhau khám phá thêm về các mô hình học khác nhé!",
+          "chuTrenManHinh": "Khám phá mô hình học",
+          "yDoHinh": "Hình ảnh học sinh khám phá.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học tập dự án giúp học sinh phát triển kỹ năng làm việc nhóm và giải quyết vấn đề.",
+          "chuTrenManHinh": "Kỹ năng làm việc nhóm",
+          "yDoHinh": "Hình ảnh học sinh làm việc nhóm.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có thấy mô hình học tập nào khác thú vị không?",
+          "chuTrenManHinh": "Mô hình học tập thú vị",
+          "yDoHinh": "Hình ảnh học sinh thảo luận.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cùng nhau, chúng ta có thể tìm ra nhiều mô hình học tập khác nhau.",
+          "chuTrenManHinh": "Tìm ra mô hình học",
+          "yDoHinh": "Hình ảnh nhóm học sinh thảo luận.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hãy nhớ rằng, việc học từ ví dụ sẽ giúp bạn phát triển tư duy phản biện.",
+          "chuTrenManHinh": "Phát triển tư duy phản biện",
+          "yDoHinh": "Hình ảnh học sinh tư duy.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Cuối cùng, hãy luôn áp dụng những gì bạn đã học vào thực tế.",
+          "chuTrenManHinh": "Áp dụng vào thực tế",
+          "yDoHinh": "Hình ảnh học sinh áp dụng kiến thức.",
+          "nguon": []
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúc các bạn học tốt và thành công trong việc áp dụng mô hình học này!",
+          "chuTrenManHinh": "Chúc các bạn học tốt",
+          "yDoHinh": "Hình ảnh động viên học sinh.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại các bạn trong bài học tiếp theo nhé!",
+          "chuTrenManHinh": "Hẹn gặp lại",
+          "yDoHinh": "Hình ảnh chia tay.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hãy nhớ rằng, việc học là một hành trình không ngừng nghỉ.",
+          "chuTrenManHinh": "Hành trình học tập",
+          "yDoHinh": "Hình ảnh hành trình học tập.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 9,
+        "verified_count": 9,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t05",
+      "t01",
+      "t03",
+      "t02",
+      "t04",
+      "t06",
+      "t08",
+      "t07"
+    ],
+    "created_at": "2026-09-18T05:26:53.453384"
+  }
+}

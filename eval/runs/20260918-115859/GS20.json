@@ -1,0 +1,356 @@
+{
+  "case": {
+    "case_id": "GS20",
+    "type": "lop-4-dac-thu-domain",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Giai thich cho hoc sinh cap ba",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Khong dung an du lam sai khai niem; phan biet du lieu huan luyen va quy tac viet san; dung mau kich ban."
+  },
+  "session_id": "06c5c4f0-ea2e-468c-805a-273b09f40f86",
+  "result": {
+    "id": 18,
+    "session_id": "06c5c4f0-ea2e-468c-805a-273b09f40f86",
+    "version": 1,
+    "json_content": {
+      "id": "06c5c4f0-ea2e-468c-805a-273b09f40f86",
+      "tieuDe": "Cách Mô Hình Học Từ Ví Dụ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về mô hình học"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào các bạn học sinh, hôm nay chúng ta sẽ cùng khám phá cách mô hình học từ ví dụ.",
+          "chuTrenManHinh": "Giới thiệu về mô hình học",
+          "yDoHinh": "Hình ảnh lớp học với học sinh đang thảo luận.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học tập dự án, hay còn gọi là Project-Based Learning, là một phương pháp học tập rất hiệu quả.",
+          "chuTrenManHinh": "Mô hình học tập dự án",
+          "yDoHinh": "Hình ảnh học sinh làm việc nhóm để giải quyết vấn đề.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Trong mô hình này, học sinh sẽ làm việc để giải quyết một vấn đề thực tế.",
+          "chuTrenManHinh": "Giải quyết vấn đề thực tế",
+          "yDoHinh": "Hình ảnh một nhóm học sinh đang thảo luận về một dự án.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Họ sẽ cần tìm hiểu, nghiên cứu và hợp tác với nhau để hoàn thành dự án.",
+          "chuTrenManHinh": "Hợp tác trong học tập",
+          "yDoHinh": "Hình ảnh học sinh đang nghiên cứu tài liệu.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn có biết tại sao mô hình học tập dự án lại quan trọng không?",
+          "chuTrenManHinh": "Tại sao mô hình học tập dự án quan trọng?",
+          "yDoHinh": "Hình ảnh học sinh suy nghĩ và đưa ra câu trả lời.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Bởi vì nó giúp học sinh áp dụng kiến thức từ nhiều lĩnh vực khác nhau.",
+          "chuTrenManHinh": "Áp dụng kiến thức đa lĩnh vực",
+          "yDoHinh": "Hình ảnh minh họa các lĩnh vực học tập khác nhau.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngoài ra, mô hình này còn khuyến khích sự sáng tạo và tư duy phản biện.",
+          "chuTrenManHinh": "Khuyến khích sáng tạo và tư duy",
+          "yDoHinh": "Hình ảnh học sinh đang thuyết trình về dự án của mình.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hãy cùng tìm hiểu thêm về cách áp dụng mô hình này trong học tập nhé.",
+          "chuTrenManHinh": "Áp dụng mô hình học tập",
+          "yDoHinh": "Hình ảnh học sinh làm việc trên máy tính.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một ví dụ điển hình là việc học toán qua mô hình hóa.",
+          "chuTrenManHinh": "Học toán qua mô hình hóa",
+          "yDoHinh": "Hình ảnh học sinh giải toán bằng mô hình.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t02",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này giúp học sinh thấy được ý nghĩa thực tiễn của môn học.",
+          "chuTrenManHinh": "Ý nghĩa thực tiễn của học toán",
+          "yDoHinh": "Hình ảnh học sinh vui vẻ khi hiểu bài.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Học sinh sẽ được khuyến khích đặt câu hỏi và tìm kiếm câu trả lời.",
+          "chuTrenManHinh": "Khuyến khích đặt câu hỏi",
+          "yDoHinh": "Hình ảnh học sinh đang thảo luận với giáo viên.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://thptphanchautrinh.hcm.edu.vn/tai-lieu-tham-khao/cac-ky-thuat-day-hoc-tich-cuc/ctmb/47043/125116",
+              "title": "Các kỹ thuật dạy học tích cực",
+              "excerpt": "4. Hỏi học sinh xem các em muốn biết thêm điều gì về chủ đề. Cả giáo viên và học sinh ghi nhận cu hỏi vào cột W. Hoạt động này kết thúc khi học sinh đã nêu ra tất cả các ý tưởng. Nếu học sinh trả lời bằng một cu phát biểu bình thường, hãy biến nó thành cu hỏi trước khi ghi nhận vào cột W.\n\nMột số lưu ý tại cột W\n\nHỏi những cu hỏi tiếp nối và gợi mở. Nếu chỉ hỏi các em : “Các em muốn biết thêm điều gì về chủ đề này?” Đôi khi học sinh trả lời đơn giản “không biết”, vì các em chưa có ý tưởng. Hãy thử sử dụng một số cu hỏi sau :\n\n“Em nghĩ mình sẽ biết thêm được điều gì sau khi em đọc chủ đề này?”\n\nChọn một ý tưởng từ cột K và hỏi, “Em có muốn tìm hiểu thêm điều gì có liên quan đến ý tưởng này không?” [...] 3. Đề nghị học sinh động não nhanh và nêu ra các từ, cụm từ có liên quan đến chủ đề. Cả ",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn có nghĩ rằng việc đặt câu hỏi là quan trọng trong học tập không?",
+          "chuTrenManHinh": "Tầm quan trọng của việc đặt câu hỏi",
+          "yDoHinh": "Hình ảnh học sinh suy nghĩ về câu hỏi.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Đúng vậy, đặt câu hỏi giúp học sinh chủ động hơn trong việc học.",
+          "chuTrenManHinh": "Học sinh chủ động trong học tập",
+          "yDoHinh": "Hình ảnh học sinh tham gia thảo luận sôi nổi.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một số kỹ thuật dạy học tích cực có thể áp dụng là thảo luận nhóm và phản hồi lẫn nhau.",
+          "chuTrenManHinh": "Kỹ thuật dạy học tích cực",
+          "yDoHinh": "Hình ảnh học sinh thảo luận nhóm.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://thptphanchautrinh.hcm.edu.vn/tai-lieu-tham-khao/cac-ky-thuat-day-hoc-tich-cuc/ctmb/47043/125116",
+              "title": "Các kỹ thuật dạy học tích cực",
+              "excerpt": "4. Hỏi học sinh xem các em muốn biết thêm điều gì về chủ đề. Cả giáo viên và học sinh ghi nhận cu hỏi vào cột W. Hoạt động này kết thúc khi học sinh đã nêu ra tất cả các ý tưởng. Nếu học sinh trả lời bằng một cu phát biểu bình thường, hãy biến nó thành cu hỏi trước khi ghi nhận vào cột W.\n\nMột số lưu ý tại cột W\n\nHỏi những cu hỏi tiếp nối và gợi mở. Nếu chỉ hỏi các em : “Các em muốn biết thêm điều gì về chủ đề này?” Đôi khi học sinh trả lời đơn giản “không biết”, vì các em chưa có ý tưởng. Hãy thử sử dụng một số cu hỏi sau :\n\n“Em nghĩ mình sẽ biết thêm được điều gì sau khi em đọc chủ đề này?”\n\nChọn một ý tưởng từ cột K và hỏi, “Em có muốn tìm hiểu thêm điều gì có liên quan đến ý tưởng này không?” [...] 3. Đề nghị học sinh động não nhanh và nêu ra các từ, cụm từ có liên quan đến chủ đề. Cả ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cũng có thể sử dụng mô hình tư duy để giải quyết vấn đề.",
+          "chuTrenManHinh": "Mô hình tư duy trong học tập",
+          "yDoHinh": "Hình ảnh minh họa các mô hình tư duy.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thaytheanh.com/nhung-mo-hinh-tu-duy-vi-dai-shane-parrish",
+              "title": "Sách Những mô hình tư duy vĩ đại - Shane Parrish - Thầy Thế Anh",
+              "excerpt": "# Sách Những mô hình tư duy vĩ đại - Shane Parrish. cuốn **“Những mô hình tư duy vĩ đại” (Great Mental Models)** của **Shane Parrish** là một trong những tác phẩm được đánh giá rất cao trong giới trí tuệ toàn cầu. Nó tổng hợp những “mô hình tư duy” (mental models) — tức là **những khuôn khổ giúp ta nhìn nhận, phn tích và ra quyết định đúng đắn hơn trong thế giới phức tạp**. * Mô hình tư duy giúp **hiểu đúng bản chất**, tránh lệch lạc do cảm xúc hay thành kiến. → Càng có nhiều mô hình đa ngành, ta càng nhìn vấn đề toàn diện và ra quyết định sáng suốt. * Người thông minh kết nối mô hình từ nhiều lĩnh vực: **Toán – Vật lý – Sinh học – Kinh tế – Tm lý – Triết học – Xác suất – Hệ thống học**. → **Tư duy liên ngành giúp tránh nhìn phiến diện.**. **Các mô hình tư duy cốt lõi (theo Tập 1)**. → Ví ",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình tư duy giúp chúng ta phân tích và ra quyết định đúng đắn hơn.",
+          "chuTrenManHinh": "Phân tích và ra quyết định",
+          "yDoHinh": "Hình ảnh học sinh đang phân tích dữ liệu.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thaytheanh.com/nhung-mo-hinh-tu-duy-vi-dai-shane-parrish",
+              "title": "Sách Những mô hình tư duy vĩ đại - Shane Parrish - Thầy Thế Anh",
+              "excerpt": "# Sách Những mô hình tư duy vĩ đại - Shane Parrish. cuốn **“Những mô hình tư duy vĩ đại” (Great Mental Models)** của **Shane Parrish** là một trong những tác phẩm được đánh giá rất cao trong giới trí tuệ toàn cầu. Nó tổng hợp những “mô hình tư duy” (mental models) — tức là **những khuôn khổ giúp ta nhìn nhận, phn tích và ra quyết định đúng đắn hơn trong thế giới phức tạp**. * Mô hình tư duy giúp **hiểu đúng bản chất**, tránh lệch lạc do cảm xúc hay thành kiến. → Càng có nhiều mô hình đa ngành, ta càng nhìn vấn đề toàn diện và ra quyết định sáng suốt. * Người thông minh kết nối mô hình từ nhiều lĩnh vực: **Toán – Vật lý – Sinh học – Kinh tế – Tm lý – Triết học – Xác suất – Hệ thống học**. → **Tư duy liên ngành giúp tránh nhìn phiến diện.**. **Các mô hình tư duy cốt lõi (theo Tập 1)**. → Ví ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Vậy, các bạn đã sẵn sàng để áp dụng những mô hình này vào học tập chưa?",
+          "chuTrenManHinh": "Sẵn sàng áp dụng mô hình học",
+          "yDoHinh": "Hình ảnh học sinh hào hứng chuẩn bị cho bài học.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hãy nhớ rằng, việc học không chỉ là tiếp thu kiến thức mà còn là trải nghiệm.",
+          "chuTrenManHinh": "Học là trải nghiệm",
+          "yDoHinh": "Hình ảnh học sinh trải nghiệm thực tế.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần tạo ra môi trường học tập tích cực và khuyến khích sự sáng tạo.",
+          "chuTrenManHinh": "Môi trường học tập tích cực",
+          "yDoHinh": "Hình ảnh lớp học sáng tạo và thân thiện.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Cuối cùng, hãy luôn giữ cho mình một tâm hồn cởi mở và sẵn sàng học hỏi.",
+          "chuTrenManHinh": "Tâm hồn cởi mở trong học tập",
+          "yDoHinh": "Hình ảnh học sinh với biểu cảm vui vẻ và cởi mở.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn",
+          "yDoHinh": "Hình ảnh giáo viên vẫy tay chào.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại các bạn trong bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại",
+          "yDoHinh": "Hình ảnh lớp học kết thúc buổi học.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 8,
+        "verified_count": 7,
+        "unverified_count": 1,
+        "accuracy_rate": 0.88
+      }
+    },
+    "sources_used": [
+      "t01",
+      "t02",
+      "t04",
+      "t08",
+      "t03",
+      "t05",
+      "t06",
+      "t07"
+    ],
+    "created_at": "2026-09-18T05:14:22.911015"
+  }
+}

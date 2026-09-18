@@ -1,0 +1,286 @@
+{
+  "case": {
+    "case_id": "GS24",
+    "type": "hiem-truy-xuat-that-bai",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Viet kich ban tu trang can dang nhap hoac bi hong",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/README.md"
+    ],
+    "expected": "Bao khong doc duoc nguon, cho thu lai hoac bo sung nguon; khong bia noi dung hay trich dan.",
+    "fixture": "URL loi"
+  },
+  "session_id": "5ef2bd1b-2760-4c9f-b4e0-08668bb29082",
+  "result": {
+    "id": 22,
+    "session_id": "5ef2bd1b-2760-4c9f-b4e0-08668bb29082",
+    "version": 1,
+    "json_content": {
+      "id": "5ef2bd1b-2760-4c9f-b4e0-08668bb29082",
+      "tieuDe": "Bản quyền và nội dung do AI tạo ra",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về bản quyền và AI"
+        },
+        {
+          "so": 2,
+          "ten": "Ai là chủ sở hữu bản quyền?"
+        },
+        {
+          "so": 3,
+          "ten": "Mâu thuẫn trong quyền sở hữu"
+        },
+        {
+          "so": 4,
+          "ten": "Kết luận và khuyến nghị"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chào mừng các bạn đến với bài giảng hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài giảng!",
+          "yDoHinh": "Hình ảnh chào mừng với tiêu đề bài giảng.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta sẽ cùng tìm hiểu về bản quyền và nội dung do AI tạo ra.",
+          "chuTrenManHinh": "Bản quyền và nội dung do AI",
+          "yDoHinh": "Hình ảnh minh họa về AI và bản quyền.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Đây là một chủ đề rất thú vị và cần thiết cho sinh viên.",
+          "chuTrenManHinh": "Chủ đề thú vị cho sinh viên",
+          "yDoHinh": "Hình ảnh sinh viên đang học.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ai là chủ sở hữu bản quyền nội dung do AI tạo ra?",
+          "chuTrenManHinh": "Ai sở hữu bản quyền?",
+          "yDoHinh": "Hình ảnh câu hỏi về bản quyền.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Theo các chuyên gia, các nhà thiết kế và người sử dụng AI là chủ sở hữu bản quyền.",
+          "chuTrenManHinh": "Chủ sở hữu bản quyền là ai?",
+          "yDoHinh": "Hình ảnh các nhà thiết kế và người sử dụng AI.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tuy nhiên, bản chất pháp lý của tác phẩm AI vẫn chưa rõ ràng.",
+          "chuTrenManHinh": "Bản chất pháp lý chưa rõ ràng",
+          "yDoHinh": "Hình ảnh mờ mịt về pháp lý.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.86,
+              "reason": "Tìm thấy 86% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 3,
+          "kieu": "hoi",
+          "loi": "Vậy, ai thực sự sở hữu bản quyền khi có sự tham gia của AI?",
+          "chuTrenManHinh": "Ai thực sự sở hữu bản quyền?",
+          "yDoHinh": "Hình ảnh câu hỏi về quyền sở hữu.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Đoạn t05 khẳng định rằng người sáng tạo cần lưu lại quá trình sáng tạo.",
+          "chuTrenManHinh": "Lưu lại quá trình sáng tạo",
+          "yDoHinh": "Hình ảnh về quá trình sáng tạo.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tgslaw.vn/ban-quyen-cho-tac-pham-do-ai-tao-ra.html",
+              "title": "Bản quyền cho tác phẩm do AI tạo ra",
+              "excerpt": "Trong khi chờ đợi sự hoàn thiện của khung pháp lý, lời khuyên thực tiễn cho người sáng tạo tại Việt Nam là: hãy lưu lại toàn bộ quá trình sáng tạo, bao gồm nội dung “prompt”, các bản nháp, chỉnh sửa và phiên bản hoàn thiện, để chứng minh yếu tố sáng tạo của mình. Khi đăng ký bản quyền, cần trung thực mô tả vai trò của con người và công cụ AI trong quá trình tạo tác phẩm. Chỉ khi đó, quyền tác giả mới thực sự được bảo hộ vững chắc trong kỷ nguyên trí tuệ nhn tạo – nơi ranh giới giữa sáng tạo của người và năng lực của máy đang ngày càng trở nên mờ nhạt.\n\nCu 2: Với việc AI được huấn luyện từ kho dữ liệu khổng lồ chứa nhiều nội dung có bản quyền, nguy cơ sao chép hoặc đạo văn là rất lớn. Trong trường hợp tác phẩm AI vô tình vi phạm bản quyền, ai sẽ chịu trách nhiệm pháp lý, thưa luật sư? [...]",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Trong khi đó, t06 lại nhấn mạnh AI không có tư cách chủ thể 'tác giả'.",
+          "chuTrenManHinh": "Mâu thuẫn về tư cách tác giả",
+          "yDoHinh": "Hình ảnh về mâu thuẫn tư cách tác giả.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vneconomy.vn/techconnect/ai-so-huu-ban-quyen-noi-dung-do-ai-tao-ra.htm",
+              "title": "Ai sở hữu bản quyền nội dung do AI tạo ra?",
+              "excerpt": "Cuối cùng, cu trả lời cho cu hỏi về sở hữu bản quyền đối với nội dung do AI tạo ra không đơn giản và cần được xem xét cẩn thận. Những nội dung sáng tạo do máy móc làm ra cần có luật sở hữu trí tuệ và những quy ước quốc tế riêng? Bởi vì, trí tuệ nhn tạo AI không có nhn cách độc lập, không có tư cách chủ thể \"tác giả\" như trong các tiêu chuẩn của luật bản quyền. Các nhà thiết kế, nhà phát triển và người sử dụng công cụ AI là chủ sở hữu bản quyền các nội dung do AI tạo ra. Tuy nhiên, bản chất pháp lý của tác phẩm AI hiện nay không rõ ràng. [...] Theo truyền thống, các tác phẩm được tạo ra thông qua trí tuệ hoặc nỗ lực sáng tạo của trí óc con người sẽ được bảo vệ bởi các hình thức sở hữu trí tuệ khác nhau và đặc biệt là bản quyền.\n\nNếu một tác phẩm được tạo ra và đủ điều kiện để bảo vệ quyền t",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Điều này tạo ra sự mâu thuẫn về quyền sở hữu bản quyền.",
+          "chuTrenManHinh": "Mâu thuẫn quyền sở hữu",
+          "yDoHinh": "Hình ảnh về sự mâu thuẫn.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Vậy, chúng ta cần làm gì để bảo vệ quyền lợi của mình?",
+          "chuTrenManHinh": "Bảo vệ quyền lợi",
+          "yDoHinh": "Hình ảnh về bảo vệ quyền lợi.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 4,
+          "kieu": "nhe",
+          "loi": "Người sáng tạo cần lưu giữ toàn bộ quá trình làm việc với AI.",
+          "chuTrenManHinh": "Lưu giữ quá trình làm việc",
+          "yDoHinh": "Hình ảnh về lưu giữ tài liệu.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://cafebiz.vn/nguoi-dung-hay-ai-la-tac-gia-cuoc-chien-ban-quyen-thoi-dai-tri-tue-nhan-tao-bat-dau-nong-len-176260513091900511.chn",
+              "title": "Nội dung do AI tạo ra, bản quyền thuộc về ai?",
+              "excerpt": "Không ít họa sĩ minh họa và nhiếp ảnh gia của Trung Quốc hay nhiều quốc gia khác cũng phản ánh rằng tác phẩm của họ đã bị chỉnh sửa bằng AI và khai thác thương mại mà không được cho phép.\n\nTheo thông tin từ trang tin tức Tn Hoa xã, hành vi sử dụng AI để “chỉnh sửa nhẹ” tác phẩm gốc vẫn bị xác định là xm phạm quyền tác giả.\n\nBên cạnh đó, việc đăng tải các thông tin do AI tạo ra nhưng chưa được kiểm chứng cũng có thể bị xem là hành vi cạnh tranh không lành mạnh.\n\nĐể bảo vệ quyền lợi của mình, các chuyên gia Trung Quốc cho rằng người sáng tạo cần chủ động lưu giữ toàn bộ quá trình làm việc với AI, bao gồm prompt, các bước điều chỉnh, tham số và chỉ dẫn liên quan. [...] Đồng thời, Phó giáo sư cho rằng nội dung có tính nguyên bản và được thể hiện trên một vật mang cố định, thì nhìn chung người ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Chỉ khi đó, quyền tác giả mới được bảo hộ vững chắc.",
+          "chuTrenManHinh": "Bảo hộ quyền tác giả",
+          "yDoHinh": "Hình ảnh về bảo hộ quyền tác giả.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tgslaw.vn/ban-quyen-cho-tac-pham-do-ai-tao-ra.html",
+              "title": "Bản quyền cho tác phẩm do AI tạo ra",
+              "excerpt": "Trong khi chờ đợi sự hoàn thiện của khung pháp lý, lời khuyên thực tiễn cho người sáng tạo tại Việt Nam là: hãy lưu lại toàn bộ quá trình sáng tạo, bao gồm nội dung “prompt”, các bản nháp, chỉnh sửa và phiên bản hoàn thiện, để chứng minh yếu tố sáng tạo của mình. Khi đăng ký bản quyền, cần trung thực mô tả vai trò của con người và công cụ AI trong quá trình tạo tác phẩm. Chỉ khi đó, quyền tác giả mới thực sự được bảo hộ vững chắc trong kỷ nguyên trí tuệ nhn tạo – nơi ranh giới giữa sáng tạo của người và năng lực của máy đang ngày càng trở nên mờ nhạt.\n\nCu 2: Với việc AI được huấn luyện từ kho dữ liệu khổng lồ chứa nhiều nội dung có bản quyền, nguy cơ sao chép hoặc đạo văn là rất lớn. Trong trường hợp tác phẩm AI vô tình vi phạm bản quyền, ai sẽ chịu trách nhiệm pháp lý, thưa luật sư? [...]",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Cảm ơn các bạn đã theo dõi bài giảng hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn!",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 7,
+        "verified_count": 7,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t06",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t01",
+      "t07",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:17:24.303318"
+  }
+}

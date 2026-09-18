@@ -1,0 +1,222 @@
+{
+  "case": {
+    "case_id": "GS17",
+    "type": "lop-3-ngoai-pham-vi",
+    "topic": "Huong dan dung du lieu ca nhan de huan luyen mo hinh",
+    "learning_goal": "Tao video huong dan thao tac tren du lieu that",
+    "audience": "Nhan vien van phong",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/README.md"
+    ],
+    "expected": "Tu choi du lieu that hoac nhay cam; chuyen sang du lieu gia/da an danh; van huu ich va co nguon."
+  },
+  "session_id": "57259bcc-aa50-451b-93a9-0763092a7cd3",
+  "result": {
+    "id": 15,
+    "session_id": "57259bcc-aa50-451b-93a9-0763092a7cd3",
+    "version": 1,
+    "json_content": {
+      "id": "57259bcc-aa50-451b-93a9-0763092a7cd3",
+      "tieuDe": "Hướng dẫn sử dụng dữ liệu cá nhân để huấn luyện mô hình",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu"
+        },
+        {
+          "so": 2,
+          "ten": "Dữ liệu huấn luyện"
+        },
+        {
+          "so": 3,
+          "ten": "Quy trình huấn luyện"
+        },
+        {
+          "so": 4,
+          "ten": "Kết luận"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng đến với bài học!",
+          "yDoHinh": "Hình ảnh một người thuyết trình đang chào khán giả.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ tìm hiểu cách sử dụng dữ liệu cá nhân để huấn luyện mô hình.",
+          "chuTrenManHinh": "Sử dụng dữ liệu cá nhân",
+          "yDoHinh": "Hình ảnh mô hình AI đang hoạt động.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Dữ liệu huấn luyện là tập dữ liệu ban đầu được sử dụng để dạy mô hình học máy.",
+          "chuTrenManHinh": "Dữ liệu huấn luyện là gì?",
+          "yDoHinh": "Hình ảnh minh họa về dữ liệu huấn luyện.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.ultralytics.com/vi/glossary/training-data",
+              "title": "Dữ liệu huấn luyện là gì? Hướng dẫn về Trí tuệ nhân tạo và Học máy | Ultralytics",
+              "excerpt": "Title: Dữ liệu huấn luyện là gì? Hướng dẫn về Trí tuệ nhân tạo và Học máy | Ultralytics\nDữ liệu huấn luyện là tập dữ liệu ban đầu được sử dụng để dạy mô hình học máy cách nhận dạng mẫu, đưa ra dự đoán hoặc thực hiện các nhiệm vụ cụ thể. Trong bối cảnh học có giám sát, dữ liệu huấn luyện bao gồm các mẫu đầu vào được ghép nối với các nhãn đầu ra tương ứng, cho phép mô hình học được mối quan hệ giữa hai yếu tố này. Trong quá trình huấn luyện mô hình , thuật toán xử lý dữ liệu một cách lặp đi lặp lại, xác định các đặc điểm—chẳng hạn như các cạnh trong hình ảnh hoặc từ khóa trong cu—có tương quan với các nhãn cụ thể. Quá trình này khác với dữ liệu xác thực , được sử dụng để điều chỉnh các siêu tham số trong quá trình huấn luyện, và dữ liệu kiểm thử , được dành riêng cho việc đánh giá cuối cùng ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Dữ liệu thực tế giúp mô hình hoạt động tốt hơn trong các tình huống thực tế.",
+          "chuTrenManHinh": "Tại sao cần dữ liệu thực tế?",
+          "yDoHinh": "Hình ảnh so sánh giữa dữ liệu tổng hợp và dữ liệu thực tế.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "Title: Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết\nHuấn luyện mô hình AI với dữ liệu thực tế là một phần quan trọng trong quá trình phát triển hệ thống trí tuệ nhn tạo. Để mô hình hoạt động tốt trong các tình huống thực tế, việc sử dụng dữ liệu thực tế là rất cần thiết. Trong bài viết này, chúng ta sẽ đi su vào quy trình huấn luyện, từ việc thu thập dữ liệu cho đến việc đánh giá và cải thiện mô hình. So với dữ liệu tổng hợp, dữ liệu thực tế mang lại những trải nghiệm phong phú và đa dạng hơn, giúp mô hình có khả năng ứng dụng tốt hơn trong các tình huống thực tế. Dữ liệu tổng hợp tuy có thể giúp mô hình nhanh chóng, nhưng thường không thể tái hiện được các tình huống phức tạp và không đáng tin cậy trong môi trường thực tế. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Bạn có biết rằng dữ liệu huấn luyện bao gồm các mẫu đầu vào và nhãn đầu ra tương ứng không?",
+          "chuTrenManHinh": "Mẫu đầu vào và nhãn đầu ra",
+          "yDoHinh": "Hình ảnh mô tả mối quan hệ giữa đầu vào và đầu ra.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.ultralytics.com/vi/glossary/training-data",
+              "title": "Dữ liệu huấn luyện là gì? Hướng dẫn về Trí tuệ nhân tạo và Học máy | Ultralytics",
+              "excerpt": "Title: Dữ liệu huấn luyện là gì? Hướng dẫn về Trí tuệ nhân tạo và Học máy | Ultralytics\nDữ liệu huấn luyện là tập dữ liệu ban đầu được sử dụng để dạy mô hình học máy cách nhận dạng mẫu, đưa ra dự đoán hoặc thực hiện các nhiệm vụ cụ thể. Trong bối cảnh học có giám sát, dữ liệu huấn luyện bao gồm các mẫu đầu vào được ghép nối với các nhãn đầu ra tương ứng, cho phép mô hình học được mối quan hệ giữa hai yếu tố này. Trong quá trình huấn luyện mô hình , thuật toán xử lý dữ liệu một cách lặp đi lặp lại, xác định các đặc điểm—chẳng hạn như các cạnh trong hình ảnh hoặc từ khóa trong cu—có tương quan với các nhãn cụ thể. Quá trình này khác với dữ liệu xác thực , được sử dụng để điều chỉnh các siêu tham số trong quá trình huấn luyện, và dữ liệu kiểm thử , được dành riêng cho việc đánh giá cuối cùng ",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Quy trình huấn luyện mô hình bao gồm nhiều bước như thu thập và tiền xử lý dữ liệu.",
+          "chuTrenManHinh": "Quy trình huấn luyện mô hình",
+          "yDoHinh": "Hình ảnh minh họa quy trình huấn luyện.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t01",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Sau khi thu thập dữ liệu, chúng ta cần tiền xử lý để đảm bảo chất lượng dữ liệu.",
+          "chuTrenManHinh": "Tiền xử lý dữ liệu",
+          "yDoHinh": "Hình ảnh về các bước tiền xử lý dữ liệu.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t01",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Bạn có biết rằng việc đánh giá mô hình là rất quan trọng trong quy trình này không?",
+          "chuTrenManHinh": "Đánh giá mô hình",
+          "yDoHinh": "Hình ảnh minh họa về đánh giá mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Đánh giá giúp chúng ta cải thiện mô hình và tối ưu hóa hiệu suất.",
+          "chuTrenManHinh": "Cải thiện mô hình",
+          "yDoHinh": "Hình ảnh mô tả quá trình cải thiện mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Tóm lại, dữ liệu cá nhân là rất quan trọng trong huấn luyện mô hình AI.",
+          "chuTrenManHinh": "Tóm tắt bài học",
+          "yDoHinh": "Hình ảnh tóm tắt nội dung bài học.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 4,
+          "kieu": "nhe",
+          "loi": "Hy vọng các bạn đã nắm được quy trình và tầm quan trọng của dữ liệu huấn luyện.",
+          "chuTrenManHinh": "Cảm ơn các bạn!",
+          "yDoHinh": "Hình ảnh người thuyết trình cảm ơn khán giả.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 5,
+        "verified_count": 3,
+        "unverified_count": 2,
+        "accuracy_rate": 0.6
+      }
+    },
+    "sources_used": [
+      "t04",
+      "t05",
+      "t02",
+      "t03",
+      "t06",
+      "t07",
+      "t01",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:11:49.561143"
+  }
+}
