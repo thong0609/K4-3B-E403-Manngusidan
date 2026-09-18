@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS01",
+    "type": "thuong",
+    "topic": "Cua so ngu canh cua mo hinh ngon ngu",
+    "learning_goal": "Giai thich vi sao tro ly quen phan dau cuoc tro chuyen dai",
+    "audience": "Sinh vien nam nhat, chua hoc lap trinh",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Co nguon giai thich gioi han ngu canh; khong noi model co tri nho nhu nguoi; claim ky thuat co trich dan."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/f9043f7c-3428-4920-b94c-f8fda1aa0320/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

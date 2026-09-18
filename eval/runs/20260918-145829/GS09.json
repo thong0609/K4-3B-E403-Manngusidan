@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS09",
+    "type": "thuong",
+    "topic": "Cua so ngu canh cua mo hinh ngon ngu",
+    "learning_goal": "Giai thich bang vi du doi thuong cho nguoi moi",
+    "audience": "Hoc vien khong chuyen",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Mot y moi canh; giai thich thuat ngu truoc tieng Anh; loi doc tu nhien va dung thoi luong."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/3fe80024-2d94-4b84-90b2-1a0601843768/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

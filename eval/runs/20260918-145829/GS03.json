@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS03",
+    "type": "thuong",
+    "topic": "Du lieu ca nhan khi dung tro ly AI",
+    "learning_goal": "Ke ba viec nen va khong nen lam",
+    "audience": "Nhan vien van phong",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Dung nguon phap ly hoac chinh thuc phu hop; khong khang dinh luat ap dung moi quoc gia; co canh bao pham vi."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/89f2a91b-7a55-4b8b-9b97-10d2bfb3e293/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

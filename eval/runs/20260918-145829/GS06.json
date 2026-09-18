@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS06",
+    "type": "thuong",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Uoc luong chi phi va biet ba cach giam chi phi",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Gia hoac so lieu co ngay va nguon; khong dung gia cu nhu hien tai; neu cach giam chi phi co can cu."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/cdc779ed-47b6-4072-bca6-de2c6abd6d5a/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

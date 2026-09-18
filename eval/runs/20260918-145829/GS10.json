@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS10",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "So sanh mo hinh hoc may va chuong trinh luat viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co bang hoac an du khong gay hieu sai rang mo hinh tu hieu nhu nguoi; co nguon."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/6369d2e1-d05d-4b45-9df2-358f252dbae7/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

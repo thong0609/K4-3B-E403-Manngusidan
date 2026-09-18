@@ -65,6 +65,10 @@ Published date (nếu có): {source.get('published_date', 'Không rõ')}
         if result.get("published_date") and not source.get("published_date"):
             source["published_date"] = result["published_date"]
         source["unverified_claims"] = result.get("unverified_claims", [])
+        if source["unverified_claims"]:
+            claims_str = "Cần kiểm chứng: " + "; ".join(source["unverified_claims"])
+            existing = source.get("conflict_note") or ""
+            source["conflict_note"] = f"{existing} | {claims_str}".strip(" |")
 
     except Exception as exc:
         logger.error("trust_agent: failed to score %s: %s", source["url"], exc)

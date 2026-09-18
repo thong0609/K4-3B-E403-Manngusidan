@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS08",
+    "type": "thuong",
+    "topic": "Ban quyen va noi dung do AI tao ra",
+    "learning_goal": "Biet khi nao can ghi nguon va khong duoc dung",
+    "audience": "Sinh vien lam do an",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Noi ro phu thuoc quoc gia va giay phep; khong tu van phap ly tuyet doi; dung nguon chinh thuc hoac hoc thuat."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/c7c27eb7-1ac7-4832-b9da-95818e011dd3/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

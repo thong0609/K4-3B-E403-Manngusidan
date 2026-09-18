@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS14",
+    "type": "lop-1-nguon-su-that",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "So sanh gia giua hai model",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Bat buoc co ngay hieu luc va nguon chinh thuc; khong tu suy ra tong chi phi khi thieu token hoac don gia."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/e682ac35-e43e-4a26-9a62-3947d1025cb0/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

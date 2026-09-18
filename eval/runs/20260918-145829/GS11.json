@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS11",
+    "type": "thuong",
+    "topic": "Vi sao AI tra loi sai ma van nghe rat tu tin",
+    "learning_goal": "Day nguoi dung kiem tra mot cau tra loi",
+    "audience": "Nguoi di lam dung AI hang ngay",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co quy trinh kiem chung theo buoc; huong dan khong tro thanh claim khong nguon."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/85493d04-4399-4440-a05c-19e71fae9c8d/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

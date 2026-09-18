@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS20",
+    "type": "lop-4-dac-thu-domain",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Giai thich cho hoc sinh cap ba",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Khong dung an du lam sai khai niem; phan biet du lieu huan luyen va quy tac viet san; dung mau kich ban."
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/65214473-e205-480a-a581-a7b890eb4305/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

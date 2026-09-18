@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS15",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chu de AI trong giao duc",
+    "learning_goal": "Viet kich ban cho mot nhom nguoi hoc",
+    "audience": "Chua cung cap cap do nguoi hoc",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai cap do va nen tang, hoac neu ro gia dinh va xin xac nhan; khong doan im lang.",
+    "requires_clarification": true
+  },
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/sessions/f7533273-0d0d-4d35-894c-8c0d6be43094/script'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+}

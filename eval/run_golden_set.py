@@ -108,6 +108,7 @@ def main() -> None:
             (run_dir / f"{case['case_id']}.json").write_text(
                 json.dumps(row, ensure_ascii=False, indent=2), encoding="utf-8"
             )
+            time.sleep(5)
 
     write_review_csv(cases, rows, run_dir / "results.csv", run_at)
     print(f"\nSaved raw outputs and review sheet to: {run_dir}")
