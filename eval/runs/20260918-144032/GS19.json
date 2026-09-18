@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS19",
+    "type": "lop-4-dac-thu-domain",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Thiet ke quy trinh cham co AI",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co human review, audit va co che khieu nai; AI khong tu quyet diem cuoi; rui ro co nguon."
+  },
+  "error": "TimeoutError: Timed out waiting for session 720a9e5c-2ebc-4eae-9532-34d1d572252b"
+}

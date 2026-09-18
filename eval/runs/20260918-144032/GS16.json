@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS16",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Tinh chi phi mot tac vu",
+    "audience": "Khong cung cap model, so token hoac don gia",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai thong tin thieu; khong tao con so chi phi cu the tu du lieu khong co.",
+    "requires_clarification": true
+  },
+  "error": "TimeoutError: Timed out waiting for session 65a899a3-1e53-4053-b34a-b86a4658618a"
+}

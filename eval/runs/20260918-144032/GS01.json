@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS01",
+    "type": "thuong",
+    "topic": "Cua so ngu canh cua mo hinh ngon ngu",
+    "learning_goal": "Giai thich vi sao tro ly quen phan dau cuoc tro chuyen dai",
+    "audience": "Sinh vien nam nhat, chua hoc lap trinh",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Co nguon giai thich gioi han ngu canh; khong noi model co tri nho nhu nguoi; claim ky thuat co trich dan."
+  },
+  "error": "TimeoutError: Timed out waiting for session 670d2f08-757d-4022-bfd0-222f6e87251f"
+}

@@ -1,0 +1,921 @@
+{
+  "case": {
+    "case_id": "GS05",
+    "type": "thuong",
+    "topic": "Nhung van ban va tim kiem theo ngu nghia",
+    "learning_goal": "Giai thich vi sao cau gan nghia van tim duoc",
+    "audience": "Sinh vien cong nghe thong tin",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Phan biet khop tu khoa va gan nghia; khong bia cong thuc hay do chinh xac; co doan nguon chung minh."
+  },
+  "session_id": "d3031a25-17d0-4afe-8212-e6f8d6703ee6",
+  "result": {
+    "id": 3,
+    "session_id": "d3031a25-17d0-4afe-8212-e6f8d6703ee6",
+    "version": 1,
+    "json_content": {
+      "id": "d3031a25-17d0-4afe-8212-e6f8d6703ee6",
+      "tieuDe": "Nhúng văn bản và tìm kiếm theo ngữ nghĩa",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Đặt vấn đề và khái niệm tìm kiếm ngữ nghĩa"
+        },
+        {
+          "so": 2,
+          "ten": "Bản chất và ứng dụng của công cụ tìm kiếm"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào mừng các bạn sinh viên công nghệ thông tin đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng các bạn sinh viên CNTT",
+          "yDoHinh": "Giảng viên chào sinh viên trên nền giao diện bài giảng",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Tại sao các câu gần nghĩa vẫn có thể tìm thấy nhau trong các hệ thống thông minh?",
+          "chuTrenManHinh": "Vì sao các câu gần nghĩa vẫn tìm được?",
+          "yDoHinh": "Hình ảnh dấu hỏi chấm nối hai câu văn có ý nghĩa tương đương",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Để hiểu được điều đó chúng ta cần xây dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa.",
+          "chuTrenManHinh": "Tìm kiếm ngữ nghĩa và mô hình chủ đề",
+          "yDoHinh": "Sơ đồ khối thể hiện mô hình tìm kiếm ngữ nghĩa",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 0.67,
+              "reason": "Tìm thấy 67% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Đôi khi mắt trần là hình ảnh ẩn dụ cho cái nhìn hời hợt và chỉ thấy vẻ bề ngoài.",
+          "chuTrenManHinh": "Mắt trần: Cái nhìn bề ngoài",
+          "yDoHinh": "Minh họa biểu tượng mắt trần quan sát dữ liệu thô",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://vietjack.com/sbt-ngu-van-6-ket-noi/cau-3-trang-8-sach-bai-tap-ngu-van-lop-6-tap-1-ket-noi-2.jsp",
+              "title": "Em hiểu thấy rõ với trái tim nghĩa là gì",
+              "excerpt": "\"Mắt trần\" là hình ảnh ẩn dụ cho cái nhìn hời hợt, nông cạn, thiếu sự cảm thông, thấu hiểu nên chỉ thấy được vẻ bề ngoài. Trong khi đó những điều quan trọng nhất (cảm xúc, tình cảm, tm hồn của mỗi con người) lại tồn tại \"vô hình\" . Vì vậy, nếu chỉ \"nhìn\" bằng con mắt bình thường, không có sự gắn kết, chia sẻ, thì sẽ không thể thấy được \"điều cốt lõi\" ấy.\n\nQuảng cáo\n\nXem thêm các bài giải sách bài tập Ngữ Văn lớp 6 Kết nối tri thức hay, chi tiết khác:",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Những điều quan trọng nhất như cảm xúc hay tâm hồn lại tồn tại vô hình.",
+          "chuTrenManHinh": "Giá trị cốt lõi tồn tại vô hình",
+          "yDoHinh": "Hình ảnh minh họa dữ liệu ẩn sâu dưới bề mặt",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://vietjack.com/sbt-ngu-van-6-ket-noi/cau-3-trang-8-sach-bai-tap-ngu-van-lop-6-tap-1-ket-noi-2.jsp",
+              "title": "Em hiểu thấy rõ với trái tim nghĩa là gì",
+              "excerpt": "\"Mắt trần\" là hình ảnh ẩn dụ cho cái nhìn hời hợt, nông cạn, thiếu sự cảm thông, thấu hiểu nên chỉ thấy được vẻ bề ngoài. Trong khi đó những điều quan trọng nhất (cảm xúc, tình cảm, tm hồn của mỗi con người) lại tồn tại \"vô hình\" . Vì vậy, nếu chỉ \"nhìn\" bằng con mắt bình thường, không có sự gắn kết, chia sẻ, thì sẽ không thể thấy được \"điều cốt lõi\" ấy.\n\nQuảng cáo\n\nXem thêm các bài giải sách bài tập Ngữ Văn lớp 6 Kết nối tri thức hay, chi tiết khác:",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Nếu chỉ nhìn bằng mắt bình thường mà không có sự chia sẻ thì không thể thấy được điều cốt lõi.",
+          "chuTrenManHinh": "Không thể thấy cốt lõi nếu chỉ nhìn bề ngoài",
+          "yDoHinh": "Hình ảnh so sánh giữa tìm kiếm từ khóa thô và tìm kiếm ngữ nghĩa sâu",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://vietjack.com/sbt-ngu-van-6-ket-noi/cau-3-trang-8-sach-bai-tap-ngu-van-lop-6-tap-1-ket-noi-2.jsp",
+              "title": "Em hiểu thấy rõ với trái tim nghĩa là gì",
+              "excerpt": "\"Mắt trần\" là hình ảnh ẩn dụ cho cái nhìn hời hợt, nông cạn, thiếu sự cảm thông, thấu hiểu nên chỉ thấy được vẻ bề ngoài. Trong khi đó những điều quan trọng nhất (cảm xúc, tình cảm, tm hồn của mỗi con người) lại tồn tại \"vô hình\" . Vì vậy, nếu chỉ \"nhìn\" bằng con mắt bình thường, không có sự gắn kết, chia sẻ, thì sẽ không thể thấy được \"điều cốt lõi\" ấy.\n\nQuảng cáo\n\nXem thêm các bài giải sách bài tập Ngữ Văn lớp 6 Kết nối tri thức hay, chi tiết khác:",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong ngôn ngữ chúng ta cũng gặp bài học về nghĩa tường minh và nghĩa hàm ý.",
+          "chuTrenManHinh": "Nghĩa tường minh và nghĩa hàm ý",
+          "yDoHinh": "Khái niệm ngữ văn ứng dụng vào xử lý ngôn ngữ tự nhiên",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://sangkienkinhnghiem.org/sang-kien-kinh-nghiem-thiet-ke-phan-luyen-tap-theo-huong-trong-luyen-co-giang-khi-day-bai-nghia-tuong-minh-va-nghia-ham-1057",
+              "title": "Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý",
+              "excerpt": "Title: Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý\n# Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý. Trong chương trình Ngữ văn THCS, dạy học Tiếng Việt có vai trò hết sức quan trọng. Đó là giúp các em nắm được bản chất hệ thống qui tắc ngữ pháp tiếng mẹ đẻ để vận dụng vào giao tiếp và sản sinh các loại văn bản. Từ đó rèn cho học sinh tư duy thực hành sáng tạo và giáo dục tư tưởng, tình cảm một cách tự nhiên, phù hợp. Dạy học Ngữ pháp ở trường THCS hiện nay được xy dựng trên cơ sở của hoạt động giao tiếp. Việc hình thành các khái niệm được tiến hành thông qua các hoạt động ngôn ngữ và hướng tới nó, tiết học luôn luôn chú trọng các kĩ n",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Việc học ngôn ngữ giúp nắm bản chất hệ thống quy tắc ngữ pháp để vận dụng vào giao tiếp.",
+          "chuTrenManHinh": "Nắm quy tắc ngữ pháp để giao tiếp",
+          "yDoHinh": "Sơ đồ chuyển đổi từ quy tắc ngữ pháp sang văn bản",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://sangkienkinhnghiem.org/sang-kien-kinh-nghiem-thiet-ke-phan-luyen-tap-theo-huong-trong-luyen-co-giang-khi-day-bai-nghia-tuong-minh-va-nghia-ham-1057",
+              "title": "Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý",
+              "excerpt": "Title: Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý\n# Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý. Trong chương trình Ngữ văn THCS, dạy học Tiếng Việt có vai trò hết sức quan trọng. Đó là giúp các em nắm được bản chất hệ thống qui tắc ngữ pháp tiếng mẹ đẻ để vận dụng vào giao tiếp và sản sinh các loại văn bản. Từ đó rèn cho học sinh tư duy thực hành sáng tạo và giáo dục tư tưởng, tình cảm một cách tự nhiên, phù hợp. Dạy học Ngữ pháp ở trường THCS hiện nay được xy dựng trên cơ sở của hoạt động giao tiếp. Việc hình thành các khái niệm được tiến hành thông qua các hoạt động ngôn ngữ và hướng tới nó, tiết học luôn luôn chú trọng các kĩ n",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Từ đó rèn luyện tư duy thực hành sáng tạo cho học sinh một cách tự nhiên.",
+          "chuTrenManHinh": "Rèn luyện tư duy thực hành sáng tạo",
+          "yDoHinh": "Biểu tượng bộ não tư duy sáng tạo",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://sangkienkinhnghiem.org/sang-kien-kinh-nghiem-thiet-ke-phan-luyen-tap-theo-huong-trong-luyen-co-giang-khi-day-bai-nghia-tuong-minh-va-nghia-ham-1057",
+              "title": "Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý",
+              "excerpt": "Title: Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý\n# Sáng kiến kinh nghiệm Thiết kế phần luyện tập theo hướng trong \"Luyện có giảng\" khi dạy bài nghĩa tường minh và nghĩa hàm ý. Trong chương trình Ngữ văn THCS, dạy học Tiếng Việt có vai trò hết sức quan trọng. Đó là giúp các em nắm được bản chất hệ thống qui tắc ngữ pháp tiếng mẹ đẻ để vận dụng vào giao tiếp và sản sinh các loại văn bản. Từ đó rèn cho học sinh tư duy thực hành sáng tạo và giáo dục tư tưởng, tình cảm một cách tự nhiên, phù hợp. Dạy học Ngữ pháp ở trường THCS hiện nay được xy dựng trên cơ sở của hoạt động giao tiếp. Việc hình thành các khái niệm được tiến hành thông qua các hoạt động ngôn ngữ và hướng tới nó, tiết học luôn luôn chú trọng các kĩ n",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Bây giờ chúng ta sẽ chuyển sang phần tìm hiểu các công cụ tìm kiếm trên Internet.",
+          "chuTrenManHinh": "Công cụ tìm kiếm và kỹ năng thông tin",
+          "yDoHinh": "Hình ảnh thanh tìm kiếm trên trình duyệt web",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bài giảng cung cấp kiến thức tổng quan về Internet và các dịch vụ cơ bản.",
+          "chuTrenManHinh": "Tổng quan Internet và dịch vụ cơ bản",
+          "yDoHinh": "Mô hình mạng lưới Internet toàn cầu",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Người học sẽ được giới thiệu các công cụ tìm kiếm cùng các kỹ thuật tìm kiếm hiệu quả.",
+          "chuTrenManHinh": "Công cụ và kỹ thuật tìm kiếm",
+          "yDoHinh": "Danh sách các kỹ thuật truy vấn dữ liệu",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bên cạnh đó là cách đánh giá và chọn lọc thông tin trên môi trường số.",
+          "chuTrenManHinh": "Đánh giá và chọn lọc thông tin",
+          "yDoHinh": "Biểu tượng bộ lọc dữ liệu",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 0.69,
+              "reason": "Tìm thấy 69% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong tối ưu hóa công cụ tìm kiếm chúng ta có hai mảng là tối ưu on page và off page.",
+          "chuTrenManHinh": "Tối ưu hóa On-page và Off-page",
+          "yDoHinh": "Hai cột so sánh On-page SEO và Off-page SEO",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 0.72,
+              "reason": "Tìm thấy 72% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hệ thống giúp theo dõi kết quả xếp hạng và tạo quảng cáo hiệu quả.",
+          "chuTrenManHinh": "Theo dõi xếp hạng và quảng cáo",
+          "yDoHinh": "Biểu đồ xếp hạng trang web tăng trưởng",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tailieu.vn/tim-kiem?q=C%C3%B4ng+c%E1%BB%A5+t%C3%ACm+ki%E1%BA%BFm",
+              "title": "Phương thức thanh toán",
+              "excerpt": "Chương 4 của bộ bài giảng Marketing điện tử giúp cho người học có thể: hiểu và giới thiệu được một số công cụ tìm kiếm, tối ưu hóa on\\_page, tối ưu hóa off\\_page, theo dõi kết quả xếp hạng, tạo trang Fanpage bán hàng, tạo và đăng quảng cáo trên FB. Bài giảng Tin học đại cương: Chương 2 Tìm kiếm và chọn lọc thông tin trên Internet, cung cấp cho người học những kiến thức như: Tổng quan về Internet và các dịch vụ cơ bản; Giới thiệu các công cụ tìm kiếm; Các kỹ thuật tìm kiếm; Đánh giá và chọn lọc thông tin trên Internet. generalladyXy dựng mô hình chủ đề và công cụ tìm kiếm ngữ nghĩa: Luận văn Thạc sĩ Công nghệ thông tin. Luận văn Thạc sĩ Công nghệ thông tin: Xy dựng mô hình các chủ đề và công cụ tìm kiếm ngữ nghĩa. Luận văn Thạc sĩ Báo chí học: Tối ưu hóa công cụ tìm kiếm (SEO) cho báo điện ",
+              "verified": true,
+              "overlap_ratio": 0.86,
+              "reason": "Tìm thấy 86% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Làm thế nào để ứng dụng các kỹ năng nhận thức này vào thực tiễn?",
+          "chuTrenManHinh": "Ứng dụng kỹ năng nhận thức thế nào?",
+          "yDoHinh": "Hình ảnh minh họa giải quyết vấn đề thực tế",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bài dạy kỹ năng nhận thức giúp vận dụng kiến thức vào tư duy logic và giải quyết vấn đề.",
+          "chuTrenManHinh": "Kỹ năng nhận thức và tư duy logic",
+          "yDoHinh": "Sơ đồ tư duy logic trong xử lý thông tin",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.slideshare.net/slideshow/tng-hp-cc-k-nng-chun-b-bi-ging-dnh-cho-gio-vin/251125611",
+              "title": "Tổng hợp các kỹ năng chuẩn bị bài giảng dành cho giáo viên | PDF",
+              "excerpt": "- Quá trình kỹ thuật (Quá trình sản xuất nhôm, khai thác vàng…)\n- Quá trình trong xã hội (Quá trình tuyển dụng, khuyến mại…)\nb. Bài dạy thực hành hoặc dạy kỹ năng\n Bài dạy kỹ năng nhận thức\nVề bản chất các bài dạy kỹ năng nhận thức chính là các bài dạy kiến thức với mục tiêu thực\nhiện rõ ràng và tường minh về việc vận dụng các kiến thức đó vào các tình huống thực tiễn: Giải\nquyết vấn đề, ra quyết định, tư duy logic, tư duy phê phán hoặc là sáng tạo ra các ý tưởng, các giải\npháp mới.\nBài dạy kỹ năng tâm vận\nCác bài dạy kỹ năng tâm vận cần dựa trên các qui luật, các giai đoạn và các cấp độ hình\nthành kỹ năng. Các nhà giáo dục đã hệ thống thành một số nguyên tắc có định hướng cho việc dạy\nmột kỹ năng đạt hiệu quả. (các nguyên tắc dạy học theo nguyên tắc dạy học theo năng lực thực\nhiện) [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hệ thống hỗ trợ ra quyết định và tư duy phản biện để sáng tạo giải pháp mới.",
+          "chuTrenManHinh": "Tư duy phản biện và sáng tạo giải pháp",
+          "yDoHinh": "Hình ảnh bóng đèn sáng tạo và các quyết định",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.slideshare.net/slideshow/tng-hp-cc-k-nng-chun-b-bi-ging-dnh-cho-gio-vin/251125611",
+              "title": "Tổng hợp các kỹ năng chuẩn bị bài giảng dành cho giáo viên | PDF",
+              "excerpt": "- Quá trình kỹ thuật (Quá trình sản xuất nhôm, khai thác vàng…)\n- Quá trình trong xã hội (Quá trình tuyển dụng, khuyến mại…)\nb. Bài dạy thực hành hoặc dạy kỹ năng\n Bài dạy kỹ năng nhận thức\nVề bản chất các bài dạy kỹ năng nhận thức chính là các bài dạy kiến thức với mục tiêu thực\nhiện rõ ràng và tường minh về việc vận dụng các kiến thức đó vào các tình huống thực tiễn: Giải\nquyết vấn đề, ra quyết định, tư duy logic, tư duy phê phán hoặc là sáng tạo ra các ý tưởng, các giải\npháp mới.\nBài dạy kỹ năng tâm vận\nCác bài dạy kỹ năng tâm vận cần dựa trên các qui luật, các giai đoạn và các cấp độ hình\nthành kỹ năng. Các nhà giáo dục đã hệ thống thành một số nguyên tắc có định hướng cho việc dạy\nmột kỹ năng đạt hiệu quả. (các nguyên tắc dạy học theo nguyên tắc dạy học theo năng lực thực\nhiện) [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Các bài dạy kỹ năng tâm vận dựa trên các quy luật và các cấp độ hình thành.",
+          "chuTrenManHinh": "Bài dạy kỹ năng tâm vận",
+          "yDoHinh": "Các cấp độ phát triển kỹ năng",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.slideshare.net/slideshow/tng-hp-cc-k-nng-chun-b-bi-ging-dnh-cho-gio-vin/251125611",
+              "title": "Tổng hợp các kỹ năng chuẩn bị bài giảng dành cho giáo viên | PDF",
+              "excerpt": "- Quá trình kỹ thuật (Quá trình sản xuất nhôm, khai thác vàng…)\n- Quá trình trong xã hội (Quá trình tuyển dụng, khuyến mại…)\nb. Bài dạy thực hành hoặc dạy kỹ năng\n Bài dạy kỹ năng nhận thức\nVề bản chất các bài dạy kỹ năng nhận thức chính là các bài dạy kiến thức với mục tiêu thực\nhiện rõ ràng và tường minh về việc vận dụng các kiến thức đó vào các tình huống thực tiễn: Giải\nquyết vấn đề, ra quyết định, tư duy logic, tư duy phê phán hoặc là sáng tạo ra các ý tưởng, các giải\npháp mới.\nBài dạy kỹ năng tâm vận\nCác bài dạy kỹ năng tâm vận cần dựa trên các qui luật, các giai đoạn và các cấp độ hình\nthành kỹ năng. Các nhà giáo dục đã hệ thống thành một số nguyên tắc có định hướng cho việc dạy\nmột kỹ năng đạt hiệu quả. (các nguyên tắc dạy học theo nguyên tắc dạy học theo năng lực thực\nhiện) [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Chúng ta cũng cần tìm hiểu các quá trình kỹ thuật như sản xuất nhôm hay khai thác vàng.",
+          "chuTrenManHinh": "Quá trình kỹ thuật trong thực tế",
+          "yDoHinh": "Hình ảnh mô phỏng quá trình kỹ thuật",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.slideshare.net/slideshow/tng-hp-cc-k-nng-chun-b-bi-ging-dnh-cho-gio-vin/251125611",
+              "title": "Tổng hợp các kỹ năng chuẩn bị bài giảng dành cho giáo viên | PDF",
+              "excerpt": "- Quá trình kỹ thuật (Quá trình sản xuất nhôm, khai thác vàng…)\n- Quá trình trong xã hội (Quá trình tuyển dụng, khuyến mại…)\nb. Bài dạy thực hành hoặc dạy kỹ năng\n Bài dạy kỹ năng nhận thức\nVề bản chất các bài dạy kỹ năng nhận thức chính là các bài dạy kiến thức với mục tiêu thực\nhiện rõ ràng và tường minh về việc vận dụng các kiến thức đó vào các tình huống thực tiễn: Giải\nquyết vấn đề, ra quyết định, tư duy logic, tư duy phê phán hoặc là sáng tạo ra các ý tưởng, các giải\npháp mới.\nBài dạy kỹ năng tâm vận\nCác bài dạy kỹ năng tâm vận cần dựa trên các qui luật, các giai đoạn và các cấp độ hình\nthành kỹ năng. Các nhà giáo dục đã hệ thống thành một số nguyên tắc có định hướng cho việc dạy\nmột kỹ năng đạt hiệu quả. (các nguyên tắc dạy học theo nguyên tắc dạy học theo năng lực thực\nhiện) [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hoặc các quá trình trong xã hội như tuyển dụng và khuyến mại.",
+          "chuTrenManHinh": "Quá trình xã hội: Tuyển dụng, khuyến mại",
+          "yDoHinh": "Biểu tượng quy trình tuyển dụng và ưu đãi",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.slideshare.net/slideshow/tng-hp-cc-k-nng-chun-b-bi-ging-dnh-cho-gio-vin/251125611",
+              "title": "Tổng hợp các kỹ năng chuẩn bị bài giảng dành cho giáo viên | PDF",
+              "excerpt": "- Quá trình kỹ thuật (Quá trình sản xuất nhôm, khai thác vàng…)\n- Quá trình trong xã hội (Quá trình tuyển dụng, khuyến mại…)\nb. Bài dạy thực hành hoặc dạy kỹ năng\n Bài dạy kỹ năng nhận thức\nVề bản chất các bài dạy kỹ năng nhận thức chính là các bài dạy kiến thức với mục tiêu thực\nhiện rõ ràng và tường minh về việc vận dụng các kiến thức đó vào các tình huống thực tiễn: Giải\nquyết vấn đề, ra quyết định, tư duy logic, tư duy phê phán hoặc là sáng tạo ra các ý tưởng, các giải\npháp mới.\nBài dạy kỹ năng tâm vận\nCác bài dạy kỹ năng tâm vận cần dựa trên các qui luật, các giai đoạn và các cấp độ hình\nthành kỹ năng. Các nhà giáo dục đã hệ thống thành một số nguyên tắc có định hướng cho việc dạy\nmột kỹ năng đạt hiệu quả. (các nguyên tắc dạy học theo nguyên tắc dạy học theo năng lực thực\nhiện) [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Việc học đúng trọng tâm giúp học sinh dễ đạt kết quả cao trong các kỳ thi.",
+          "chuTrenManHinh": "Kiến thức cơ bản và kết quả thi cử",
+          "yDoHinh": "Hình ảnh bài thi đạt điểm cao",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://giaovienlichsu.com/day-dung-trong-tam-dam-bao-kien-thuc-co-ban-va-nhung-he-qua",
+              "title": "Dạy “đúng trọng tâm” đảm bảo “kiến thức cơ bản” và những hệ quả – Giáo Viên Lịch Sử",
+              "excerpt": "Đối với học sinh, kiến thức cơ bản, giúp học sinh dễ đạt điểm cao hơn trong các kỳ thi. Khi mà nội dung thi cử đã giới hạn trong những điều “được học và được dạy”. Nó làm cho phụ huynh và nhà trường sẽ cảm thấy hài lòng với kết quả mà học sinh đạt được.\n\nNhưng, việc dạy theo “kiến thức cơ bản” và “bám sát sách giáo khoa” sẽ để lại nhưng hậu quả rất lu dài về sau đối với học sinh và cả giáo viên. [...] Kiến thức trọng tm còn được hiểu là những gì học sinh sẽ thi trong các kỳ thi. Đối với các lớp cuối cấp đó là kì thi chuyển cấp (vào THPT và thi Đại học). Đối với các lớp khác là các bài kiểm tra giữa kỳ, kiểm tra học kỳ, cuối năm…\n\nViệc dạy theo kiến thức trọng tm có ưu điểm là “học gì thi nấy”, nó khiến cho người dạy cảm thấy “yên tm” về chất lượng đầu ra. Họ cảm thấy đo lường và thấy ngay ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Nội dung thi cử thường giới hạn trong những điều đã được học và được dạy.",
+          "chuTrenManHinh": "Giới hạn trong phạm vi được dạy",
+          "yDoHinh": "Hình ảnh trang sách giáo khoa được khoanh vùng",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://giaovienlichsu.com/day-dung-trong-tam-dam-bao-kien-thuc-co-ban-va-nhung-he-qua",
+              "title": "Dạy “đúng trọng tâm” đảm bảo “kiến thức cơ bản” và những hệ quả – Giáo Viên Lịch Sử",
+              "excerpt": "Đối với học sinh, kiến thức cơ bản, giúp học sinh dễ đạt điểm cao hơn trong các kỳ thi. Khi mà nội dung thi cử đã giới hạn trong những điều “được học và được dạy”. Nó làm cho phụ huynh và nhà trường sẽ cảm thấy hài lòng với kết quả mà học sinh đạt được.\n\nNhưng, việc dạy theo “kiến thức cơ bản” và “bám sát sách giáo khoa” sẽ để lại nhưng hậu quả rất lu dài về sau đối với học sinh và cả giáo viên. [...] Kiến thức trọng tm còn được hiểu là những gì học sinh sẽ thi trong các kỳ thi. Đối với các lớp cuối cấp đó là kì thi chuyển cấp (vào THPT và thi Đại học). Đối với các lớp khác là các bài kiểm tra giữa kỳ, kiểm tra học kỳ, cuối năm…\n\nViệc dạy theo kiến thức trọng tm có ưu điểm là “học gì thi nấy”, nó khiến cho người dạy cảm thấy “yên tm” về chất lượng đầu ra. Họ cảm thấy đo lường và thấy ngay ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Tuy nhiên chỉ bám sát sách giáo khoa có thể để lại hệ quả dài lâu.",
+          "chuTrenManHinh": "Hệ quả của việc chỉ học thuộc lòng",
+          "yDoHinh": "Hình ảnh đồng hồ biểu thị thời gian dài lâu",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://giaovienlichsu.com/day-dung-trong-tam-dam-bao-kien-thuc-co-ban-va-nhung-he-qua",
+              "title": "Dạy “đúng trọng tâm” đảm bảo “kiến thức cơ bản” và những hệ quả – Giáo Viên Lịch Sử",
+              "excerpt": "Đối với học sinh, kiến thức cơ bản, giúp học sinh dễ đạt điểm cao hơn trong các kỳ thi. Khi mà nội dung thi cử đã giới hạn trong những điều “được học và được dạy”. Nó làm cho phụ huynh và nhà trường sẽ cảm thấy hài lòng với kết quả mà học sinh đạt được.\n\nNhưng, việc dạy theo “kiến thức cơ bản” và “bám sát sách giáo khoa” sẽ để lại nhưng hậu quả rất lu dài về sau đối với học sinh và cả giáo viên. [...] Kiến thức trọng tm còn được hiểu là những gì học sinh sẽ thi trong các kỳ thi. Đối với các lớp cuối cấp đó là kì thi chuyển cấp (vào THPT và thi Đại học). Đối với các lớp khác là các bài kiểm tra giữa kỳ, kiểm tra học kỳ, cuối năm…\n\nViệc dạy theo kiến thức trọng tm có ưu điểm là “học gì thi nấy”, nó khiến cho người dạy cảm thấy “yên tm” về chất lượng đầu ra. Họ cảm thấy đo lường và thấy ngay ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Kiến thức trọng tâm chính là những gì sinh viên sẽ trải qua trong bài kiểm tra.",
+          "chuTrenManHinh": "Kiến thức trọng tâm bài kiểm tra",
+          "yDoHinh": "Hình ảnh danh sách kiểm tra kiến thức",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://giaovienlichsu.com/day-dung-trong-tam-dam-bao-kien-thuc-co-ban-va-nhung-he-qua",
+              "title": "Dạy “đúng trọng tâm” đảm bảo “kiến thức cơ bản” và những hệ quả – Giáo Viên Lịch Sử",
+              "excerpt": "Đối với học sinh, kiến thức cơ bản, giúp học sinh dễ đạt điểm cao hơn trong các kỳ thi. Khi mà nội dung thi cử đã giới hạn trong những điều “được học và được dạy”. Nó làm cho phụ huynh và nhà trường sẽ cảm thấy hài lòng với kết quả mà học sinh đạt được.\n\nNhưng, việc dạy theo “kiến thức cơ bản” và “bám sát sách giáo khoa” sẽ để lại nhưng hậu quả rất lu dài về sau đối với học sinh và cả giáo viên. [...] Kiến thức trọng tm còn được hiểu là những gì học sinh sẽ thi trong các kỳ thi. Đối với các lớp cuối cấp đó là kì thi chuyển cấp (vào THPT và thi Đại học). Đối với các lớp khác là các bài kiểm tra giữa kỳ, kiểm tra học kỳ, cuối năm…\n\nViệc dạy theo kiến thức trọng tm có ưu điểm là “học gì thi nấy”, nó khiến cho người dạy cảm thấy “yên tm” về chất lượng đầu ra. Họ cảm thấy đo lường và thấy ngay ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 26,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Để minh họa cho việc truy xuất dữ liệu y khoa chúng ta hãy xét ví dụ về tim mạch.",
+          "chuTrenManHinh": "Ví dụ truy xuất dữ liệu y tế",
+          "yDoHinh": "Mô hình trái tim 3D hoạt động",
+          "nguon": []
+        },
+        {
+          "n": 27,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hệ thống van tim đảm bảo cho máu lưu chuyển giữa các buồng tim một chiều.",
+          "chuTrenManHinh": "Van tim giúp máu chảy một chiều",
+          "yDoHinh": "Sơ đồ dòng máu chảy một chiều qua van tim",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.vinmec.com/vie/bai-viet/tim-hieu-ve-van-tim-va-cac-benh-van-tim-thuong-gap-vi",
+              "title": "Tìm hiểu về van tim và các bệnh van tim thường gặp | Vinmec",
+              "excerpt": "Hệ thống van tim trong cơ thể\n\n \n\n## 2. Bệnh van tim là gì?\n\nBệnh van tim thường biểu hiện dưới hai dạng tổn thương chính là hẹp van tim và hở van tim, đôi khi một van có tổn thương phối hợp cả hai dạng trên vừa hẹp vừa hở.\n\nHệ thống van tim là các cấu trúc đảm bảo cho máu lưu chuyển giữa các buồng tim theo một chu trình một chiều nhất định. Bình thường các van tim này là các cấu trúc thanh mảnh, mềm mại, cấu tạo bởi các lá van tim, và được cố định bằng các dy chằng, cột cơ. Vì nguyên nhn nào đó, các lá van này mất đi độ mềm mại, thanh mảnh, bị dày lên, dính vào nhau, vôi hóa hoặc các dy chằng cố định van tim bị sa xuống, bị đứt làm cho các van này không hoạt động được bình thường dẫn đến các bệnh lý van tim. [...] ## 5. Các triệu chứng thường gặp khi có bệnh lý van tim\n\n Khó thở: Đầu tiên",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 28,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bình thường van tim thanh mảnh mềm mại và được cố định bằng dây chằng.",
+          "chuTrenManHinh": "Cấu trúc van tim mềm mại",
+          "yDoHinh": "Cận cảnh lá van tim và dây chằng",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.vinmec.com/vie/bai-viet/tim-hieu-ve-van-tim-va-cac-benh-van-tim-thuong-gap-vi",
+              "title": "Tìm hiểu về van tim và các bệnh van tim thường gặp | Vinmec",
+              "excerpt": "Hệ thống van tim trong cơ thể\n\n \n\n## 2. Bệnh van tim là gì?\n\nBệnh van tim thường biểu hiện dưới hai dạng tổn thương chính là hẹp van tim và hở van tim, đôi khi một van có tổn thương phối hợp cả hai dạng trên vừa hẹp vừa hở.\n\nHệ thống van tim là các cấu trúc đảm bảo cho máu lưu chuyển giữa các buồng tim theo một chu trình một chiều nhất định. Bình thường các van tim này là các cấu trúc thanh mảnh, mềm mại, cấu tạo bởi các lá van tim, và được cố định bằng các dy chằng, cột cơ. Vì nguyên nhn nào đó, các lá van này mất đi độ mềm mại, thanh mảnh, bị dày lên, dính vào nhau, vôi hóa hoặc các dy chằng cố định van tim bị sa xuống, bị đứt làm cho các van này không hoạt động được bình thường dẫn đến các bệnh lý van tim. [...] ## 5. Các triệu chứng thường gặp khi có bệnh lý van tim\n\n Khó thở: Đầu tiên",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bệnh van tim biểu hiện dưới hai dạng tổn thương chính là hẹp và hở.",
+          "chuTrenManHinh": "Hẹp van tim và hở van tim",
+          "yDoHinh": "So sánh tổn thương hẹp van và hở van",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.vinmec.com/vie/bai-viet/tim-hieu-ve-van-tim-va-cac-benh-van-tim-thuong-gap-vi",
+              "title": "Tìm hiểu về van tim và các bệnh van tim thường gặp | Vinmec",
+              "excerpt": "Hệ thống van tim trong cơ thể\n\n \n\n## 2. Bệnh van tim là gì?\n\nBệnh van tim thường biểu hiện dưới hai dạng tổn thương chính là hẹp van tim và hở van tim, đôi khi một van có tổn thương phối hợp cả hai dạng trên vừa hẹp vừa hở.\n\nHệ thống van tim là các cấu trúc đảm bảo cho máu lưu chuyển giữa các buồng tim theo một chu trình một chiều nhất định. Bình thường các van tim này là các cấu trúc thanh mảnh, mềm mại, cấu tạo bởi các lá van tim, và được cố định bằng các dy chằng, cột cơ. Vì nguyên nhn nào đó, các lá van này mất đi độ mềm mại, thanh mảnh, bị dày lên, dính vào nhau, vôi hóa hoặc các dy chằng cố định van tim bị sa xuống, bị đứt làm cho các van này không hoạt động được bình thường dẫn đến các bệnh lý van tim. [...] ## 5. Các triệu chứng thường gặp khi có bệnh lý van tim\n\n Khó thở: Đầu tiên",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 30,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Đôi khi một van tim có thể gặp tổn thương phối hợp cả hẹp và hở.",
+          "chuTrenManHinh": "Tổn thương phối hợp vừa hẹp vừa hở",
+          "yDoHinh": "Hình ảnh van tim bị vôi hóa và dính vào nhau",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.vinmec.com/vie/bai-viet/tim-hieu-ve-van-tim-va-cac-benh-van-tim-thuong-gap-vi",
+              "title": "Tìm hiểu về van tim và các bệnh van tim thường gặp | Vinmec",
+              "excerpt": "Hệ thống van tim trong cơ thể\n\n \n\n## 2. Bệnh van tim là gì?\n\nBệnh van tim thường biểu hiện dưới hai dạng tổn thương chính là hẹp van tim và hở van tim, đôi khi một van có tổn thương phối hợp cả hai dạng trên vừa hẹp vừa hở.\n\nHệ thống van tim là các cấu trúc đảm bảo cho máu lưu chuyển giữa các buồng tim theo một chu trình một chiều nhất định. Bình thường các van tim này là các cấu trúc thanh mảnh, mềm mại, cấu tạo bởi các lá van tim, và được cố định bằng các dy chằng, cột cơ. Vì nguyên nhn nào đó, các lá van này mất đi độ mềm mại, thanh mảnh, bị dày lên, dính vào nhau, vôi hóa hoặc các dy chằng cố định van tim bị sa xuống, bị đứt làm cho các van này không hoạt động được bình thường dẫn đến các bệnh lý van tim. [...] ## 5. Các triệu chứng thường gặp khi có bệnh lý van tim\n\n Khó thở: Đầu tiên",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 31,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Van hai lá đóng mở để máu đi từ tâm nhĩ trái xuống tâm thất trái.",
+          "chuTrenManHinh": "Van hai lá kiểm soát dòng máu trái",
+          "yDoHinh": "Hoạt động đóng mở của van hai lá",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tamanhhospital.vn/co-the-nguoi/van-tim",
+              "title": "Van tim là gì? Những điều cần biết về cấu tạo và chức năng của van",
+              "excerpt": "Van hai lá: Hoạt động nhịp nhàng theo chu kỳ, đóng, mở để máu có thể di chuyển từ tm nhĩ trái đi vào tm thất trái. Khi van hai lá đóng lại đúng lúc sẽ ngăn chặn tình trạng máu chảy ngược trở lại tm nhĩ.\n Van ba lá: Bao gồm lá trước, lá sau và lá lách. Van 3 lá mở ra trong thời kỳ tm trương, cho máu sẽ chảy từ tm nhĩ phải xuống tm thất phải. Van đóng lại đảm bảo cho máu không bị chảy ngược.\n Van động mạch phổi: Vị trí van ở giữa động mạch phổi và tm thất phải. Van có vai trò kiểm soát dòng máu từ tim qua động mạch phổi, đảm bảo máu chảy đúng một chiều, không bị rò rỉ ngược.\n Van động mạch chủ: Tm thất trái co bóp đẩy máu vào động mạch chủ thông qua van động mạch chủ. Khi van này đóng lại sẽ ngăn dòng máu chảy về lại thất trái trong thời kỳ tm trương. (1)\n\nHệ thống van tim [...] Bạn nên có c",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 32,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Khi van đóng đúng lúc sẽ ngăn tình trạng máu chảy ngược về tâm nhĩ.",
+          "chuTrenManHinh": "Ngăn máu chảy ngược lại tâm nhĩ",
+          "yDoHinh": "Mô phỏng van đóng kín chặn dòng chảy ngược",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tamanhhospital.vn/co-the-nguoi/van-tim",
+              "title": "Van tim là gì? Những điều cần biết về cấu tạo và chức năng của van",
+              "excerpt": "Van hai lá: Hoạt động nhịp nhàng theo chu kỳ, đóng, mở để máu có thể di chuyển từ tm nhĩ trái đi vào tm thất trái. Khi van hai lá đóng lại đúng lúc sẽ ngăn chặn tình trạng máu chảy ngược trở lại tm nhĩ.\n Van ba lá: Bao gồm lá trước, lá sau và lá lách. Van 3 lá mở ra trong thời kỳ tm trương, cho máu sẽ chảy từ tm nhĩ phải xuống tm thất phải. Van đóng lại đảm bảo cho máu không bị chảy ngược.\n Van động mạch phổi: Vị trí van ở giữa động mạch phổi và tm thất phải. Van có vai trò kiểm soát dòng máu từ tim qua động mạch phổi, đảm bảo máu chảy đúng một chiều, không bị rò rỉ ngược.\n Van động mạch chủ: Tm thất trái co bóp đẩy máu vào động mạch chủ thông qua van động mạch chủ. Khi van này đóng lại sẽ ngăn dòng máu chảy về lại thất trái trong thời kỳ tm trương. (1)\n\nHệ thống van tim [...] Bạn nên có c",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 33,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Van ba lá mở ra trong thời kỳ tâm trương để máu chảy xuống tâm thất phải.",
+          "chuTrenManHinh": "Van ba lá mở trong thời kỳ tâm trương",
+          "yDoHinh": "Máu chảy từ tâm nhĩ phải xuống tâm thất phải",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tamanhhospital.vn/co-the-nguoi/van-tim",
+              "title": "Van tim là gì? Những điều cần biết về cấu tạo và chức năng của van",
+              "excerpt": "Van hai lá: Hoạt động nhịp nhàng theo chu kỳ, đóng, mở để máu có thể di chuyển từ tm nhĩ trái đi vào tm thất trái. Khi van hai lá đóng lại đúng lúc sẽ ngăn chặn tình trạng máu chảy ngược trở lại tm nhĩ.\n Van ba lá: Bao gồm lá trước, lá sau và lá lách. Van 3 lá mở ra trong thời kỳ tm trương, cho máu sẽ chảy từ tm nhĩ phải xuống tm thất phải. Van đóng lại đảm bảo cho máu không bị chảy ngược.\n Van động mạch phổi: Vị trí van ở giữa động mạch phổi và tm thất phải. Van có vai trò kiểm soát dòng máu từ tim qua động mạch phổi, đảm bảo máu chảy đúng một chiều, không bị rò rỉ ngược.\n Van động mạch chủ: Tm thất trái co bóp đẩy máu vào động mạch chủ thông qua van động mạch chủ. Khi van này đóng lại sẽ ngăn dòng máu chảy về lại thất trái trong thời kỳ tm trương. (1)\n\nHệ thống van tim [...] Bạn nên có c",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 34,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Van động mạch phổi nằm ở giữa động mạch phổi và tâm thất phải.",
+          "chuTrenManHinh": "Vị trí van động mạch phổi",
+          "yDoHinh": "Vị trí van động mạch phổi trên mô hình tim",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tamanhhospital.vn/co-the-nguoi/van-tim",
+              "title": "Van tim là gì? Những điều cần biết về cấu tạo và chức năng của van",
+              "excerpt": "Van hai lá: Hoạt động nhịp nhàng theo chu kỳ, đóng, mở để máu có thể di chuyển từ tm nhĩ trái đi vào tm thất trái. Khi van hai lá đóng lại đúng lúc sẽ ngăn chặn tình trạng máu chảy ngược trở lại tm nhĩ.\n Van ba lá: Bao gồm lá trước, lá sau và lá lách. Van 3 lá mở ra trong thời kỳ tm trương, cho máu sẽ chảy từ tm nhĩ phải xuống tm thất phải. Van đóng lại đảm bảo cho máu không bị chảy ngược.\n Van động mạch phổi: Vị trí van ở giữa động mạch phổi và tm thất phải. Van có vai trò kiểm soát dòng máu từ tim qua động mạch phổi, đảm bảo máu chảy đúng một chiều, không bị rò rỉ ngược.\n Van động mạch chủ: Tm thất trái co bóp đẩy máu vào động mạch chủ thông qua van động mạch chủ. Khi van này đóng lại sẽ ngăn dòng máu chảy về lại thất trái trong thời kỳ tm trương. (1)\n\nHệ thống van tim [...] Bạn nên có c",
+              "verified": true,
+              "overlap_ratio": 0.91,
+              "reason": "Tìm thấy 91% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 35,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Van kiểm soát dòng máu để đảm bảo không bị rò rỉ ngược lại.",
+          "chuTrenManHinh": "Đảm bảo máu không rò rỉ ngược",
+          "yDoHinh": "Minh họa dòng chảy chuẩn không rò rỉ",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tamanhhospital.vn/co-the-nguoi/van-tim",
+              "title": "Van tim là gì? Những điều cần biết về cấu tạo và chức năng của van",
+              "excerpt": "Van hai lá: Hoạt động nhịp nhàng theo chu kỳ, đóng, mở để máu có thể di chuyển từ tm nhĩ trái đi vào tm thất trái. Khi van hai lá đóng lại đúng lúc sẽ ngăn chặn tình trạng máu chảy ngược trở lại tm nhĩ.\n Van ba lá: Bao gồm lá trước, lá sau và lá lách. Van 3 lá mở ra trong thời kỳ tm trương, cho máu sẽ chảy từ tm nhĩ phải xuống tm thất phải. Van đóng lại đảm bảo cho máu không bị chảy ngược.\n Van động mạch phổi: Vị trí van ở giữa động mạch phổi và tm thất phải. Van có vai trò kiểm soát dòng máu từ tim qua động mạch phổi, đảm bảo máu chảy đúng một chiều, không bị rò rỉ ngược.\n Van động mạch chủ: Tm thất trái co bóp đẩy máu vào động mạch chủ thông qua van động mạch chủ. Khi van này đóng lại sẽ ngăn dòng máu chảy về lại thất trái trong thời kỳ tm trương. (1)\n\nHệ thống van tim [...] Bạn nên có c",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 36,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Khi tìm kiếm thông tin y tế chúng ta cần lưu ý triệu chứng như sốt hoặc đau họng.",
+          "chuTrenManHinh": "Triệu chứng sốt và đau họng",
+          "yDoHinh": "Biểu tượng cảnh báo sức khỏe",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://benhviendongnai.com.vn/benh-van-tim-va-nhung-dieu-can-biet",
+              "title": "Bệnh van tim: Nguyên nhân, dấu hiệu và cách điều trị",
+              "excerpt": "Liên hệ bác sĩ khi xuất hiện triệu chứng nhiễm trùng như đau họng, sốt, đau nhức cơ thể.\n Chăm sóc răng miệng cẩn thận, khám nha khoa định kỳ 6 tháng/lần và thông báo tình trạng bệnh khi điều trị.\n Uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu (như làm răng, xét nghiệm xm lấn, phẫu thuật) theo hướng dẫn bác sĩ.\n Tái khám định kỳ theo chỉ dẫn của bác sĩ đồng thời kiểm tra huyết áp thường xuyên.\n\n> Tìm hiểu thêm về các bệnh:\n>\n> Xơ vữa động mạch\n>\n> Xơ gan và ung thư gan\n\n## Khi nghi ngờ mắc bệnh van tim cần nên làm gì? [...] Lời khuyên giúp bảo vệ sức khỏe tim mạch:\n\n1. Ăn uống lành mạnh: Ăn nhiều rau xanh, trái cy, ngũ cốc nguyên hạt, cá, gia cầm không da, hạn chế thực phẩm nhiều dầu mỡ.\n2. Vận động thường xuyên: Tập thể dục ít nhất 150 phút/tuần với các bài tập như đi b",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 37,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Việc chăm sóc răng miệng và khám nha khoa sáu tháng một lần rất quan trọng.",
+          "chuTrenManHinh": "Khám nha khoa định kỳ sáu tháng một lần",
+          "yDoHinh": "Lịch nhắc nhở khám nha khoa định kỳ",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://benhviendongnai.com.vn/benh-van-tim-va-nhung-dieu-can-biet",
+              "title": "Bệnh van tim: Nguyên nhân, dấu hiệu và cách điều trị",
+              "excerpt": "Liên hệ bác sĩ khi xuất hiện triệu chứng nhiễm trùng như đau họng, sốt, đau nhức cơ thể.\n Chăm sóc răng miệng cẩn thận, khám nha khoa định kỳ 6 tháng/lần và thông báo tình trạng bệnh khi điều trị.\n Uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu (như làm răng, xét nghiệm xm lấn, phẫu thuật) theo hướng dẫn bác sĩ.\n Tái khám định kỳ theo chỉ dẫn của bác sĩ đồng thời kiểm tra huyết áp thường xuyên.\n\n> Tìm hiểu thêm về các bệnh:\n>\n> Xơ vữa động mạch\n>\n> Xơ gan và ung thư gan\n\n## Khi nghi ngờ mắc bệnh van tim cần nên làm gì? [...] Lời khuyên giúp bảo vệ sức khỏe tim mạch:\n\n1. Ăn uống lành mạnh: Ăn nhiều rau xanh, trái cy, ngũ cốc nguyên hạt, cá, gia cầm không da, hạn chế thực phẩm nhiều dầu mỡ.\n2. Vận động thường xuyên: Tập thể dục ít nhất 150 phút/tuần với các bài tập như đi b",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 38,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bệnh nhân cần uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu.",
+          "chuTrenManHinh": "Kháng sinh dự phòng trước thủ thuật",
+          "yDoHinh": "Hình ảnh viên thuốc và thủ thuật y tế",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://benhviendongnai.com.vn/benh-van-tim-va-nhung-dieu-can-biet",
+              "title": "Bệnh van tim: Nguyên nhân, dấu hiệu và cách điều trị",
+              "excerpt": "Liên hệ bác sĩ khi xuất hiện triệu chứng nhiễm trùng như đau họng, sốt, đau nhức cơ thể.\n Chăm sóc răng miệng cẩn thận, khám nha khoa định kỳ 6 tháng/lần và thông báo tình trạng bệnh khi điều trị.\n Uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu (như làm răng, xét nghiệm xm lấn, phẫu thuật) theo hướng dẫn bác sĩ.\n Tái khám định kỳ theo chỉ dẫn của bác sĩ đồng thời kiểm tra huyết áp thường xuyên.\n\n> Tìm hiểu thêm về các bệnh:\n>\n> Xơ vữa động mạch\n>\n> Xơ gan và ung thư gan\n\n## Khi nghi ngờ mắc bệnh van tim cần nên làm gì? [...] Lời khuyên giúp bảo vệ sức khỏe tim mạch:\n\n1. Ăn uống lành mạnh: Ăn nhiều rau xanh, trái cy, ngũ cốc nguyên hạt, cá, gia cầm không da, hạn chế thực phẩm nhiều dầu mỡ.\n2. Vận động thường xuyên: Tập thể dục ít nhất 150 phút/tuần với các bài tập như đi b",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 39,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Chúng ta nên tái khám định kỳ đồng thời kiểm tra huyết áp thường xuyên.",
+          "chuTrenManHinh": "Kiểm tra huyết áp thường xuyên",
+          "yDoHinh": "Đo huyết áp và sổ theo dõi sức khỏe",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://benhviendongnai.com.vn/benh-van-tim-va-nhung-dieu-can-biet",
+              "title": "Bệnh van tim: Nguyên nhân, dấu hiệu và cách điều trị",
+              "excerpt": "Liên hệ bác sĩ khi xuất hiện triệu chứng nhiễm trùng như đau họng, sốt, đau nhức cơ thể.\n Chăm sóc răng miệng cẩn thận, khám nha khoa định kỳ 6 tháng/lần và thông báo tình trạng bệnh khi điều trị.\n Uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu (như làm răng, xét nghiệm xm lấn, phẫu thuật) theo hướng dẫn bác sĩ.\n Tái khám định kỳ theo chỉ dẫn của bác sĩ đồng thời kiểm tra huyết áp thường xuyên.\n\n> Tìm hiểu thêm về các bệnh:\n>\n> Xơ vữa động mạch\n>\n> Xơ gan và ung thư gan\n\n## Khi nghi ngờ mắc bệnh van tim cần nên làm gì? [...] Lời khuyên giúp bảo vệ sức khỏe tim mạch:\n\n1. Ăn uống lành mạnh: Ăn nhiều rau xanh, trái cy, ngũ cốc nguyên hạt, cá, gia cầm không da, hạn chế thực phẩm nhiều dầu mỡ.\n2. Vận động thường xuyên: Tập thể dục ít nhất 150 phút/tuần với các bài tập như đi b",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 40,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ngoài ra tài liệu cũng đề cập các bệnh như xơ vữa động mạch và xơ gan.",
+          "chuTrenManHinh": "Xơ vữa động mạch và xơ gan",
+          "yDoHinh": "Các thuật ngữ y khoa liên quan trên màn hình",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://benhviendongnai.com.vn/benh-van-tim-va-nhung-dieu-can-biet",
+              "title": "Bệnh van tim: Nguyên nhân, dấu hiệu và cách điều trị",
+              "excerpt": "Liên hệ bác sĩ khi xuất hiện triệu chứng nhiễm trùng như đau họng, sốt, đau nhức cơ thể.\n Chăm sóc răng miệng cẩn thận, khám nha khoa định kỳ 6 tháng/lần và thông báo tình trạng bệnh khi điều trị.\n Uống kháng sinh dự phòng trước các thủ thuật có nguy cơ chảy máu (như làm răng, xét nghiệm xm lấn, phẫu thuật) theo hướng dẫn bác sĩ.\n Tái khám định kỳ theo chỉ dẫn của bác sĩ đồng thời kiểm tra huyết áp thường xuyên.\n\n> Tìm hiểu thêm về các bệnh:\n>\n> Xơ vữa động mạch\n>\n> Xơ gan và ung thư gan\n\n## Khi nghi ngờ mắc bệnh van tim cần nên làm gì? [...] Lời khuyên giúp bảo vệ sức khỏe tim mạch:\n\n1. Ăn uống lành mạnh: Ăn nhiều rau xanh, trái cy, ngũ cốc nguyên hạt, cá, gia cầm không da, hạn chế thực phẩm nhiều dầu mỡ.\n2. Vận động thường xuyên: Tập thể dục ít nhất 150 phút/tuần với các bài tập như đi b",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 41,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Hiểu đúng ngữ nghĩa giúp các hệ thống tìm kiếm kết nối đúng thông tin người dùng cần.",
+          "chuTrenManHinh": "Ngữ nghĩa kết nối thông tin chính xác",
+          "yDoHinh": "Mạng lưới kết nối dữ liệu ngữ nghĩa",
+          "nguon": []
+        },
+        {
+          "n": 42,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học tìm kiếm ngữ nghĩa hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn đã theo dõi!",
+          "yDoHinh": "Màn hình kết thúc bài giảng với thông tin liên hệ",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 35,
+        "verified_count": 35,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t05",
+      "t06",
+      "t07",
+      "t08",
+      "t03",
+      "t04",
+      "t02",
+      "t01"
+    ],
+    "created_at": "2026-09-18T07:54:53.745802"
+  }
+}

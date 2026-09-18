@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS09",
+    "type": "thuong",
+    "topic": "Cua so ngu canh cua mo hinh ngon ngu",
+    "learning_goal": "Giai thich bang vi du doi thuong cho nguoi moi",
+    "audience": "Hoc vien khong chuyen",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Mot y moi canh; giai thich thuat ngu truoc tieng Anh; loi doc tu nhien va dung thoi luong."
+  },
+  "error": "ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host"
+}

@@ -1,0 +1,16 @@
+{
+  "case": {
+    "case_id": "GS22",
+    "type": "hiem-nguon-mau-thuan",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Neu tac dong cua AI len ket qua hoc tap",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Neu ro mau thuan, trich ca hai nguon uy tin, khong am tham chon mot ket luan; de nguoi duyet quyet dinh.",
+    "fixture": "hai nguon uy tin trai chieu"
+  },
+  "error": "TimeoutError: Timed out waiting for session 44a46bb4-8e0e-4c9f-93cf-7d8a21d4d4fb"
+}

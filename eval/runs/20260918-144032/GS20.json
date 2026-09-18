@@ -1,0 +1,569 @@
+{
+  "case": {
+    "case_id": "GS20",
+    "type": "lop-4-dac-thu-domain",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Giai thich cho hoc sinh cap ba",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Khong dung an du lam sai khai niem; phan biet du lieu huan luyen va quy tac viet san; dung mau kich ban."
+  },
+  "session_id": "371db249-73d0-46fb-b1b9-61306b229485",
+  "result": {
+    "id": 10,
+    "session_id": "371db249-73d0-46fb-b1b9-61306b229485",
+    "version": 1,
+    "json_content": {
+      "id": "371db249-73d0-46fb-b1b9-61306b229485",
+      "tieuDe": "Tìm Hiểu Các Mô Hình Học Tập Và Tư Duy",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "So sánh mô hình truyền thống và hiện đại"
+        },
+        {
+          "so": 2,
+          "ten": "Học tập qua dự án và trải nghiệm"
+        },
+        {
+          "so": 3,
+          "ten": "Quy trình STEM và phát triển năng lực tư duy"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào các em học sinh đến với bài học về các mô hình học tập.",
+          "chuTrenManHinh": "Mô hình học tập",
+          "yDoHinh": "Hình ảnh lớp học sinh động và tiêu đề bài học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong mô hình dạy học truyền thống, giáo viên đóng vai trò trung tâm và truyền đạt kiến thức một chiều.",
+          "chuTrenManHinh": "Mô hình truyền thống: Giáo viên trung tâm",
+          "yDoHinh": "Sơ đồ minh họa giáo viên giảng bài một chiều cho học sinh.",
+          "nguon": [
+            "t01",
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            },
+            {
+              "code": "t03",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Các ví dụ quen thuộc của phương pháp này là bài giảng truyền thống hoặc việc đọc chép.",
+          "chuTrenManHinh": "Ví dụ: Bài giảng truyền thống, đọc chép",
+          "yDoHinh": "Hình ảnh học sinh ngồi nghe giảng và ghi chép bài.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.83,
+              "reason": "Tìm thấy 83% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ưu điểm của mô hình này là truyền tải kiến thức nền tảng một cách hệ thống.",
+          "chuTrenManHinh": "Ưu điểm: Kiến thức nền tảng hệ thống",
+          "yDoHinh": "Đồ họa hiển thị cuốn sách kiến thức nối liền nhau hệ thống.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Tuy nhiên, hạn chế là học sinh thiếu chủ động và không phát triển được năng lực tư duy phản biện.",
+          "chuTrenManHinh": "Hạn chế: Thiếu chủ động, tư duy phản biện",
+          "yDoHinh": "Biểu tượng học sinh thụ động và dấu hỏi chấm.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngược lại, mô hình lấy người học làm trung tâm giúp học sinh chủ động tìm hiểu và khám phá kiến thức.",
+          "chuTrenManHinh": "Mô hình lấy người học làm trung tâm",
+          "yDoHinh": "Hình ảnh học sinh thảo luận nhóm, giáo viên hỗ trợ.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Lúc này, giáo viên sẽ giữ vai trò hướng dẫn và hỗ trợ các em.",
+          "chuTrenManHinh": "Giáo viên: Hướng dẫn và hỗ trợ",
+          "yDoHinh": "Hình ảnh giáo viên đứng cạnh gợi mở cho học sinh.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://wikinvsp.hnue.edu.vn/index.php?title=M%C3%B4_h%C3%ACnh_d%E1%BA%A1y_h%E1%BB%8Dc",
+              "title": "Mô hình dạy học - Nghiep vu Su pham",
+              "excerpt": "Đặc điểm: Giáo viên đóng vai trò trung tm, truyền đạt kiến thức một chiều, học sinh tiếp thu thụ động.\n Ví dụ: Bài giảng truyền thống, đọc chép.\n Ưu điểm: Truyền tải kiến thức nền tảng một cách hệ thống.\n Hạn chế: Học sinh thiếu chủ động, không phát triển được năng lực tư duy phản biện và sáng tạo.\n\n##### Mô hình dạy học lấy người học làm trung tm (Learner-Centered Model)\n\n Đặc điểm: Học sinh chủ động trong việc tìm hiểu và khám phá kiến thức, giáo viên đóng vai trò hướng dẫn, hỗ trợ.\n Ví dụ: Học theo dự án (Project-Based Learning), học theo vấn đề (Problem-Based Learning), học hợp tác (Collaborative Learning).\n Ưu điểm: Phát triển năng lực tự học, tư duy phản biện và kỹ năng hợp tác.\n Hạn chế: Đòi hỏi giáo viên có kỹ năng sư phạm cao, cần nhiều thời gian chuẩn bị. [...] ### Khái niệm về m",
+              "verified": true,
+              "overlap_ratio": 0.67,
+              "reason": "Tìm thấy 67% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Học sinh được tham gia vào quá trình học tập như những người kiến tạo tri thức của chính mình.",
+          "chuTrenManHinh": "Học sinh là người kiến tạo tri thức",
+          "yDoHinh": "Biểu tượng học sinh đang lắp ráp các mảnh ghép tri thức.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://tse-tesol.edu.vn/cac-mo-hinh-day-hoc-tich-cuc-giup-hoc-sinh-linh-hoi-kien-thuc",
+              "title": "Các mô hình dạy học tích cực giúp học sinh lĩnh hội kiến thức",
+              "excerpt": "3.1 Cấu trúc của một tiết học theo trạm\n\n3.2 Lợi ích của mô hình Station Rotation\n\n4 Khóa học TESOL 100h/120h giúp bạn giảng dạy tiếng Anh chuyên nghiệp\n\n5 Kết luận\n\n# Các mô hình dạy học tích cực giúp học sinh lĩnh hội kiến thức\n\n ,  Phương pháp giảng dạy\n\nCác mô hình dạy học tích cực không chỉ giúp học sinh tiếp thu kiến thức hiệu quả mà còn khuyến khích các em chủ động khám phá, xử lý và vận dụng thông tin một cách linh hoạt, sáng tạo. Thay vì tiếp nhận thụ động, học sinh được tham gia vào quá trình học tập như những ‘người kiến tạo’ tri thức của chính mình. [...] 📍 [Miễn phí] Offline tại Hà Nội\n\n📅 09:30 - 11:30\n\n⏰ 22/09/2026\n\nXem chi tiết\n\nPHƯƠNG PHÁP DẠY TỪ VỰNG TIẾNG ANH HIỆU QUẢ: Từ trang sách đến bài giảng sống động\n\nMiễn phí\n\nHướng dẫn tư duy dạy & chấm chữa Writing Task 1\n\n👉 Thầy",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Vậy mô hình học tập theo dự án hoạt động như thế nào?",
+          "chuTrenManHinh": "Học tập theo dự án (PBL)?",
+          "yDoHinh": "Dấu hỏi lớn cùng hình ảnh dự án thực tế.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ở mô hình học tập dự án, học viên làm việc trong một khoảng thời gian để giải quyết vấn đề thực tế.",
+          "chuTrenManHinh": "Giải quyết vấn đề thực tế",
+          "yDoHinh": "Hình ảnh nhóm học sinh giải quyết một bài toán thực địa.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Quá trình này đòi hỏi các em nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực.",
+          "chuTrenManHinh": "Nghiên cứu, hợp tác, liên môn",
+          "yDoHinh": "Sơ đồ kết nối các môn học khác nhau.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bên cạnh đó, học tập trải nghiệm giúp học sinh áp dụng kiến thức vào những tình huống thực tế.",
+          "chuTrenManHinh": "Học tập trải nghiệm: Áp dụng thực tế",
+          "yDoHinh": "Học sinh đang thực hành ghi chép trong môi trường thực tế.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Để kích thích tư duy, kỹ thuật đặt câu hỏi ở cột W có thể được áp dụng ra sao?",
+          "chuTrenManHinh": "Kỹ thuật cột W?",
+          "yDoHinh": "Bảng KWL với trọng tâm là cột W.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Giáo viên sẽ hỏi học sinh xem các em muốn biết thêm điều gì về chủ đề.",
+          "chuTrenManHinh": "Muốn biết thêm điều gì về chủ đề?",
+          "yDoHinh": "Giáo viên ghi nhận các câu hỏi của học sinh lên bảng.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thptphanchautrinh.hcm.edu.vn/tai-lieu-tham-khao/cac-ky-thuat-day-hoc-tich-cuc/ctmb/47043/125116",
+              "title": "Các kỹ thuật dạy học tích cực",
+              "excerpt": "4. Hỏi học sinh xem các em muốn biết thêm điều gì về chủ đề. Cả giáo viên và học sinh ghi nhận cu hỏi vào cột W. Hoạt động này kết thúc khi học sinh đã nêu ra tất cả các ý tưởng. Nếu học sinh trả lời bằng một cu phát biểu bình thường, hãy biến nó thành cu hỏi trước khi ghi nhận vào cột W.\n\nMột số lưu ý tại cột W\n\nHỏi những cu hỏi tiếp nối và gợi mở. Nếu chỉ hỏi các em : “Các em muốn biết thêm điều gì về chủ đề này?” Đôi khi học sinh trả lời đơn giản “không biết”, vì các em chưa có ý tưởng. Hãy thử sử dụng một số cu hỏi sau :\n\n“Em nghĩ mình sẽ biết thêm được điều gì sau khi em đọc chủ đề này?”\n\nChọn một ý tưởng từ cột K và hỏi, “Em có muốn tìm hiểu thêm điều gì có liên quan đến ý tưởng này không?” [...] 3. Đề nghị học sinh động não nhanh và nêu ra các từ, cụm từ có liên quan đến chủ đề. Cả ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Ví dụ như câu hỏi: Em nghĩ mình sẽ biết thêm được điều gì sau khi đọc chủ đề này?",
+          "chuTrenManHinh": "Em nghĩ sẽ biết thêm điều gì?",
+          "yDoHinh": "Dòng chữ câu hỏi gợi mở xuất hiện sinh động.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thptphanchautrinh.hcm.edu.vn/tai-lieu-tham-khao/cac-ky-thuat-day-hoc-tich-cuc/ctmb/47043/125116",
+              "title": "Các kỹ thuật dạy học tích cực",
+              "excerpt": "4. Hỏi học sinh xem các em muốn biết thêm điều gì về chủ đề. Cả giáo viên và học sinh ghi nhận cu hỏi vào cột W. Hoạt động này kết thúc khi học sinh đã nêu ra tất cả các ý tưởng. Nếu học sinh trả lời bằng một cu phát biểu bình thường, hãy biến nó thành cu hỏi trước khi ghi nhận vào cột W.\n\nMột số lưu ý tại cột W\n\nHỏi những cu hỏi tiếp nối và gợi mở. Nếu chỉ hỏi các em : “Các em muốn biết thêm điều gì về chủ đề này?” Đôi khi học sinh trả lời đơn giản “không biết”, vì các em chưa có ý tưởng. Hãy thử sử dụng một số cu hỏi sau :\n\n“Em nghĩ mình sẽ biết thêm được điều gì sau khi em đọc chủ đề này?”\n\nChọn một ý tưởng từ cột K và hỏi, “Em có muốn tìm hiểu thêm điều gì có liên quan đến ý tưởng này không?” [...] 3. Đề nghị học sinh động não nhanh và nêu ra các từ, cụm từ có liên quan đến chủ đề. Cả ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Đối với bài giảng STEM, bước đầu tiên là xác định vấn đề hoặc yêu cầu thiết chế tạo.",
+          "chuTrenManHinh": "STEM Bước một: Xác định vấn đề",
+          "yDoHinh": "Quy trình năm bước STEM, nổi bật bước một.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://robotsteam.vn/cach-thiet-ke-bai-giang-stem-gan-voi-thuc-te",
+              "title": "Hướng dẫn cách thiết kế bài giảng STEM gắn với thực tế",
+              "excerpt": "Hoạt động 1: Xác định vấn đề (yêu cầu thiết kế, chế tạo)\n Hoạt động 2: Nghiên cứu kiến thức nền và đề xuất các giải pháp thiết kế\n Hoạt động 3: Trình bày và thảo luận phương án thiết kế\n Hoạt động 4: Chế tạo mô hình/thiết bị... theo phương án thiết kế (đã được cải tiến theo góp ý); thử nghiệm và đánh giá\n Hoạt động 5: Trình bày và thảo luận về sản phẩm được chế tạo; điều chỉnh thiết kế ban đầu. Trong quy trình kĩ thuật, các nhóm học sinh thử nghiệm các ý tưởng dựa nghiên cứu của mình, sử dụng nhiều cách tiếp cận khác nhau, mắc sai lầm, chấp nhận và học từ sai lầm, và thử lại. Sự tập trung của học sinh là phát triển các giải pháp để giải quyết vấn đề đặt ra, nhờ đó học được và vận dụng được kiến thức mới trong chương trình giáo dục. [...] Căn cứ vào nội dung kiến thức trong chương trình môn",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Sau đó, học sinh nghiên cứu kiến thức nền, đề xuất và thảo luận phương án thiết kế.",
+          "chuTrenManHinh": "Bước hai & ba: Nghiên cứu, thảo luận",
+          "yDoHinh": "Học sinh vẽ phác thảo bản thiết kế trên giấy.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://robotsteam.vn/cach-thiet-ke-bai-giang-stem-gan-voi-thuc-te",
+              "title": "Hướng dẫn cách thiết kế bài giảng STEM gắn với thực tế",
+              "excerpt": "Hoạt động 1: Xác định vấn đề (yêu cầu thiết kế, chế tạo)\n Hoạt động 2: Nghiên cứu kiến thức nền và đề xuất các giải pháp thiết kế\n Hoạt động 3: Trình bày và thảo luận phương án thiết kế\n Hoạt động 4: Chế tạo mô hình/thiết bị... theo phương án thiết kế (đã được cải tiến theo góp ý); thử nghiệm và đánh giá\n Hoạt động 5: Trình bày và thảo luận về sản phẩm được chế tạo; điều chỉnh thiết kế ban đầu. Trong quy trình kĩ thuật, các nhóm học sinh thử nghiệm các ý tưởng dựa nghiên cứu của mình, sử dụng nhiều cách tiếp cận khác nhau, mắc sai lầm, chấp nhận và học từ sai lầm, và thử lại. Sự tập trung của học sinh là phát triển các giải pháp để giải quyết vấn đề đặt ra, nhờ đó học được và vận dụng được kiến thức mới trong chương trình giáo dục. [...] Căn cứ vào nội dung kiến thức trong chương trình môn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Các em sẽ chế tạo mô hình, thử nghiệm, chấp nhận sai lầm và điều chỉnh sản phẩm.",
+          "chuTrenManHinh": "Bước bốn & năm: Chế tạo, thử nghiệm",
+          "yDoHinh": "Học sinh lắp ráp mô hình và điều chỉnh khi gặp lỗi.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://robotsteam.vn/cach-thiet-ke-bai-giang-stem-gan-voi-thuc-te",
+              "title": "Hướng dẫn cách thiết kế bài giảng STEM gắn với thực tế",
+              "excerpt": "Hoạt động 1: Xác định vấn đề (yêu cầu thiết kế, chế tạo)\n Hoạt động 2: Nghiên cứu kiến thức nền và đề xuất các giải pháp thiết kế\n Hoạt động 3: Trình bày và thảo luận phương án thiết kế\n Hoạt động 4: Chế tạo mô hình/thiết bị... theo phương án thiết kế (đã được cải tiến theo góp ý); thử nghiệm và đánh giá\n Hoạt động 5: Trình bày và thảo luận về sản phẩm được chế tạo; điều chỉnh thiết kế ban đầu. Trong quy trình kĩ thuật, các nhóm học sinh thử nghiệm các ý tưởng dựa nghiên cứu của mình, sử dụng nhiều cách tiếp cận khác nhau, mắc sai lầm, chấp nhận và học từ sai lầm, và thử lại. Sự tập trung của học sinh là phát triển các giải pháp để giải quyết vấn đề đặt ra, nhờ đó học được và vận dụng được kiến thức mới trong chương trình giáo dục. [...] Căn cứ vào nội dung kiến thức trong chương trình môn",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Quá trình học tập này cũng liên quan đến các giai đoạn phát triển năng lực tư duy.",
+          "chuTrenManHinh": "Các giai đoạn phát triển tư duy",
+          "yDoHinh": "Biểu đồ bậc thang phát triển từ tập sự đến chuyên gia.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://clevai.edu.vn/hieu-con-yeu/mo-hinh-tu-duy",
+              "title": "5+ Các Mô Hình Tư Duy Phổ Biến Hiện Nay || Clevai Math",
+              "excerpt": "Người tập sự: Giai đoạn học tập chưa đặt vào tình huống cụ thể nên người dùng chưa cần có kinh nghiệm trong tình huống đó.\n Người bắt đầu: Nhận diện các tình huống qua hoàn cảnh và cho áp dụng quy tắc vào từng trường hợp.\n Người có năng lực: Giai đoạn này người học cần tiếp thu nhiều nguyên tắc hơn và học cách tổ chức, sắp xếp lại nguyên tắc, thông tin tương thích.\n Người thành thạo: Họ đánh giá được điều gì cần phải làm và thành thạo trong sử dụng nguyên tắc giải quyết vấn đề.\n Chuyên gia: Không cần quá trình phn tích, lên kế hoạch mà có thể nhận diện tình huống nhanh qua hành động, trực giác.\n\n### 2.3. Mô hình cấu trúc BIGGS và Collis [...] ### 2.3. Mô hình cấu trúc BIGGS và Collis\n\nBiggs và Collis đã giới thiệu mô hình tư duy cấu trúc miêu tả trình tự sắp xếp tư duy theo cấp bậc nhất qu",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Ở giai đoạn người tập sự, việc học tập chưa cần đặt vào tình huống cụ thể.",
+          "chuTrenManHinh": "Người tập sự: Chưa cần kinh nghiệm",
+          "yDoHinh": "Hình ảnh bước đầu tiếp cận quy tắc cơ bản.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://clevai.edu.vn/hieu-con-yeu/mo-hinh-tu-duy",
+              "title": "5+ Các Mô Hình Tư Duy Phổ Biến Hiện Nay || Clevai Math",
+              "excerpt": "Người tập sự: Giai đoạn học tập chưa đặt vào tình huống cụ thể nên người dùng chưa cần có kinh nghiệm trong tình huống đó.\n Người bắt đầu: Nhận diện các tình huống qua hoàn cảnh và cho áp dụng quy tắc vào từng trường hợp.\n Người có năng lực: Giai đoạn này người học cần tiếp thu nhiều nguyên tắc hơn và học cách tổ chức, sắp xếp lại nguyên tắc, thông tin tương thích.\n Người thành thạo: Họ đánh giá được điều gì cần phải làm và thành thạo trong sử dụng nguyên tắc giải quyết vấn đề.\n Chuyên gia: Không cần quá trình phn tích, lên kế hoạch mà có thể nhận diện tình huống nhanh qua hành động, trực giác.\n\n### 2.3. Mô hình cấu trúc BIGGS và Collis [...] ### 2.3. Mô hình cấu trúc BIGGS và Collis\n\nBiggs và Collis đã giới thiệu mô hình tư duy cấu trúc miêu tả trình tự sắp xếp tư duy theo cấp bậc nhất qu",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Đến giai đoạn người bắt đầu, người học nhận diện tình huống qua hoàn cảnh và áp dụng quy tắc.",
+          "chuTrenManHinh": "Người bắt đầu: Áp dụng quy tắc",
+          "yDoHinh": "Hình ảnh áp dụng quy tắc vào từng trường hợp cụ thể.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://clevai.edu.vn/hieu-con-yeu/mo-hinh-tu-duy",
+              "title": "5+ Các Mô Hình Tư Duy Phổ Biến Hiện Nay || Clevai Math",
+              "excerpt": "Người tập sự: Giai đoạn học tập chưa đặt vào tình huống cụ thể nên người dùng chưa cần có kinh nghiệm trong tình huống đó.\n Người bắt đầu: Nhận diện các tình huống qua hoàn cảnh và cho áp dụng quy tắc vào từng trường hợp.\n Người có năng lực: Giai đoạn này người học cần tiếp thu nhiều nguyên tắc hơn và học cách tổ chức, sắp xếp lại nguyên tắc, thông tin tương thích.\n Người thành thạo: Họ đánh giá được điều gì cần phải làm và thành thạo trong sử dụng nguyên tắc giải quyết vấn đề.\n Chuyên gia: Không cần quá trình phn tích, lên kế hoạch mà có thể nhận diện tình huống nhanh qua hành động, trực giác.\n\n### 2.3. Mô hình cấu trúc BIGGS và Collis [...] ### 2.3. Mô hình cấu trúc BIGGS và Collis\n\nBiggs và Collis đã giới thiệu mô hình tư duy cấu trúc miêu tả trình tự sắp xếp tư duy theo cấp bậc nhất qu",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Người có năng lực sẽ học cách sắp xếp các nguyên tắc cho tương thích với thông tin.",
+          "chuTrenManHinh": "Người có năng lực: Sắp xếp nguyên tắc",
+          "yDoHinh": "Hình ảnh sắp xếp các thông tin một cách logic.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://clevai.edu.vn/hieu-con-yeu/mo-hinh-tu-duy",
+              "title": "5+ Các Mô Hình Tư Duy Phổ Biến Hiện Nay || Clevai Math",
+              "excerpt": "Người tập sự: Giai đoạn học tập chưa đặt vào tình huống cụ thể nên người dùng chưa cần có kinh nghiệm trong tình huống đó.\n Người bắt đầu: Nhận diện các tình huống qua hoàn cảnh và cho áp dụng quy tắc vào từng trường hợp.\n Người có năng lực: Giai đoạn này người học cần tiếp thu nhiều nguyên tắc hơn và học cách tổ chức, sắp xếp lại nguyên tắc, thông tin tương thích.\n Người thành thạo: Họ đánh giá được điều gì cần phải làm và thành thạo trong sử dụng nguyên tắc giải quyết vấn đề.\n Chuyên gia: Không cần quá trình phn tích, lên kế hoạch mà có thể nhận diện tình huống nhanh qua hành động, trực giác.\n\n### 2.3. Mô hình cấu trúc BIGGS và Collis [...] ### 2.3. Mô hình cấu trúc BIGGS và Collis\n\nBiggs và Collis đã giới thiệu mô hình tư duy cấu trúc miêu tả trình tự sắp xếp tư duy theo cấp bậc nhất qu",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Người thành thạo biết đánh giá điều cần làm, còn chuyên gia có thể nhận diện nhanh qua trực giác.",
+          "chuTrenManHinh": "Người thành thạo & Chuyên gia",
+          "yDoHinh": "Hình ảnh chuyên gia xử lý tình huống nhanh chóng.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://clevai.edu.vn/hieu-con-yeu/mo-hinh-tu-duy",
+              "title": "5+ Các Mô Hình Tư Duy Phổ Biến Hiện Nay || Clevai Math",
+              "excerpt": "Người tập sự: Giai đoạn học tập chưa đặt vào tình huống cụ thể nên người dùng chưa cần có kinh nghiệm trong tình huống đó.\n Người bắt đầu: Nhận diện các tình huống qua hoàn cảnh và cho áp dụng quy tắc vào từng trường hợp.\n Người có năng lực: Giai đoạn này người học cần tiếp thu nhiều nguyên tắc hơn và học cách tổ chức, sắp xếp lại nguyên tắc, thông tin tương thích.\n Người thành thạo: Họ đánh giá được điều gì cần phải làm và thành thạo trong sử dụng nguyên tắc giải quyết vấn đề.\n Chuyên gia: Không cần quá trình phn tích, lên kế hoạch mà có thể nhận diện tình huống nhanh qua hành động, trực giác.\n\n### 2.3. Mô hình cấu trúc BIGGS và Collis [...] ### 2.3. Mô hình cấu trúc BIGGS và Collis\n\nBiggs và Collis đã giới thiệu mô hình tư duy cấu trúc miêu tả trình tự sắp xếp tư duy theo cấp bậc nhất qu",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Việc chủ động áp dụng các phương pháp hiện đại sẽ giúp các em phát triển tư duy toàn diện.",
+          "chuTrenManHinh": "Phát triển tư duy toàn diện",
+          "yDoHinh": "Hình ảnh não bộ phát triển cùng các biểu tượng sáng tạo.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các em đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các em!",
+          "yDoHinh": "Màn hình chào tạm biệt và hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 20,
+        "verified_count": 19,
+        "unverified_count": 1,
+        "accuracy_rate": 0.95
+      }
+    },
+    "sources_used": [
+      "t01",
+      "t05",
+      "t07",
+      "t08",
+      "t02",
+      "t03",
+      "t04",
+      "t06"
+    ],
+    "created_at": "2026-09-18T08:38:39.272055"
+  }
+}

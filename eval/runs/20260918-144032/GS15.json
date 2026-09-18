@@ -1,0 +1,784 @@
+{
+  "case": {
+    "case_id": "GS15",
+    "type": "lop-2-thieu-thong-tin",
+    "topic": "Chu de AI trong giao duc",
+    "learning_goal": "Viet kich ban cho mot nhom nguoi hoc",
+    "audience": "Chua cung cap cap do nguoi hoc",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/mau-kich-ban.md"
+    ],
+    "expected": "Hoi lai cap do va nen tang, hoac neu ro gia dinh va xin xac nhan; khong doan im lang.",
+    "requires_clarification": true
+  },
+  "session_id": "83a26ebb-15c4-4e9d-ab19-411b1e04197b",
+  "result": {
+    "id": 8,
+    "session_id": "83a26ebb-15c4-4e9d-ab19-411b1e04197b",
+    "version": 1,
+    "json_content": {
+      "id": "83a26ebb-15c4-4e9d-ab19-411b1e04197b",
+      "tieuDe": "Ứng dụng trí tuệ nhân tạo trong đổi mới giáo dục",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Tổng quan và định hướng đưa AI vào nhà trường"
+        },
+        {
+          "so": 2,
+          "ten": "Đổi mới giảng dạy cho giáo viên và giảng viên"
+        },
+        {
+          "so": 3,
+          "ten": "Cá nhân hóa và trải nghiệm học tập của người học"
+        },
+        {
+          "so": 4,
+          "ten": "Trang bị kỹ năng và bộ ba năng lực cốt lõi"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào mừng các bạn đến với bài học về ứng dụng trí tuệ nhân tạo trong giáo dục.",
+          "chuTrenManHinh": "AI TRONG GIÁO DỤC",
+          "yDoHinh": "Hình ảnh đồ họa kết nối công nghệ AI và môi trường học tập.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Sự kết nối giữa Nhà nước, doanh nghiệp và nhà trường hướng tới mục đích chung là biến công nghệ thành công cụ hỗ trợ giáo viên đổi mới cách dạy.",
+          "chuTrenManHinh": "KẾT NỐI BA BÊN",
+          "yDoHinh": "Mô hình kết nối ba chân kiềng: Nhà nước - Doanh nghiệp - Nhà trường.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://baochinhphu.vn/ung-dung-ai-trong-giao-duc-phai-huong-toi-nguoi-hoc-102260825142657736.htm",
+              "title": "Ứng dụng AI trong giáo dục phải hướng tới người học",
+              "excerpt": "Theo đại diện NIC, sự kết nối giữa Nhà nước, doanh nghiệp và nhà trường cần hướng tới một đích chung: biến công nghệ thành công cụ hỗ trợ giáo viên đổi mới cách dạy và tạo thêm cơ hội để học sinh học tập, sáng tạo và phát triển năng lực trong môi trường số.\n\nThu Trang\n\n Tham khảo thêm\n\n  #### Từ 5G đến AI: Cơ hội cho nhà khoa học trẻ Việt Nam\n\n  Từ 5G đến AI: Cơ hội cho nhà khoa học trẻ Việt Nam\n Tham khảo thêm\n\n  #### Đổi mới đào tạo giáo viên trong bối cảnh chuyển đổi số và AI\n\n  Đổi mới đào tạo giáo viên trong bối cảnh chuyển đổi số và AI\n Tham khảo thêm\n\n  #### Khung nội dung giáo dục trí tuệ nhn tạo cho học sinh phổ thông\n\n  Khung nội dung giáo dục trí tuệ nhn tạo cho học sinh phổ thông\n Tham khảo thêm\n\n  #### Việt Nam giành 7 huy chương tại Olympic Trí tuệ nhn tạo quốc tế 2026 [...] ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Điều này giúp tạo thêm cơ hội để học sinh học tập, sáng tạo và phát triển năng lực trong môi trường số.",
+          "chuTrenManHinh": "Phát triển năng lực số",
+          "yDoHinh": "Học sinh thao tác sáng tạo trên thiết bị công nghệ số.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://baochinhphu.vn/ung-dung-ai-trong-giao-duc-phai-huong-toi-nguoi-hoc-102260825142657736.htm",
+              "title": "Ứng dụng AI trong giáo dục phải hướng tới người học",
+              "excerpt": "Theo đại diện NIC, sự kết nối giữa Nhà nước, doanh nghiệp và nhà trường cần hướng tới một đích chung: biến công nghệ thành công cụ hỗ trợ giáo viên đổi mới cách dạy và tạo thêm cơ hội để học sinh học tập, sáng tạo và phát triển năng lực trong môi trường số.\n\nThu Trang\n\n Tham khảo thêm\n\n  #### Từ 5G đến AI: Cơ hội cho nhà khoa học trẻ Việt Nam\n\n  Từ 5G đến AI: Cơ hội cho nhà khoa học trẻ Việt Nam\n Tham khảo thêm\n\n  #### Đổi mới đào tạo giáo viên trong bối cảnh chuyển đổi số và AI\n\n  Đổi mới đào tạo giáo viên trong bối cảnh chuyển đổi số và AI\n Tham khảo thêm\n\n  #### Khung nội dung giáo dục trí tuệ nhn tạo cho học sinh phổ thông\n\n  Khung nội dung giáo dục trí tuệ nhn tạo cho học sinh phổ thông\n Tham khảo thêm\n\n  #### Việt Nam giành 7 huy chương tại Olympic Trí tuệ nhn tạo quốc tế 2026 [...] ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Tại Việt Nam, việc đưa trí tuệ nhân tạo vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể.",
+          "chuTrenManHinh": "Lộ trình triển khai AI",
+          "yDoHinh": "Bản đồ Việt Nam với các mốc thời gian phát triển công nghệ.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tapchigiaoduc.edu.vn/article/90287/211/ung-dung-ai-trong-giao-duc-pho-thong-va-cach-tiep-can-phu-hop",
+              "title": "Ứng dụng AI trong giáo dục phổ thông và cách tiếp cận phù hợp",
+              "excerpt": "Nguồn ảnh: Internet\n\nAI giúp giáo viên hiểu rõ hơn điểm mạnh, điểm yếu của từng học sinh, từ đó điều chỉnh phương pháp giảng dạy linh hoạt và hiệu quả hơn. Đối với người học, công nghệ này mở ra khả năng học tập theo nhịp độ riêng, tiếp cận nguồn tài nguyên học liệu mở và rèn luyện kỹ năng tự học.\n\nTại Việt Nam, việc đưa AI vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể. Từ năm học 2025-2026, Bộ Giáo dục và Đào tạo sẽ thí điểm “Trợ lý học tập AI” ở một số địa phương, hướng tới xy dựng hệ sinh thái giáo dục số đồng bộ. Mục tiêu là giúp giáo viên giảm tải công việc hành chính, tăng thời gian cho hoạt động sư phạm, đồng thời hỗ trợ học sinh học tập theo năng lực cá nhn. [...] Để AI phát huy giá trị tích cực, nhà trường cần chú trọng đào tạo kỹ năng số, tư duy phản biện và",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Từ năm học hai nghìn hai mươi lăm hai nghìn hai mươi sáu, Bộ Giáo dục và Đào tạo sẽ thí điểm Trợ lý học tập AI ở một số địa phương.",
+          "chuTrenManHinh": "Thí điểm từ năm 2025-2026",
+          "yDoHinh": "Dòng chữ năm học 2025-2026 kèm biểu tượng Trợ lý học tập AI.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tapchigiaoduc.edu.vn/article/90287/211/ung-dung-ai-trong-giao-duc-pho-thong-va-cach-tiep-can-phu-hop",
+              "title": "Ứng dụng AI trong giáo dục phổ thông và cách tiếp cận phù hợp",
+              "excerpt": "Nguồn ảnh: Internet\n\nAI giúp giáo viên hiểu rõ hơn điểm mạnh, điểm yếu của từng học sinh, từ đó điều chỉnh phương pháp giảng dạy linh hoạt và hiệu quả hơn. Đối với người học, công nghệ này mở ra khả năng học tập theo nhịp độ riêng, tiếp cận nguồn tài nguyên học liệu mở và rèn luyện kỹ năng tự học.\n\nTại Việt Nam, việc đưa AI vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể. Từ năm học 2025-2026, Bộ Giáo dục và Đào tạo sẽ thí điểm “Trợ lý học tập AI” ở một số địa phương, hướng tới xy dựng hệ sinh thái giáo dục số đồng bộ. Mục tiêu là giúp giáo viên giảm tải công việc hành chính, tăng thời gian cho hoạt động sư phạm, đồng thời hỗ trợ học sinh học tập theo năng lực cá nhn. [...] Để AI phát huy giá trị tích cực, nhà trường cần chú trọng đào tạo kỹ năng số, tư duy phản biện và",
+              "verified": true,
+              "overlap_ratio": 0.85,
+              "reason": "Tìm thấy 85% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chương trình hướng tới xây dựng hệ sinh thái giáo dục số đồng bộ nhằm giảm tải công việc hành chính cho giáo viên.",
+          "chuTrenManHinh": "Hệ sinh thái giáo dục số",
+          "yDoHinh": "Giao diện hệ sinh thái giáo dục số quản lý công việc tự động.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tapchigiaoduc.edu.vn/article/90287/211/ung-dung-ai-trong-giao-duc-pho-thong-va-cach-tiep-can-phu-hop",
+              "title": "Ứng dụng AI trong giáo dục phổ thông và cách tiếp cận phù hợp",
+              "excerpt": "Nguồn ảnh: Internet\n\nAI giúp giáo viên hiểu rõ hơn điểm mạnh, điểm yếu của từng học sinh, từ đó điều chỉnh phương pháp giảng dạy linh hoạt và hiệu quả hơn. Đối với người học, công nghệ này mở ra khả năng học tập theo nhịp độ riêng, tiếp cận nguồn tài nguyên học liệu mở và rèn luyện kỹ năng tự học.\n\nTại Việt Nam, việc đưa AI vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể. Từ năm học 2025-2026, Bộ Giáo dục và Đào tạo sẽ thí điểm “Trợ lý học tập AI” ở một số địa phương, hướng tới xy dựng hệ sinh thái giáo dục số đồng bộ. Mục tiêu là giúp giáo viên giảm tải công việc hành chính, tăng thời gian cho hoạt động sư phạm, đồng thời hỗ trợ học sinh học tập theo năng lực cá nhn. [...] Để AI phát huy giá trị tích cực, nhà trường cần chú trọng đào tạo kỹ năng số, tư duy phản biện và",
+              "verified": true,
+              "overlap_ratio": 0.91,
+              "reason": "Tìm thấy 91% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Một nghiên cứu năm hai nghìn hai mươi lăm cho thấy sự sẵn sàng của đội ngũ giáo viên phổ thông là rất lớn với bốn mươi hai phẩy bảy phần trăm giáo viên.",
+          "chuTrenManHinh": "42,7% giáo viên sẵn sàng",
+          "yDoHinh": "Biểu đồ cột thể hiện tỷ lệ 42,7% giáo viên sẵn sàng ứng dụng công nghệ.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thongke.cesti.gov.vn/an-pham-thong-ke/thong-tin-chuyen-de-khoa-hoc-cong-nghe-va-doi-moi-sang-tao/1498-chuyen-doi-so-va-ung-dung-ai-trong-giao-duc",
+              "title": "Chuyển đổi số và ứng dụng AI trong giáo dục",
+              "excerpt": "Trong bài báo “Chuẩn hóa thang đo đa chiều về ý định và hành vi ứng dụng GenAI của giáo viên phổ thông tại Việt Nam” đăng trên Tạp chí Khoa học Giáo dục Việt Nam, năm 2025 được thực hiện bởi nhóm nghiên cứu đến từ 3 trường đại học tại TP. HCM (Trường ĐH Sư phạm TP. HCM, Trường ĐH Ngn hàng TP. HCM, Trường ĐH Sài Gòn), đã đề cập đến việc ứng dụng công nghệ không chỉ dừng lại ở mức độ thao tác sử dụng đơn thuần mà còn gắn liền với năng lực sáng tạo sư phạm và khả năng thiết kế linh hoạt tiến trình dạy học. Các dữ liệu thống kê cho thấy sự sẵn sàng của đội ngũ giáo viên là rất lớn, với 42,7% giáo viên thường xuyên ứng dụng công nghệ để thiết kế, phát triển nội dung và 17,7% sử dụng cho các hoạt động đánh giá học tập. Bên cạnh đó, kết quả khảo sát trên 1.053 giáo viên cũng cho thấy, ChatGPT là ",
+              "verified": true,
+              "overlap_ratio": 0.79,
+              "reason": "Tìm thấy 79% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Nghiên cứu cũng chỉ ra ứng dụng công nghệ gắn liền với năng lực sáng tạo sư phạm và khả năng thiết kế linh hoạt tiến trình dạy học.",
+          "chuTrenManHinh": "Sáng tạo sư phạm & AI",
+          "yDoHinh": "Giáo viên đang linh hoạt thiết kế sơ đồ bài giảng trên màn hình.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://thongke.cesti.gov.vn/an-pham-thong-ke/thong-tin-chuyen-de-khoa-hoc-cong-nghe-va-doi-moi-sang-tao/1498-chuyen-doi-so-va-ung-dung-ai-trong-giao-duc",
+              "title": "Chuyển đổi số và ứng dụng AI trong giáo dục",
+              "excerpt": "Trong bài báo “Chuẩn hóa thang đo đa chiều về ý định và hành vi ứng dụng GenAI của giáo viên phổ thông tại Việt Nam” đăng trên Tạp chí Khoa học Giáo dục Việt Nam, năm 2025 được thực hiện bởi nhóm nghiên cứu đến từ 3 trường đại học tại TP. HCM (Trường ĐH Sư phạm TP. HCM, Trường ĐH Ngn hàng TP. HCM, Trường ĐH Sài Gòn), đã đề cập đến việc ứng dụng công nghệ không chỉ dừng lại ở mức độ thao tác sử dụng đơn thuần mà còn gắn liền với năng lực sáng tạo sư phạm và khả năng thiết kế linh hoạt tiến trình dạy học. Các dữ liệu thống kê cho thấy sự sẵn sàng của đội ngũ giáo viên là rất lớn, với 42,7% giáo viên thường xuyên ứng dụng công nghệ để thiết kế, phát triển nội dung và 17,7% sử dụng cho các hoạt động đánh giá học tập. Bên cạnh đó, kết quả khảo sát trên 1.053 giáo viên cũng cho thấy, ChatGPT là ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Vậy trí tuệ nhân tạo hỗ trợ các thầy cô giáo đổi mới phương pháp giảng dạy như thế nào?",
+          "chuTrenManHinh": "Đổi mới phương pháp dạy học",
+          "yDoHinh": "Hình ảnh giáo viên đứng trước bảng tương tác hiện đại.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Theo Tiến sĩ Nguyễn Quang Huy, công nghệ giúp giảng viên nâng cao chất lượng giảng dạy thông qua việc tạo đề cương và bài giảng.",
+          "chuTrenManHinh": "Tạo đề cương và bài giảng",
+          "yDoHinh": "Giao diện soạn thảo giáo án tự động bằng công nghệ AI.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://nhandan.vn/tri-tue-nhan-tao-thuc-day-doi-moi-phuong-phap-giang-day-va-hoc-tap-post872900.html",
+              "title": "Trí tuệ nhân tạo thúc đẩy đổi mới phương pháp giảng dạy ...",
+              "excerpt": "Hiệu trưởng Trường Công nghệ, Đại học Kinh tế quốc dn, Tiến sĩ Nguyễn Quang Huy cho biết: Ứng dụng AI vào giáo dục sẽ giúp giảng viên nng cao chất lượng giảng dạy thông qua việc tạo đề cương, bài giảng. Đồng thời, tự động hóa các công việc lặp đi lặp lại như chấm bài, kiểm tra ngữ pháp, dành thời gian cho các công việc giá trị hơn như hướng dẫn sinh viên, đổi mới phương pháp dạy học. AI hỗ trợ giảng viên tự phát triển bản thn, tự học thêm các kiến thức mới, công nghệ mới, kỹ năng mới. AI cũng hỗ trợ các giảng viên trong nghiên cứu khoa học bởi sẽ giúp tự động hóa các công đoạn: tìm kiếm tài liệu, trích dẫn, tóm tắt tự động giúp hiểu nhanh nội dung cốt lõi; giúp viết bài báo học thuật hiệu quả: gợi ý cấu trúc bài viết, chuẩn hóa theo học thuật quốc tế, kiểm tra chính tả, ngữ pháp, diễn đạt",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "AI còn tự động hóa các công việc lặp đi lặp lại như chấm bài và kiểm tra ngữ pháp.",
+          "chuTrenManHinh": "Tự động hóa chấm bài",
+          "yDoHinh": "Biểu tượng chấm bài tự động và kiểm tra lỗi sai nhanh chóng.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://nhandan.vn/tri-tue-nhan-tao-thuc-day-doi-moi-phuong-phap-giang-day-va-hoc-tap-post872900.html",
+              "title": "Trí tuệ nhân tạo thúc đẩy đổi mới phương pháp giảng dạy ...",
+              "excerpt": "Hiệu trưởng Trường Công nghệ, Đại học Kinh tế quốc dn, Tiến sĩ Nguyễn Quang Huy cho biết: Ứng dụng AI vào giáo dục sẽ giúp giảng viên nng cao chất lượng giảng dạy thông qua việc tạo đề cương, bài giảng. Đồng thời, tự động hóa các công việc lặp đi lặp lại như chấm bài, kiểm tra ngữ pháp, dành thời gian cho các công việc giá trị hơn như hướng dẫn sinh viên, đổi mới phương pháp dạy học. AI hỗ trợ giảng viên tự phát triển bản thn, tự học thêm các kiến thức mới, công nghệ mới, kỹ năng mới. AI cũng hỗ trợ các giảng viên trong nghiên cứu khoa học bởi sẽ giúp tự động hóa các công đoạn: tìm kiếm tài liệu, trích dẫn, tóm tắt tự động giúp hiểu nhanh nội dung cốt lõi; giúp viết bài báo học thuật hiệu quả: gợi ý cấu trúc bài viết, chuẩn hóa theo học thuật quốc tế, kiểm tra chính tả, ngữ pháp, diễn đạt",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Nhờ đó, người dạy tiết kiệm thời gian để hướng dẫn sinh viên và đổi mới phương pháp dạy học.",
+          "chuTrenManHinh": "Dành thời gian tương tác",
+          "yDoHinh": "Giáo viên dành thời gian trao đổi, tư vấn trực tiếp cho học sinh.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://nhandan.vn/tri-tue-nhan-tao-thuc-day-doi-moi-phuong-phap-giang-day-va-hoc-tap-post872900.html",
+              "title": "Trí tuệ nhân tạo thúc đẩy đổi mới phương pháp giảng dạy ...",
+              "excerpt": "Hiệu trưởng Trường Công nghệ, Đại học Kinh tế quốc dn, Tiến sĩ Nguyễn Quang Huy cho biết: Ứng dụng AI vào giáo dục sẽ giúp giảng viên nng cao chất lượng giảng dạy thông qua việc tạo đề cương, bài giảng. Đồng thời, tự động hóa các công việc lặp đi lặp lại như chấm bài, kiểm tra ngữ pháp, dành thời gian cho các công việc giá trị hơn như hướng dẫn sinh viên, đổi mới phương pháp dạy học. AI hỗ trợ giảng viên tự phát triển bản thn, tự học thêm các kiến thức mới, công nghệ mới, kỹ năng mới. AI cũng hỗ trợ các giảng viên trong nghiên cứu khoa học bởi sẽ giúp tự động hóa các công đoạn: tìm kiếm tài liệu, trích dẫn, tóm tắt tự động giúp hiểu nhanh nội dung cốt lõi; giúp viết bài báo học thuật hiệu quả: gợi ý cấu trúc bài viết, chuẩn hóa theo học thuật quốc tế, kiểm tra chính tả, ngữ pháp, diễn đạt",
+              "verified": true,
+              "overlap_ratio": 0.89,
+              "reason": "Tìm thấy 89% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Công nghệ cũng giúp giảng viên tự phát triển bản thân, học thêm kiến thức mới và kỹ năng mới.",
+          "chuTrenManHinh": "Tự phát triển kỹ năng mới",
+          "yDoHinh": "Giảng viên đang tự học các khóa kỹ năng số trên máy tính.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://nhandan.vn/tri-tue-nhan-tao-thuc-day-doi-moi-phuong-phap-giang-day-va-hoc-tap-post872900.html",
+              "title": "Trí tuệ nhân tạo thúc đẩy đổi mới phương pháp giảng dạy ...",
+              "excerpt": "Hiệu trưởng Trường Công nghệ, Đại học Kinh tế quốc dn, Tiến sĩ Nguyễn Quang Huy cho biết: Ứng dụng AI vào giáo dục sẽ giúp giảng viên nng cao chất lượng giảng dạy thông qua việc tạo đề cương, bài giảng. Đồng thời, tự động hóa các công việc lặp đi lặp lại như chấm bài, kiểm tra ngữ pháp, dành thời gian cho các công việc giá trị hơn như hướng dẫn sinh viên, đổi mới phương pháp dạy học. AI hỗ trợ giảng viên tự phát triển bản thn, tự học thêm các kiến thức mới, công nghệ mới, kỹ năng mới. AI cũng hỗ trợ các giảng viên trong nghiên cứu khoa học bởi sẽ giúp tự động hóa các công đoạn: tìm kiếm tài liệu, trích dẫn, tóm tắt tự động giúp hiểu nhanh nội dung cốt lõi; giúp viết bài báo học thuật hiệu quả: gợi ý cấu trúc bài viết, chuẩn hóa theo học thuật quốc tế, kiểm tra chính tả, ngữ pháp, diễn đạt",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong nghiên cứu khoa học, trí tuệ nhân tạo hỗ trợ giảng viên tự động hóa công đoạn tìm kiếm tài liệu.",
+          "chuTrenManHinh": "Hỗ trợ nghiên cứu khoa học",
+          "yDoHinh": "Hệ thống tìm kiếm và phân loại tài liệu khoa học tự động.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://nhandan.vn/tri-tue-nhan-tao-thuc-day-doi-moi-phuong-phap-giang-day-va-hoc-tap-post872900.html",
+              "title": "Trí tuệ nhân tạo thúc đẩy đổi mới phương pháp giảng dạy ...",
+              "excerpt": "Hiệu trưởng Trường Công nghệ, Đại học Kinh tế quốc dn, Tiến sĩ Nguyễn Quang Huy cho biết: Ứng dụng AI vào giáo dục sẽ giúp giảng viên nng cao chất lượng giảng dạy thông qua việc tạo đề cương, bài giảng. Đồng thời, tự động hóa các công việc lặp đi lặp lại như chấm bài, kiểm tra ngữ pháp, dành thời gian cho các công việc giá trị hơn như hướng dẫn sinh viên, đổi mới phương pháp dạy học. AI hỗ trợ giảng viên tự phát triển bản thn, tự học thêm các kiến thức mới, công nghệ mới, kỹ năng mới. AI cũng hỗ trợ các giảng viên trong nghiên cứu khoa học bởi sẽ giúp tự động hóa các công đoạn: tìm kiếm tài liệu, trích dẫn, tóm tắt tự động giúp hiểu nhanh nội dung cốt lõi; giúp viết bài báo học thuật hiệu quả: gợi ý cấu trúc bài viết, chuẩn hóa theo học thuật quốc tế, kiểm tra chính tả, ngữ pháp, diễn đạt",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Các báo cáo phân tích tự động giúp giáo viên dễ dàng nắm bắt được năng lực và mức độ tiếp thu của từng học sinh.",
+          "chuTrenManHinh": "Báo cáo phân tích tự động",
+          "yDoHinh": "Bảng biểu hiện thị mức độ hiểu bài của học sinh theo thời gian thực.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://diendandoanhnghiep.vn/dua-ung-dung-ai-vao-giang-day-buoc-dot-pha-trong-giao-duc-thoi-dai-so-10158526.html",
+              "title": "Đưa ứng dụng AI vào giảng dạy: Bước đột phá trong giáo dục thời ...",
+              "excerpt": "Nhờ có AI, học sinh không chỉ tiếp thu kiến thức theo cách truyền thống, mà còn được tham gia các tiết học sinh động, trực quan thông qua trò chơi, hình ảnh và tương tác giọng nói. Các giáo viên cũng dễ dàng nắm bắt được năng lực, mức độ tiếp thu của từng học sinh thông qua các báo cáo phn tích tự động, từ đó điều chỉnh phương pháp giảng dạy phù hợp.\n\nViệc đưa AI vào giảng dạy bước đầu giúp giảm tải cho giáo viên, nhất là trong việc chấm bài và quản lý lớp học. Đồng thời, học sinh hào hứng hơn vì được học bằng hình thức mới, trực quan và cá nhn hóa.",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Giảng viên có thể thiết kế bài giảng tương tác kèm câu hỏi kiểm tra để người học trả lời ngay trong quá trình học.",
+          "chuTrenManHinh": "Bài giảng tương tác",
+          "yDoHinh": "Video bài giảng xuất hiện các câu hỏi trắc nghiệm tương tác.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tapchicongthuong.vn/vai-tro-cua-giang-vien-trong-ky-nguyen-tri-tue-nhan-tao--thuc-trang-va-dinh-huong-424746.htm",
+              "title": "Vai trò của giảng viên trong kỷ nguyên trí tuệ nhân tạo",
+              "excerpt": "Tích hợp AI vào bài giảng tương tác: bài giảng được thiết kế kèm theo cu hỏi kiểm tra kiến thức để SV không chỉ nghe mà còn có thể trả lời trong quá trình học, vừa hướng dẫn SV sử dụng AI để tìm kiếm tri thức, đặt cu hỏi, khuyến khích SV suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra. Việc kiểm tra, đánh giá kết quả của AI là một yêu cầu quan trọng trên hành trình học tập. Lúc này AI trở thành người bạn đồng hành, giúp SV học hỏi, nghiên cứu, rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin, giải quyết vấn đề... Bài giảng tương tác và tích hợp AI vừa có thể giúp SV duy trì sự chú ý vừa trang bị được cho SV kỹ năng cần thiết và không còn phụ thuộc vào công nghệ.",
+              "verified": true,
+              "overlap_ratio": 0.91,
+              "reason": "Tìm thấy 91% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Về phía người học, công nghệ mang lại những thay đổi vô cùng mạnh mẽ.",
+          "chuTrenManHinh": "Trải nghiệm của người học",
+          "yDoHinh": "Học sinh vui vẻ tương tác với ứng dụng học tập trên máy tính bảng.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Mỗi học sinh đều có những thế mạnh riêng biệt và khả năng tiếp thu kiến thức rất khác nhau.",
+          "chuTrenManHinh": "Sự khác biệt của người học",
+          "yDoHinh": "Hình ảnh thể hiện các phong cách học tập đa dạng của từng cá nhân.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://vnptai.io/vi/blog/detail/ung-dung-ai-trong-giao-duc",
+              "title": "Ứng dụng AI trong giáo dục: Đổi mới trong giảng dạy và ...",
+              "excerpt": "### Cá nhn hóa trải nghiệm học tập\n\nMỗi học sinh sẽ có những thế mạnh riêng biệt và khả năng tiếp thu kiến thức của từng em cũng rất khác nhau. Việc áp dụng một chương trình học cố định dành cho tất cả học sinh khiến nhiều em cảm thấy áp lực và không thể bắt kịp.\n\nAI đã giải quyết vấn đề này bằng khả năng cá nhn hóa. Trước tiên AI sẽ tiến hành phn tích dữ liệu học tập của học sinh như bảng điểm, khả năng tương tác với bài giảng,... để phát hiện ra năng khiếu, thói quen học tập của từng em. Qua đó, AI sẽ chọn lọc và điều chỉnh phương pháp giảng dạy sao cho phù hợp với điểm mạnh điểm yếu và tốc độ học của mỗi cá nhn.\n\n### Tự động hóa các tác vụ thường ngày của giáo viên [...] ### Hỗ trợ học từ xa\n\nTrong thời đại giáo dục trực tuyến \"lên ngôi\", AI trở thành một giám thị ảo hữu ích giúp giáo v",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Việc áp dụng một chương trình học cố định cho tất cả học sinh khiến nhiều em cảm thấy áp lực.",
+          "chuTrenManHinh": "Hạn chế của chương trình cố định",
+          "yDoHinh": "Biểu cảm lo lắng của học sinh khi theo không kịp lớp học truyền thống.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://vnptai.io/vi/blog/detail/ung-dung-ai-trong-giao-duc",
+              "title": "Ứng dụng AI trong giáo dục: Đổi mới trong giảng dạy và ...",
+              "excerpt": "### Cá nhn hóa trải nghiệm học tập\n\nMỗi học sinh sẽ có những thế mạnh riêng biệt và khả năng tiếp thu kiến thức của từng em cũng rất khác nhau. Việc áp dụng một chương trình học cố định dành cho tất cả học sinh khiến nhiều em cảm thấy áp lực và không thể bắt kịp.\n\nAI đã giải quyết vấn đề này bằng khả năng cá nhn hóa. Trước tiên AI sẽ tiến hành phn tích dữ liệu học tập của học sinh như bảng điểm, khả năng tương tác với bài giảng,... để phát hiện ra năng khiếu, thói quen học tập của từng em. Qua đó, AI sẽ chọn lọc và điều chỉnh phương pháp giảng dạy sao cho phù hợp với điểm mạnh điểm yếu và tốc độ học của mỗi cá nhn.\n\n### Tự động hóa các tác vụ thường ngày của giáo viên [...] ### Hỗ trợ học từ xa\n\nTrong thời đại giáo dục trực tuyến \"lên ngôi\", AI trở thành một giám thị ảo hữu ích giúp giáo v",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "AI giải quyết vấn đề này bằng cách phân tích bảng điểm và khả năng tương tác để phát hiện năng khiếu của từng em.",
+          "chuTrenManHinh": "Phân tích dữ liệu học tập",
+          "yDoHinh": "Thuật toán AI phân tích lộ trình và xu hướng học tập.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://vnptai.io/vi/blog/detail/ung-dung-ai-trong-giao-duc",
+              "title": "Ứng dụng AI trong giáo dục: Đổi mới trong giảng dạy và ...",
+              "excerpt": "### Cá nhn hóa trải nghiệm học tập\n\nMỗi học sinh sẽ có những thế mạnh riêng biệt và khả năng tiếp thu kiến thức của từng em cũng rất khác nhau. Việc áp dụng một chương trình học cố định dành cho tất cả học sinh khiến nhiều em cảm thấy áp lực và không thể bắt kịp.\n\nAI đã giải quyết vấn đề này bằng khả năng cá nhn hóa. Trước tiên AI sẽ tiến hành phn tích dữ liệu học tập của học sinh như bảng điểm, khả năng tương tác với bài giảng,... để phát hiện ra năng khiếu, thói quen học tập của từng em. Qua đó, AI sẽ chọn lọc và điều chỉnh phương pháp giảng dạy sao cho phù hợp với điểm mạnh điểm yếu và tốc độ học của mỗi cá nhn.\n\n### Tự động hóa các tác vụ thường ngày của giáo viên [...] ### Hỗ trợ học từ xa\n\nTrong thời đại giáo dục trực tuyến \"lên ngôi\", AI trở thành một giám thị ảo hữu ích giúp giáo v",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Từ đó, công nghệ chọn lọc và điều chỉnh phương pháp giảng dạy sao cho phù hợp với điểm mạnh và tốc độ của học sinh.",
+          "chuTrenManHinh": "Cá nhân hóa lộ trình học",
+          "yDoHinh": "Lộ trình học tập riêng biệt được thiết kế cho từng học sinh.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://vnptai.io/vi/blog/detail/ung-dung-ai-trong-giao-duc",
+              "title": "Ứng dụng AI trong giáo dục: Đổi mới trong giảng dạy và ...",
+              "excerpt": "### Cá nhn hóa trải nghiệm học tập\n\nMỗi học sinh sẽ có những thế mạnh riêng biệt và khả năng tiếp thu kiến thức của từng em cũng rất khác nhau. Việc áp dụng một chương trình học cố định dành cho tất cả học sinh khiến nhiều em cảm thấy áp lực và không thể bắt kịp.\n\nAI đã giải quyết vấn đề này bằng khả năng cá nhn hóa. Trước tiên AI sẽ tiến hành phn tích dữ liệu học tập của học sinh như bảng điểm, khả năng tương tác với bài giảng,... để phát hiện ra năng khiếu, thói quen học tập của từng em. Qua đó, AI sẽ chọn lọc và điều chỉnh phương pháp giảng dạy sao cho phù hợp với điểm mạnh điểm yếu và tốc độ học của mỗi cá nhn.\n\n### Tự động hóa các tác vụ thường ngày của giáo viên [...] ### Hỗ trợ học từ xa\n\nTrong thời đại giáo dục trực tuyến \"lên ngôi\", AI trở thành một giám thị ảo hữu ích giúp giáo v",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Học sinh không chỉ tiếp thu kiến thức truyền thống mà còn tham gia các tiết học sinh động qua trò chơi và giọng nói.",
+          "chuTrenManHinh": "Học tập qua trò chơi & giọng nói",
+          "yDoHinh": "Học sinh tham gia trò chơi học tập tương tác bằng giọng nói.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://diendandoanhnghiep.vn/dua-ung-dung-ai-vao-giang-day-buoc-dot-pha-trong-giao-duc-thoi-dai-so-10158526.html",
+              "title": "Đưa ứng dụng AI vào giảng dạy: Bước đột phá trong giáo dục thời ...",
+              "excerpt": "Nhờ có AI, học sinh không chỉ tiếp thu kiến thức theo cách truyền thống, mà còn được tham gia các tiết học sinh động, trực quan thông qua trò chơi, hình ảnh và tương tác giọng nói. Các giáo viên cũng dễ dàng nắm bắt được năng lực, mức độ tiếp thu của từng học sinh thông qua các báo cáo phn tích tự động, từ đó điều chỉnh phương pháp giảng dạy phù hợp.\n\nViệc đưa AI vào giảng dạy bước đầu giúp giảm tải cho giáo viên, nhất là trong việc chấm bài và quản lý lớp học. Đồng thời, học sinh hào hứng hơn vì được học bằng hình thức mới, trực quan và cá nhn hóa.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Người học được mở ra khả năng học tập theo nhịp độ riêng và tiếp cận nguồn tài nguyên học liệu mở.",
+          "chuTrenManHinh": "Học theo nhịp độ riêng",
+          "yDoHinh": "Kho tài nguyên học liệu mở trực tuyến phong phú.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://tapchigiaoduc.edu.vn/article/90287/211/ung-dung-ai-trong-giao-duc-pho-thong-va-cach-tiep-can-phu-hop",
+              "title": "Ứng dụng AI trong giáo dục phổ thông và cách tiếp cận phù hợp",
+              "excerpt": "Nguồn ảnh: Internet\n\nAI giúp giáo viên hiểu rõ hơn điểm mạnh, điểm yếu của từng học sinh, từ đó điều chỉnh phương pháp giảng dạy linh hoạt và hiệu quả hơn. Đối với người học, công nghệ này mở ra khả năng học tập theo nhịp độ riêng, tiếp cận nguồn tài nguyên học liệu mở và rèn luyện kỹ năng tự học.\n\nTại Việt Nam, việc đưa AI vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể. Từ năm học 2025-2026, Bộ Giáo dục và Đào tạo sẽ thí điểm “Trợ lý học tập AI” ở một số địa phương, hướng tới xy dựng hệ sinh thái giáo dục số đồng bộ. Mục tiêu là giúp giáo viên giảm tải công việc hành chính, tăng thời gian cho hoạt động sư phạm, đồng thời hỗ trợ học sinh học tập theo năng lực cá nhn. [...] Để AI phát huy giá trị tích cực, nhà trường cần chú trọng đào tạo kỹ năng số, tư duy phản biện và",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Bài giảng tích hợp AI giúp sinh viên vừa duy trì sự tập trung, vừa rèn luyện kỹ năng tự học.",
+          "chuTrenManHinh": "Rèn luyện kỹ năng tự học",
+          "yDoHinh": "Sinh viên chủ động tra cứu và tự nghiên cứu kiến thức.",
+          "nguon": [
+            "t01",
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tapchicongthuong.vn/vai-tro-cua-giang-vien-trong-ky-nguyen-tri-tue-nhan-tao--thuc-trang-va-dinh-huong-424746.htm",
+              "title": "Vai trò của giảng viên trong kỷ nguyên trí tuệ nhân tạo",
+              "excerpt": "Tích hợp AI vào bài giảng tương tác: bài giảng được thiết kế kèm theo cu hỏi kiểm tra kiến thức để SV không chỉ nghe mà còn có thể trả lời trong quá trình học, vừa hướng dẫn SV sử dụng AI để tìm kiếm tri thức, đặt cu hỏi, khuyến khích SV suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra. Việc kiểm tra, đánh giá kết quả của AI là một yêu cầu quan trọng trên hành trình học tập. Lúc này AI trở thành người bạn đồng hành, giúp SV học hỏi, nghiên cứu, rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin, giải quyết vấn đề... Bài giảng tương tác và tích hợp AI vừa có thể giúp SV duy trì sự chú ý vừa trang bị được cho SV kỹ năng cần thiết và không còn phụ thuộc vào công nghệ.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            },
+            {
+              "code": "t05",
+              "url": "https://tapchigiaoduc.edu.vn/article/90287/211/ung-dung-ai-trong-giao-duc-pho-thong-va-cach-tiep-can-phu-hop",
+              "title": "Ứng dụng AI trong giáo dục phổ thông và cách tiếp cận phù hợp",
+              "excerpt": "Nguồn ảnh: Internet\n\nAI giúp giáo viên hiểu rõ hơn điểm mạnh, điểm yếu của từng học sinh, từ đó điều chỉnh phương pháp giảng dạy linh hoạt và hiệu quả hơn. Đối với người học, công nghệ này mở ra khả năng học tập theo nhịp độ riêng, tiếp cận nguồn tài nguyên học liệu mở và rèn luyện kỹ năng tự học.\n\nTại Việt Nam, việc đưa AI vào giáo dục phổ thông bắt đầu được triển khai theo lộ trình cụ thể. Từ năm học 2025-2026, Bộ Giáo dục và Đào tạo sẽ thí điểm “Trợ lý học tập AI” ở một số địa phương, hướng tới xy dựng hệ sinh thái giáo dục số đồng bộ. Mục tiêu là giúp giáo viên giảm tải công việc hành chính, tăng thời gian cho hoạt động sư phạm, đồng thời hỗ trợ học sinh học tập theo năng lực cá nhn. [...] Để AI phát huy giá trị tích cực, nhà trường cần chú trọng đào tạo kỹ năng số, tư duy phản biện và",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "phan": 4,
+          "kieu": "hoi",
+          "loi": "Để ứng dụng hiệu quả, học sinh Việt Nam cần được trang bị những kỹ năng quan trọng nào?",
+          "chuTrenManHinh": "Kỹ năng cần thiết cho học sinh",
+          "yDoHinh": "Hình ảnh biểu tượng ba nhóm kỹ năng cốt lõi.",
+          "nguon": []
+        },
+        {
+          "n": 26,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Chuyên gia nhận định Việt Nam có thể đảm bảo tính nhất quán khi trang bị cho học sinh ba nhóm kỹ năng.",
+          "chuTrenManHinh": "Ba nhóm kỹ năng cốt lõi",
+          "yDoHinh": "Sơ đồ ba nhóm kỹ năng ứng dụng AI trong trường học.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vnexpress.net/chuyen-gia-neu-kinh-nghiem-dua-ai-vao-truong-hoc-4946574.html",
+              "title": "Chuyên gia nêu kinh nghiệm đưa AI vào trường học",
+              "excerpt": "Nếu thực hiện được những định hướng này, ông nhận định Việt Nam có thể đảm bảo tính nhất quán trong việc ứng dụng AI vào giáo dục khi học sinh được trang bị ba nhóm kỹ năng. Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ này. Thứ hai, các em có tư duy số và tư duy tính toán, không chỉ dành cho sinh viên ngành công nghệ, mà còn cần thiết cho mọi người để rèn luyện logic, giải quyết vấn đề và tư duy liên ngành. Cuối cùng, quan trọng nhất là lý luận đạo đức và liêm chính học thuật. Học sinh phải biết phn biệt giữa hợp tác và gian lận, sử dụng AI có trách nhiệm. [...] Đào tạo AI từ bậc phổ thông giúp Việt Nam vươn mình\n\nTrưởng khoa Khoa học Máy tính & Công nghệ BUV cũng nhận định, định hướng đưa Trí tuệ nhn tạo trở thành mô",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 27,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ.",
+          "chuTrenManHinh": "1. Năng lực hiểu biết về AI",
+          "yDoHinh": "Biểu tượng khái niệm cơ bản và giới hạn của AI.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vnexpress.net/chuyen-gia-neu-kinh-nghiem-dua-ai-vao-truong-hoc-4946574.html",
+              "title": "Chuyên gia nêu kinh nghiệm đưa AI vào trường học",
+              "excerpt": "Nếu thực hiện được những định hướng này, ông nhận định Việt Nam có thể đảm bảo tính nhất quán trong việc ứng dụng AI vào giáo dục khi học sinh được trang bị ba nhóm kỹ năng. Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ này. Thứ hai, các em có tư duy số và tư duy tính toán, không chỉ dành cho sinh viên ngành công nghệ, mà còn cần thiết cho mọi người để rèn luyện logic, giải quyết vấn đề và tư duy liên ngành. Cuối cùng, quan trọng nhất là lý luận đạo đức và liêm chính học thuật. Học sinh phải biết phn biệt giữa hợp tác và gian lận, sử dụng AI có trách nhiệm. [...] Đào tạo AI từ bậc phổ thông giúp Việt Nam vươn mình\n\nTrưởng khoa Khoa học Máy tính & Công nghệ BUV cũng nhận định, định hướng đưa Trí tuệ nhn tạo trở thành mô",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 28,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Thứ hai là tư duy số và tư duy tính toán giúp rèn luyện logic, giải quyết vấn đề và tư duy liên ngành.",
+          "chuTrenManHinh": "2. Tư duy số và tính toán",
+          "yDoHinh": "Mô phỏng tư duy logic và giải quyết vấn đề liên ngành.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vnexpress.net/chuyen-gia-neu-kinh-nghiem-dua-ai-vao-truong-hoc-4946574.html",
+              "title": "Chuyên gia nêu kinh nghiệm đưa AI vào trường học",
+              "excerpt": "Nếu thực hiện được những định hướng này, ông nhận định Việt Nam có thể đảm bảo tính nhất quán trong việc ứng dụng AI vào giáo dục khi học sinh được trang bị ba nhóm kỹ năng. Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ này. Thứ hai, các em có tư duy số và tư duy tính toán, không chỉ dành cho sinh viên ngành công nghệ, mà còn cần thiết cho mọi người để rèn luyện logic, giải quyết vấn đề và tư duy liên ngành. Cuối cùng, quan trọng nhất là lý luận đạo đức và liêm chính học thuật. Học sinh phải biết phn biệt giữa hợp tác và gian lận, sử dụng AI có trách nhiệm. [...] Đào tạo AI từ bậc phổ thông giúp Việt Nam vươn mình\n\nTrưởng khoa Khoa học Máy tính & Công nghệ BUV cũng nhận định, định hướng đưa Trí tuệ nhn tạo trở thành mô",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Cuối cùng và quan trọng nhất là lý luận đạo đức và liêm chính học thuật.",
+          "chuTrenManHinh": "3. Đạo đức & liêm chính học thuật",
+          "yDoHinh": "Biểu tượng cán cân thể hiện sự liêm chính trong học tập.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vnexpress.net/chuyen-gia-neu-kinh-nghiem-dua-ai-vao-truong-hoc-4946574.html",
+              "title": "Chuyên gia nêu kinh nghiệm đưa AI vào trường học",
+              "excerpt": "Nếu thực hiện được những định hướng này, ông nhận định Việt Nam có thể đảm bảo tính nhất quán trong việc ứng dụng AI vào giáo dục khi học sinh được trang bị ba nhóm kỹ năng. Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ này. Thứ hai, các em có tư duy số và tư duy tính toán, không chỉ dành cho sinh viên ngành công nghệ, mà còn cần thiết cho mọi người để rèn luyện logic, giải quyết vấn đề và tư duy liên ngành. Cuối cùng, quan trọng nhất là lý luận đạo đức và liêm chính học thuật. Học sinh phải biết phn biệt giữa hợp tác và gian lận, sử dụng AI có trách nhiệm. [...] Đào tạo AI từ bậc phổ thông giúp Việt Nam vươn mình\n\nTrưởng khoa Khoa học Máy tính & Công nghệ BUV cũng nhận định, định hướng đưa Trí tuệ nhn tạo trở thành mô",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 30,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Học sinh phải biết phân biệt giữa việc hợp tác với công nghệ và hành vi gian lận.",
+          "chuTrenManHinh": "Phân biệt hợp tác và gian lận",
+          "yDoHinh": "Hình ảnh so sánh giữa sử dụng AI đúng cách và gian lận.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vnexpress.net/chuyen-gia-neu-kinh-nghiem-dua-ai-vao-truong-hoc-4946574.html",
+              "title": "Chuyên gia nêu kinh nghiệm đưa AI vào trường học",
+              "excerpt": "Nếu thực hiện được những định hướng này, ông nhận định Việt Nam có thể đảm bảo tính nhất quán trong việc ứng dụng AI vào giáo dục khi học sinh được trang bị ba nhóm kỹ năng. Đầu tiên là năng lực hiểu biết về AI, tức nắm vững kiến thức cơ bản, hiểu giá trị, mục tiêu và giới hạn của công nghệ này. Thứ hai, các em có tư duy số và tư duy tính toán, không chỉ dành cho sinh viên ngành công nghệ, mà còn cần thiết cho mọi người để rèn luyện logic, giải quyết vấn đề và tư duy liên ngành. Cuối cùng, quan trọng nhất là lý luận đạo đức và liêm chính học thuật. Học sinh phải biết phn biệt giữa hợp tác và gian lận, sử dụng AI có trách nhiệm. [...] Đào tạo AI từ bậc phổ thông giúp Việt Nam vươn mình\n\nTrưởng khoa Khoa học Máy tính & Công nghệ BUV cũng nhận định, định hướng đưa Trí tuệ nhn tạo trở thành mô",
+              "verified": true,
+              "overlap_ratio": 0.89,
+              "reason": "Tìm thấy 89% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 31,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Giáo viên cần hướng dẫn sinh viên đặt câu hỏi và khuyến khích suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra.",
+          "chuTrenManHinh": "So sánh kết quả với AI",
+          "yDoHinh": "Sinh viên đối chiếu câu trả lời cá nhân và kết quả từ AI.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tapchicongthuong.vn/vai-tro-cua-giang-vien-trong-ky-nguyen-tri-tue-nhan-tao--thuc-trang-va-dinh-huong-424746.htm",
+              "title": "Vai trò của giảng viên trong kỷ nguyên trí tuệ nhân tạo",
+              "excerpt": "Tích hợp AI vào bài giảng tương tác: bài giảng được thiết kế kèm theo cu hỏi kiểm tra kiến thức để SV không chỉ nghe mà còn có thể trả lời trong quá trình học, vừa hướng dẫn SV sử dụng AI để tìm kiếm tri thức, đặt cu hỏi, khuyến khích SV suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra. Việc kiểm tra, đánh giá kết quả của AI là một yêu cầu quan trọng trên hành trình học tập. Lúc này AI trở thành người bạn đồng hành, giúp SV học hỏi, nghiên cứu, rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin, giải quyết vấn đề... Bài giảng tương tác và tích hợp AI vừa có thể giúp SV duy trì sự chú ý vừa trang bị được cho SV kỹ năng cần thiết và không còn phụ thuộc vào công nghệ.",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 32,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Việc kiểm tra và đánh giá kết quả của công nghệ là một yêu cầu quan trọng trên hành trình học tập.",
+          "chuTrenManHinh": "Kiểm tra đánh giá kết quả AI",
+          "yDoHinh": "Dấu tích kiểm chứng thông tin và đánh giá chất lượng.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tapchicongthuong.vn/vai-tro-cua-giang-vien-trong-ky-nguyen-tri-tue-nhan-tao--thuc-trang-va-dinh-huong-424746.htm",
+              "title": "Vai trò của giảng viên trong kỷ nguyên trí tuệ nhân tạo",
+              "excerpt": "Tích hợp AI vào bài giảng tương tác: bài giảng được thiết kế kèm theo cu hỏi kiểm tra kiến thức để SV không chỉ nghe mà còn có thể trả lời trong quá trình học, vừa hướng dẫn SV sử dụng AI để tìm kiếm tri thức, đặt cu hỏi, khuyến khích SV suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra. Việc kiểm tra, đánh giá kết quả của AI là một yêu cầu quan trọng trên hành trình học tập. Lúc này AI trở thành người bạn đồng hành, giúp SV học hỏi, nghiên cứu, rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin, giải quyết vấn đề... Bài giảng tương tác và tích hợp AI vừa có thể giúp SV duy trì sự chú ý vừa trang bị được cho SV kỹ năng cần thiết và không còn phụ thuộc vào công nghệ.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 33,
+          "phan": 4,
+          "kieu": "giang",
+          "loi": "Khi đó, AI trở thành người bạn đồng hành giúp người học rèn luyện tư duy phản biện, kỹ năng kiểm chứng thông tin và giải quyết vấn đề.",
+          "chuTrenManHinh": "AI là người bạn đồng hành",
+          "yDoHinh": "Hình ảnh minh họa AI đồng hành hỗ trợ người học suy ngẫm.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://tapchicongthuong.vn/vai-tro-cua-giang-vien-trong-ky-nguyen-tri-tue-nhan-tao--thuc-trang-va-dinh-huong-424746.htm",
+              "title": "Vai trò của giảng viên trong kỷ nguyên trí tuệ nhân tạo",
+              "excerpt": "Tích hợp AI vào bài giảng tương tác: bài giảng được thiết kế kèm theo cu hỏi kiểm tra kiến thức để SV không chỉ nghe mà còn có thể trả lời trong quá trình học, vừa hướng dẫn SV sử dụng AI để tìm kiếm tri thức, đặt cu hỏi, khuyến khích SV suy nghĩ, so sánh kết quả của mình với kết quả do AI tạo ra. Việc kiểm tra, đánh giá kết quả của AI là một yêu cầu quan trọng trên hành trình học tập. Lúc này AI trở thành người bạn đồng hành, giúp SV học hỏi, nghiên cứu, rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin, giải quyết vấn đề... Bài giảng tương tác và tích hợp AI vừa có thể giúp SV duy trì sự chú ý vừa trang bị được cho SV kỹ năng cần thiết và không còn phụ thuộc vào công nghệ.",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 34,
+          "phan": 4,
+          "kieu": "nhe",
+          "loi": "Hy vọng bài học này giúp các bạn có cái nhìn toàn diện về việc chủ động ứng dụng trí tuệ nhân tạo hiệu quả.",
+          "chuTrenManHinh": "ỨNG DỤNG AI HIỆU QUẢ",
+          "yDoHinh": "Dòng chữ kết thúc bài học cùng các biểu tượng giáo dục số.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 29,
+        "verified_count": 29,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t05",
+      "t02",
+      "t06",
+      "t07",
+      "t08",
+      "t01",
+      "t04",
+      "t03"
+    ],
+    "created_at": "2026-09-18T08:23:26.159161"
+  }
+}
