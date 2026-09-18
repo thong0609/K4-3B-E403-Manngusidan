@@ -1,0 +1,414 @@
+{
+  "case": {
+    "case_id": "GS10",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "So sanh mo hinh hoc may va chuong trinh luat viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co bang hoac an du khong gay hieu sai rang mo hinh tu hieu nhu nguoi; co nguon."
+  },
+  "session_id": "00a1dc83-6b78-4c2b-9e4b-fa9ff8dd010b",
+  "result": {
+    "id": 8,
+    "session_id": "00a1dc83-6b78-4c2b-9e4b-fa9ff8dd010b",
+    "version": 1,
+    "json_content": {
+      "id": "00a1dc83-6b78-4c2b-9e4b-fa9ff8dd010b",
+      "tieuDe": "Cách Mô Hình Học Từ Ví Dụ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu mô hình học tập"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chào mừng các bạn đến với bài học hôm nay.",
+          "chuTrenManHinh": "Chào mừng các bạn!",
+          "yDoHinh": "Hình ảnh chào đón học sinh.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay, chúng ta sẽ tìm hiểu về cách mô hình học tập từ ví dụ.",
+          "chuTrenManHinh": "Mô hình học tập từ ví dụ",
+          "yDoHinh": "Hình ảnh mô hình học tập.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Các bạn có biết mô hình học tập dự án là gì không?",
+          "chuTrenManHinh": "Mô hình học tập dự án",
+          "yDoHinh": "Hình ảnh minh họa mô hình học tập dự án.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học tập dự án, hay còn gọi là PBL, là một phương pháp học tập mạnh mẽ.",
+          "chuTrenManHinh": "Mô hình học tập dự án (PBL)",
+          "yDoHinh": "Hình ảnh mô hình học tập dự án.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong đó, học viên làm việc để giải quyết một vấn đề thực tế.",
+          "chuTrenManHinh": "Giải quyết vấn đề thực tế",
+          "yDoHinh": "Hình ảnh học viên làm việc nhóm.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Quá trình này đòi hỏi họ phải tìm hiểu và nghiên cứu.",
+          "chuTrenManHinh": "Tìm hiểu và nghiên cứu",
+          "yDoHinh": "Hình ảnh học viên nghiên cứu.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Vậy, mô hình học máy thì sao?",
+          "chuTrenManHinh": "Mô hình học máy",
+          "yDoHinh": "Hình ảnh mô hình học máy.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học máy thường đạt độ chính xác dự báo cao hơn trong nhiều trường hợp.",
+          "chuTrenManHinh": "Độ chính xác của mô hình học máy",
+          "yDoHinh": "Hình ảnh biểu đồ độ chính xác.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://nghiencuu.tapchikinhtetaichinh.vn/so-sanh-mot-so-mo-hinh-hoc-may-trong-du-bao-chi-so-lam-phat-viet-nam-150864.html",
+              "title": "​​​​​​​So sánh một số mô hình học máy trong dự báo chỉ số lạm phát Việt Nam",
+              "excerpt": "Trong nhiều nghiên cứu trước đy, các mô hình tuyến tính truyền thống, đặc biệt là hồi quy tuyến tính, được sử dụng rộng rãi nhờ tính đơn giản và khả năng diễn giải cao, hiệu quả ổn định trong trường hợp dữ liệu có quy mô vừa và nhỏ. Tuy nhiên, khi xử lý các bộ dữ liệu lớn và có cấu trúc phức tạp, các phương pháp học máy thường đạt độ chính xác dự báo cao hơn. Hiệu quả tương đối giữa 2 nhóm phương pháp phụ thuộc đáng kể vào đặc điểm và quy mô của dữ liệu. [...] Bảng: So sánh sai số và hệ số R2\n\n| Mô hình | MAE (%) | sMAPE (%) | R² Train | R² Test |\n ---  --- \n| LSTM | 0.7105 | 16.50% | 0.85 | 0.35 |\n| RNN | 0.8421 | 19.50% | 0.78 | 0.25 |\n| LR | 0.5342 | 12.40% | 0.62 | 0.60 |\n| LR-LSTM | 0.4855 | 10.50% | 0.88 | 0.68 |\n| LR-RNN | 0.5120 | 11.20% | 0.82 | 0.64 |\n\nNguồn: Các tác giả tính toá",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Các phương pháp học máy thường hiệu quả hơn khi dữ liệu lớn và phức tạp.",
+          "chuTrenManHinh": "Dữ liệu lớn và phức tạp",
+          "yDoHinh": "Hình ảnh dữ liệu lớn.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://nghiencuu.tapchikinhtetaichinh.vn/so-sanh-mot-so-mo-hinh-hoc-may-trong-du-bao-chi-so-lam-phat-viet-nam-150864.html",
+              "title": "​​​​​​​So sánh một số mô hình học máy trong dự báo chỉ số lạm phát Việt Nam",
+              "excerpt": "Trong nhiều nghiên cứu trước đy, các mô hình tuyến tính truyền thống, đặc biệt là hồi quy tuyến tính, được sử dụng rộng rãi nhờ tính đơn giản và khả năng diễn giải cao, hiệu quả ổn định trong trường hợp dữ liệu có quy mô vừa và nhỏ. Tuy nhiên, khi xử lý các bộ dữ liệu lớn và có cấu trúc phức tạp, các phương pháp học máy thường đạt độ chính xác dự báo cao hơn. Hiệu quả tương đối giữa 2 nhóm phương pháp phụ thuộc đáng kể vào đặc điểm và quy mô của dữ liệu. [...] Bảng: So sánh sai số và hệ số R2\n\n| Mô hình | MAE (%) | sMAPE (%) | R² Train | R² Test |\n ---  --- \n| LSTM | 0.7105 | 16.50% | 0.85 | 0.35 |\n| RNN | 0.8421 | 19.50% | 0.78 | 0.25 |\n| LR | 0.5342 | 12.40% | 0.62 | 0.60 |\n| LR-LSTM | 0.4855 | 10.50% | 0.88 | 0.68 |\n| LR-RNN | 0.5120 | 11.20% | 0.82 | 0.64 |\n\nNguồn: Các tác giả tính toá",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta có thể so sánh mô hình học máy với mô hình học truyền thống.",
+          "chuTrenManHinh": "So sánh mô hình học",
+          "yDoHinh": "Hình ảnh so sánh mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học truyền thống thường tập trung vào giáo viên.",
+          "chuTrenManHinh": "Mô hình học truyền thống",
+          "yDoHinh": "Hình ảnh giáo viên giảng bài.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong khi đó, mô hình học hiện đại lại chú trọng vào học viên.",
+          "chuTrenManHinh": "Mô hình học hiện đại",
+          "yDoHinh": "Hình ảnh học viên tham gia.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn nghĩ sao về sự khác biệt này?",
+          "chuTrenManHinh": "Sự khác biệt trong mô hình học",
+          "yDoHinh": "Hình ảnh học viên thảo luận.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Rõ ràng, mỗi mô hình có ưu và nhược điểm riêng.",
+          "chuTrenManHinh": "Ưu và nhược điểm",
+          "yDoHinh": "Hình ảnh tóm tắt ưu nhược điểm.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình học dự án khuyến khích sự sáng tạo và hợp tác.",
+          "chuTrenManHinh": "Khuyến khích sáng tạo",
+          "yDoHinh": "Hình ảnh học viên sáng tạo.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong khi đó, mô hình học truyền thống có thể hạn chế sự sáng tạo.",
+          "chuTrenManHinh": "Hạn chế sáng tạo",
+          "yDoHinh": "Hình ảnh học viên bị hạn chế.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Các bạn có muốn thử nghiệm mô hình học dự án không?",
+          "chuTrenManHinh": "Thử nghiệm mô hình học",
+          "yDoHinh": "Hình ảnh học viên hào hứng.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hãy cùng nhau áp dụng những gì đã học vào thực tế.",
+          "chuTrenManHinh": "Áp dụng vào thực tế",
+          "yDoHinh": "Hình ảnh học viên áp dụng kiến thức.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Chúng ta có thể tạo ra sản phẩm cụ thể từ mô hình học tập này.",
+          "chuTrenManHinh": "Tạo sản phẩm cụ thể",
+          "yDoHinh": "Hình ảnh sản phẩm từ mô hình học.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://www.izone.edu.vn/teacher-corner/mo-hinh-lop-hoc-hien-dai",
+              "title": "Các mô hình lớp học theo xu hướng giáo dục hiện đại - IZONE",
+              "excerpt": "### Mô Hình Học Tập Dự Án (Project-Based Learning – PBL)\n\nHọc tập dự án là một mô hình dạy học mạnh mẽ, trong đó học viên làm việc trong một khoảng thời gian nhất định để giải quyết một vấn đề thực tế, trả lời một cu hỏi phức tạp hoặc tạo ra một sản phẩm cụ thể. Quá trình này đòi hỏi họ phải tìm hiểu, nghiên cứu, hợp tác và áp dụng kiến thức từ nhiều lĩnh vực khác nhau, bao gồm cả tiếng Anh.\n\n|  |\n\n| Bản chất của Project-Based Learning – PBL | [...] |  |  |  |\n --- \n| Tiêu chí | Dạy học Truyền thống (Teacher-Centered) | Dạy học Hiện đại  (Student-Centered) |\n| Trọng tm | Giáo viên là trung tm | Học viên là trung tm |\n| Vai trò của Giáo viên | Truyền đạt kiến thức, giảng bài, kiểm soát lớp học | Hướng dẫn, cố vấn, tạo môi trường học tập, thiết kế hoạt động, hỗ trợ cá nhn |\n| Vai trò của Học",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Cuối cùng, hãy nhớ rằng học tập là một quá trình liên tục.",
+          "chuTrenManHinh": "Học tập liên tục",
+          "yDoHinh": "Hình ảnh quá trình học tập.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã tham gia bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn!",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hy vọng các bạn sẽ áp dụng những kiến thức này vào học tập.",
+          "chuTrenManHinh": "Áp dụng kiến thức",
+          "yDoHinh": "Hình ảnh học viên áp dụng.",
+          "nguon": []
+        },
+        {
+          "n": 23,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Chúc các bạn học tốt và thành công!",
+          "chuTrenManHinh": "Chúc các bạn thành công!",
+          "yDoHinh": "Hình ảnh chúc thành công.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Hẹn gặp lại các bạn trong những bài học sau.",
+          "chuTrenManHinh": "Hẹn gặp lại!",
+          "yDoHinh": "Hình ảnh tạm biệt.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Chúc các bạn một ngày học tập vui vẻ.",
+          "chuTrenManHinh": "Ngày học tập vui vẻ",
+          "yDoHinh": "Hình ảnh học sinh vui vẻ.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 10,
+        "verified_count": 10,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t01",
+      "t03",
+      "t02",
+      "t06",
+      "t04",
+      "t08",
+      "t07",
+      "t05"
+    ],
+    "created_at": "2026-09-18T05:05:50.967909"
+  }
+}

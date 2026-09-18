@@ -1,0 +1,268 @@
+{
+  "case": {
+    "case_id": "GS23",
+    "type": "hiem-nguon-cu",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "Neu gia dich vu hien tai",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Uu tien ban cap nhat; canh bao nguon cu; khong dung so cu nhu hien tai.",
+    "fixture": "ban cu va ban cap nhat"
+  },
+  "session_id": "f868734b-5761-4f74-b3b0-7092ff7db78c",
+  "result": {
+    "id": 21,
+    "session_id": "f868734b-5761-4f74-b3b0-7092ff7db78c",
+    "version": 1,
+    "json_content": {
+      "id": "f868734b-5761-4f74-b3b0-7092ff7db78c",
+      "tieuDe": "Chi phí khi dùng mô hình ngôn ngữ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về chi phí"
+        },
+        {
+          "so": 2,
+          "ten": "Chi phí huấn luyện mô hình"
+        },
+        {
+          "so": 3,
+          "ten": "Mâu thuẫn về chi phí"
+        },
+        {
+          "so": 4,
+          "ten": "Kết luận"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Hôm nay, chúng ta sẽ khám phá chi phí khi sử dụng mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Khám phá chi phí mô hình ngôn ngữ",
+          "yDoHinh": "Hình ảnh minh họa mô hình ngôn ngữ.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ lớn yêu cầu cơ sở hạ tầng đáng kể để đào tạo.",
+          "chuTrenManHinh": "Cơ sở hạ tầng cho mô hình ngôn ngữ",
+          "yDoHinh": "Hình ảnh về cơ sở hạ tầng máy chủ.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Bạn có biết rằng chi phí cho một mô hình lớn có thể lên đến hàng triệu đô la không?",
+          "chuTrenManHinh": "Chi phí mô hình lớn",
+          "yDoHinh": "Hình ảnh biểu đồ chi phí mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ví dụ, chi phí huấn luyện GPT-2 vào năm hai ngàn mười chín là năm mươi ngàn đô la.",
+          "chuTrenManHinh": "Chi phí huấn luyện GPT-2",
+          "yDoHinh": "Hình ảnh về GPT-2.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.83,
+              "reason": "Tìm thấy 83% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong khi đó, huấn luyện mô hình PaLM vào năm hai ngàn hai mươi hai có giá tám triệu đô la.",
+          "chuTrenManHinh": "Chi phí huấn luyện PaLM",
+          "yDoHinh": "Hình ảnh về PaLM.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.84,
+              "reason": "Tìm thấy 84% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Chi phí cho Megatron-Turing NLG là khoảng mười một triệu đô la.",
+          "chuTrenManHinh": "Chi phí Megatron-Turing NLG",
+          "yDoHinh": "Hình ảnh về Megatron-Turing NLG.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 2,
+          "kieu": "nhe",
+          "loi": "Thật thú vị phải không? Những con số này thật sự gây sốc.",
+          "chuTrenManHinh": "Sốc với chi phí",
+          "yDoHinh": "Hình ảnh biểu cảm ngạc nhiên.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 3,
+          "kieu": "hoi",
+          "loi": "Nhưng bạn có biết rằng có sự mâu thuẫn về chi phí huấn luyện giữa các nguồn không?",
+          "chuTrenManHinh": "Mâu thuẫn chi phí",
+          "yDoHinh": "Hình ảnh biểu đồ so sánh chi phí.",
+          "nguon": []
+        },
+        {
+          "n": 9,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Một nguồn cho rằng chi phí huấn luyện PaLM là tám triệu đô la.",
+          "chuTrenManHinh": "Chi phí PaLM",
+          "yDoHinh": "Hình ảnh về PaLM.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://vi.wikipedia.org/wiki/M%C3%B4_h%C3%ACnh_ng%C3%B4n_ng%E1%BB%AF_l%E1%BB%9Bn",
+              "title": "Mô hình ngôn ngữ lớn",
+              "excerpt": "### Chi phí\n\n[sửa | sửa mã nguồn]\n\nCần có cơ sở hạ tầng đáng kể để đào tạo các mô hình lớn nhất. Xu hướng hướng tới các mô hình lớn hơn có thể thấy rõ trong danh sách các mô hình ngôn ngữ lớn\"). Ví dụ: quá trình huấn luyện GPT-2 (tức là mô hình 1,5 tỷ tham số) vào năm 2019 có giá 50.000 đô la, trong khi quá trình huấn luyện PaLM\") (mô hình 540 tỷ tham số) vào năm 2022 có giá 8 triệu đô la và Megatron-Turing NLG 530B (vào năm 2021) có giá khoảng 11 triệu đô la. Tính từ \"lớn\" trong \"mô hình ngôn ngữ lớn\" thực chất rất mơ hồ vì không có ngưỡng cố định nào về số lượng tham số cần thiết để đủ điều kiện là \"lớn\". GPT-1\") năm 2018 có 117 triệu tham số.[cần dẫn nguồn]\n\n### Tinh chỉnh (Fine-tuning)\n\n[sửa”\") | sửa mã nguồn\")] [...] Một kết quả nổi bật là quy luật Chinchilla scaling, theo đó để đạt h",
+              "verified": true,
+              "overlap_ratio": 0.93,
+              "reason": "Tìm thấy 93% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Trong khi đó, một nguồn khác lại ước tính chi phí này chỉ là bốn triệu sáu trăm ngàn đô la.",
+          "chuTrenManHinh": "Chi phí mâu thuẫn",
+          "yDoHinh": "Hình ảnh về sự mâu thuẫn.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t06",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Điều này thật sự làm cho chúng ta phải suy nghĩ về độ tin cậy của thông tin.",
+          "chuTrenManHinh": "Suy nghĩ về độ tin cậy",
+          "yDoHinh": "Hình ảnh người suy nghĩ.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Tóm lại, chi phí khi sử dụng mô hình ngôn ngữ lớn là rất cao.",
+          "chuTrenManHinh": "Chi phí mô hình ngôn ngữ lớn",
+          "yDoHinh": "Hình ảnh tổng kết chi phí.",
+          "nguon": []
+        },
+        {
+          "n": 13,
+          "phan": 4,
+          "kieu": "nhan",
+          "loi": "Chúng ta cần cân nhắc kỹ lưỡng trước khi đầu tư vào các mô hình này.",
+          "chuTrenManHinh": "Cân nhắc đầu tư",
+          "yDoHinh": "Hình ảnh về quyết định đầu tư.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 4,
+          "kieu": "nhe",
+          "loi": "Hy vọng bài học hôm nay đã giúp bạn hiểu rõ hơn về chi phí mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Hiểu rõ về chi phí",
+          "yDoHinh": "Hình ảnh về sự hiểu biết.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 6,
+        "verified_count": 5,
+        "unverified_count": 1,
+        "accuracy_rate": 0.83
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t01",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:16:39.919604"
+  }
+}

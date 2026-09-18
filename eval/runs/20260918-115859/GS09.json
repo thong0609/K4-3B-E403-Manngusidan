@@ -1,0 +1,345 @@
+{
+  "case": {
+    "case_id": "GS09",
+    "type": "thuong",
+    "topic": "Cua so ngu canh cua mo hinh ngon ngu",
+    "learning_goal": "Giai thich bang vi du doi thuong cho nguoi moi",
+    "audience": "Hoc vien khong chuyen",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Mot y moi canh; giai thich thuat ngu truoc tieng Anh; loi doc tu nhien va dung thoi luong."
+  },
+  "session_id": "0f847361-f0c1-4054-8855-9f6b4892ac31",
+  "result": {
+    "id": 7,
+    "session_id": "0f847361-f0c1-4054-8855-9f6b4892ac31",
+    "version": 1,
+    "json_content": {
+      "id": "0f847361-f0c1-4054-8855-9f6b4892ac31",
+      "tieuDe": "Cửa sổ ngữ cảnh trong mô hình ngôn ngữ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu về mô hình ngôn ngữ"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Hôm nay, chúng ta sẽ cùng tìm hiểu về cửa sổ ngữ cảnh trong mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Cửa sổ ngữ cảnh là gì?",
+          "yDoHinh": "Hình ảnh minh họa về mô hình ngôn ngữ.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ là một hệ thống trí tuệ nhân tạo được huấn luyện trên dữ liệu văn bản.",
+          "chuTrenManHinh": "Mô hình ngôn ngữ là gì?",
+          "yDoHinh": "Hình ảnh mô tả mô hình ngôn ngữ.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-la-gi",
+              "title": "Mô hình ngôn ngữ là gì? Ứng dụng & các loại ...",
+              "excerpt": "Khái niệm mô hình ngôn ngữ\n\nMô hình ngôn ngữ là một hệ thống trí tuệ nhn tạo được huấn luyện trên dữ liệu văn bản để thực hiện các tác vụ như dự đoán từ tiếp theo, hiểu ngữ cảnh, hoặc xử lý các nhiệm vụ ngôn ngữ cụ thể, tùy thuộc vào kiến trúc và mục tiêu huấn luyện.\n\nVí dụ: Trong cu: “Jenny ghé qua văn phòng để lấy chìa khóa nên tôi đã đưa cho […]”,  \n mô hình ngôn ngữ tốt sẽ hiểu rằng chỗ trống cần điền là “cô ấy”, vì trước đó đã nhắc đến Jenny.\n\nCách mô hình ngôn ngữ lớn (LMs) hoạt động\n\nLMs sử dụng học su và kiến trúc transformer để học ngữ cảnh từ dữ liệu văn bản quy mô lớn. Quy trình gồm 3 bước: [...] Tiền xử lý: Chuyển văn bản thành token, sau đó mã hóa số.\n Dự đoán: Dựa vào ngữ cảnh để đoán từ kế tiếp, đồng thời học cấu trúc và ý nghĩa ngôn ngữ.\n Tối ưu hóa: Tăng độ chính xác và an",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta sẽ xem xét cách mà cửa sổ ngữ cảnh ảnh hưởng đến khả năng của mô hình.",
+          "chuTrenManHinh": "Tầm quan trọng của cửa sổ ngữ cảnh",
+          "yDoHinh": "Hình ảnh minh họa về cửa sổ ngữ cảnh.",
+          "nguon": []
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cửa sổ ngữ cảnh giúp mô hình nhớ và xử lý thông tin dài hơn.",
+          "chuTrenManHinh": "Cửa sổ ngữ cảnh và thông tin dài",
+          "yDoHinh": "Hình ảnh mô tả quá trình xử lý thông tin.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://tuyendung.evotek.vn/ai-agent-roadmap-huong-dan-ve-cua-so-ngu-canh-va-do-dai-toi-da-trong-llm",
+              "title": "Hướng dẫn về Cửa sổ Ngữ cảnh và Độ dài Tối đa trong LLM",
+              "excerpt": "Hôm nay, chúng ta sẽ tập trung vào một khía cạnh kỹ thuật cực kỳ quan trọng quyết định khả năng “ghi nhớ” và xử lý thông tin dài của các Mô hình Ngôn ngữ Lớn (LLM): Cửa sổ Ngữ cảnh (Context Window) và Độ dài Tối đa (Max Length). Hiểu rõ hai khái niệm này là điều cần thiết để xây dựng các AI Agent mạnh mẽ và đáng tin cậy, đặc biệt khi agent cần xử lý nhiều thông tin hoặc duy trì cuộc trò chuyện dài.\n\nMục lục\n\n## Cửa sổ Ngữ cảnh là gì và Tại sao nó Quan trọng?\n\nHãy hình dung bạn đang đọc một cuốn sách rất dài, nhưng trí nhớ ngắn hạn của bạn chỉ cho phép bạn nhớ được vài trang gần nhất. Cửa sổ ngữ cảnh của một LLM cũng tương tự như vậy. Nó là lượng văn bản (thường được đo bằng token) mà mô hình có thể xem xét cùng một lúc khi xử lý yêu cầu hiện tại của bạn. [...] ### 1. Chunking và Summarizat",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có biết cửa sổ ngữ cảnh hoạt động như thế nào không?",
+          "chuTrenManHinh": "Cửa sổ ngữ cảnh hoạt động ra sao?",
+          "yDoHinh": "Hình ảnh minh họa về hoạt động của cửa sổ ngữ cảnh.",
+          "nguon": []
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mỗi khi tương tác, mô hình không chỉ đọc tin nhắn hiện tại mà còn lịch sử hội thoại.",
+          "chuTrenManHinh": "Tương tác với mô hình",
+          "yDoHinh": "Hình ảnh mô tả quá trình tương tác.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://starttrain.edu.vn/context-window",
+              "title": "Context Window là gì? Sức mạnh của cửa sổ ngữ cảnh ...",
+              "excerpt": "## Context Window hoạt động như thế nào?\n\nMỗi khi bạn tương tác với một mô hình ngôn ngữ lớn, hệ thống không chỉ đọc tin nhắn hiện tại mà còn nạp lại toàn bộ lịch sử hội thoại liên quan vào mô hình. Context Window hoạt động như một bộ nhớ tạm (working memory), khác biệt hoàn toàn với kho dữ liệu khổng lồ mà AI đã được huấn luyện từ trước. Trong khi dữ liệu huấn luyện là kiến thức tĩnh, thì cửa sổ ngữ cảnh là những gì AI thực sự biết và nhìn thấy ngay tại thời điểm đưa ra cu trả lời. [...] ### Tối ưu hóa năng suất và quy trình làm việc\n\nCửa sổ ngữ cảnh dài giúp giảm bớt các công đoạn chuẩn bị dữ liệu bên ngoài mô hình. Thay vì phải tốn thời gian chia nhỏ file hoặc chọn lọc thủ công các đoạn văn bản quan trọng (như khi sử dụng các mô hình cửa sổ ngắn), người dùng có thể nạp trực tiếp toàn bộ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này giúp mô hình hiểu rõ hơn về ngữ cảnh cuộc trò chuyện.",
+          "chuTrenManHinh": "Hiểu ngữ cảnh cuộc trò chuyện",
+          "yDoHinh": "Hình ảnh minh họa về ngữ cảnh.",
+          "nguon": []
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cửa sổ ngữ cảnh cũng có giới hạn về số lượng từ mà nó có thể xử lý.",
+          "chuTrenManHinh": "Giới hạn của cửa sổ ngữ cảnh",
+          "yDoHinh": "Hình ảnh mô tả giới hạn cửa sổ ngữ cảnh.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://manus.im/vi/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+              "title": "Kỹ thuật ngữ cảnh cho các tác nhân AI: Bài học từ việc xây ...",
+              "excerpt": "Những thiết kế này giúp đảm bảo rằng vòng lặp tác nhn Manus vẫn ổn định—ngay cả khi sử dụng kiến trúc điều khiển bởi mô hình.\n\n### Sử dụng Hệ thống Tệp làm Ngữ cảnh\n\nCác mô hình LLM tiên tiến hiện đại hiện cung cấp cửa sổ ngữ cảnh lên đến 128K token hoặc hơn. Nhưng trong các tình huống tác nhn thực tế, điều đó thường không đủ, và đôi khi thậm chí là một hạn chế. Có ba điểm đau thường gặp:\n\n1.Các quan sát có thể rất lớn, đặc biệt là khi các tác nhn tương tác với dữ liệu không có cấu trúc như trang web hoặc PDF. Rất dễ vượt quá giới hạn ngữ cảnh.\n\n2.Hiệu suất của mô hình thường suy giảm khi vượt quá một độ dài ngữ cảnh nhất định, ngay cả khi cửa sổ về mặt kỹ thuật hỗ trợ nó.\n\n3.Đầu vào dài tốn kém, ngay cả với bộ nhớ đệm tiền tố. Bạn vẫn phải trả tiền để truyền và điền trước mỗi token. [...]",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Vì vậy, nếu thông tin quá lớn, mô hình có thể không xử lý được.",
+          "chuTrenManHinh": "Hạn chế khi thông tin lớn",
+          "yDoHinh": "Hình ảnh minh họa về thông tin lớn.",
+          "nguon": []
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một số mô hình hiện đại có cửa sổ ngữ cảnh lên đến một trăm hai mươi tám ngàn token.",
+          "chuTrenManHinh": "Cửa sổ ngữ cảnh hiện đại",
+          "yDoHinh": "Hình ảnh mô tả mô hình hiện đại.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://manus.im/vi/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+              "title": "Kỹ thuật ngữ cảnh cho các tác nhân AI: Bài học từ việc xây ...",
+              "excerpt": "Những thiết kế này giúp đảm bảo rằng vòng lặp tác nhn Manus vẫn ổn định—ngay cả khi sử dụng kiến trúc điều khiển bởi mô hình.\n\n### Sử dụng Hệ thống Tệp làm Ngữ cảnh\n\nCác mô hình LLM tiên tiến hiện đại hiện cung cấp cửa sổ ngữ cảnh lên đến 128K token hoặc hơn. Nhưng trong các tình huống tác nhn thực tế, điều đó thường không đủ, và đôi khi thậm chí là một hạn chế. Có ba điểm đau thường gặp:\n\n1.Các quan sát có thể rất lớn, đặc biệt là khi các tác nhn tương tác với dữ liệu không có cấu trúc như trang web hoặc PDF. Rất dễ vượt quá giới hạn ngữ cảnh.\n\n2.Hiệu suất của mô hình thường suy giảm khi vượt quá một độ dài ngữ cảnh nhất định, ngay cả khi cửa sổ về mặt kỹ thuật hỗ trợ nó.\n\n3.Đầu vào dài tốn kém, ngay cả với bộ nhớ đệm tiền tố. Bạn vẫn phải trả tiền để truyền và điền trước mỗi token. [...]",
+              "verified": true,
+              "overlap_ratio": 0.84,
+              "reason": "Tìm thấy 84% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có biết mô hình nào có thể xử lý thông tin dài hơn không?",
+          "chuTrenManHinh": "Mô hình nào xử lý tốt?",
+          "yDoHinh": "Hình ảnh minh họa về mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 12,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ lớn có thể trở nên lỗi thời nếu không được cập nhật thông tin mới.",
+          "chuTrenManHinh": "Mô hình lỗi thời",
+          "yDoHinh": "Hình ảnh mô tả vấn đề lỗi thời.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-lon-co-the-co-han-che-gi",
+              "title": "Mô hình ngôn ngữ lớn có thể có hạn chế gì? Giải pháp ...",
+              "excerpt": "Ví dụ, mô hình huấn luyện đến 2023 sẽ không tự cập nhật thông tin về chính sách năm 2025 nếu không được cung cấp dữ liệu mới, dẫn đến cu trả lời lỗi thời, đặc biệt hạn chế trong lĩnh vực thời sự hoặc dữ liệu biến đổi nhanh như phn tích thị trường chứng khoán hay báo cáo khoa học mới.\n\nCách xử lý phổ biến gồm:\n\n So sánh hoặc đối chiếu thông tin với dữ liệu mới nhất.\n Yêu cầu LLM nêu thời điểm cập nhật dữ liệu cho các truy vấn nhạy cảm về thời gian.\n Ưu tiên dùng LLM cho các chủ đề ít thay đổi theo thời gian thay vì các chủ đề biến động nhanh.\n Tinh chỉnh LLM trên dữ liệu mới nhất cho các ứng dụng cần thông tin cập nhật.\n Kết hợp đầu ra LLM với kiểm tra thực tế của con người.\n\nMo Hinh Ngon Ngu Lon Han Che Du Lieu Cap Nhat 1755786338\n\nMột số mô hình ngôn ngữ lớn bị giới hạn dữ liệu cập nhật [",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Điều này đặc biệt quan trọng trong lĩnh vực thời sự.",
+          "chuTrenManHinh": "Tầm quan trọng trong thời sự",
+          "yDoHinh": "Hình ảnh minh họa về thời sự.",
+          "nguon": []
+        },
+        {
+          "n": 14,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Vì vậy, việc cập nhật dữ liệu mới là rất cần thiết.",
+          "chuTrenManHinh": "Cập nhật dữ liệu mới",
+          "yDoHinh": "Hình ảnh mô tả việc cập nhật.",
+          "nguon": []
+        },
+        {
+          "n": 15,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta cần phải hiểu rõ về mô hình để sử dụng hiệu quả hơn.",
+          "chuTrenManHinh": "Hiểu mô hình để sử dụng",
+          "yDoHinh": "Hình ảnh minh họa về việc sử dụng mô hình.",
+          "nguon": []
+        },
+        {
+          "n": 16,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ có nhiều ứng dụng trong thực tế.",
+          "chuTrenManHinh": "Ứng dụng của mô hình",
+          "yDoHinh": "Hình ảnh mô tả ứng dụng.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-la-gi",
+              "title": "Mô hình ngôn ngữ là gì? Ứng dụng & các loại ...",
+              "excerpt": "Khái niệm mô hình ngôn ngữ\n\nMô hình ngôn ngữ là một hệ thống trí tuệ nhn tạo được huấn luyện trên dữ liệu văn bản để thực hiện các tác vụ như dự đoán từ tiếp theo, hiểu ngữ cảnh, hoặc xử lý các nhiệm vụ ngôn ngữ cụ thể, tùy thuộc vào kiến trúc và mục tiêu huấn luyện.\n\nVí dụ: Trong cu: “Jenny ghé qua văn phòng để lấy chìa khóa nên tôi đã đưa cho […]”,  \n mô hình ngôn ngữ tốt sẽ hiểu rằng chỗ trống cần điền là “cô ấy”, vì trước đó đã nhắc đến Jenny.\n\nCách mô hình ngôn ngữ lớn (LMs) hoạt động\n\nLMs sử dụng học su và kiến trúc transformer để học ngữ cảnh từ dữ liệu văn bản quy mô lớn. Quy trình gồm 3 bước: [...] Tiền xử lý: Chuyển văn bản thành token, sau đó mã hóa số.\n Dự đoán: Dựa vào ngữ cảnh để đoán từ kế tiếp, đồng thời học cấu trúc và ý nghĩa ngôn ngữ.\n Tối ưu hóa: Tăng độ chính xác và an",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta có thể thấy mô hình trong dịch thuật, tạo nội dung và nhiều lĩnh vực khác.",
+          "chuTrenManHinh": "Mô hình trong dịch thuật",
+          "yDoHinh": "Hình ảnh minh họa về dịch thuật.",
+          "nguon": []
+        },
+        {
+          "n": 18,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ giúp cải thiện khả năng giao tiếp của máy tính.",
+          "chuTrenManHinh": "Cải thiện giao tiếp",
+          "yDoHinh": "Hình ảnh mô tả giao tiếp.",
+          "nguon": []
+        },
+        {
+          "n": 19,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chúng ta đã cùng nhau khám phá cửa sổ ngữ cảnh trong mô hình ngôn ngữ.",
+          "chuTrenManHinh": "Khám phá cửa sổ ngữ cảnh",
+          "yDoHinh": "Hình ảnh tổng kết khám phá.",
+          "nguon": []
+        },
+        {
+          "n": 20,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Hiểu rõ cửa sổ ngữ cảnh là chìa khóa để sử dụng mô hình ngôn ngữ hiệu quả.",
+          "chuTrenManHinh": "Chìa khóa sử dụng hiệu quả",
+          "yDoHinh": "Hình ảnh minh họa chìa khóa.",
+          "nguon": []
+        },
+        {
+          "n": 21,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Cảm ơn các bạn đã theo dõi bài học hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn",
+          "yDoHinh": "Hình ảnh cảm ơn.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại trong các bài học tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại",
+          "yDoHinh": "Hình ảnh hẹn gặp lại.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 7,
+        "verified_count": 7,
+        "unverified_count": 0,
+        "accuracy_rate": 1.0
+      }
+    },
+    "sources_used": [
+      "t01",
+      "t05",
+      "t07",
+      "t02",
+      "t03",
+      "t04",
+      "t06",
+      "t08"
+    ],
+    "created_at": "2026-09-18T05:04:29.977015"
+  }
+}
