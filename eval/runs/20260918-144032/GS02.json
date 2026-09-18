@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS02",
+    "type": "thuong",
+    "topic": "Vi sao AI tra loi sai ma van nghe rat tu tin",
+    "learning_goal": "Nhan ra ba dau hieu can kiem chung",
+    "audience": "Nguoi di lam dung AI hang ngay",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Neu dung ba dau hieu co can cu; phan biet loi su that voi van phong tu tin; co huong dan kiem chung."
+  },
+  "error": "TimeoutError: Timed out waiting for session b2ccfa5b-2423-4043-b312-b1c471e15b0c"
+}

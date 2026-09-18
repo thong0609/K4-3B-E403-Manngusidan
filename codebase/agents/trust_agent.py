@@ -32,6 +32,18 @@ Trả về JSON với cấu trúc:
 """
 
 
+def _clean_json_text(text: str) -> str:
+    text = (text or "").strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
+    return text
+
+
 def score_source(source: dict) -> dict:
     """
     Chấm tin cậy một nguồn. Trả về source dict đã bổ sung trust_score, trust_reason, v.v.
@@ -55,7 +67,8 @@ Published date (nếu có): {source.get('published_date', 'Không rõ')}
             response_format={"type": "json_object"},
             temperature=0.1,
         )
-        result = json.loads(response.choices[0].message.content)
+        content = _clean_json_text(response.choices[0].message.content)
+        result = json.loads(content)
 
         source["trust_score"] = float(result.get("trust_score", 0.5))
         source["trust_reason"] = result.get("trust_reason", "")
@@ -116,7 +129,8 @@ Nếu không có mâu thuẫn: {{"conflicts": []}}
             response_format={"type": "json_object"},
             temperature=0.1,
         )
-        result = json.loads(response.choices[0].message.content)
+        content = _clean_json_text(response.choices[0].message.content)
+        result = json.loads(content)
 
         # Gán conflict_note vào từng source liên quan
         code_to_source = {s["code"]: s for s in sources}

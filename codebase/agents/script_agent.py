@@ -14,6 +14,18 @@ _client = OpenAI(
     base_url=settings.OPENAI_BASE_URL,
 )
 
+def _clean_json_text(text: str) -> str:
+    text = (text or "").strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
+    return text
+
+
 # Mẫu hướng dẫn viết kịch bản (từ mau-kich-ban.md của BTC)
 _SCRIPT_SYSTEM_PROMPT = """Bạn là biên kịch chuyên nghiệp cho video bài giảng e-learning.
 
@@ -143,7 +155,8 @@ Hãy viết kịch bản JSON đúng mẫu. Mọi câu chứa thông tin phải 
                 temperature=0.3,
                 max_tokens=8192,
             )
-            script = json.loads(response.choices[0].message.content)
+            content = _clean_json_text(response.choices[0].message.content)
+            script = json.loads(content)
             # Đảm bảo id khớp với session
             script["id"] = session_id
             return script

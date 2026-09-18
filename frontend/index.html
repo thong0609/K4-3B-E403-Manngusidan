@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriptScout Studio — AI Video Script with Citations</title>
+  <meta name="description" content="Tạo kịch bản bài giảng video với AI, tự động nghiên cứu và dẫn nguồn uy tín.">
+
+  <!-- Design System (external CSS, không phụ thuộc Tailwind CDN ~350KB) -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- React 18 (production UMD — vẫn dùng CDN vì không có build step) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!--
+    Babel Standalone: cần thiết vì không có build tool.
+    Lưu ý với team: khi project trưởng thành, migrate sang Vite để loại bỏ overhead này.
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- API Service Layer: tách biệt hoàn toàn khỏi UI -->
+  <script src="js/api.js"></script>
+
+  <!-- React Application -->
+  <script type="text/babel">
+  /* eslint-disable no-undef */
+  const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+  // ================================================================
+  // CONSTANTS
+  // ================================================================
+  const PRESETS = [
+    {
+      label: "Cửa sổ ngữ cảnh LLM",
+      topic: "Cửa sổ ngữ cảnh của mô hình ngôn ngữ",
+      learning_goal: "Giải thích vì sao trợ lý AI quên phần đầu cuộc trò chuyện dài",
+      audience: "Sinh viên năm nhất, chưa học lập trình",
+      duration: 3,
+    },
+    {
+      label: "AI, ML & Deep Learning",
+      topic: "Học máy là gì",
+      learning_goal: "Phân biệt được sự khác nhau giữa AI, Machine Learning và Deep Learning",
+      audience: "Người mới bắt đầu tìm hiểu công nghệ",
+      duration: 4,
+    },
+    {
+      label: "AI ảo giác (Hallucination)",
+      topic: "Hiện tượng ảo giác (Hallucination) của AI",
+      learning_goal: "Nhận ra 3 dấu hiệu thông tin sai và cách người dùng kiểm chứng",
+      audience: "Người đi làm sử dụng AI hàng ngày",
+      duration: 5,
+    },
+  ];
+
+  // Search agent stages (labels chỉ mang tính cosmetic, không tied vào real status)
+  const SEARCH_STAGES = [
+    "Đang khởi tạo phiên làm việc...",
+    "Agent đang tìm kiếm bài viết qua Tavily...",
+    "Đang trích xuất nội dung từ các trang web...",
+    "LLM đang chấm điểm độ tin cậy (Trust Scoring)...",
+    "Đang phân tích mâu thuẫn giữa các tài liệu...",
+    "Hoàn tất — Đang tải danh sách nguồn...",
+  ];
+
+  const GEN_STAGES = [
+    "Script Agent đang lập cấu trúc kịch bản...",
+    "Đang phân rã từng câu và gán mã trích dẫn...",
+    "Verify Agent đang đối soát với tài liệu gốc...",
+    "Đang đóng gói kịch bản hoàn chỉnh...",
+  ];
+
+  // ================================================================
+  // SHARED HOOKS
+  // ================================================================
+
+  /**
+   * useToast: quản lý toast notifications.
+   * Fix: thay alert() và animate-bounce bằng proper notification system.
+   */
+  function useToast() {
+    const [toasts, setToasts] = useState([]);
+    const show = useCallback((msg, type = "default") => {
+      const id = Date.now();
+      setToasts((prev) => [...prev, { id, msg, type }]);
+      // Auto-dismiss sau 3.5s
+      setTimeout(() => setToasts((prev) => prev.filter((t) => t.id !== id)), 3500);
+    }, []);
+    return { toasts, show };
+  }
+
+  /**
+   * useTimer: đếm giây elapsed cho loading states.
+   * Đảm bảo cleanup đúng khi component unmount.
+   */
+  function useTimer() {
+    const [elapsed, setElapsed] = useState(0);
+    const intervalRef = useRef(null);
+
+    const start = useCallback(() => {
+      setElapsed(0);
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      intervalRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
+    }, []);
+
+    const stop = useCallback(() => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    }, []);
+
+    // Cleanup on unmount
+    useEffect(() => () => stop(), [stop]);
+
+    return { elapsed, start, stop };
+  }
+
+  /**
+   * useStageAdvancer: advance a stage label on an interval.
+   * Ý nghĩa: tách riêng "fake progress" concern, không để nó
+   * lẫn vào logic quan trọng như polling. Bất kỳ ai đọc code
+   * đều biết ngay đây là cosmetic label, không phải real status.
+   */
+  function useStageAdvancer(stages, intervalMs = 8000) {
+    const [idx, setIdx] = useState(0);
+    const ref = useRef(null);
+
+    const start = useCallback(() => {
+      setIdx(0);
+      let current = 0;
+      ref.current = setInterval(() => {
+        current = Math.min(current + 1, stages.length - 2); // dừng ở penultimate
+        setIdx(current);
+      }, intervalMs);
+    }, [stages, intervalMs]);
+
+    const setFinal = useCallback(() => {
+      if (ref.current) clearInterval(ref.current);
+      setIdx(stages.length - 1);
+    }, [stages]);
+
+    const stop = useCallback(() => {
+      if (ref.current) { clearInterval(ref.current); ref.current = null; }
+    }, []);
+
+    useEffect(() => () => stop(), [stop]);
+
+    return { label: stages[idx], start, stop, setFinal };
+  }
+
+  // ================================================================
+  // SHARED COMPONENTS
+  // ================================================================
+
+  function Toasts({ toasts }) {
+    return (
+      <div className="toast-container">
+        {toasts.map((t) => (
+          <div key={t.id} className={`toast ${t.type === "success" ? "toast-success" : t.type === "error" ? "toast-error" : ""}`}>
+            {t.msg}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  function Spinner({ size }) {
+    return <div className={size === "lg" ? "spinner spinner-lg" : "spinner"} />;
+  }
+
+  function EmptyState({ icon, text }) {
+    return (
+      <div className="empty-state">
+        <span className="empty-icon">{icon}</span>
+        <p className="empty-text">{text}</p>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // APP ROOT
+  // ================================================================
+  function App() {
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+    const [step, setStep] = useState(1);
+    const [serverStatus, setServerStatus] = useState("checking"); // "checking" | "online" | "offline"
+    const [session, setSession] = useState(null);
+    const [sources, setSources] = useState([]);
+    const [script, setScript] = useState(null);
+
+    useEffect(() => {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }, [theme]);
+
+    useEffect(() => {
+      API.health()
+        .then(() => setServerStatus("online"))
+        .catch(() => setServerStatus("offline"));
+    }, []);
+
+    const goToStep2 = (s, srcs) => { setSession(s); setSources(srcs); setStep(2); };
+    const goToStep3 = (sc) => { setScript(sc); setStep(3); };
+    const reset = () => { setSession(null); setSources([]); setScript(null); setStep(1); };
+
+    return (
+      <div className="app">
+        <Header serverStatus={serverStatus} theme={theme} setTheme={setTheme} />
+        <main className="main">
+          <Stepper step={step} />
+          {step === 1 && <Step1 onComplete={goToStep2} />}
+          {step === 2 && (
+            <Step2
+              session={session}
+              sources={sources}
+              setSources={setSources}
+              onBack={() => setStep(1)}
+              onComplete={goToStep3}
+            />
+          )}
+          {step === 3 && (
+            <Step3
+              session={session}
+              script={script}
+              sources={sources}
+              onBack={() => setStep(2)}
+              onReset={reset}
+            />
+          )}
+        </main>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // HEADER
+  // ================================================================
+  function Header({ serverStatus, theme, setTheme }) {
+    const statusLabel = {
+      online: "Backend Online",
+      offline: "Backend Offline — Hãy chạy server",
+      checking: "Đang kết nối...",
+    }[serverStatus];
+
+    return (
+      <header className="header">
+        <div className="header-inner">
+          <div className="logo">
+            <div className="logo-icon">S</div>
+            <div>
+              <div className="flex items-center">
+                <span className="logo-name">ScriptScout</span>
+                <span className="badge-track">Track C3 · Lesson Studio</span>
+              </div>
+              <div className="logo-sub">Agent nghiên cứu web & viết kịch bản có dẫn nguồn</div>
+            </div>
+          </div>
+          <div className="flex gap-4" style={{ alignItems: "center" }}>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              title={theme === "light" ? "Chuyển sang Giao diện Tối" : "Chuyển sang Giao diện Sáng"}
+              style={{ fontSize: 16, padding: "6px" }}
+            >
+              {theme === "light" ? "🌙" : "☀️"}
+            </button>
+            <div className="status-pill">
+              <div className={`status-dot ${serverStatus}`} />
+              <span>{statusLabel}</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
+  // ================================================================
+  // STEPPER
+  // ================================================================
+  const STEPS = [
+    { n: 1, label: "Thiết lập & Tìm kiếm" },
+    { n: 2, label: "Duyệt & Thẩm định nguồn" },
+    { n: 3, label: "Kịch bản & Trích dẫn" },
+  ];
+
+  function Stepper({ step }) {
+    return (
+      <div className="stepper">
+        {STEPS.map((s, idx) => (
+          <React.Fragment key={s.n}>
+            <div className={`step ${step === s.n ? "active" : step > s.n ? "done" : ""}`}>
+              <div className="step-num">{step > s.n ? "✓" : s.n}</div>
+              <div className="step-label">
+                <div className="step-label-sub">Bước {s.n}</div>
+                <div className="step-label-main">{s.label}</div>
+              </div>
+            </div>
+            {idx < STEPS.length - 1 && (
+              <div className={`step-conn ${step > s.n ? "active" : ""}`} />
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 1 — SETUP & SEARCH
+  // ================================================================
+  function Step1({ onComplete }) {
+    const [form, setForm] = useState({
+      topic: "Học máy là gì",
+      learningGoal: "Phân biệt được AI, học máy và học sâu qua ví dụ thực tế",
+      audience: "Người mới bắt đầu học AI",
+      duration: 3,
+    });
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+
+    const { elapsed, start: startTimer, stop: stopTimer } = useTimer();
+    const stage = useStageAdvancer(SEARCH_STAGES, 35000); // 35s/stage — pipeline thực tế ~228s
+
+    const update = (key) => (e) =>
+      setForm((prev) => ({ ...prev, [key]: e.target.value }));
+
+    const handlePreset = (preset) => {
+      if (loading) return;
+      setForm({ topic: preset.topic, learningGoal: preset.learning_goal, audience: preset.audience, duration: preset.duration });
+      setError("");
+    };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (!form.topic.trim()) { setError("Vui lòng nhập chủ đề bài học."); return; }
+
+      setError("");
+      setLoading(true);
+      startTimer();
+      stage.start();
+
+      try {
+        // 1. Tạo session
+        const newSession = await API.createSession(
+          form.topic.trim(), form.learningGoal.trim(),
+          form.audience.trim(), Number(form.duration)
+        );
+        // 2. Kích hoạt search agent
+        await API.startSearch(newSession.id);
+        // 3. Poll cho đến khi sources_ready
+        const finalSession = await API.pollUntilReady(newSession.id);
+        // 4. Lấy danh sách sources
+        const loadedSources = await API.getSources(newSession.id);
+
+        stage.setFinal();
+        stopTimer();
+
+        // Brief pause trước khi chuyển bước
+        setTimeout(() => onComplete(finalSession, loadedSources), 600);
+      } catch (err) {
+        stage.stop();
+        stopTimer();
+        setError(err.message || "Đã xảy ra lỗi không xác định.");
+        setLoading(false);
+      }
+    };
+
+    // Mặc định elapsed > i*8 không đúng hoàn toàn với real time
+    // nhưng vẫn giữ vì chỉ mang tính cosmetic — comment rõ ràng hơn original
+    const subSteps = ["Tavily Search", "Scrape Web", "Trust Scoring"];
+
+    return (
+      <div className="space-y-6 anim-slide-down">
+        {/* Hero */}
+        <div className="hero">
+          <h1 className="font-heading font-extrabold" style={{ fontSize: 26, marginBottom: 10 }}>
+            Tạo Kịch Bản Bài Giảng với Nguồn Dẫn Chứng
+          </h1>
+          <p className="text-secondary text-sm" style={{ maxWidth: 560, lineHeight: 1.75 }}>
+            Nhập chủ đề video — hệ thống Multi-Agent sẽ tự động nghiên cứu internet,
+            trích xuất tài liệu uy tín và thẩm định trước khi viết kịch bản.
+          </p>
+        </div>
+
+        {/* Preset chips */}
+        <div>
+          <div className="text-xs font-semibold text-muted mb-2" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            💡 Chọn nhanh chủ đề mẫu:
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {PRESETS.map((p, i) => (
+              <button key={i} type="button" className="chip" onClick={() => handlePreset(p)} disabled={loading}>
+                <span className="chip-dot">✦</span> {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="card">
+          <div className="card-body space-y-5">
+            {error && (
+              <div className="alert alert-danger">
+                <span className="alert-icon">⚠️</span>
+                <span>{error}</span>
+              </div>
+            )}
+
+            {/* Topic */}
+            <div className="form-group">
+              <label className="form-label">1. Chủ đề bài giảng <span className="required">*</span></label>
+              <input
+                type="text" className="form-input"
+                value={form.topic} onChange={update("topic")}
+                disabled={loading} placeholder="Ví dụ: Học máy (Machine Learning) là gì"
+              />
+            </div>
+
+            {/* Learning goal */}
+            <div className="form-group">
+              <label className="form-label">2. Mục tiêu người học cần đạt được</label>
+              <input
+                type="text" className="form-input"
+                value={form.learningGoal} onChange={update("learningGoal")}
+                disabled={loading} placeholder="Ví dụ: Hiểu và phân biệt AI, ML, Deep Learning qua ví dụ"
+              />
+            </div>
+
+            <div className="grid-2">
+              {/* Audience */}
+              <div className="form-group">
+                <label className="form-label">3. Đối tượng người học</label>
+                <input
+                  type="text" className="form-input"
+                  value={form.audience} onChange={update("audience")}
+                  disabled={loading} placeholder="Ví dụ: Sinh viên năm nhất"
+                />
+              </div>
+
+              {/* Duration */}
+              <div className="form-group">
+                <label className="form-label">4. Thời lượng video</label>
+                <select className="form-input" value={form.duration} onChange={update("duration")} disabled={loading}>
+                  <option value={2}>2 phút (~20-25 câu)</option>
+                  <option value={3}>3 phút (~30-35 câu) ★</option>
+                  <option value={5}>5 phút (~50 câu)</option>
+                  <option value={8}>8 phút (~80 câu)</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Loading state (cosmetic progress, không tied real status) */}
+            {loading && (
+              <div className="loading-panel">
+                <div className="flex-between">
+                  <div className="flex gap-3" style={{ alignItems: "center" }}>
+                    <Spinner />
+                    <span className="text-sm font-medium text-accent">{stage.label}</span>
+                  </div>
+                  <code className="text-xs text-muted">{elapsed}s / 300s max</code>
+                </div>
+                <div className="loading-substeps">
+                  {subSteps.map((label, i) => {
+                    // Thresholds dựa trên timing thực tế: ~30s / ~120s / ~200s
+                    const thresholds = [30, 120, 200];
+                    return (
+                      <div key={label} className={`substep ${elapsed > thresholds[i] ? "done" : ""}`}>
+                        <span>{elapsed > thresholds[i] ? "✓" : "○"}</span>
+                        <span>{label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Submit */}
+            <button type="submit" disabled={loading} className="btn btn-primary btn-lg">
+              {loading
+                ? <><Spinner /> Đang xử lý tài liệu...</>
+                : <>Bắt đầu Tìm kiếm & Thẩm định nguồn →</>
+              }
+            </button>
+          </div>
+        </form>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 2 — SOURCE REVIEW & MANAGEMENT
+  // ================================================================
+  function Step2({ session, sources, setSources, onBack, onComplete }) {
+    const [filter, setFilter] = useState("all");
+    const [expanded, setExpanded] = useState({});
+    const [customUrl, setCustomUrl] = useState("");
+    const [addingSource, setAddingSource] = useState(false);
+    const [generating, setGenerating] = useState(false);
+    const [genError, setGenError] = useState("");
+
+    const { elapsed: genElapsed, start: startGenTimer, stop: stopGenTimer } = useTimer();
+    const genStage = useStageAdvancer(GEN_STAGES, 9000);
+    const { toasts, show: showToast } = useToast();
+
+    const activeCount = sources.filter((s) => s.is_active).length;
+    const conflictCount = sources.filter((s) => !!s.conflict_note).length;
+    const filtered = sources.filter((s) => {
+      if (filter === "active") return s.is_active;
+      if (filter === "conflicts") return !!s.conflict_note;
+      return true;
+    });
+
+    // Toggle với optimistic update + rollback on error
+    const handleToggle = async (code, currentActive) => {
+      const next = !currentActive;
+      setSources((prev) => prev.map((s) => (s.code === code ? { ...s, is_active: next } : s)));
+      try {
+        await API.toggleSource(session.id, code, next);
+      } catch (err) {
+        // Rollback
+        setSources((prev) => prev.map((s) => (s.code === code ? { ...s, is_active: currentActive } : s)));
+        showToast(`⚠️ Không thể lưu: ${err.message}`, "error");
+      }
+    };
+
+    const handleAddSource = async (e) => {
+      e.preventDefault();
+      const url = customUrl.trim();
+      if (!url.startsWith("http")) {
+        showToast("⚠️ URL không hợp lệ — cần bắt đầu bằng http:// hoặc https://", "error");
+        return;
+      }
+      setAddingSource(true);
+      try {
+        const newSource = await API.addSource(session.id, url);
+        setSources((prev) => [newSource, ...prev]);
+        setCustomUrl("");
+        showToast("✅ Đã thêm nguồn thành công!", "success");
+      } catch (err) {
+        showToast(`⚠️ ${err.message}`, "error");
+      } finally {
+        setAddingSource(false);
+      }
+    };
+
+    const handleGenerate = async () => {
+      if (activeCount === 0) {
+        setGenError("Vui lòng kích hoạt ít nhất 1 nguồn tài liệu.");
+        return;
+      }
+      setGenError("");
+      setGenerating(true);
+      startGenTimer();
+      genStage.start();
+
+      try {
+        const scriptData = await API.generateScript(session.id);
+        genStage.stop();
+        stopGenTimer();
+        onComplete(scriptData);
+      } catch (err) {
+        genStage.stop();
+        stopGenTimer();
+        setGenError(err.message);
+        setGenerating(false);
+      }
+    };
+
+    return (
+      <>
+        <div className="space-y-5 anim-slide-down">
+        <Toasts toasts={toasts} />
+
+        {/* Session overview */}
+        <div className="card">
+          <div className="card-body flex-between flex-wrap gap-4">
+            <div className="flex-1 min-w-0">
+              <div className="flex gap-2 mb-2" style={{ alignItems: "center" }}>
+                <span className="badge badge-accent">Đang duyệt</span>
+                <span className="text-xs text-muted">⏱ {session?.duration_minutes} phút</span>
+              </div>
+              <h2 className="font-heading font-bold" style={{ fontSize: 20 }}>{session?.topic}</h2>
+              {session?.learning_goal && (
+                <p className="text-xs text-secondary mt-2">🎯 {session.learning_goal}</p>
+              )}
+            </div>
+            <div className="stat-card shrink-0">
+              <div className="stat-value text-success">
+                {activeCount}
+                <span className="stat-unit">/ {sources.length}</span>
+              </div>
+              <div className="stat-label">Nguồn đang bật</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Filter tabs + Add source */}
+        <div className="flex flex-wrap gap-3" style={{ alignItems: "center", justifyContent: "space-between" }}>
+          <div className="tabs">
+            <button className={`tab ${filter === "all" ? "active" : ""}`} onClick={() => setFilter("all")}>
+              Tất cả ({sources.length})
+            </button>
+            <button className={`tab ${filter === "active" ? "active" : ""}`} onClick={() => setFilter("active")}>
+              Đang bật ({activeCount})
+            </button>
+            <button className={`tab tab-warn ${filter === "conflicts" ? "active" : ""}`} onClick={() => setFilter("conflicts")}>
+              ⚡ Mâu thuẫn ({conflictCount})
+            </button>
+          </div>
+
+          <form onSubmit={handleAddSource} className="flex gap-2" style={{ flex: "1 1 280px", maxWidth: 420 }}>
+            <input
+              type="url" className="form-input flex-1"
+              value={customUrl} onChange={(e) => setCustomUrl(e.target.value)}
+              disabled={addingSource} placeholder="Dán link bài viết bổ sung (https://...)"
+            />
+            <button type="submit" className="btn btn-secondary shrink-0" disabled={addingSource || !customUrl.trim()}>
+              {addingSource ? <Spinner /> : "+ Thêm"}
+            </button>
+          </form>
+        </div>
+
+        {/* Sources list */}
+        <div className="space-y-3">
+          {filtered.length === 0 ? (
+            <div className="card">
+              <EmptyState icon="🔍" text="Không có nguồn nào trong bộ lọc này." />
+            </div>
+          ) : (
+            filtered.map((source) => (
+              <SourceCard
+                key={source.code}
+                source={source}
+                expanded={!!expanded[source.code]}
+                onToggle={() => handleToggle(source.code, source.is_active)}
+                onExpand={() => setExpanded((p) => ({ ...p, [source.code]: !p[source.code] }))}
+              />
+            ))
+          )}
+        </div>
+
+        {/* Generation error */}
+        {genError && (
+          <div className="alert alert-danger">
+            <span className="alert-icon">⚠️</span>
+            <span>{genError}</span>
+          </div>
+        )}
+
+        {/* Sticky action footer */}
+        <div className="action-footer">
+          <button className="btn btn-secondary" onClick={onBack} disabled={generating}>
+            ← Quay lại thiết lập
+          </button>
+          <button
+            className="btn btn-primary"
+            style={{ minWidth: 230 }}
+            onClick={handleGenerate}
+            disabled={generating || activeCount === 0}
+          >
+            {generating
+              ? <><Spinner /> Đang sinh kịch bản ({genElapsed}s)...</>
+              : <>Xác nhận & Sinh kịch bản ({activeCount} nguồn) →</>
+            }
+          </button>
+        </div>
+
+        </div>
+
+        {/* Generating modal */}
+        {generating && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <div className="modal-spinner-wrap">
+                <Spinner size="lg" />
+              </div>
+              <h3 className="font-heading font-bold" style={{ fontSize: 20, marginBottom: 8 }}>
+                Đang Biên Soạn Kịch Bản
+              </h3>
+              <p className="text-secondary text-sm" style={{ minHeight: 42 }}>{genStage.label}</p>
+              <div className="modal-timer">{genElapsed}s · Khoảng 20-40s</div>
+              <p className="text-xs text-muted mt-4">
+                Mọi câu chứa thông tin đều được trích dẫn và đối soát tự động.
+              </p>
+            </div>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  // Source Card component (extracted để dễ maintain)
+  function SourceCard({ source, expanded, onToggle, onExpand }) {
+    const trust = Number(source.trust_score || 0.5);
+    const pct = Math.round(trust * 100);
+    const trustClass = trust >= 0.7 ? "trust-high" : trust >= 0.5 ? "trust-mid" : "trust-low";
+    const badgeClass = trust >= 0.7 ? "badge-success" : trust >= 0.5 ? "badge-warning" : "badge-danger";
+
+    return (
+      <div className={`source-card ${!source.is_active ? "inactive" : ""}`}>
+        <div className="source-card-body">
+          {/* Header */}
+          <div className="flex-between gap-3 items-start">
+            <div className="flex gap-3 flex-1 min-w-0 items-start">
+              <span className="badge badge-accent badge-mono shrink-0" style={{ marginTop: 2 }}>{source.code}</span>
+              <div className="min-w-0">
+                <a
+                  href={source.url} target="_blank" rel="noopener noreferrer"
+                  className="font-semibold clamp-1"
+                  style={{ fontSize: 14, color: "var(--text-1)", display: "flex", alignItems: "center", gap: 4 }}
+                >
+                  {source.title || source.url}
+                  <span className="text-muted" style={{ fontSize: 10 }}>↗</span>
+                </a>
+                <div className="source-meta">
+                  {source.domain && <span>🌐 {source.domain}</span>}
+                  {source.author && <span>✍️ {source.author}</span>}
+                  {source.published_date && <span>📅 {source.published_date}</span>}
+                </div>
+              </div>
+            </div>
+
+            {/* Toggle */}
+            <div className="flex gap-2 shrink-0" style={{ alignItems: "center" }}>
+              <span className="text-xs text-muted">{source.is_active ? "Đang dùng" : "Đã tắt"}</span>
+              <button
+                type="button" className="toggle"
+                data-on={source.is_active ? "true" : "false"}
+                onClick={onToggle}
+                title={source.is_active ? "Bấm để tắt" : "Bấm để bật"}
+                aria-label={`Nguồn ${source.code}: ${source.is_active ? "đang bật, bấm để tắt" : "đang tắt, bấm để bật"}`}
+              >
+                <div className="toggle-track" />
+                <div className="toggle-thumb" />
+              </button>
+            </div>
+          </div>
+
+          {/* Trust score */}
+          <div className="flex gap-3 mt-3" style={{ padding: "10px 14px", borderRadius: "var(--r-md)", background: "var(--bg)", border: "1px solid var(--border)", alignItems: "center" }}>
+            <span className={`badge ${badgeClass} shrink-0`}>{pct}% tin cậy</span>
+            <div className={`trust-row flex-1 ${trustClass}`}>
+              <div className="trust-bar-wrap">
+                <div className="trust-bar-fill" style={{ width: `${pct}%` }} />
+              </div>
+            </div>
+            <p className="text-xs text-secondary clamp-1" style={{ flex: 2 }}>
+              {source.trust_reason || "Chưa có đánh giá chi tiết."}
+            </p>
+          </div>
+
+          {/* Conflict alert */}
+          {source.conflict_note && (
+            <div className="alert alert-warning mt-3">
+              <span className="alert-icon">⚡</span>
+              <div><strong>Mâu thuẫn phát hiện: </strong>{source.conflict_note}</div>
+            </div>
+          )}
+
+          {/* Unverified claims */}
+          {source.unverified_claims?.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-3" style={{ alignItems: "center" }}>
+              <span className="text-xs text-muted">Cần kiểm chứng:</span>
+              {source.unverified_claims.map((c, i) => (
+                <span key={i} className="badge badge-neutral badge-mono">{c}</span>
+              ))}
+            </div>
+          )}
+
+          {/* Excerpt with expand/collapse */}
+          {source.excerpt && (
+            <div className="mt-3" style={{ borderTop: "1px solid var(--border)", paddingTop: 12 }}>
+              <div className="flex-between mb-2">
+                <span className="text-xs font-semibold text-muted" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                  Đoạn trích nội dung:
+                </span>
+                <button
+                  onClick={onExpand}
+                  className="text-xs text-accent font-semibold"
+                  style={{ background: "none", border: "none", cursor: "pointer" }}
+                >
+                  {expanded ? "Thu gọn ▲" : "Xem thêm ▼"}
+                </button>
+              </div>
+              <div className={`excerpt-box ${expanded ? "" : "excerpt-collapsed"}`}>
+                {source.excerpt}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 3 — SCRIPT VIEWER & EXPORT
+  // ================================================================
+  function Step3({ session, script: scriptData, sources, onBack, onReset }) {
+    const script = scriptData?.json_content || scriptData || {};
+    const sentences = script.cau || [];
+    const sections = script.phan || [];
+    const verification = script._verification_summary || {};
+
+    const [selectedN, setSelectedN] = useState(sentences[0]?.n ?? 1);
+    const [filterType, setFilterType] = useState("all");
+    const [exporting, setExporting] = useState(false);
+    const { toasts, show: showToast } = useToast();
+
+    const sourceMap = useMemo(() => {
+      const m = {};
+      sources.forEach((s) => { m[s.code] = s; });
+      return m;
+    }, [sources]);
+
+    const sectionMap = useMemo(() => {
+      const m = {};
+      sections.forEach((p) => { m[p.so] = p.ten; });
+      return m;
+    }, [sections]);
+
+    const filtered = sentences.filter((s) => {
+      if (filterType === "cited") return s.nguon?.length > 0;
+      if (filterType === "verified") return s.citation_verified === true;
+      return true;
+    });
+
+    const selected = sentences.find((s) => s.n === selectedN) || sentences[0];
+
+    // Guard: kịch bản trống hoặc format sai
+    if (!sentences.length) {
+      return (
+        <div className="card">
+          <div className="card-body">
+            <EmptyState
+              icon="⚠️"
+              text="Kịch bản trống hoặc định dạng không hợp lệ. Quay lại và thử sinh lại."
+            />
+            <div className="flex-center mt-4">
+              <button className="btn btn-secondary" onClick={onBack}>← Quay lại</button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const exportScript = async (format) => {
+      if (exporting) return;
+      setExporting(true);
+      try {
+        const data = await API.export(session.id, format);
+        const isJson = format === "json";
+        const content = isJson ? JSON.stringify(data, null, 2) : data;
+        const blob = new Blob([content], { type: isJson ? "application/json" : "text/markdown;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `kich_ban_${(session?.topic || "script").replace(/\s+/g, "_")}.${isJson ? "json" : "md"}`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast(`✅ Đã xuất ${format.toUpperCase()} thành công!`, "success");
+      } catch (err) {
+        showToast(`⚠️ Lỗi xuất file: ${err.message}`, "error");
+      } finally {
+        setExporting(false);
+      }
+    };
+
+    const copyScript = async () => {
+      try {
+        const text = await API.export(session.id, "markdown");
+        await navigator.clipboard.writeText(text);
+        showToast("📋 Đã sao chép kịch bản vào bộ nhớ tạm!", "success");
+      } catch (err) {
+        showToast(`⚠️ Không thể sao chép: ${err.message}`, "error");
+      }
+    };
+
+    return (
+      <div className="space-y-6 anim-slide-down">
+        <Toasts toasts={toasts} />
+
+        {/* Script header */}
+        <div className="card">
+          <div className="card-body flex-between flex-wrap gap-5 items-start">
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap gap-2 mb-3" style={{ alignItems: "center" }}>
+                <span className="badge badge-success">✓ Kịch bản hoàn tất · v{scriptData?.version || 1}</span>
+                <span className="text-xs text-muted">⏱ ~{session?.duration_minutes} phút</span>
+                <span className="text-xs text-muted">📝 {sentences.length} câu</span>
+              </div>
+              <h2 className="font-heading font-bold" style={{ fontSize: 22 }}>
+                {script.tieuDe || session?.topic}
+              </h2>
+              <p className="text-xs text-secondary mt-2" style={{ lineHeight: 1.65 }}>
+                🎯 {session?.learning_goal}
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3" style={{ alignItems: "flex-end" }}>
+              {/* Accuracy stat */}
+              <div className="stat-card" style={{ minWidth: 130 }}>
+                <div className="stat-value text-success">
+                  {Math.round((verification?.accuracy_rate || 0) * 100)}%
+                </div>
+                <div className="stat-label">
+                  Trích dẫn đối soát<br />
+                  <span style={{ color: "var(--text-3)" }}>
+                    ({verification?.verified_count || 0}/{verification?.total_sentences_with_source || 0} câu)
+                  </span>
+                </div>
+              </div>
+
+              {/* Export buttons */}
+              <div className="flex flex-wrap gap-2" style={{ justifyContent: "flex-end" }}>
+                <button className="btn btn-primary btn-sm" onClick={() => exportScript("markdown")} disabled={exporting}>
+                  📥 Xuất Markdown
+                </button>
+                <button className="btn btn-secondary btn-sm" onClick={copyScript}>
+                  📋 Copy
+                </button>
+                <button className="btn btn-secondary btn-sm" onClick={() => exportScript("json")} disabled={exporting}>
+                  {"{ }"} JSON
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Split view */}
+        <div className="grid-split">
+          {/* Left: Sentence list */}
+          <div className="space-y-4">
+            {/* Filter bar */}
+            <div className="flex-between" style={{ padding: "8px 12px", background: "var(--surface-1)", border: "1px solid var(--border)", borderRadius: "var(--r-lg)" }}>
+              <div className="tabs" style={{ background: "none", border: "none", padding: 0 }}>
+                <button className={`tab ${filterType === "all" ? "active" : ""}`} onClick={() => setFilterType("all")}>
+                  Tất cả ({sentences.length})
+                </button>
+                <button className={`tab ${filterType === "cited" ? "active" : ""}`} onClick={() => setFilterType("cited")}>
+                  Có trích dẫn ({sentences.filter((s) => s.nguon?.length > 0).length})
+                </button>
+                <button className={`tab ${filterType === "verified" ? "active" : ""}`} onClick={() => setFilterType("verified")}>
+                  Đối soát ✓ ({verification?.verified_count || 0})
+                </button>
+              </div>
+              <span className="text-xs text-muted">💡 Bấm câu để xem nguồn</span>
+            </div>
+
+            {/* Sentences */}
+            <div className="space-y-3">
+              {filtered.map((cau, idx) => {
+                const showSection = idx === 0 || cau.phan !== filtered[idx - 1]?.phan;
+                const isSelected = cau.n === selectedN;
+                const hasSrc = cau.nguon?.length > 0;
+                const isVerified = cau.citation_verified === true;
+
+                return (
+                  <React.Fragment key={cau.n}>
+                    {showSection && (
+                      <div className="section-header">
+                        <div className="section-dot" />
+                        Phần {cau.phan || 1}: {sectionMap[cau.phan] || `Nội dung phần ${cau.phan || 1}`}
+                      </div>
+                    )}
+                    <div
+                      className={`sentence-card ${isSelected ? "selected" : ""}`}
+                      onClick={() => setSelectedN(cau.n)}
+                      role="button" tabIndex={0}
+                      onKeyDown={(e) => e.key === "Enter" && setSelectedN(cau.n)}
+                    >
+                      <div className="sentence-meta">
+                        <div className="flex gap-2" style={{ alignItems: "center" }}>
+                          <span className={`badge badge-mono ${isSelected ? "badge-accent" : "badge-neutral"}`}>#{cau.n}</span>
+                          {cau.kieu && (
+                            <span className="badge badge-neutral text-xs">
+                              {cau.kieu === "giang" ? "Giảng giải" : cau.kieu === "nhe" ? "Dẫn dắt" : cau.kieu === "ke" ? "Ví dụ" : cau.kieu}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex gap-1" style={{ alignItems: "center" }}>
+                          {hasSrc ? (
+                            <>
+                              {cau.nguon.map((code) => (
+                                <span key={code} className="badge badge-accent badge-mono" style={{ fontSize: 10 }}>{code}</span>
+                              ))}
+                              <span className={`badge ${isVerified ? "badge-success" : "badge-warning"}`} style={{ fontSize: 10 }}>
+                                {isVerified ? "✓ OK" : "⚠️"}
+                              </span>
+                            </>
+                          ) : (
+                            <span className="text-xs text-muted">Lời dẫn</span>
+                          )}
+                        </div>
+                      </div>
+
+                      <p className="sentence-text">{cau.loi}</p>
+
+                      {(cau.chuTrenManHinh || cau.yDoHinh) && (
+                        <div className="sentence-dir mt-3">
+                          {cau.chuTrenManHinh && (
+                            <div className="text-secondary text-xs">
+                              <span className="font-semibold text-accent">Màn hình:</span> {cau.chuTrenManHinh}
+                            </div>
+                          )}
+                          {cau.yDoHinh && (
+                            <div className="text-secondary text-xs mt-1">
+                              <span className="font-semibold text-success">Ý đồ hình:</span> {cau.yDoHinh}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Right: Evidence panel (sticky) */}
+          <div style={{ position: "sticky", top: 76 }}>
+            <div className="evidence-panel">
+              <div className="evidence-header">
+                <div className="flex gap-2" style={{ alignItems: "center" }}>
+                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "var(--accent)", display: "block", boxShadow: "0 0 8px var(--accent)" }} />
+                  <h3 className="font-heading font-bold text-sm">Đối Chiếu Bằng Chứng Gốc</h3>
+                </div>
+                <span className="badge badge-accent badge-mono text-xs">Câu #{selected?.n || 1}</span>
+              </div>
+
+              <div className="evidence-body space-y-4">
+                {/* Trust Summary Card */}
+                <div className="trust-summary-card">
+                  <div className="circular-progress" style={{ "--p": Math.round((verification?.accuracy_rate || 0) * 100) }}>
+                    <span>{Math.round((verification?.accuracy_rate || 0) * 100)}%</span>
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base mb-1">Độ tin cậy cao</h4>
+                    <p className="text-secondary text-sm" style={{ margin: 0 }}>Nội dung sinh ra có trích dẫn đối soát chính xác với {verification?.verified_count || 0}/{verification?.total_sentences_with_source || 0} câu.</p>
+                  </div>
+                </div>
+
+                {/* Selected sentence quote */}
+                <div>
+                  <div className="quote-label" style={{ marginBottom: 8, color: "var(--accent)" }}>
+                    ĐANG ĐỐI CHIẾU: CÂU #{selected?.n || 1}
+                  </div>
+                  <div className="quote-box" style={{ marginBottom: 0, borderLeft: "2px solid var(--accent)" }}>
+                    <p className="quote-text" style={{ fontStyle: "italic", fontSize: 14 }}>"{selected?.loi}"</p>
+                  </div>
+                </div>
+
+                {/* Citations */}
+                {selected?.nguon?.length > 0 ? (
+                  <div className="space-y-3" style={{ marginTop: 24 }}>
+                    <div className="flex-between mb-3">
+                      <span className="text-xs font-semibold text-secondary" style={{ textTransform: "uppercase", letterSpacing: "0.07em" }}>
+                        Tài liệu nguồn ({selected.nguon.length})
+                      </span>
+                      <span className="badge badge-accent text-xs" style={{ background: "rgba(139,92,246,0.1)", color: "var(--violet)", borderColor: "rgba(139,92,246,0.2)" }}>Qua Verify Agent</span>
+                    </div>
+
+                    {selected.nguon.map((code) => {
+                      const src = sourceMap[code] || {};
+                      const detail = (selected.citation_details || []).find((c) => c.code === code) || {};
+                      const ok = detail.verified !== false;
+                      const overlap = detail.overlap_ratio ? Math.round(detail.overlap_ratio * 100) : null;
+
+                      return (
+                        <div key={code} className={`evidence-source space-y-3 ${ok ? "" : "warning"}`}>
+                          <div className="flex-between">
+                            <div className="flex gap-2" style={{ alignItems: "center", minWidth: 0 }}>
+                              <span className="badge badge-accent badge-mono shrink-0">{code}</span>
+                              <span className="text-xs text-secondary clamp-1">
+                                {src.title || src.url || `Nguồn ${code}`}
+                              </span>
+                            </div>
+                            {src.url && (
+                              <a href={src.url} target="_blank" rel="noopener noreferrer" className="text-accent text-xs shrink-0">
+                                Mở ↗
+                              </a>
+                            )}
+                          </div>
+
+                          <div className="flex gap-2" style={{ alignItems: "center" }}>
+                            <span className={`badge ${ok ? "badge-success" : "badge-warning"} text-xs`}>
+                              {ok ? "✓ Trùng khớp" : "⚠️ Cần kiểm tra"}
+                            </span>
+                            {overlap !== null && (
+                              <span className="text-xs text-muted">
+                                Độ khớp: <strong className="text-primary">{overlap}%</strong>
+                              </span>
+                            )}
+                          </div>
+
+                          <div>
+                            <div className="quote-label" style={{ marginBottom: 6 }}>Đoạn trích chứng minh:</div>
+                            <div className="excerpt-box">
+                              {detail.excerpt || src.excerpt || "Không tìm thấy đoạn trích phù hợp."}
+                            </div>
+                          </div>
+
+                          {detail.reason && (
+                            <p className="text-xs text-muted">ℹ️ {detail.reason}</p>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <EmptyState
+                    icon="💬"
+                    text="Câu này là lời dẫn dắt hoặc kết luận — không chứa số liệu cần đối chiếu nguồn."
+                  />
+                )}
+              </div>
+
+              <div className="evidence-footer">
+                <button className="btn btn-ghost btn-sm" onClick={onBack}>← Chỉnh nguồn</button>
+                <button className="btn btn-ghost btn-sm text-accent" onClick={onReset}>+ Bài giảng mới</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // RENDER
+  // ================================================================
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<App />);
+  </script>
+</body>
+</html>

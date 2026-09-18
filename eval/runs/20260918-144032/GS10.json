@@ -1,0 +1,113 @@
+{
+  "case": {
+    "case_id": "GS10",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "So sanh mo hinh hoc may va chuong trinh luat viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Co bang hoac an du khong gay hieu sai rang mo hinh tu hieu nhu nguoi; co nguon."
+  },
+  "session_id": "93aebfe0-f11b-49e2-9b55-2ee9866ec6ff",
+  "result": {
+    "id": 4,
+    "session_id": "93aebfe0-f11b-49e2-9b55-2ee9866ec6ff",
+    "version": 1,
+    "json_content": {
+      "id": "93aebfe0-f11b-49e2-9b55-2ee9866ec6ff",
+      "tieuDe": "Cách một mô hình học từ ví dụ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Mô hình học máy và khả năng dự đoán"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào các bạn học sinh.",
+          "chuTrenManHinh": "Chào các bạn học sinh",
+          "yDoHinh": "Giáo viên mỉm cười chào học sinh.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có bao giờ thắc mắc mô hình học máy hoạt động như thế nào chưa?",
+          "chuTrenManHinh": "Mô hình học máy hoạt động thế nào?",
+          "yDoHinh": "Hình ảnh biểu tượng dấu hỏi chấm bên cạnh mô hình máy tính.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học.",
+          "chuTrenManHinh": "Nhận diện đặc điểm mẫu để dự đoán",
+          "yDoHinh": "Đồ họa thể hiện luồng dữ liệu đi qua mô hình và đưa ra dự đoán.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vi.khanacademy.org/khan-for-educators/khanmigo-for-educators/x6ac3038eb35166b0:hieu-ve-tri-tue-nhan-tao-ai/x6ac3038eb35166b0:tong-quan-ve-ai/v/ai-what-is-machine-learning",
+              "title": "Mô hình học máy là gì? (video)",
+              "excerpt": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu, mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học. Ví dụ, mô hình có thể tìm",
+              "verified": false,
+              "overlap_ratio": 0.0,
+              "reason": "Chỉ tìm thấy 0% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Đây chính là điểm cốt lõi giúp máy tính tự rút ra tri thức từ các ví dụ.",
+          "chuTrenManHinh": "Tự rút ra tri thức từ ví dụ",
+          "yDoHinh": "Hình ảnh minh họa các ví dụ đầu vào chuyển hóa thành kết quả dự đoán.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vi.khanacademy.org/khan-for-educators/khanmigo-for-educators/x6ac3038eb35166b0:hieu-ve-tri-tue-nhan-tao-ai/x6ac3038eb35166b0:tong-quan-ve-ai/v/ai-what-is-machine-learning",
+              "title": "Mô hình học máy là gì? (video)",
+              "excerpt": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu, mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học. Ví dụ, mô hình có thể tìm",
+              "verified": false,
+              "overlap_ratio": 0.0,
+              "reason": "Chỉ tìm thấy 0% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 2,
+        "verified_count": 0,
+        "unverified_count": 2,
+        "accuracy_rate": 0.0
+      }
+    },
+    "sources_used": [
+      "t05",
+      "t03",
+      "t04",
+      "t07",
+      "t02",
+      "t01",
+      "t08",
+      "t06"
+    ],
+    "created_at": "2026-09-18T08:09:22.737343"
+  }
+}

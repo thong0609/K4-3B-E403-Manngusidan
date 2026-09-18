@@ -2,9 +2,14 @@
 test_api.py — Script kiểm tra nhanh toàn bộ luồng ScriptScout
 Chạy: python test_api.py (trong khi uvicorn đang chạy ở terminal khác)
 """
+import sys
 import httpx
 import time
 import json
+
+# Đảm bảo in tiếng Việt trên Windows console không bị lỗi mã hóa cp1252
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE = "http://localhost:8000"
 
@@ -37,7 +42,7 @@ def main():
 
     # Chờ agent hoàn thành
     print("\n⏳ Đang chờ agent tìm và chấm nguồn...")
-    for i in range(30):
+    for i in range(60):
         time.sleep(3)
         r = httpx.get(f"{BASE}/api/sessions/{session_id}")
         status = r.json()["status"]
@@ -47,6 +52,10 @@ def main():
         if status == "error":
             print("❌ Agent gặp lỗi!")
             return
+
+    if status != "sources_ready":
+        print(f"❌ Quá thời gian chờ tìm kiếm nguồn (status: {status}).")
+        return
 
     # Bước 3: Xem danh sách nguồn
     log("Bước 3: Xem danh sách nguồn")
