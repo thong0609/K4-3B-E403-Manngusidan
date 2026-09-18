@@ -20,6 +20,7 @@ Nhiệm vụ: đánh giá mức độ tin cậy của một nguồn tài liệu 
 3. Ngày đăng còn mới (ưu tiên tài liệu < 3 năm cho chủ đề AI/công nghệ)
 4. Nội dung đủ sâu, có dẫn chứng, không phải quảng cáo
 5. Không có dấu hiệu thiên vị hoặc thông tin sai lệch
+6. GUARDRAIL AN TOÀN: Nếu tài liệu chứa hướng dẫn bạo lực, giết người, vi phạm pháp luật hoặc đạo đức nghiêm trọng, lập tức đánh giá trust_score = 0.0 và trust_reason = 'Nội dung vi phạm tiêu chuẩn an toàn cộng đồng'.
 
 Trả về JSON với cấu trúc:
 {
@@ -106,7 +107,8 @@ def detect_conflicts(sources: list[dict]) -> list[dict]:
     )
 
     prompt = f"""Phân tích các đoạn trích sau từ nhiều nguồn khác nhau về cùng một chủ đề.
-Xác định những điểm mâu thuẫn (số liệu khác nhau, tuyên bố trái ngược).
+CHỈ xác định những điểm mâu thuẫn THỰC SỰ (ví dụ: số liệu trái ngược nhau hoàn toàn, hoặc một bên khẳng định Có một bên khẳng định Không).
+KHÔNG tính là mâu thuẫn nếu hai nguồn chỉ đang đề cập đến các khía cạnh khác nhau, bổ sung cho nhau, hoặc dùng từ ngữ khác nhau để diễn đạt cùng một ý.
 
 {excerpts_for_prompt}
 
