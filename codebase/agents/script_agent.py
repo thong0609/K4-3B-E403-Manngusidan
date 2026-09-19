@@ -11,7 +11,7 @@ from config import settings
 logger = logging.getLogger(__name__)
 _client = OpenAI(
     api_key=settings.OPENAI_API_KEY,
-    base_url=settings.OPENAI_BASE_URL,
+    base_url=settings.OPENAI_BASE_URL
 )
 
 
@@ -159,9 +159,8 @@ Hãy viết kịch bản JSON đúng mẫu. Mọi câu chứa thông tin phải 
                 temperature=0.3,
                 max_tokens=8192,
             )
-            content = _clean_json_text(response.choices[0].message.content)
-            script = json.loads(content)
-        # Đảm bảo id khớp với session
+            script = json.loads(response.choices[0].message.content)
+            # Đảm bảo id khớp với session
             script["id"] = session_id
             return script
 
