@@ -159,7 +159,8 @@ Hãy viết kịch bản JSON đúng mẫu. Mọi câu chứa thông tin phải 
                 temperature=0.3,
                 max_tokens=8192,
             )
-            script = json.loads(response.choices[0].message.content)
+            content = _clean_json_text(response.choices[0].message.content)
+            script = json.loads(content)
             # Đảm bảo id khớp với session
             script["id"] = session_id
             return script
