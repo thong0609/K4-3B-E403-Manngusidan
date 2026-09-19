@@ -1,0 +1,755 @@
+{
+  "case": {
+    "case_id": "GS14",
+    "type": "lop-1-nguon-su-that",
+    "topic": "Chi phi khi dung mo hinh ngon ngu",
+    "learning_goal": "So sanh gia giua hai model",
+    "audience": "Quan ly san pham",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Bat buoc co ngay hieu luc va nguon chinh thuc; khong tu suy ra tong chi phi khi thieu token hoac don gia."
+  },
+  "session_id": "9e1dfaa6-a662-434e-885f-0fb8b0033b56",
+  "result": {
+    "id": 7,
+    "session_id": "9e1dfaa6-a662-434e-885f-0fb8b0033b56",
+    "version": 1,
+    "json_content": {
+      "id": "9e1dfaa6-a662-434e-885f-0fb8b0033b56",
+      "tieuDe": "Chi phí khi dùng mô hình ngôn ngữ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Tổng quan chi phí và thách thức của LLM"
+        },
+        {
+          "so": 2,
+          "ten": "So sánh chi phí giữa LLM và tìm kiếm web"
+        },
+        {
+          "so": 3,
+          "ten": "Giải pháp tối ưu chi phí triển khai"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Xin chào các quản lý sản phẩm tương lai.",
+          "chuTrenManHinh": "Chào mừng các Product Manager",
+          "yDoHinh": "Giảng viên mỉm cười chào người học.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hôm nay chúng ta sẽ tìm hiểu bài học về chi phí khi sử dụng mô hình ngôn ngữ lớn.",
+          "chuTrenManHinh": "Chi phí khi dùng mô hình ngôn ngữ",
+          "yDoHinh": "Tiêu đề bài học xuất hiện trên màn hình.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý GPU để tính toán hàng trăm tỷ tham số.",
+          "chuTrenManHinh": "Yêu cầu hàng ngàn GPU",
+          "yDoHinh": "Hình ảnh hệ thống hàng ngàn chip xử lý GPU.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Điều này khiến chi phí xây dựng chúng lên đến hàng triệu đô la Mỹ.",
+          "chuTrenManHinh": "Chi phí xây dựng hàng triệu USD",
+          "yDoHinh": "Biểu tượng chi phí gia tăng cán mốc triệu đô.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 0.8,
+              "reason": "Tìm thấy 80% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Thách thức lớn nhất là tinh chỉnh tính toán để giảm thời gian huấn luyện và chi phí.",
+          "chuTrenManHinh": "Thách thức tinh chỉnh tính toán",
+          "yDoHinh": "Mô phỏng đồng hồ đo thời gian và ngân sách.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://tapchinganhang.gov.vn/mo-hinh-ngon-ngu-lon-ung-dung-thach-thuc-trong-linh-vuc-tai-chinh-ngan-hang-9305.html",
+              "title": "Mô hình ngôn ngữ lớn: Ứng dụng, thách thức trong lĩnh vực tài chính - ngân hàng",
+              "excerpt": "Học tăng cường (Reinforcement Learning): Một số mô hình ngôn ngữ lớn sử dụng kĩ thuật học tăng cường để cải thiện hiệu suất và độ chính xác. Quá trình học tăng cường cho phép mô hình tương tác với môi trường, nhận phản hồi để cải thiện dự đoán và quyết định.\n\nTinh chỉnh tính toán (Computational Efficiency): Một trong những thách thức lớn nhất của mô hình ngôn ngữ lớn là tinh chỉnh tính toán để giảm thiểu thời gian huấn luyện và chi phí tính toán. Các phương pháp như tự động song song và tối ưu hóa phần cứng giúp tăng tốc quá trình huấn luyện và triển khai. [...] hoặc tư vấn tài chính đòi hỏi sự cẩn trọng để đảm bảo tính chính xác, đạo đức của thông tin được cung cấp, đặc biệt là khi liên quan đến việc quản lí rủi ro tài chính và đầu tư. Việc sử dụng mô hình ngôn ngữ lớn để đưa ra quyết địn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Các phương pháp như tự động song song và tối ưu phần cứng giúp tăng tốc triển khai.",
+          "chuTrenManHinh": "Tự động song song & tối ưu phần cứng",
+          "yDoHinh": "Sơ đồ luồng công việc được tăng tốc.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://tapchinganhang.gov.vn/mo-hinh-ngon-ngu-lon-ung-dung-thach-thuc-trong-linh-vuc-tai-chinh-ngan-hang-9305.html",
+              "title": "Mô hình ngôn ngữ lớn: Ứng dụng, thách thức trong lĩnh vực tài chính - ngân hàng",
+              "excerpt": "Học tăng cường (Reinforcement Learning): Một số mô hình ngôn ngữ lớn sử dụng kĩ thuật học tăng cường để cải thiện hiệu suất và độ chính xác. Quá trình học tăng cường cho phép mô hình tương tác với môi trường, nhận phản hồi để cải thiện dự đoán và quyết định.\n\nTinh chỉnh tính toán (Computational Efficiency): Một trong những thách thức lớn nhất của mô hình ngôn ngữ lớn là tinh chỉnh tính toán để giảm thiểu thời gian huấn luyện và chi phí tính toán. Các phương pháp như tự động song song và tối ưu hóa phần cứng giúp tăng tốc quá trình huấn luyện và triển khai. [...] hoặc tư vấn tài chính đòi hỏi sự cẩn trọng để đảm bảo tính chính xác, đạo đức của thông tin được cung cấp, đặc biệt là khi liên quan đến việc quản lí rủi ro tài chính và đầu tư. Việc sử dụng mô hình ngôn ngữ lớn để đưa ra quyết địn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Một số mô hình dùng học tăng cường để cải thiện hiệu suất và độ chính xác.",
+          "chuTrenManHinh": "Học tăng cường (Reinforcement Learning)",
+          "yDoHinh": "Mô hình nhận phản hồi từ môi trường.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://tapchinganhang.gov.vn/mo-hinh-ngon-ngu-lon-ung-dung-thach-thuc-trong-linh-vuc-tai-chinh-ngan-hang-9305.html",
+              "title": "Mô hình ngôn ngữ lớn: Ứng dụng, thách thức trong lĩnh vực tài chính - ngân hàng",
+              "excerpt": "Học tăng cường (Reinforcement Learning): Một số mô hình ngôn ngữ lớn sử dụng kĩ thuật học tăng cường để cải thiện hiệu suất và độ chính xác. Quá trình học tăng cường cho phép mô hình tương tác với môi trường, nhận phản hồi để cải thiện dự đoán và quyết định.\n\nTinh chỉnh tính toán (Computational Efficiency): Một trong những thách thức lớn nhất của mô hình ngôn ngữ lớn là tinh chỉnh tính toán để giảm thiểu thời gian huấn luyện và chi phí tính toán. Các phương pháp như tự động song song và tối ưu hóa phần cứng giúp tăng tốc quá trình huấn luyện và triển khai. [...] hoặc tư vấn tài chính đòi hỏi sự cẩn trọng để đảm bảo tính chính xác, đạo đức của thông tin được cung cấp, đặc biệt là khi liên quan đến việc quản lí rủi ro tài chính và đầu tư. Việc sử dụng mô hình ngôn ngữ lớn để đưa ra quyết địn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Quá trình này cho phép mô hình tương tác với môi trường để cải thiện dự đoán.",
+          "chuTrenManHinh": "Tương tác và cải thiện dự đoán",
+          "yDoHinh": "Vòng lặp tương tác giữa mô hình và dữ liệu.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://tapchinganhang.gov.vn/mo-hinh-ngon-ngu-lon-ung-dung-thach-thuc-trong-linh-vuc-tai-chinh-ngan-hang-9305.html",
+              "title": "Mô hình ngôn ngữ lớn: Ứng dụng, thách thức trong lĩnh vực tài chính - ngân hàng",
+              "excerpt": "Học tăng cường (Reinforcement Learning): Một số mô hình ngôn ngữ lớn sử dụng kĩ thuật học tăng cường để cải thiện hiệu suất và độ chính xác. Quá trình học tăng cường cho phép mô hình tương tác với môi trường, nhận phản hồi để cải thiện dự đoán và quyết định.\n\nTinh chỉnh tính toán (Computational Efficiency): Một trong những thách thức lớn nhất của mô hình ngôn ngữ lớn là tinh chỉnh tính toán để giảm thiểu thời gian huấn luyện và chi phí tính toán. Các phương pháp như tự động song song và tối ưu hóa phần cứng giúp tăng tốc quá trình huấn luyện và triển khai. [...] hoặc tư vấn tài chính đòi hỏi sự cẩn trọng để đảm bảo tính chính xác, đạo đức của thông tin được cung cấp, đặc biệt là khi liên quan đến việc quản lí rủi ro tài chính và đầu tư. Việc sử dụng mô hình ngôn ngữ lớn để đưa ra quyết địn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Thực tế chi phí suy luận đã giảm nhanh hơn tốc độ cải thiện chất lượng mô hình.",
+          "chuTrenManHinh": "Chi phí suy luận giảm nhanh",
+          "yDoHinh": "Đồ thị thể hiện chi phí suy luận giảm sâu.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Một công nghệ giảm giá một nghìn lần chỉ trong hai năm là điều đã xảy ra.",
+          "chuTrenManHinh": "Giảm giá 1.000 lần trong 2 năm",
+          "yDoHinh": "Con số một nghìn lần được làm nổi bật.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Vậy chi phí của mô hình ngôn ngữ lớn khác biệt thế nào so với tìm kiếm web?",
+          "chuTrenManHinh": "So sánh: LLM vs Tìm kiếm web",
+          "yDoHinh": "Hai cán cân so sánh hai công nghệ.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.83,
+              "reason": "Tìm thấy 83% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hãy cùng xem xét giá của các dịch vụ tìm kiếm web tính đến tháng năm năm hai nghìn hai mươi lăm.",
+          "chuTrenManHinh": "Giá tìm kiếm web (tháng 5/2025)",
+          "yDoHinh": "Bảng dữ liệu chi phí dịch vụ tìm kiếm.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.8,
+              "reason": "Tìm thấy 80% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Dịch vụ Gemini API của Google có mức giá ba mươi lăm đô la cho một nghìn truy vấn.",
+          "chuTrenManHinh": "Gemini API: $35/1.000 truy vấn",
+          "yDoHinh": "Logo Gemini API kèm mức giá.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.74,
+              "reason": "Tìm thấy 74% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Dịch vụ Bing Search API có giá mười lăm đô la cho một nghìn truy vấn.",
+          "chuTrenManHinh": "Bing Search API: $15/1.000 truy vấn",
+          "yDoHinh": "Logo Bing Search kèm mức giá.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": true,
+              "overlap_ratio": 0.69,
+              "reason": "Tìm thấy 69% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Còn Brave Search API dao động từ năm đến chín đô la cho một nghìn truy vấn.",
+          "chuTrenManHinh": "Brave Search API: $5-$9/1.000 truy vấn",
+          "yDoHinh": "Logo Brave Search kèm mức giá.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://tuyendung.evotek.vn/mo-hinh-ngon-ngu-lon-llm-co-thuc-su-dat-do-nhu-ban-nghi",
+              "title": "Mô Hình Ngôn Ngữ Lớn (LLM) Có Thực Sự Đắt Đỏ Như ...",
+              "excerpt": "Trên thực tế, chi phí suy luận đã giảm nhanh hơn cả tốc độ cải thiện chất lượng mô hình. Việc một công nghệ giảm giá 1000 lần chỉ trong hai năm là điều khó tưởng tượng, nhưng đó chính xác là những gì đã xảy ra với LLM.\n\n## So sánh chi phí: LLM vs Tìm kiếm web\n\nĐể có cái nhìn cụ thể, hãy so sánh chi phí của LLM với các dịch vụ tìm kiếm web:\n\n### Chi phí tìm kiếm web (tính đến 2025-05-02):\n\n Gemini API (Google): $35/1.000 truy vấn\n Bing Search API: $15/1.000 truy vấn\n Brave Search API: $5-$9/1.000 truy vấn\n\n### Chi phí LLM (tính đến 2025-05-02):\n\nGiả sử mỗi truy vấn tạo ra khoảng 1.000 token, dưới đy là chi phí cho 1.000 truy vấn:\n\n Gemma 3 27B: $0.20\n Qwen3 30B A3B: $0.30\n Gemini 2.0 Flash: $0.40\n GPT-4.1 nano: $0.40\n Deepseek V3: $1.10\n GPT-4.1: $8.00\n Claude 3.7 Sonnet: $15.00 [...] Khả n",
+              "verified": false,
+              "overlap_ratio": 0.59,
+              "reason": "Chỉ tìm thấy 59% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Việc nắm rõ các mức giá này giúp nhà quản lý cân đối ngân sách cho sản phẩm.",
+          "chuTrenManHinh": "Cân đối ngân sách sản phẩm",
+          "yDoHinh": "Quản lý sản phẩm xem xét biểu đồ ngân sách.",
+          "nguon": []
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "hoi",
+          "loi": "Làm thế nào để chọn lựa giữa mô hình mã nguồn mở và mô hình độc quyền?",
+          "chuTrenManHinh": "Mã nguồn mở hay Độc quyền?",
+          "yDoHinh": "Hai hướng đi lựa chọn mô hình.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-lon-tot-nhat",
+              "title": "[Cập nhật] 7+ mô hình ngôn ngữ lớn (LLMs) tốt nhất",
+              "excerpt": "### 1.7. Hệ sinh thái hỗ trợ và cộng đồng\n\nSự hỗ trợ từ nhà cung cấp hoặc cộng đồng giúp việc triển khai, vận hành và xử lý sự cố thuận tiện hơn. Mô hình mã nguồn mở thường có cộng đồng mạnh; mô hình độc quyền có hỗ trợ chuyên su.\n\nXem thêm: Ứng dụng xử lý ngôn ngữ tự nhiên (NLP) trong doanh nghiệp\n\n## 2. So sánh giữa LLM mã nguồn mở và LLM độc quyền\n\nTùy theo năng lực kỹ thuật, yêu cầu bảo mật và ngn sách, cá nhn/tổ chức có thể cn nhắc lựa chọn 1 trong 2 loại mô hình dựa vào bảng so sánh sau: [...] Kich Thuoc Cua Mo Hinh Ngon Ngu Lon 1755585520 tốt nhất 13\")\n\nKích thước của các mô hình LLM phổ biến\n\n### 1.2. Mức độ phù hợp với lĩnh vực chuyên môn\n\nMột số LLM được huấn luyện chuyên biệt cho các ngành như y tế, tài chính, pháp lý… sẽ cho kết quả chính xác và sát ngữ cảnh hơn so với mô hình ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Tùy theo năng lực kỹ thuật và bảo mật mà tổ chức sẽ cân nhắc lựa chọn.",
+          "chuTrenManHinh": "Căn cứ: Kỹ thuật & Bảo mật",
+          "yDoHinh": "Biểu tượng năng lực kỹ thuật và an ninh.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-lon-tot-nhat",
+              "title": "[Cập nhật] 7+ mô hình ngôn ngữ lớn (LLMs) tốt nhất",
+              "excerpt": "### 1.7. Hệ sinh thái hỗ trợ và cộng đồng\n\nSự hỗ trợ từ nhà cung cấp hoặc cộng đồng giúp việc triển khai, vận hành và xử lý sự cố thuận tiện hơn. Mô hình mã nguồn mở thường có cộng đồng mạnh; mô hình độc quyền có hỗ trợ chuyên su.\n\nXem thêm: Ứng dụng xử lý ngôn ngữ tự nhiên (NLP) trong doanh nghiệp\n\n## 2. So sánh giữa LLM mã nguồn mở và LLM độc quyền\n\nTùy theo năng lực kỹ thuật, yêu cầu bảo mật và ngn sách, cá nhn/tổ chức có thể cn nhắc lựa chọn 1 trong 2 loại mô hình dựa vào bảng so sánh sau: [...] Kich Thuoc Cua Mo Hinh Ngon Ngu Lon 1755585520 tốt nhất 13\")\n\nKích thước của các mô hình LLM phổ biến\n\n### 1.2. Mức độ phù hợp với lĩnh vực chuyên môn\n\nMột số LLM được huấn luyện chuyên biệt cho các ngành như y tế, tài chính, pháp lý… sẽ cho kết quả chính xác và sát ngữ cảnh hơn so với mô hình ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Mô hình mã nguồn mở thường có cộng đồng hỗ trợ rất mạnh mẽ.",
+          "chuTrenManHinh": "Mã nguồn mở: Cộng đồng mạnh",
+          "yDoHinh": "Hình ảnh đại diện cho cộng đồng lập trình viên.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-lon-tot-nhat",
+              "title": "[Cập nhật] 7+ mô hình ngôn ngữ lớn (LLMs) tốt nhất",
+              "excerpt": "### 1.7. Hệ sinh thái hỗ trợ và cộng đồng\n\nSự hỗ trợ từ nhà cung cấp hoặc cộng đồng giúp việc triển khai, vận hành và xử lý sự cố thuận tiện hơn. Mô hình mã nguồn mở thường có cộng đồng mạnh; mô hình độc quyền có hỗ trợ chuyên su.\n\nXem thêm: Ứng dụng xử lý ngôn ngữ tự nhiên (NLP) trong doanh nghiệp\n\n## 2. So sánh giữa LLM mã nguồn mở và LLM độc quyền\n\nTùy theo năng lực kỹ thuật, yêu cầu bảo mật và ngn sách, cá nhn/tổ chức có thể cn nhắc lựa chọn 1 trong 2 loại mô hình dựa vào bảng so sánh sau: [...] Kich Thuoc Cua Mo Hinh Ngon Ngu Lon 1755585520 tốt nhất 13\")\n\nKích thước của các mô hình LLM phổ biến\n\n### 1.2. Mức độ phù hợp với lĩnh vực chuyên môn\n\nMột số LLM được huấn luyện chuyên biệt cho các ngành như y tế, tài chính, pháp lý… sẽ cho kết quả chính xác và sát ngữ cảnh hơn so với mô hình ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong khi đó mô hình độc quyền lại mang đến sự hỗ trợ chuyên sâu từ nhà cung cấp.",
+          "chuTrenManHinh": "Độc quyền: Hỗ trợ chuyên sâu",
+          "yDoHinh": "Hình ảnh chuyên gia hỗ trợ kỹ thuật.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://fpt-is.com/goc-nhin-so/mo-hinh-ngon-ngu-lon-tot-nhat",
+              "title": "[Cập nhật] 7+ mô hình ngôn ngữ lớn (LLMs) tốt nhất",
+              "excerpt": "### 1.7. Hệ sinh thái hỗ trợ và cộng đồng\n\nSự hỗ trợ từ nhà cung cấp hoặc cộng đồng giúp việc triển khai, vận hành và xử lý sự cố thuận tiện hơn. Mô hình mã nguồn mở thường có cộng đồng mạnh; mô hình độc quyền có hỗ trợ chuyên su.\n\nXem thêm: Ứng dụng xử lý ngôn ngữ tự nhiên (NLP) trong doanh nghiệp\n\n## 2. So sánh giữa LLM mã nguồn mở và LLM độc quyền\n\nTùy theo năng lực kỹ thuật, yêu cầu bảo mật và ngn sách, cá nhn/tổ chức có thể cn nhắc lựa chọn 1 trong 2 loại mô hình dựa vào bảng so sánh sau: [...] Kich Thuoc Cua Mo Hinh Ngon Ngu Lon 1755585520 tốt nhất 13\")\n\nKích thước của các mô hình LLM phổ biến\n\n### 1.2. Mức độ phù hợp với lĩnh vực chuyên môn\n\nMột số LLM được huấn luyện chuyên biệt cho các ngành như y tế, tài chính, pháp lý… sẽ cho kết quả chính xác và sát ngữ cảnh hơn so với mô hình ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Chúng ta tiếp tục tìm hiểu giải pháp thay thế mô hình lớn.",
+          "chuTrenManHinh": "Giải pháp mô hình ngôn ngữ nhỏ",
+          "yDoHinh": "Mô hình nhỏ thay thế mô hình lớn.",
+          "nguon": []
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Thay vì kiến thức đa dạng như mô hình lớn thì mô hình nhỏ tập trung chuyên biệt.",
+          "chuTrenManHinh": "SLM: Tập trung chuyên biệt",
+          "yDoHinh": "Hình ảnh tập trung vào một lõi kiến thức.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Mô hình nhỏ đưa ra phản hồi chính xác và phù hợp với từng vai trò người dùng.",
+          "chuTrenManHinh": "Phản hồi chính xác theo vai trò",
+          "yDoHinh": "Sơ đồ phản hồi tùy biến cho từng nhân sự.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Ví dụ câu hỏi từ Giám đốc Marketing sẽ nhận câu trả lời khác với Giám đốc Tài chính.",
+          "chuTrenManHinh": "Tùy biến cho CMO và CFO",
+          "yDoHinh": "Hình ảnh so sánh câu trả lời cho CMO và CFO.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t01",
+              "url": "https://vneconomy.vn/techconnect/mo-hinh-ngon-ngu-nho-se-la-dot-pha-tiep-theo-cua-ai.htm",
+              "title": "Mô hình ngôn ngữ nhỏ sẽ là đột phá tiếp theo của AI",
+              "excerpt": "Thay vì cung cấp kiến thức đa dạng và rộng lớn như các LLM thông thường, SLM theo lĩnh vực tập trung vào một loại kiến thức chuyên biệt. Các mô hình này được đào tạo su trong một lĩnh vực cụ thể, giúp đưa ra phản hồi chính xác hơn và phù hợp với vai trò của người dùng, ví dụ: trả lời cu hỏi của Giám đốc Marketing (CMO) sẽ khác với cu hỏi từ Giám đốc Tài chính (CFO).\n\n### THÁCH THỨC VỀ ẢO GIÁC, NĂNG LƯỢNG VÀ ĐÀO TẠO AI\n\nCác mô hình ngôn ngữ lớn yêu cầu hàng ngàn chip xử lý AI (GPU) để xử lý hàng trăm tỷ tham số. Điều này khiến chi phí xy dựng chúng lên đến hàng triệu USD, không chỉ trong giai đoạn đào tạo mà cả khi vận hành để trả lời các truy vấn của người dùng. [...] Hàng loạt công ty khởi nghiệp trong lĩnh vực LLM đang nổi lên, cung cấp giải pháp cho phép máy tính tổng hợp lượng dữ liệu ",
+              "verified": true,
+              "overlap_ratio": 0.88,
+              "reason": "Tìm thấy 88% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "phan": 3,
+          "kieu": "hoi",
+          "loi": "Vậy làm sao để tinh chỉnh mô hình một cách hiệu quả về chi phí?",
+          "chuTrenManHinh": "Phương pháp tinh chỉnh tối ưu chi phí",
+          "yDoHinh": "Biểu tượng tối ưu hóa chi phí.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://mygpt.vn/loi-ich-va-chi-phi-viec-so-huu-mo-hinh-ngon-ngu-dung-rieng-llm",
+              "title": "Lợi ích và Chi phí sở hữu mô hình ngôn ngữ dùng riêng (LLM) - MyGPT",
+              "excerpt": "Sử dụng kỹ thuật QLoRa để điều chỉnh một mô hình như Falcon 7B có thể được thực hiện một cách hiệu quả về chi phí bằng cách sử dụng Google Colab Pro, với giá là 9,72 đô la mỗi tháng và bạn có thể hủy bất cứ lúc nào. Một tùy chọn khác là điều chỉnh trên máy tính cá nhn trang bị ít nhất 16 GB VRAM, một lựa chọn khả thi khác. Thiết lập này cho phép điều chỉnh tinh vi mô hình ngôn ngữ lớn một cách hiệu quả về chi phí với kết quả có thể so sánh với các phương pháp điều chỉnh truyền thống.\n\nPhần tiếp theo sẽ tiết lộ chi phí thực tế liên quan đến triển khai một mô hình đã được đào tạo và sử dụng nó một cách hiệu quả.\n\n## 4. Chi phí phục vụ mô hình ngôn ngữ – LLM [...] Trong kịch bản kinh tế nhất, việc phát triển một mô hình chuyên biệt dựa trên Falcon 7B, được điều chỉnh tốt trên dữ liệu độc quyề",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 26,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Sử dụng kỹ thuật QLoRa để điều chỉnh mô hình Falcon bảy B rất hiệu quả về chi phí.",
+          "chuTrenManHinh": "Kỹ thuật QLoRa với Falcon 7B",
+          "yDoHinh": "Mô phỏng kỹ thuật QLoRa trên mô hình Falcon 7B.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://mygpt.vn/loi-ich-va-chi-phi-viec-so-huu-mo-hinh-ngon-ngu-dung-rieng-llm",
+              "title": "Lợi ích và Chi phí sở hữu mô hình ngôn ngữ dùng riêng (LLM) - MyGPT",
+              "excerpt": "Sử dụng kỹ thuật QLoRa để điều chỉnh một mô hình như Falcon 7B có thể được thực hiện một cách hiệu quả về chi phí bằng cách sử dụng Google Colab Pro, với giá là 9,72 đô la mỗi tháng và bạn có thể hủy bất cứ lúc nào. Một tùy chọn khác là điều chỉnh trên máy tính cá nhn trang bị ít nhất 16 GB VRAM, một lựa chọn khả thi khác. Thiết lập này cho phép điều chỉnh tinh vi mô hình ngôn ngữ lớn một cách hiệu quả về chi phí với kết quả có thể so sánh với các phương pháp điều chỉnh truyền thống.\n\nPhần tiếp theo sẽ tiết lộ chi phí thực tế liên quan đến triển khai một mô hình đã được đào tạo và sử dụng nó một cách hiệu quả.\n\n## 4. Chi phí phục vụ mô hình ngôn ngữ – LLM [...] Trong kịch bản kinh tế nhất, việc phát triển một mô hình chuyên biệt dựa trên Falcon 7B, được điều chỉnh tốt trên dữ liệu độc quyề",
+              "verified": true,
+              "overlap_ratio": 0.89,
+              "reason": "Tìm thấy 89% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 27,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Bạn có thể dùng Google Colab Pro với giá chín phẩy bảy mươi hai đô la một tháng.",
+          "chuTrenManHinh": "Google Colab Pro: $9.72/tháng",
+          "yDoHinh": "Giao diện Google Colab Pro và giá tiền.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://mygpt.vn/loi-ich-va-chi-phi-viec-so-huu-mo-hinh-ngon-ngu-dung-rieng-llm",
+              "title": "Lợi ích và Chi phí sở hữu mô hình ngôn ngữ dùng riêng (LLM) - MyGPT",
+              "excerpt": "Sử dụng kỹ thuật QLoRa để điều chỉnh một mô hình như Falcon 7B có thể được thực hiện một cách hiệu quả về chi phí bằng cách sử dụng Google Colab Pro, với giá là 9,72 đô la mỗi tháng và bạn có thể hủy bất cứ lúc nào. Một tùy chọn khác là điều chỉnh trên máy tính cá nhn trang bị ít nhất 16 GB VRAM, một lựa chọn khả thi khác. Thiết lập này cho phép điều chỉnh tinh vi mô hình ngôn ngữ lớn một cách hiệu quả về chi phí với kết quả có thể so sánh với các phương pháp điều chỉnh truyền thống.\n\nPhần tiếp theo sẽ tiết lộ chi phí thực tế liên quan đến triển khai một mô hình đã được đào tạo và sử dụng nó một cách hiệu quả.\n\n## 4. Chi phí phục vụ mô hình ngôn ngữ – LLM [...] Trong kịch bản kinh tế nhất, việc phát triển một mô hình chuyên biệt dựa trên Falcon 7B, được điều chỉnh tốt trên dữ liệu độc quyề",
+              "verified": true,
+              "overlap_ratio": 0.78,
+              "reason": "Tìm thấy 78% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 28,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Một tùy chọn khác là điều chỉnh trên máy tính cá nhân có ít nhất mười sáu gigabyte VRAM.",
+          "chuTrenManHinh": "Máy tính cá nhân >= 16 GB VRAM",
+          "yDoHinh": "Hình ảnh máy tính trang bị 16 GB VRAM.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://mygpt.vn/loi-ich-va-chi-phi-viec-so-huu-mo-hinh-ngon-ngu-dung-rieng-llm",
+              "title": "Lợi ích và Chi phí sở hữu mô hình ngôn ngữ dùng riêng (LLM) - MyGPT",
+              "excerpt": "Sử dụng kỹ thuật QLoRa để điều chỉnh một mô hình như Falcon 7B có thể được thực hiện một cách hiệu quả về chi phí bằng cách sử dụng Google Colab Pro, với giá là 9,72 đô la mỗi tháng và bạn có thể hủy bất cứ lúc nào. Một tùy chọn khác là điều chỉnh trên máy tính cá nhn trang bị ít nhất 16 GB VRAM, một lựa chọn khả thi khác. Thiết lập này cho phép điều chỉnh tinh vi mô hình ngôn ngữ lớn một cách hiệu quả về chi phí với kết quả có thể so sánh với các phương pháp điều chỉnh truyền thống.\n\nPhần tiếp theo sẽ tiết lộ chi phí thực tế liên quan đến triển khai một mô hình đã được đào tạo và sử dụng nó một cách hiệu quả.\n\n## 4. Chi phí phục vụ mô hình ngôn ngữ – LLM [...] Trong kịch bản kinh tế nhất, việc phát triển một mô hình chuyên biệt dựa trên Falcon 7B, được điều chỉnh tốt trên dữ liệu độc quyề",
+              "verified": true,
+              "overlap_ratio": 0.84,
+              "reason": "Tìm thấy 84% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Thiết lập này cho kết quả có thể so sánh với các phương pháp truyền thống.",
+          "chuTrenManHinh": "Kết quả tương đương truyền thống",
+          "yDoHinh": "Biểu đồ so sánh hiệu năng hai phương pháp.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://mygpt.vn/loi-ich-va-chi-phi-viec-so-huu-mo-hinh-ngon-ngu-dung-rieng-llm",
+              "title": "Lợi ích và Chi phí sở hữu mô hình ngôn ngữ dùng riêng (LLM) - MyGPT",
+              "excerpt": "Sử dụng kỹ thuật QLoRa để điều chỉnh một mô hình như Falcon 7B có thể được thực hiện một cách hiệu quả về chi phí bằng cách sử dụng Google Colab Pro, với giá là 9,72 đô la mỗi tháng và bạn có thể hủy bất cứ lúc nào. Một tùy chọn khác là điều chỉnh trên máy tính cá nhn trang bị ít nhất 16 GB VRAM, một lựa chọn khả thi khác. Thiết lập này cho phép điều chỉnh tinh vi mô hình ngôn ngữ lớn một cách hiệu quả về chi phí với kết quả có thể so sánh với các phương pháp điều chỉnh truyền thống.\n\nPhần tiếp theo sẽ tiết lộ chi phí thực tế liên quan đến triển khai một mô hình đã được đào tạo và sử dụng nó một cách hiệu quả.\n\n## 4. Chi phí phục vụ mô hình ngôn ngữ – LLM [...] Trong kịch bản kinh tế nhất, việc phát triển một mô hình chuyên biệt dựa trên Falcon 7B, được điều chỉnh tốt trên dữ liệu độc quyề",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 30,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Khi được tinh chỉnh với sách giáo khoa mô hình hỗ trợ học tập cá nhân hóa.",
+          "chuTrenManHinh": "Học tập cá nhân hóa",
+          "yDoHinh": "Học sinh tương tác với giáo trình cá nhân.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.ultralytics.com/vi/blog/from-code-to-conversation-how-does-an-llm-work",
+              "title": "Mô hình ngôn ngữ lớn (LLMs): Cách chúng hoạt động",
+              "excerpt": "Khi được fine-tune với sách giáo khoa, LLM có thể cung cấp trải nghiệm học tập cá nhân hóa, cho phép học sinh học theo tốc độ riêng và tập trung vào các chủ đề mà các em thấy khó. Giáo viên cũng có thể tận dụng LLM để chấm điểm bài làm của học sinh, như bài luận và bài kiểm tra, giúp tiết kiệm thời gian và cho phép họ tập trung vào các khía cạnh khác của việc giảng dạy.\n\nHơn nữa, các model này có thể dịch sách giáo khoa và tài liệu học tập sang các ngôn ngữ khác nhau, giúp học sinh tiếp cận nội dung giáo dục bằng ngôn ngữ mẹ đẻ của mình.\n\nAn example of translating text using an LLM\n\nAn example of translating text using an LLM\n\nHình 5. Ví dụ về việc dịch văn bản bằng LLM.\n\n## Link to this sectionƯu điểm và nhược điểm của large language model#",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 31,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Giáo viên tận dụng mô hình để chấm điểm bài luận giúp tiết kiệm thời gian.",
+          "chuTrenManHinh": "Tiết kiệm thời gian chấm bài",
+          "yDoHinh": "Hình ảnh tự động hóa chấm bài tập.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.ultralytics.com/vi/blog/from-code-to-conversation-how-does-an-llm-work",
+              "title": "Mô hình ngôn ngữ lớn (LLMs): Cách chúng hoạt động",
+              "excerpt": "Khi được fine-tune với sách giáo khoa, LLM có thể cung cấp trải nghiệm học tập cá nhân hóa, cho phép học sinh học theo tốc độ riêng và tập trung vào các chủ đề mà các em thấy khó. Giáo viên cũng có thể tận dụng LLM để chấm điểm bài làm của học sinh, như bài luận và bài kiểm tra, giúp tiết kiệm thời gian và cho phép họ tập trung vào các khía cạnh khác của việc giảng dạy.\n\nHơn nữa, các model này có thể dịch sách giáo khoa và tài liệu học tập sang các ngôn ngữ khác nhau, giúp học sinh tiếp cận nội dung giáo dục bằng ngôn ngữ mẹ đẻ của mình.\n\nAn example of translating text using an LLM\n\nAn example of translating text using an LLM\n\nHình 5. Ví dụ về việc dịch văn bản bằng LLM.\n\n## Link to this sectionƯu điểm và nhược điểm của large language model#",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 32,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Mô hình còn dịch sách giáo khoa sang ngôn ngữ mẹ đẻ của học sinh.",
+          "chuTrenManHinh": "Dịch sách sang ngôn ngữ mẹ đẻ",
+          "yDoHinh": "Mô phỏng dịch thuật sách giáo khoa.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://www.ultralytics.com/vi/blog/from-code-to-conversation-how-does-an-llm-work",
+              "title": "Mô hình ngôn ngữ lớn (LLMs): Cách chúng hoạt động",
+              "excerpt": "Khi được fine-tune với sách giáo khoa, LLM có thể cung cấp trải nghiệm học tập cá nhân hóa, cho phép học sinh học theo tốc độ riêng và tập trung vào các chủ đề mà các em thấy khó. Giáo viên cũng có thể tận dụng LLM để chấm điểm bài làm của học sinh, như bài luận và bài kiểm tra, giúp tiết kiệm thời gian và cho phép họ tập trung vào các khía cạnh khác của việc giảng dạy.\n\nHơn nữa, các model này có thể dịch sách giáo khoa và tài liệu học tập sang các ngôn ngữ khác nhau, giúp học sinh tiếp cận nội dung giáo dục bằng ngôn ngữ mẹ đẻ của mình.\n\nAn example of translating text using an LLM\n\nAn example of translating text using an LLM\n\nHình 5. Ví dụ về việc dịch văn bản bằng LLM.\n\n## Link to this sectionƯu điểm và nhược điểm của large language model#",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 33,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Việc lựa chọn mô hình phù hợp giúp doanh nghiệp tối ưu chi phí suy luận đáng kể.",
+          "chuTrenManHinh": "Tối ưu chi phí doanh nghiệp",
+          "yDoHinh": "Biểu đồ chi phí được tối ưu hiệu quả.",
+          "nguon": []
+        },
+        {
+          "n": 34,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã theo dõi bài giảng hôm nay.",
+          "chuTrenManHinh": "Cảm ơn các bạn đã theo dõi!",
+          "yDoHinh": "Màn hình chào tạm biệt người học.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 28,
+        "verified_count": 27,
+        "unverified_count": 1,
+        "accuracy_rate": 0.96
+      }
+    },
+    "sources_used": [
+      "t04",
+      "t01",
+      "t05",
+      "t08",
+      "t06",
+      "t07",
+      "t03",
+      "t02"
+    ],
+    "created_at": "2026-09-18T08:21:01.372747"
+  }
+}

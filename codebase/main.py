@@ -42,10 +42,18 @@ def on_startup():
     logging.getLogger(__name__).info("Database initialized.")
 
 
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+
 # Mount routes
 app.include_router(sessions_router)
 app.include_router(sources_router)
 app.include_router(scripts_router)
+
+# Mount Frontend UI
+frontend_dir = Path(__file__).resolve().parent.parent / "frontend"
+if frontend_dir.exists():
+    app.mount("/app", StaticFiles(directory=str(frontend_dir), html=True), name="frontend")
 
 
 @app.get("/", tags=["Health"])
@@ -53,6 +61,7 @@ def root():
     return {
         "service": "ScriptScout API",
         "version": "1.0.0",
+        "app_ui": "/app/",
         "docs": "/docs",
         "endpoints": {
             "1_create_session": "POST /api/sessions",

@@ -9,11 +9,10 @@ from pydantic import BaseModel, Field, HttpUrl
 # ─── Session ──────────────────────────────────────────────────────────────────
 
 class SessionCreate(BaseModel):
-    topic: str = Field(..., description="Chủ đề của video bài giảng")
-    learning_goal: str = Field(..., description="Mục tiêu bài học: người xem sẽ biết/làm được gì")
-    audience: str = Field(..., description="Người học là ai, ví dụ: 'sinh viên IT năm 1'")
-    duration_minutes: int = Field(..., ge=1, le=30, description="Thời lượng video dự kiến (phút)")
-
+    topic: str = Field(..., min_length=2, description="Chủ đề của video bài giảng")
+    learning_goal: str = Field(..., min_length=5, description="Mục tiêu bài học")
+    audience: str = Field(..., min_length=2, description="Người học là ai")
+    duration_minutes: int = Field(..., ge=1, le=10, description="Thời lượng video (1–10 phút, chuẩn Studio là 3–5 phút)")
 
 class SessionResponse(BaseModel):
     id: str
@@ -25,7 +24,6 @@ class SessionResponse(BaseModel):
     created_at: datetime
 
     model_config = {"from_attributes": True}
-
 
 # ─── Source ───────────────────────────────────────────────────────────────────
 

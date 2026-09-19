@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriptScout Studio — AI Video Script with Citations</title>
+  <meta name="description" content="Tạo kịch bản bài giảng video với AI, tự động nghiên cứu và dẫn nguồn uy tín.">
+
+  <!-- Design System (external CSS, không phụ thuộc Tailwind CDN ~350KB) -->
+  <link rel="stylesheet" href="css/styles.css?v=2">
+
+  <!-- React 18 (production UMD — vẫn dùng CDN vì không có build step) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!--
+    Babel Standalone: cần thiết vì không có build tool.
+    Lưu ý với team: khi project trưởng thành, migrate sang Vite để loại bỏ overhead này.
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- API Service Layer: tách biệt hoàn toàn khỏi UI -->
+  <script src="js/api.js?v=2"></script>
+
+  <!-- React Application -->
+  <script type="text/babel">
+  /* eslint-disable no-undef */
+  const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+  // ================================================================
+  // CONSTANTS
+  // ================================================================
+  const PRESETS = [
+    {
+      label: "Cửa sổ ngữ cảnh LLM",
+      topic: "Cửa sổ ngữ cảnh của mô hình ngôn ngữ",
+      learning_goal: "Giải thích vì sao trợ lý AI quên phần đầu cuộc trò chuyện dài",
+      audience: "Sinh viên năm nhất, chưa học lập trình",
+      duration: 3,
+    },
+    {
+      label: "AI, ML & Deep Learning",
+      topic: "Học máy là gì",
+      learning_goal: "Phân biệt được sự khác nhau giữa AI, Machine Learning và Deep Learning",
+      audience: "Người mới bắt đầu tìm hiểu công nghệ",
+      duration: 4,
+    },
+    {
+      label: "AI ảo giác (Hallucination)",
+      topic: "Hiện tượng ảo giác (Hallucination) của AI",
+      learning_goal: "Nhận ra 3 dấu hiệu thông tin sai và cách người dùng kiểm chứng",
+      audience: "Người đi làm sử dụng AI hàng ngày",
+      duration: 5,
+    },
+  ];
+
+  // Search agent stages (labels chỉ mang tính cosmetic, không tied vào real status)
+  const SEARCH_STAGES = [
+    "Đang khởi tạo phiên làm việc...",
+    "Agent đang tìm kiếm bài viết qua Tavily...",
+    "Đang trích xuất nội dung từ các trang web...",
+    "LLM đang chấm điểm độ tin cậy (Trust Scoring)...",
+    "Đang phân tích mâu thuẫn giữa các tài liệu...",
+    "Hoàn tất — Đang tải danh sách nguồn...",
+  ];
+
+  const GEN_STAGES = [
+    "Script Agent đang lập cấu trúc kịch bản...",
+    "Đang phân rã từng câu và gán mã trích dẫn...",
+    "Verify Agent đang đối soát với tài liệu gốc...",
+    "Đang đóng gói kịch bản hoàn chỉnh...",
+  ];
+
+  // ================================================================
+  // SHARED HOOKS
+  // ================================================================
+
+  /**
+   * useToast: quản lý toast notifications.
+   * Fix: thay alert() và animate-bounce bằng proper notification system.
+   */
+  function useToast() {
+    const [toasts, setToasts] = useState([]);
+    const show = useCallback((msg, type = "default") => {
+      const id = Date.now();
+      setToasts((prev) => [...prev, { id, msg, type }]);
+      // Auto-dismiss sau 3.5s
+      setTimeout(() => setToasts((prev) => prev.filter((t) => t.id !== id)), 3500);
+    }, []);
+    return { toasts, show };
+  }
+
+  /**
+   * useTimer: đếm giây elapsed cho loading states.
+   * Đảm bảo cleanup đúng khi component unmount.
+   */
+  function useTimer() {
+    const [elapsed, setElapsed] = useState(0);
+    const intervalRef = useRef(null);
+
+    const start = useCallback(() => {
+      setElapsed(0);
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      intervalRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
+    }, []);
+
+    const stop = useCallback(() => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    }, []);
+
+    // Cleanup on unmount
+    useEffect(() => () => stop(), [stop]);
+
+    return { elapsed, start, stop };
+  }
+
+  /**
+   * useStageAdvancer: advance a stage label on an interval.
+   * Ý nghĩa: tách riêng "fake progress" concern, không để nó
+   * lẫn vào logic quan trọng như polling. Bất kỳ ai đọc code
+   * đều biết ngay đây là cosmetic label, không phải real status.
+   */
+  function useStageAdvancer(stages, intervalMs = 8000) {
+    const [idx, setIdx] = useState(0);
+    const ref = useRef(null);
+
+    const start = useCallback(() => {
+      setIdx(0);
+      let current = 0;
+      ref.current = setInterval(() => {
+        current = Math.min(current + 1, stages.length - 2); // dừng ở penultimate
+        setIdx(current);
+      }, intervalMs);
+    }, [stages, intervalMs]);
+
+    const setFinal = useCallback(() => {
+      if (ref.current) clearInterval(ref.current);
+      setIdx(stages.length - 1);
+    }, [stages]);
+
+    const stop = useCallback(() => {
+      if (ref.current) { clearInterval(ref.current); ref.current = null; }
+    }, []);
+
+    useEffect(() => () => stop(), [stop]);
+
+    return { label: stages[idx], start, stop, setFinal };
+  }
+
+  // ================================================================
+  // SHARED COMPONENTS
+  // ================================================================
+
+  function Toasts({ toasts }) {
+    return (
+      <div className="toast-container">
+        {toasts.map((t) => (
+          <div key={t.id} className={`toast ${t.type === "success" ? "toast-success" : t.type === "error" ? "toast-error" : ""}`}>
+            {t.msg}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  function Spinner({ size }) {
+    return <div className={size === "lg" ? "spinner spinner-lg" : "spinner"} />;
+  }
+
+  function EmptyState({ icon, text }) {
+    return (
+      <div className="empty-state">
+        <span className="empty-icon">{icon}</span>
+        <p className="empty-text">{text}</p>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // APP ROOT
+  // ================================================================
+  function App() {
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+    const [step, setStep] = useState(1);
+    const [serverStatus, setServerStatus] = useState("checking"); // "checking" | "online" | "offline"
+    const [session, setSession] = useState(null);
+    const [sources, setSources] = useState([]);
+    const [script, setScript] = useState(null);
+
+    // Lưu trữ formData ở cấp App để không bao giờ bị mất dữ liệu khi chuyển bước hoặc dừng
+    const [formData, setFormData] = useState({
+      topic: "Học máy là gì",
+      learningGoal: "Phân biệt được AI, học máy và học sâu qua ví dụ thực tế",
+      audience: "Người mới bắt đầu học AI",
+      duration: 3,
+    });
+
+    const abortControllerRef = useRef(null);
+
+    useEffect(() => {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }, [theme]);
+
+    useEffect(() => {
+      API.health()
+        .then(() => setServerStatus("online"))
+        .catch(() => setServerStatus("offline"));
+    }, []);
+
+    // Hàm dừng ngay lập tức tác vụ ngầm hiện tại
+    const stopActiveTask = useCallback(() => {
+      if (abortControllerRef.current) {
+        try {
+          abortControllerRef.current.abort();
+        } catch (_) {}
+        abortControllerRef.current = null;
+      }
+    }, []);
+
+    const handleSourcesLoaded = (s, srcs) => {
+      setSession(s);
+      setSources(srcs);
+    };
+
+    const clearSources = useCallback(() => {
+      setSession(null);
+      setSources([]);
+    }, []);
+
+    const goToStep1 = () => {
+      stopActiveTask();
+      setStep(1);
+    };
+
+    const goToStep2 = (s, srcs) => {
+      stopActiveTask();
+      if (s) setSession(s);
+      if (srcs) setSources(srcs);
+      setStep(2);
+    };
+
+    const goToStep3 = (sc) => {
+      stopActiveTask();
+      if (sc) setScript(sc);
+      setStep(3);
+    };
+
+    const reset = () => {
+      stopActiveTask();
+      setSession(null);
+      setSources([]);
+      setScript(null);
+      setStep(1);
+    };
+
+    // Kiểm tra bước nào có thể bấm vào được trên Stepper
+    const canNavigateToStep = (targetStep) => {
+      if (targetStep === 1) return true;
+      if (targetStep === 2) return Boolean(session || sources.length > 0);
+      if (targetStep === 3) return Boolean(script);
+      return false;
+    };
+
+    const handleSelectStep = (targetStep) => {
+      stopActiveTask();
+      setStep(targetStep);
+    };
+
+    return (
+      <div className="app">
+        <Header serverStatus={serverStatus} theme={theme} setTheme={setTheme} />
+        <main className="main">
+          <Stepper
+            step={step}
+            canNavigateToStep={canNavigateToStep}
+            onSelectStep={handleSelectStep}
+          />
+          {step === 1 && (
+            <Step1
+              formData={formData}
+              setFormData={setFormData}
+              hasSources={sources.length > 0}
+              sourcesCount={sources.length}
+              onGoToSources={() => goToStep2()}
+              onSourcesLoaded={handleSourcesLoaded}
+              onClearSources={clearSources}
+              abortControllerRef={abortControllerRef}
+              stopActiveTask={stopActiveTask}
+            />
+          )}
+          {step === 2 && (
+            <Step2
+              session={session}
+              sources={sources}
+              setSources={setSources}
+              hasScript={Boolean(script)}
+              onGoToScript={() => goToStep3(script)}
+              onBack={goToStep1}
+              onComplete={goToStep3}
+              abortControllerRef={abortControllerRef}
+              stopActiveTask={stopActiveTask}
+            />
+          )}
+          {step === 3 && (
+            <Step3
+              session={session}
+              script={script}
+              sources={sources}
+              onBack={() => goToStep2()}
+              onGoToStep1={goToStep1}
+              onReset={reset}
+            />
+          )}
+        </main>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // HEADER
+  // ================================================================
+  function Header({ serverStatus, theme, setTheme }) {
+    const statusLabel = {
+      online: "Backend Online",
+      offline: "Backend Offline — Hãy chạy server",
+      checking: "Đang kết nối...",
+    }[serverStatus];
+
+    return (
+      <header className="header">
+        <div className="header-inner">
+          <div className="logo">
+            <div className="logo-icon">S</div>
+            <div>
+              <div className="flex items-center">
+                <span className="logo-name">ScriptScout</span>
+                <span className="badge-track">Track C3 · Lesson Studio</span>
+              </div>
+              <div className="logo-sub">Agent nghiên cứu web & viết kịch bản có dẫn nguồn</div>
+            </div>
+          </div>
+          <div className="flex gap-4" style={{ alignItems: "center" }}>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              title={theme === "light" ? "Chuyển sang Giao diện Tối" : "Chuyển sang Giao diện Sáng"}
+              style={{ fontSize: 16, padding: "6px" }}
+            >
+              {theme === "light" ? "🌙" : "☀️"}
+            </button>
+            <div className="status-pill">
+              <div className={`status-dot ${serverStatus}`} />
+              <span>{statusLabel}</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
+  // ================================================================
+  // STEPPER
+  // ================================================================
+  const STEPS = [
+    { n: 1, label: "Thiết lập & Tìm kiếm" },
+    { n: 2, label: "Duyệt & Thẩm định nguồn" },
+    { n: 3, label: "Kịch bản & Trích dẫn" },
+  ];
+
+  function Stepper({ step, canNavigateToStep, onSelectStep }) {
+    return (
+      <div className="mb-6">
+        <div className="stepper">
+          {STEPS.map((s, idx) => {
+            const isClickable = canNavigateToStep ? canNavigateToStep(s.n) : false;
+            const isCurrent = step === s.n;
+            const isDone = step > s.n;
+            return (
+              <React.Fragment key={s.n}>
+                <div
+                  className={`step ${isCurrent ? "active" : isDone ? "done" : ""} ${isClickable ? "step-clickable" : ""}`}
+                  onClick={() => {
+                    if (isClickable && onSelectStep) {
+                      onSelectStep(s.n);
+                    }
+                  }}
+                  title={isClickable ? `Chuyển sang Bước ${s.n} (bảo lưu dữ liệu)` : `Bước ${s.n}`}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if ((e.key === "Enter" || e.key === " ") && isClickable && onSelectStep) {
+                      onSelectStep(s.n);
+                    }
+                  }}
+                >
+                  <div className="step-num">{isDone ? "✓" : s.n}</div>
+                  <div className="step-label">
+                    <div className="step-label-sub">
+                      Bước {s.n} {isClickable && !isCurrent ? <span style={{ opacity: 0.75, fontSize: 11 }}>↶</span> : null}
+                    </div>
+                    <div className="step-label-main">{s.label}</div>
+                  </div>
+                </div>
+                {idx < STEPS.length - 1 && (
+                  <div className={`step-conn ${step > s.n ? "active" : ""}`} />
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 1 — SETUP & SEARCH
+  // ================================================================
+  function Step1({
+    formData,
+    setFormData,
+    hasSources,
+    sourcesCount,
+    onGoToSources,
+    onSourcesLoaded,
+    onClearSources,
+    abortControllerRef,
+    stopActiveTask,
+  }) {
+    const form = formData;
+    const setForm = setFormData;
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [searchDone, setSearchDone] = useState(false);
+    const [stopNote, setStopNote] = useState("");
+
+    const { elapsed, start: startTimer, stop: stopTimer } = useTimer();
+    const stage = useStageAdvancer(SEARCH_STAGES, 35000); // 35s/stage — pipeline thực tế ~228s
+
+    const update = (key) => (e) =>
+      setForm((prev) => ({ ...prev, [key]: e.target.value }));
+
+    const handlePreset = (preset) => {
+      if (loading) return;
+      setForm({ topic: preset.topic, learningGoal: preset.learning_goal, audience: preset.audience, duration: preset.duration });
+      setError("");
+      setStopNote("");
+      setSearchDone(false);
+    };
+
+    const activeSessionIdRef = useRef(null);
+    const isStoppedRef = useRef(false);
+
+    // Khi người dùng bấm nút đỏ DỪNG LẠI & CHỈNH SỬA
+    const handleStop = () => {
+      // 1. Kích hoạt chốt chặn ngắt cứng ngay tức khắc (< 1ms)
+      isStoppedRef.current = true;
+      // 2. Huỷ fetch ngay tức thì ở client
+      stopActiveTask();
+      // 3. Báo backend dừng ngay lập tức mọi tiến trình ngầm (Tavily/Scraping/LLM)
+      if (activeSessionIdRef.current) {
+        API.cancelSession(activeSessionIdRef.current);
+      }
+      // 4. Xoá sạch nguồn cũ/dở dang, đưa form về đúng nguyên trạng ban đầu khi vừa vào Bước 1
+      if (onClearSources) onClearSources();
+      stage.stop();
+      stopTimer();
+      setLoading(false);
+      setSearchDone(false);
+      setStopNote("Đã ngắt quá trình tìm kiếm ngay lập tức. Toàn bộ thông tin bạn vừa nhập được giữ nguyên 100%, bạn có thể chỉnh sửa và bắt đầu lại bất cứ lúc nào.");
+    };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (!form.topic.trim()) { setError("Vui lòng nhập chủ đề bài học."); return; }
+
+      // Reset trạng thái: xóa sạch nguồn cũ và cờ dừng trước khi bắt đầu tìm kiếm mới
+      isStoppedRef.current = false;
+      if (onClearSources) onClearSources();
+      setError("");
+      setStopNote("");
+      setSearchDone(false);
+
+      const ac = new AbortController();
+      abortControllerRef.current = ac;
+
+      setLoading(true);
+      startTimer();
+      stage.start();
+
+      try {
+        // 1. Tạo session (có truyền ac.signal để ngắt fetch ngay tức thì)
+        const newSession = await API.createSession(
+          form.topic.trim(),
+          form.learningGoal.trim(),
+          form.audience.trim(),
+          Number(form.duration),
+          ac.signal
+        );
+
+        activeSessionIdRef.current = newSession?.id;
+
+        if (isStoppedRef.current || ac.signal.aborted) {
+          setLoading(false);
+          return;
+        }
+
+        // 2. Kích hoạt search agent (có signal)
+        await API.startSearch(newSession.id, ac.signal);
+
+        if (isStoppedRef.current || ac.signal.aborted) {
+          setLoading(false);
+          return;
+        }
+
+        // 3. Poll cho đến khi sources_ready (kiểm tra signal ngắt mỗi 100ms)
+        const finalSession = await API.pollUntilReady(newSession.id, {
+          signal: ac.signal,
+          intervalMs: 2000,
+        });
+
+        if (isStoppedRef.current || ac.signal.aborted) {
+          setLoading(false);
+          return;
+        }
+
+        // 4. Lấy danh sách sources (có signal)
+        const loadedSources = await API.getSources(newSession.id, ac.signal);
+
+        if (isStoppedRef.current || ac.signal.aborted) {
+          setLoading(false);
+          return;
+        }
+
+        // CHỐT CHẶN BẢO VỆ: Nếu người dùng đã bấm dừng thì vứt bỏ toàn bộ kết quả, không nạp vào App
+        if (isStoppedRef.current || (abortControllerRef.current === null && ac.signal.aborted)) {
+          setLoading(false);
+          return;
+        }
+
+        stage.setFinal();
+        stopTimer();
+        setLoading(false);
+        abortControllerRef.current = null;
+
+        // Lưu kết quả vào state của App
+        onSourcesLoaded(finalSession, loadedSources);
+        setSearchDone(true);
+      } catch (err) {
+        stage.stop();
+        stopTimer();
+        setLoading(false);
+        abortControllerRef.current = null;
+
+        if (isStoppedRef.current || err.name === "AbortError" || err.message === "OPERATION_STOPPED" || ac.signal.aborted) {
+          if (onClearSources) onClearSources();
+          setSearchDone(false);
+          setStopNote("Đã ngắt quá trình tìm kiếm ngay lập tức. Toàn bộ thông tin bạn vừa nhập được giữ nguyên 100%, bạn có thể chỉnh sửa và bắt đầu lại bất cứ lúc nào.");
+        } else {
+          setError(err.message || "Đã xảy ra lỗi không xác định.");
+        }
+      }
+    };
+
+    const subSteps = ["Tavily Search", "Scrape Web", "Trust Scoring"];
+
+    return (
+      <div className="space-y-6 anim-slide-down">
+        {/* Hero */}
+        <div className="hero">
+          <h1 className="font-heading font-extrabold" style={{ fontSize: 26, marginBottom: 10 }}>
+            Tạo Kịch Bản Bài Giảng với Nguồn Dẫn Chứng
+          </h1>
+          <p className="text-secondary text-sm" style={{ maxWidth: 560, lineHeight: 1.75 }}>
+            Nhập chủ đề video — hệ thống Multi-Agent sẽ tự động nghiên cứu internet,
+            trích xuất tài liệu uy tín và thẩm định trước khi viết kịch bản.
+          </p>
+        </div>
+
+        {/* Preset chips */}
+        <div>
+          <div className="text-xs font-semibold text-muted mb-2" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            💡 Chọn nhanh chủ đề mẫu:
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {PRESETS.map((p, i) => (
+              <button key={i} type="button" className="chip" onClick={() => handlePreset(p)} disabled={loading}>
+                <span className="chip-dot">✦</span> {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="card">
+          <div className="card-body space-y-5">
+            {error && (
+              <div className="alert alert-danger">
+                <span className="alert-icon">⚠️</span>
+                <span>{error}</span>
+              </div>
+            )}
+
+            {stopNote && (
+              <div className="alert alert-warning" style={{ background: "rgba(245, 158, 11, 0.12)", borderColor: "var(--warning)", display: "flex", alignItems: "center", gap: 10, padding: "12px 16px" }}>
+                <span className="alert-icon" style={{ fontSize: 20 }}>⏸</span>
+                <span style={{ fontSize: 13, lineHeight: 1.5 }}>
+                  <strong>ĐÃ DỪNG: </strong>
+                  {stopNote}
+                </span>
+              </div>
+            )}
+
+            {searchDone && (
+              <div className="alert alert-success" style={{ padding: "16px", borderRadius: "var(--r-lg)", background: "rgba(16, 185, 129, 0.1)", border: "1px solid var(--success)" }}>
+                <div className="flex gap-2 mb-2" style={{ alignItems: "center" }}>
+                  <span style={{ fontSize: 20 }}>✅</span>
+                  <strong style={{ fontSize: 15 }}>Đã hoàn tất tìm kiếm & thẩm định nguồn!</strong>
+                </div>
+                <p className="text-secondary text-sm mb-3">
+                  Hệ thống đã thu thập và thẩm định xong danh sách tài liệu uy tín. Bạn có thể bấm tiếp tục sang Bước 2, hoặc chỉnh sửa lại các thông số bên dưới nếu thấy chưa ổn.
+                </p>
+                <div className="flex gap-3 flex-wrap">
+                  <button
+                    type="button"
+                    onClick={onGoToSources}
+                    className="btn btn-primary btn-lg"
+                    style={{ flex: 1 }}
+                  >
+                    Tiếp tục sang Bước 2: Duyệt & Thẩm định nguồn ({sourcesCount} nguồn) ➔
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSearchDone(false)}
+                    className="btn btn-secondary btn-lg"
+                    style={{ flex: "0 1 auto" }}
+                  >
+                    Chỉnh sửa lại thông tin ở đây
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Topic */}
+            <div className="form-group">
+              <label className="form-label">1. Chủ đề bài giảng <span className="required">*</span></label>
+              <input
+                type="text" className="form-input"
+                value={form.topic} onChange={update("topic")}
+                disabled={loading} placeholder="Ví dụ: Học máy (Machine Learning) là gì"
+              />
+            </div>
+
+            {/* Learning goal */}
+            <div className="form-group">
+              <label className="form-label">2. Mục tiêu người học cần đạt được</label>
+              <input
+                type="text" className="form-input"
+                value={form.learningGoal} onChange={update("learningGoal")}
+                disabled={loading} placeholder="Ví dụ: Hiểu và phân biệt AI, ML, Deep Learning qua ví dụ"
+              />
+            </div>
+
+            <div className="grid-2">
+              {/* Audience */}
+              <div className="form-group">
+                <label className="form-label">3. Đối tượng người học</label>
+                <input
+                  type="text" className="form-input"
+                  value={form.audience} onChange={update("audience")}
+                  disabled={loading} placeholder="Ví dụ: Sinh viên năm nhất"
+                />
+              </div>
+
+              {/* Duration */}
+              <div className="form-group">
+                <label className="form-label">4. Thời lượng video</label>
+                <select className="form-input" value={form.duration} onChange={update("duration")} disabled={loading}>
+                  <option value={2}>2 phút (~20-25 câu)</option>
+                  <option value={3}>3 phút (~30-35 câu) ★</option>
+                  <option value={5}>5 phút (~50 câu)</option>
+                  <option value={8}>8 phút (~80 câu)</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Loading state */}
+            {loading && (
+              <div className="loading-panel">
+                <div className="flex-between">
+                  <div className="flex gap-3" style={{ alignItems: "center" }}>
+                    <Spinner />
+                    <span className="text-sm font-medium text-accent">{stage.label}</span>
+                  </div>
+                  <code className="text-xs text-muted">{elapsed}s / 300s max</code>
+                </div>
+                <div className="loading-substeps">
+                  {subSteps.map((label, i) => {
+                    const thresholds = [30, 120, 200];
+                    return (
+                      <div key={label} className={`substep ${elapsed > thresholds[i] ? "done" : ""}`}>
+                        <span>{elapsed > thresholds[i] ? "✓" : "○"}</span>
+                        <span>{label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Action buttons */}
+            <div className="flex gap-3 flex-wrap" style={{ alignItems: "center" }}>
+              {loading ? (
+                <button
+                  type="button"
+                  onClick={handleStop}
+                  className="btn btn-danger btn-lg"
+                  style={{
+                    flex: 1,
+                    padding: "16px 24px",
+                    fontSize: 16,
+                    fontWeight: 700,
+                    letterSpacing: "0.02em",
+                    boxShadow: "0 4px 14px rgba(239, 68, 68, 0.4)",
+                    cursor: "pointer"
+                  }}
+                  title="Dừng ngay lập tức quá trình tìm kiếm và mở khóa form để bạn chỉnh sửa thông tin"
+                >
+                  ⏹ DỪNG TÌM KIẾM & CHỈNH SỬA Ở BƯỚC NÀY
+                </button>
+              ) : !searchDone ? (
+                <>
+                  <button type="submit" className="btn btn-primary btn-lg" style={{ flex: 1 }}>
+                    {hasSources ? "Tìm kiếm lại với thông tin mới →" : "Bắt đầu Tìm kiếm & Thẩm định nguồn →"}
+                  </button>
+                  {hasSources && (
+                    <button
+                      type="button"
+                      onClick={onGoToSources}
+                      className="btn btn-secondary btn-lg"
+                      style={{ flex: "0 1 auto" }}
+                      title="Quay lại danh sách nguồn đã lưu từ trước"
+                    >
+                      Quay lại nguồn đã chọn (Bước 2: {sourcesCount} nguồn) ➔
+                    </button>
+                  )}
+                </>
+              ) : null}
+            </div>
+          </div>
+        </form>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 2 — SOURCE REVIEW & MANAGEMENT
+  // ================================================================
+  function Step2({
+    session,
+    sources,
+    setSources,
+    hasScript,
+    onGoToScript,
+    onBack,
+    onComplete,
+    abortControllerRef,
+    stopActiveTask,
+  }) {
+    const [filter, setFilter] = useState("all");
+    const [expanded, setExpanded] = useState({});
+    const [customUrl, setCustomUrl] = useState("");
+    const [addingSource, setAddingSource] = useState(false);
+    const [generating, setGenerating] = useState(false);
+    const [genError, setGenError] = useState("");
+    const isGenStoppedRef = useRef(false);
+
+    const { elapsed: genElapsed, start: startGenTimer, stop: stopGenTimer } = useTimer();
+    const genStage = useStageAdvancer(GEN_STAGES, 9000);
+    const { toasts, show: showToast } = useToast();
+
+    const activeCount = sources.filter((s) => s.is_active).length;
+    const conflictCount = sources.filter((s) => !!s.conflict_note).length;
+    const filtered = sources.filter((s) => {
+      if (filter === "active") return s.is_active;
+      if (filter === "conflicts") return !!s.conflict_note;
+      return true;
+    });
+
+    const handleStopGenerating = () => {
+      isGenStoppedRef.current = true;
+      stopActiveTask();
+      if (session?.id) {
+        API.cancelSession(session.id);
+      }
+      genStage.stop();
+      stopGenTimer();
+      setGenerating(false);
+      showToast("⏹ Đã dừng sinh kịch bản ngay lập tức. Toàn bộ danh sách nguồn và thiết lập được giữ nguyên.", "default");
+    };
+
+    // Toggle với optimistic update + rollback on error
+    const handleToggle = async (code, currentActive) => {
+      const next = !currentActive;
+      setSources((prev) => prev.map((s) => (s.code === code ? { ...s, is_active: next } : s)));
+      try {
+        await API.toggleSource(session.id, code, next);
+      } catch (err) {
+        // Rollback
+        setSources((prev) => prev.map((s) => (s.code === code ? { ...s, is_active: currentActive } : s)));
+        showToast(`⚠️ Không thể lưu: ${err.message}`, "error");
+      }
+    };
+
+    const handleAddSource = async (e) => {
+      e.preventDefault();
+      const url = customUrl.trim();
+      if (!url.startsWith("http")) {
+        showToast("⚠️ URL không hợp lệ — cần bắt đầu bằng http:// hoặc https://", "error");
+        return;
+      }
+      setAddingSource(true);
+      try {
+        const newSource = await API.addSource(session.id, url);
+        setSources((prev) => [newSource, ...prev]);
+        setCustomUrl("");
+        showToast("✅ Đã thêm nguồn thành công!", "success");
+      } catch (err) {
+        showToast(`⚠️ ${err.message}`, "error");
+      } finally {
+        setAddingSource(false);
+      }
+    };
+
+    const handleGenerate = async () => {
+      if (activeCount === 0) {
+        setGenError("Vui lòng kích hoạt ít nhất 1 nguồn tài liệu.");
+        return;
+      }
+      setGenError("");
+      isGenStoppedRef.current = false;
+
+      const ac = new AbortController();
+      abortControllerRef.current = ac;
+
+      setGenerating(true);
+      startGenTimer();
+      genStage.start();
+
+      try {
+        const scriptData = await API.generateScript(session.id, ac.signal);
+        if (isGenStoppedRef.current || ac.signal.aborted) {
+          setGenerating(false);
+          return;
+        }
+        genStage.stop();
+        stopGenTimer();
+        setGenerating(false);
+        abortControllerRef.current = null;
+        onComplete(scriptData);
+      } catch (err) {
+        genStage.stop();
+        stopGenTimer();
+        setGenerating(false);
+        abortControllerRef.current = null;
+        if (isGenStoppedRef.current || err.name === "AbortError" || ac.signal.aborted) {
+          showToast("⏹ Đã dừng sinh kịch bản ngay lập tức. Bạn có thể tiếp tục tinh chỉnh nguồn.", "default");
+        } else {
+          setGenError(err.message || "Không thể sinh kịch bản.");
+        }
+      }
+    };
+
+    return (
+      <>
+        <div className="space-y-5 anim-slide-down">
+        <Toasts toasts={toasts} />
+
+        {/* Top bar: Back to Step 1 & Jump to Step 3 */}
+        <div className="flex-between flex-wrap gap-3" style={{ alignItems: "center" }}>
+          <button
+            type="button"
+            className="btn btn-secondary btn-sm"
+            onClick={onBack}
+            disabled={generating}
+            title="Quay lại Bước 1 để tinh chỉnh thông tin bài học (dữ liệu nguồn được giữ nguyên)"
+          >
+            ← Quay lại Bước 1: Chỉnh thông tin bài học
+          </button>
+          {hasScript && (
+            <button
+              type="button"
+              className="btn btn-ghost btn-sm"
+              onClick={onGoToScript}
+              disabled={generating}
+              style={{ color: "var(--accent)", fontWeight: 600 }}
+            >
+              Xem kịch bản đã sinh (Bước 3) ➔
+            </button>
+          )}
+        </div>
+
+        {/* Session overview */}
+        <div className="card">
+          <div className="card-body flex-between flex-wrap gap-4">
+            <div className="flex-1 min-w-0">
+              <div className="flex gap-2 mb-2" style={{ alignItems: "center" }}>
+                <span className="badge badge-accent">Đang duyệt</span>
+                <span className="text-xs text-muted">⏱ {session?.duration_minutes} phút</span>
+              </div>
+              <h2 className="font-heading font-bold" style={{ fontSize: 20 }}>{session?.topic}</h2>
+              {session?.learning_goal && (
+                <p className="text-xs text-secondary mt-2">🎯 {session.learning_goal}</p>
+              )}
+            </div>
+            <div className="stat-card shrink-0">
+              <div className="stat-value text-success">
+                {activeCount}
+                <span className="stat-unit">/ {sources.length}</span>
+              </div>
+              <div className="stat-label">Nguồn đang bật</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Filter tabs + Add source */}
+        <div className="flex flex-wrap gap-3" style={{ alignItems: "center", justifyContent: "space-between" }}>
+          <div className="tabs">
+            <button className={`tab ${filter === "all" ? "active" : ""}`} onClick={() => setFilter("all")}>
+              Tất cả ({sources.length})
+            </button>
+            <button className={`tab ${filter === "active" ? "active" : ""}`} onClick={() => setFilter("active")}>
+              Đang bật ({activeCount})
+            </button>
+            <button className={`tab tab-warn ${filter === "conflicts" ? "active" : ""}`} onClick={() => setFilter("conflicts")}>
+              ⚡ Mâu thuẫn ({conflictCount})
+            </button>
+          </div>
+
+          <form onSubmit={handleAddSource} className="flex gap-2" style={{ flex: "1 1 280px", maxWidth: 420 }}>
+            <input
+              type="url" className="form-input flex-1"
+              value={customUrl} onChange={(e) => setCustomUrl(e.target.value)}
+              disabled={addingSource} placeholder="Dán link bài viết bổ sung (https://...)"
+            />
+            <button type="submit" className="btn btn-secondary shrink-0" disabled={addingSource || !customUrl.trim()}>
+              {addingSource ? <Spinner /> : "+ Thêm"}
+            </button>
+          </form>
+        </div>
+
+        {/* Sources list */}
+        <div className="space-y-3">
+          {filtered.length === 0 ? (
+            <div className="card">
+              <EmptyState icon="🔍" text="Không có nguồn nào trong bộ lọc này." />
+            </div>
+          ) : (
+            filtered.map((source) => (
+              <SourceCard
+                key={source.code}
+                source={source}
+                expanded={!!expanded[source.code]}
+                onToggle={() => handleToggle(source.code, source.is_active)}
+                onExpand={() => setExpanded((p) => ({ ...p, [source.code]: !p[source.code] }))}
+              />
+            ))
+          )}
+        </div>
+
+        {/* Generation error */}
+        {genError && (
+          <div className="alert alert-danger">
+            <span className="alert-icon">⚠️</span>
+            <span>{genError}</span>
+          </div>
+        )}
+
+        {/* Sticky action footer */}
+        <div className="action-footer">
+          <button className="btn btn-secondary" onClick={onBack} disabled={generating}>
+            ← Quay lại Bước 1: Chỉnh thông tin
+          </button>
+          <button
+            className="btn btn-primary"
+            style={{ minWidth: 230 }}
+            onClick={handleGenerate}
+            disabled={generating || activeCount === 0}
+          >
+            {generating
+              ? <><Spinner /> Đang sinh kịch bản ({genElapsed}s)...</>
+              : <>Xác nhận & Sinh kịch bản ({activeCount} nguồn) →</>
+            }
+          </button>
+        </div>
+
+        </div>
+
+        {/* Generating modal */}
+        {generating && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <div className="modal-spinner-wrap">
+                <Spinner size="lg" />
+              </div>
+              <h3 className="font-heading font-bold" style={{ fontSize: 20, marginBottom: 8 }}>
+                Đang Biên Soạn Kịch Bản
+              </h3>
+              <p className="text-secondary text-sm" style={{ minHeight: 42 }}>{genStage.label}</p>
+              <div className="modal-timer">{genElapsed}s · Khoảng 20-40s</div>
+              <p className="text-xs text-muted mt-4" style={{ marginBottom: 16 }}>
+                Mọi câu chứa thông tin đều được trích dẫn và đối soát tự động.
+              </p>
+              <button
+                type="button"
+                className="btn btn-danger btn-lg"
+                style={{
+                  width: "100%",
+                  marginTop: 16,
+                  padding: "14px 20px",
+                  fontSize: 15,
+                  fontWeight: 700,
+                  boxShadow: "0 4px 14px rgba(239, 68, 68, 0.4)",
+                  cursor: "pointer"
+                }}
+                onClick={handleStopGenerating}
+              >
+                ⏹ DỪNG SINH KỊCH BẢN & CHỈNH SỬA NGUỒN Ở BƯỚC NÀY
+              </button>
+            </div>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  // Source Card component (extracted để dễ maintain)
+  function SourceCard({ source, expanded, onToggle, onExpand }) {
+    const trust = Number(source.trust_score || 0.5);
+    const pct = Math.round(trust * 100);
+    const trustClass = trust >= 0.7 ? "trust-high" : trust >= 0.5 ? "trust-mid" : "trust-low";
+    const badgeClass = trust >= 0.7 ? "badge-success" : trust >= 0.5 ? "badge-warning" : "badge-danger";
+
+    return (
+      <div className={`source-card ${!source.is_active ? "inactive" : ""}`}>
+        <div className="source-card-body">
+          {/* Header */}
+          <div className="flex-between gap-3 items-start">
+            <div className="flex gap-3 flex-1 min-w-0 items-start">
+              <span className="badge badge-accent badge-mono shrink-0" style={{ marginTop: 2 }}>{source.code}</span>
+              <div className="min-w-0">
+                <a
+                  href={source.url} target="_blank" rel="noopener noreferrer"
+                  className="font-semibold clamp-1"
+                  style={{ fontSize: 14, color: "var(--text-1)", display: "flex", alignItems: "center", gap: 4 }}
+                >
+                  {source.title || source.url}
+                  <span className="text-muted" style={{ fontSize: 10 }}>↗</span>
+                </a>
+                <div className="source-meta">
+                  {source.domain && <span>🌐 {source.domain}</span>}
+                  {source.author && <span>✍️ {source.author}</span>}
+                  {source.published_date && <span>📅 {source.published_date}</span>}
+                </div>
+              </div>
+            </div>
+
+            {/* Toggle */}
+            <div className="flex gap-2 shrink-0" style={{ alignItems: "center" }}>
+              <span className="text-xs text-muted">{source.is_active ? "Đang dùng" : "Đã tắt"}</span>
+              <button
+                type="button" className="toggle"
+                data-on={source.is_active ? "true" : "false"}
+                onClick={onToggle}
+                title={source.is_active ? "Bấm để tắt" : "Bấm để bật"}
+                aria-label={`Nguồn ${source.code}: ${source.is_active ? "đang bật, bấm để tắt" : "đang tắt, bấm để bật"}`}
+              >
+                <div className="toggle-track" />
+                <div className="toggle-thumb" />
+              </button>
+            </div>
+          </div>
+
+          {/* Trust score */}
+          <div className="flex gap-3 mt-3" style={{ padding: "10px 14px", borderRadius: "var(--r-md)", background: "var(--bg)", border: "1px solid var(--border)", alignItems: "center" }}>
+            <span className={`badge ${badgeClass} shrink-0`}>{pct}% tin cậy</span>
+            <div className={`trust-row flex-1 ${trustClass}`}>
+              <div className="trust-bar-wrap">
+                <div className="trust-bar-fill" style={{ width: `${pct}%` }} />
+              </div>
+            </div>
+            <p className="text-xs text-secondary clamp-1" style={{ flex: 2 }}>
+              {source.trust_reason || "Chưa có đánh giá chi tiết."}
+            </p>
+          </div>
+
+          {/* Conflict alert */}
+          {source.conflict_note && (
+            <div className="alert alert-warning mt-3">
+              <span className="alert-icon">⚡</span>
+              <div><strong>Mâu thuẫn phát hiện: </strong>{source.conflict_note}</div>
+            </div>
+          )}
+
+          {/* Unverified claims */}
+          {source.unverified_claims?.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-3" style={{ alignItems: "center" }}>
+              <span className="text-xs text-muted">Cần kiểm chứng:</span>
+              {source.unverified_claims.map((c, i) => (
+                <span key={i} className="badge badge-neutral badge-mono">{c}</span>
+              ))}
+            </div>
+          )}
+
+          {/* Excerpt with expand/collapse */}
+          {source.excerpt && (
+            <div className="mt-3" style={{ borderTop: "1px solid var(--border)", paddingTop: 12 }}>
+              <div className="flex-between mb-2">
+                <span className="text-xs font-semibold text-muted" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                  Đoạn trích nội dung:
+                </span>
+                <button
+                  onClick={onExpand}
+                  className="text-xs text-accent font-semibold"
+                  style={{ background: "none", border: "none", cursor: "pointer" }}
+                >
+                  {expanded ? "Thu gọn ▲" : "Xem thêm ▼"}
+                </button>
+              </div>
+              <div className={`excerpt-box ${expanded ? "" : "excerpt-collapsed"}`}>
+                {source.excerpt}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // STEP 3 — SCRIPT VIEWER & EXPORT
+  // ================================================================
+  function Step3({ session, script: scriptData, sources, onBack, onGoToStep1, onReset }) {
+    const script = scriptData?.json_content || scriptData || {};
+    const sentences = script.cau || [];
+    const sections = script.phan || [];
+    const verification = script._verification_summary || {};
+
+    const [selectedN, setSelectedN] = useState(sentences[0]?.n ?? 1);
+    const [filterType, setFilterType] = useState("all");
+    const [exporting, setExporting] = useState(false);
+    const { toasts, show: showToast } = useToast();
+
+    const sourceMap = useMemo(() => {
+      const m = {};
+      sources.forEach((s) => { m[s.code] = s; });
+      return m;
+    }, [sources]);
+
+    const sectionMap = useMemo(() => {
+      const m = {};
+      sections.forEach((p) => { m[p.so] = p.ten; });
+      return m;
+    }, [sections]);
+
+    const filtered = sentences.filter((s) => {
+      if (filterType === "cited") return s.nguon?.length > 0;
+      if (filterType === "verified") return s.citation_verified === true;
+      return true;
+    });
+
+    const selected = sentences.find((s) => s.n === selectedN) || sentences[0];
+
+    // Guard: kịch bản trống hoặc format sai
+    if (!sentences.length) {
+      return (
+        <div className="card">
+          <div className="card-body">
+            <EmptyState
+              icon="⚠️"
+              text="Kịch bản trống hoặc định dạng không hợp lệ. Quay lại và thử sinh lại."
+            />
+            <div className="flex-center mt-4">
+              <button className="btn btn-secondary" onClick={onBack}>← Quay lại</button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const exportScript = async (format) => {
+      if (exporting) return;
+      setExporting(true);
+      try {
+        const data = await API.export(session.id, format);
+        const isJson = format === "json";
+        const content = isJson ? JSON.stringify(data, null, 2) : data;
+        const blob = new Blob([content], { type: isJson ? "application/json" : "text/markdown;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `kich_ban_${(session?.topic || "script").replace(/\s+/g, "_")}.${isJson ? "json" : "md"}`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast(`✅ Đã xuất ${format.toUpperCase()} thành công!`, "success");
+      } catch (err) {
+        showToast(`⚠️ Lỗi xuất file: ${err.message}`, "error");
+      } finally {
+        setExporting(false);
+      }
+    };
+
+    const copyScript = async () => {
+      try {
+        const text = await API.export(session.id, "markdown");
+        await navigator.clipboard.writeText(text);
+        showToast("📋 Đã sao chép kịch bản vào bộ nhớ tạm!", "success");
+      } catch (err) {
+        showToast(`⚠️ Không thể sao chép: ${err.message}`, "error");
+      }
+    };
+
+    return (
+      <div className="space-y-6 anim-slide-down">
+        <Toasts toasts={toasts} />
+
+        {/* Top bar: Pause & back to edit */}
+        <div className="flex-between flex-wrap gap-3" style={{ alignItems: "center" }}>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              className="btn btn-secondary btn-sm"
+              onClick={onBack}
+              title="Quay lại Bước 2 để tinh chỉnh danh sách nguồn (kịch bản vẫn được lưu giữ)"
+            >
+              ← Quay lại Bước 2: Tinh chỉnh nguồn
+            </button>
+            <button
+              type="button"
+              className="btn btn-ghost btn-sm"
+              onClick={onGoToStep1}
+              title="Quay lại Bước 1 để tinh chỉnh thông tin bài học (kịch bản và nguồn vẫn được giữ)"
+            >
+              ← Quay lại Bước 1: Chỉnh thông tin bài học
+            </button>
+          </div>
+          <span className="text-xs text-muted">
+            ℹ️ Mọi tinh chỉnh và kịch bản đều được lưu tự động
+          </span>
+        </div>
+
+        {/* Script header */}
+        <div className="card">
+          <div className="card-body flex-between flex-wrap gap-5 items-start">
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap gap-2 mb-3" style={{ alignItems: "center" }}>
+                <span className="badge badge-success">✓ Kịch bản hoàn tất · v{scriptData?.version || 1}</span>
+                <span className="text-xs text-muted">⏱ ~{session?.duration_minutes} phút</span>
+                <span className="text-xs text-muted">📝 {sentences.length} câu</span>
+              </div>
+              <h2 className="font-heading font-bold" style={{ fontSize: 22 }}>
+                {script.tieuDe || session?.topic}
+              </h2>
+              <p className="text-xs text-secondary mt-2" style={{ lineHeight: 1.65 }}>
+                🎯 {session?.learning_goal}
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3" style={{ alignItems: "flex-end" }}>
+              {/* Accuracy stat */}
+              <div className="stat-card" style={{ minWidth: 130 }}>
+                <div className="stat-value text-success">
+                  {Math.round((verification?.accuracy_rate || 0) * 100)}%
+                </div>
+                <div className="stat-label">
+                  Trích dẫn đối soát<br />
+                  <span style={{ color: "var(--text-3)" }}>
+                    ({verification?.verified_count || 0}/{verification?.total_sentences_with_source || 0} câu)
+                  </span>
+                </div>
+              </div>
+
+              {/* Export buttons */}
+              <div className="flex flex-wrap gap-2" style={{ justifyContent: "flex-end" }}>
+                <button className="btn btn-primary btn-sm" onClick={() => exportScript("markdown")} disabled={exporting}>
+                  📥 Xuất Markdown
+                </button>
+                <button className="btn btn-secondary btn-sm" onClick={copyScript}>
+                  📋 Copy
+                </button>
+                <button className="btn btn-secondary btn-sm" onClick={() => exportScript("json")} disabled={exporting}>
+                  {"{ }"} JSON
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Split view */}
+        <div className="grid-split">
+          {/* Left: Sentence list */}
+          <div className="space-y-4">
+            {/* Filter bar */}
+            <div className="flex-between" style={{ padding: "8px 12px", background: "var(--surface-1)", border: "1px solid var(--border)", borderRadius: "var(--r-lg)" }}>
+              <div className="tabs" style={{ background: "none", border: "none", padding: 0 }}>
+                <button className={`tab ${filterType === "all" ? "active" : ""}`} onClick={() => setFilterType("all")}>
+                  Tất cả ({sentences.length})
+                </button>
+                <button className={`tab ${filterType === "cited" ? "active" : ""}`} onClick={() => setFilterType("cited")}>
+                  Có trích dẫn ({sentences.filter((s) => s.nguon?.length > 0).length})
+                </button>
+                <button className={`tab ${filterType === "verified" ? "active" : ""}`} onClick={() => setFilterType("verified")}>
+                  Đối soát ✓ ({verification?.verified_count || 0})
+                </button>
+              </div>
+              <span className="text-xs text-muted">💡 Bấm câu để xem nguồn</span>
+            </div>
+
+            {/* Sentences */}
+            <div className="space-y-3">
+              {filtered.map((cau, idx) => {
+                const showSection = idx === 0 || cau.phan !== filtered[idx - 1]?.phan;
+                const isSelected = cau.n === selectedN;
+                const hasSrc = cau.nguon?.length > 0;
+                const isVerified = cau.citation_verified === true;
+
+                return (
+                  <React.Fragment key={cau.n}>
+                    {showSection && (
+                      <div className="section-header">
+                        <div className="section-dot" />
+                        Phần {cau.phan || 1}: {sectionMap[cau.phan] || `Nội dung phần ${cau.phan || 1}`}
+                      </div>
+                    )}
+                    <div
+                      className={`sentence-card ${isSelected ? "selected" : ""}`}
+                      onClick={() => setSelectedN(cau.n)}
+                      role="button" tabIndex={0}
+                      onKeyDown={(e) => e.key === "Enter" && setSelectedN(cau.n)}
+                    >
+                      <div className="sentence-meta">
+                        <div className="flex gap-2" style={{ alignItems: "center" }}>
+                          <span className={`badge badge-mono ${isSelected ? "badge-accent" : "badge-neutral"}`}>#{cau.n}</span>
+                          {cau.kieu && (
+                            <span className="badge badge-neutral text-xs">
+                              {cau.kieu === "giang" ? "Giảng giải" : cau.kieu === "nhe" ? "Dẫn dắt" : cau.kieu === "ke" ? "Ví dụ" : cau.kieu}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex gap-1" style={{ alignItems: "center" }}>
+                          {hasSrc ? (
+                            <>
+                              {cau.nguon.map((code) => (
+                                <span key={code} className="badge badge-accent badge-mono" style={{ fontSize: 10 }}>{code}</span>
+                              ))}
+                              <span className={`badge ${isVerified ? "badge-success" : "badge-warning"}`} style={{ fontSize: 10 }}>
+                                {isVerified ? "✓ OK" : "⚠️"}
+                              </span>
+                            </>
+                          ) : (
+                            <span className="text-xs text-muted">Lời dẫn</span>
+                          )}
+                        </div>
+                      </div>
+
+                      <p className="sentence-text">{cau.loi}</p>
+
+                      {(cau.chuTrenManHinh || cau.yDoHinh) && (
+                        <div className="sentence-dir mt-3">
+                          {cau.chuTrenManHinh && (
+                            <div className="text-secondary text-xs">
+                              <span className="font-semibold text-accent">Màn hình:</span> {cau.chuTrenManHinh}
+                            </div>
+                          )}
+                          {cau.yDoHinh && (
+                            <div className="text-secondary text-xs mt-1">
+                              <span className="font-semibold text-success">Ý đồ hình:</span> {cau.yDoHinh}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Right: Evidence panel (sticky) */}
+          <div style={{ position: "sticky", top: 76 }}>
+            <div className="evidence-panel">
+              <div className="evidence-header">
+                <div className="flex gap-2" style={{ alignItems: "center" }}>
+                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "var(--accent)", display: "block", boxShadow: "0 0 8px var(--accent)" }} />
+                  <h3 className="font-heading font-bold text-sm">Đối Chiếu Bằng Chứng Gốc</h3>
+                </div>
+                <span className="badge badge-accent badge-mono text-xs">Câu #{selected?.n || 1}</span>
+              </div>
+
+              <div className="evidence-body space-y-4">
+                {/* Trust Summary Card */}
+                <div className="trust-summary-card">
+                  <div className="circular-progress" style={{ "--p": Math.round((verification?.accuracy_rate || 0) * 100) }}>
+                    <span>{Math.round((verification?.accuracy_rate || 0) * 100)}%</span>
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base mb-1">Độ tin cậy cao</h4>
+                    <p className="text-secondary text-sm" style={{ margin: 0 }}>Nội dung sinh ra có trích dẫn đối soát chính xác với {verification?.verified_count || 0}/{verification?.total_sentences_with_source || 0} câu.</p>
+                  </div>
+                </div>
+
+                {/* Selected sentence quote */}
+                <div>
+                  <div className="quote-label" style={{ marginBottom: 8, color: "var(--accent)" }}>
+                    ĐANG ĐỐI CHIẾU: CÂU #{selected?.n || 1}
+                  </div>
+                  <div className="quote-box" style={{ marginBottom: 0, borderLeft: "2px solid var(--accent)" }}>
+                    <p className="quote-text" style={{ fontStyle: "italic", fontSize: 14 }}>"{selected?.loi}"</p>
+                  </div>
+                </div>
+
+                {/* Citations */}
+                {selected?.nguon?.length > 0 ? (
+                  <div className="space-y-3" style={{ marginTop: 24 }}>
+                    <div className="flex-between mb-3">
+                      <span className="text-xs font-semibold text-secondary" style={{ textTransform: "uppercase", letterSpacing: "0.07em" }}>
+                        Tài liệu nguồn ({selected.nguon.length})
+                      </span>
+                      <span className="badge badge-accent text-xs" style={{ background: "rgba(139,92,246,0.1)", color: "var(--violet)", borderColor: "rgba(139,92,246,0.2)" }}>Qua Verify Agent</span>
+                    </div>
+
+                    {selected.nguon.map((code) => {
+                      const src = sourceMap[code] || {};
+                      const detail = (selected.citation_details || []).find((c) => c.code === code) || {};
+                      const ok = detail.verified !== false;
+                      const overlap = detail.overlap_ratio ? Math.round(detail.overlap_ratio * 100) : null;
+
+                      return (
+                        <div key={code} className={`evidence-source space-y-3 ${ok ? "" : "warning"}`}>
+                          <div className="flex-between">
+                            <div className="flex gap-2" style={{ alignItems: "center", minWidth: 0 }}>
+                              <span className="badge badge-accent badge-mono shrink-0">{code}</span>
+                              <span className="text-xs text-secondary clamp-1">
+                                {src.title || src.url || `Nguồn ${code}`}
+                              </span>
+                            </div>
+                            {src.url && (
+                              <a href={src.url} target="_blank" rel="noopener noreferrer" className="text-accent text-xs shrink-0">
+                                Mở ↗
+                              </a>
+                            )}
+                          </div>
+
+                          <div className="flex gap-2" style={{ alignItems: "center" }}>
+                            <span className={`badge ${ok ? "badge-success" : "badge-warning"} text-xs`}>
+                              {ok ? "✓ Trùng khớp" : "⚠️ Cần kiểm tra"}
+                            </span>
+                            {overlap !== null && (
+                              <span className="text-xs text-muted">
+                                Độ khớp: <strong className="text-primary">{overlap}%</strong>
+                              </span>
+                            )}
+                          </div>
+
+                          <div>
+                            <div className="quote-label" style={{ marginBottom: 6 }}>Đoạn trích chứng minh:</div>
+                            <div className="excerpt-box">
+                              {detail.excerpt || src.excerpt || "Không tìm thấy đoạn trích phù hợp."}
+                            </div>
+                          </div>
+
+                          {detail.reason && (
+                            <p className="text-xs text-muted">ℹ️ {detail.reason}</p>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <EmptyState
+                    icon="💬"
+                    text="Câu này là lời dẫn dắt hoặc kết luận — không chứa số liệu cần đối chiếu nguồn."
+                  />
+                )}
+              </div>
+
+              <div className="evidence-footer">
+                <button className="btn btn-secondary btn-sm" onClick={onBack}>← Quay lại Bước 2: Chỉnh nguồn</button>
+                <button className="btn btn-ghost btn-sm" onClick={onGoToStep1}>← Quay lại Bước 1: Chỉnh thông tin</button>
+                <button className="btn btn-ghost btn-sm text-accent" onClick={onReset}>+ Bài giảng mới</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ================================================================
+  // RENDER
+  // ================================================================
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<App />);
+  </script>
+</body>
+</html>

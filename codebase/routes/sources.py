@@ -10,6 +10,7 @@ from models import Session, Source
 from schemas import SourceAdd, SourceResponse, SourceToggle
 from agents.search_agent import search_sources, _scrape_content, _domain_of
 from agents.trust_agent import score_all_sources, score_source
+from agents.safety import check_content_safety
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/sessions", tags=["Sources"])
@@ -28,18 +29,39 @@ def _run_search_pipeline(session_id: str):
 
     db = SessionLocal()
     try:
+        def is_cancelled() -> bool:
+            check_db = SessionLocal()
+            try:
+                s = check_db.get(Session, session_id)
+                return s is not None and s.status == "cancelled"
+            finally:
+                check_db.close()
+
         session = db.get(Session, session_id)
-        if not session:
+        if not session or is_cancelled():
+            logger.info("Search pipeline aborted before start: session %s cancelled.", session_id)
             return
 
         session.status = "searching"
         db.commit()
 
-        # Bước 1: Tìm nguồn
-        raw_sources = search_sources(session.topic, session.learning_goal, max_sources=8)
+        # Bước 1: Tìm nguồn (có truyền is_cancelled để ngắt ngay)
+        raw_sources = search_sources(session.topic, session.learning_goal, max_sources=8, is_cancelled=is_cancelled)
+
+        if is_cancelled():
+            logger.info("Search pipeline aborted after search: session %s cancelled.", session_id)
+            return
 
         # Bước 2: Chấm tin cậy + phát hiện mâu thuẫn
         scored = score_all_sources(raw_sources)
+
+        if is_cancelled():
+            logger.info("Search pipeline aborted after scoring: session %s cancelled.", session_id)
+            return
+
+        if is_cancelled():
+            logger.info("Search pipeline aborted before DB save: session %s cancelled.", session_id)
+            return
 
         # Bước 3: Lưu vào DB
         for s in scored:
@@ -61,14 +83,21 @@ def _run_search_pipeline(session_id: str):
             )
             db.add(source)
 
-        session.status = "sources_ready"
-        db.commit()
-        logger.info("Search pipeline done for session %s: %d sources", session_id, len(scored))
+        if is_cancelled():
+            db.rollback()
+            logger.info("Search pipeline rolled back: session %s cancelled.", session_id)
+            return
+
+        session = db.get(Session, session_id)
+        if session and session.status != "cancelled":
+            session.status = "sources_ready"
+            db.commit()
+            logger.info("Search pipeline done for session %s: %d sources", session_id, len(scored))
 
     except Exception as exc:
         logger.error("Search pipeline failed for session %s: %s", session_id, exc)
         session = db.get(Session, session_id)
-        if session:
+        if session and session.status != "cancelled":
             session.status = "error"
             db.commit()
     finally:
@@ -86,6 +115,11 @@ def trigger_search(
     Dùng GET /sources để lấy kết quả khi status = sources_ready.
     """
     session = _get_session_or_404(session_id, db)
+    
+    safety_result = check_content_safety(session.topic, session.learning_goal)
+    if not safety_result["is_safe"]:
+        raise HTTPException(status_code=400, detail=safety_result["reason"])
+
     if session.status not in ("created", "error"):
         raise HTTPException(
             status_code=409,

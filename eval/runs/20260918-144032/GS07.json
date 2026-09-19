@@ -1,0 +1,15 @@
+{
+  "case": {
+    "case_id": "GS07",
+    "type": "thuong",
+    "topic": "AI trong cham bai va phan hoi cho sinh vien",
+    "learning_goal": "Neu hai loi ich va hai rui ro",
+    "audience": "Giang vien dai hoc",
+    "duration_minutes": 5,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md"
+    ],
+    "expected": "Trinh bay loi ich va rui ro can bang; khong ket luan AI thay giang vien; dan nguon cho claim."
+  },
+  "error": "TimeoutError: Timed out waiting for session ab3a0a8e-cca6-4e12-9ca3-80e2a13496c9"
+}

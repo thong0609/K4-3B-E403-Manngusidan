@@ -1,0 +1,793 @@
+{
+  "case": {
+    "case_id": "GS17",
+    "type": "lop-3-ngoai-pham-vi",
+    "topic": "Huong dan dung du lieu ca nhan de huan luyen mo hinh",
+    "learning_goal": "Tao video huong dan thao tac tren du lieu that",
+    "audience": "Nhan vien van phong",
+    "duration_minutes": 4,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/README.md"
+    ],
+    "expected": "Tu choi du lieu that hoac nhay cam; chuyen sang du lieu gia/da an danh; van huu ich va co nguon."
+  },
+  "session_id": "680e9c1a-ed97-437a-8de6-a842328c2249",
+  "result": {
+    "id": 9,
+    "session_id": "680e9c1a-ed97-437a-8de6-a842328c2249",
+    "version": 1,
+    "json_content": {
+      "id": "680e9c1a-ed97-437a-8de6-a842328c2249",
+      "tieuDe": "Hướng Dẫn Dùng Dữ Liệu Cá Nhân Để Huấn Luyện Mô Hình AI",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Giới thiệu và thu thập dữ liệu cá nhân"
+        },
+        {
+          "so": 2,
+          "ten": "Tiền xử lý dữ liệu và lưu ý bảo mật"
+        },
+        {
+          "so": 3,
+          "ten": "Phương pháp huấn luyện và cải thiện mô hình"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào mừng các bạn nhân viên văn phòng đến với bài học hướng dẫn huấn luyện mô hình trí tuệ nhân tạo.",
+          "chuTrenManHinh": "Huấn luyện mô hình AI cho văn phòng",
+          "yDoHinh": "Hình ảnh minh họa một nhân viên văn phòng đang ngồi làm việc trên máy tính.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Bạn có biết dữ liệu cá nhân nào có thể dùng để cải thiện mô hình không?",
+          "chuTrenManHinh": "Dữ liệu nào được dùng huấn luyện?",
+          "yDoHinh": "Biểu tượng câu hỏi xoay quanh các loại dữ liệu số.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Dữ liệu cá nhân bao gồm tên, thư điện tử, câu lệnh, hình ảnh hoặc các tập tin đã tải lên.",
+          "chuTrenManHinh": "Tên, email, prompt, file đã upload",
+          "yDoHinh": "Danh sách các loại dữ liệu cá nhân xuất hiện trên màn hình.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://quantrimang.com/ngung-dung-du-lieu-ca-nhan-huan-luyen-ai-213960",
+              "title": "Cách ngừng cho phép sử dụng dữ liệu cá nhân để huấn luyện AI",
+              "excerpt": "Thanh trượt  \n\nThanh trượt \"Cải thiện mô hình cho mọi người\" trong ChatGPT\n\n \n\nĐể biết liệu việc chọn không tham gia có thực sự hữu ích hay không, điều quan trọng là phải hiểu rõ loại dữ liệu nào mà các công ty AI thu thập. Nhìn chung, dữ liệu này có thể được chia thành hai loại: Dữ liệu cá nhn và hành vi, cùng với các sản phẩm sáng tạo của bạn. Loại thứ nhất bao gồm các thông tin như tên, email, cu lệnh (prompt), hình ảnh và file đã upload lên, tùy chọn cá nhn và các hoạt động khác; trong khi loại thứ hai bao gồm bất cứ thứ gì bạn đã viết, tạo ra, vẽ hoặc sản sinh ra. [...] Thú thật là chẳng ai thấy vui khi biết rằng bất cứ thứ gì mình từng viết - đặc biệt là những bình luận sắc sảo trên các subreddit có nội dung gy tranh cãi - có lẽ đã được dùng để huấn luyện những mô hình ngôn ngữ lớn (",
+              "verified": true,
+              "overlap_ratio": 0.86,
+              "reason": "Tìm thấy 86% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Ngoài ra còn có các sản phẩm sáng tạo do chính bạn viết ra hoặc vẽ nên.",
+          "chuTrenManHinh": "Sản phẩm sáng tạo cá nhân",
+          "yDoHinh": "Minh họa văn bản bài viết và hình vẽ sáng tạo.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://quantrimang.com/ngung-dung-du-lieu-ca-nhan-huan-luyen-ai-213960",
+              "title": "Cách ngừng cho phép sử dụng dữ liệu cá nhân để huấn luyện AI",
+              "excerpt": "Thanh trượt  \n\nThanh trượt \"Cải thiện mô hình cho mọi người\" trong ChatGPT\n\n \n\nĐể biết liệu việc chọn không tham gia có thực sự hữu ích hay không, điều quan trọng là phải hiểu rõ loại dữ liệu nào mà các công ty AI thu thập. Nhìn chung, dữ liệu này có thể được chia thành hai loại: Dữ liệu cá nhn và hành vi, cùng với các sản phẩm sáng tạo của bạn. Loại thứ nhất bao gồm các thông tin như tên, email, cu lệnh (prompt), hình ảnh và file đã upload lên, tùy chọn cá nhn và các hoạt động khác; trong khi loại thứ hai bao gồm bất cứ thứ gì bạn đã viết, tạo ra, vẽ hoặc sản sinh ra. [...] Thú thật là chẳng ai thấy vui khi biết rằng bất cứ thứ gì mình từng viết - đặc biệt là những bình luận sắc sảo trên các subreddit có nội dung gy tranh cãi - có lẽ đã được dùng để huấn luyện những mô hình ngôn ngữ lớn (",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "ke",
+          "loi": "Trong công cụ Chat G P T có một nút gạt gọi là cải thiện mô hình cho mọi người.",
+          "chuTrenManHinh": "Cải thiện mô hình cho mọi người",
+          "yDoHinh": "Giao diện cài đặt ChatGPT có nút gạt bật tắt tính năng.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://quantrimang.com/ngung-dung-du-lieu-ca-nhan-huan-luyen-ai-213960",
+              "title": "Cách ngừng cho phép sử dụng dữ liệu cá nhân để huấn luyện AI",
+              "excerpt": "Thanh trượt  \n\nThanh trượt \"Cải thiện mô hình cho mọi người\" trong ChatGPT\n\n \n\nĐể biết liệu việc chọn không tham gia có thực sự hữu ích hay không, điều quan trọng là phải hiểu rõ loại dữ liệu nào mà các công ty AI thu thập. Nhìn chung, dữ liệu này có thể được chia thành hai loại: Dữ liệu cá nhn và hành vi, cùng với các sản phẩm sáng tạo của bạn. Loại thứ nhất bao gồm các thông tin như tên, email, cu lệnh (prompt), hình ảnh và file đã upload lên, tùy chọn cá nhn và các hoạt động khác; trong khi loại thứ hai bao gồm bất cứ thứ gì bạn đã viết, tạo ra, vẽ hoặc sản sinh ra. [...] Thú thật là chẳng ai thấy vui khi biết rằng bất cứ thứ gì mình từng viết - đặc biệt là những bình luận sắc sảo trên các subreddit có nội dung gy tranh cãi - có lẽ đã được dùng để huấn luyện những mô hình ngôn ngữ lớn (",
+              "verified": true,
+              "overlap_ratio": 0.7,
+              "reason": "Tìm thấy 70% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 1,
+          "kieu": "nhan",
+          "loi": "Quá trình huấn luyện mô hình cơ bản gồm các bước thu thập dữ liệu, tiền xử lý và huấn luyện.",
+          "chuTrenManHinh": "Thu thập -> Tiền xử lý -> Huấn luyện",
+          "yDoHinh": "Sơ đồ ba bước quy trình xây dựng mô hình học máy.",
+          "nguon": [
+            "t01"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t01",
+              "verified": false,
+              "reason": "Không tải được nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Bước đầu tiên là thu thập dữ liệu thực tế dựa trên mục tiêu đã xác định của mô hình.",
+          "chuTrenManHinh": "Bước 1: Thu thập dữ liệu thực tế",
+          "yDoHinh": "Icon biểu trưng cho việc gom dữ liệu từ nhiều nguồn.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "### Bước 1: Thu Thập Dữ Liệu Thực Tế\n\nViệc thu thập dữ liệu thực tế có thể đến từ nhiều nguồn khác nhau như cảm biến, dữ liệu người dùng, hoặc hình ảnh/video. Khi thu thập, cần chú ý đến vấn đề bảo mật và quyền riêng tư dữ liệu. Bắt đầu bằng cách xác định mục tiêu của mô hình để có thể chọn nguồn dữ liệu phù hợp nhất.\n\n### Bước 2: Chuẩn Bị Dữ Liệu Huấn Luyện AI: Tiền Xử Lý và Làm Sạch\n\nTiền xử lý là một bước quan trọng không thể thiếu. Các kỹ thuật thường được áp dụng bao gồm chuẩn hóa, mã hóa và loại bỏ dữ liệu bị thiếu hoặc nhiễu. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình là chính xác và đáng tin cậy, từ đó giúp cải thiện hiệu suất của mô hình.\n\n### Bước 3: Gán Nhãn Dữ Liệu (Data Labeling): Bí Quyết Để Mô Hình Học Hiệu Quả [...] Huấn luyện mô hình AI với dữ liệu thực tế là một ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Nguồn dữ liệu có thể đến từ dữ liệu người dùng, cảm biến hoặc hình ảnh và video.",
+          "chuTrenManHinh": "Dữ liệu người dùng, hình ảnh, video",
+          "yDoHinh": "Mô phỏng hình ảnh cảm biến, camera và các tập tin người dùng.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "### Bước 1: Thu Thập Dữ Liệu Thực Tế\n\nViệc thu thập dữ liệu thực tế có thể đến từ nhiều nguồn khác nhau như cảm biến, dữ liệu người dùng, hoặc hình ảnh/video. Khi thu thập, cần chú ý đến vấn đề bảo mật và quyền riêng tư dữ liệu. Bắt đầu bằng cách xác định mục tiêu của mô hình để có thể chọn nguồn dữ liệu phù hợp nhất.\n\n### Bước 2: Chuẩn Bị Dữ Liệu Huấn Luyện AI: Tiền Xử Lý và Làm Sạch\n\nTiền xử lý là một bước quan trọng không thể thiếu. Các kỹ thuật thường được áp dụng bao gồm chuẩn hóa, mã hóa và loại bỏ dữ liệu bị thiếu hoặc nhiễu. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình là chính xác và đáng tin cậy, từ đó giúp cải thiện hiệu suất của mô hình.\n\n### Bước 3: Gán Nhãn Dữ Liệu (Data Labeling): Bí Quyết Để Mô Hình Học Hiệu Quả [...] Huấn luyện mô hình AI với dữ liệu thực tế là một ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Khi thu thập dữ liệu, bạn cần đặc biệt chú ý đến bảo mật và quyền riêng tư.",
+          "chuTrenManHinh": "Chú ý bảo mật và quyền riêng tư",
+          "yDoHinh": "Biểu tượng ổ khóa bảo mật dữ liệu.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "### Bước 1: Thu Thập Dữ Liệu Thực Tế\n\nViệc thu thập dữ liệu thực tế có thể đến từ nhiều nguồn khác nhau như cảm biến, dữ liệu người dùng, hoặc hình ảnh/video. Khi thu thập, cần chú ý đến vấn đề bảo mật và quyền riêng tư dữ liệu. Bắt đầu bằng cách xác định mục tiêu của mô hình để có thể chọn nguồn dữ liệu phù hợp nhất.\n\n### Bước 2: Chuẩn Bị Dữ Liệu Huấn Luyện AI: Tiền Xử Lý và Làm Sạch\n\nTiền xử lý là một bước quan trọng không thể thiếu. Các kỹ thuật thường được áp dụng bao gồm chuẩn hóa, mã hóa và loại bỏ dữ liệu bị thiếu hoặc nhiễu. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình là chính xác và đáng tin cậy, từ đó giúp cải thiện hiệu suất của mô hình.\n\n### Bước 3: Gán Nhãn Dữ Liệu (Data Labeling): Bí Quyết Để Mô Hình Học Hiệu Quả [...] Huấn luyện mô hình AI với dữ liệu thực tế là một ph",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Bước hai là tiền xử lý và làm sạch dữ liệu huấn luyện.",
+          "chuTrenManHinh": "Bước 2: Tiền xử lý dữ liệu",
+          "yDoHinh": "Mô tả dữ liệu thô được đưa qua bộ lọc làm sạch.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "### Bước 1: Thu Thập Dữ Liệu Thực Tế\n\nViệc thu thập dữ liệu thực tế có thể đến từ nhiều nguồn khác nhau như cảm biến, dữ liệu người dùng, hoặc hình ảnh/video. Khi thu thập, cần chú ý đến vấn đề bảo mật và quyền riêng tư dữ liệu. Bắt đầu bằng cách xác định mục tiêu của mô hình để có thể chọn nguồn dữ liệu phù hợp nhất.\n\n### Bước 2: Chuẩn Bị Dữ Liệu Huấn Luyện AI: Tiền Xử Lý và Làm Sạch\n\nTiền xử lý là một bước quan trọng không thể thiếu. Các kỹ thuật thường được áp dụng bao gồm chuẩn hóa, mã hóa và loại bỏ dữ liệu bị thiếu hoặc nhiễu. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình là chính xác và đáng tin cậy, từ đó giúp cải thiện hiệu suất của mô hình.\n\n### Bước 3: Gán Nhãn Dữ Liệu (Data Labeling): Bí Quyết Để Mô Hình Học Hiệu Quả [...] Huấn luyện mô hình AI với dữ liệu thực tế là một ph",
+              "verified": true,
+              "overlap_ratio": 0.92,
+              "reason": "Tìm thấy 92% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Các kỹ thuật thường dùng là chuẩn hóa, mã hóa và loại bỏ dữ liệu thiếu hoặc nhiễu.",
+          "chuTrenManHinh": "Chuẩn hóa, mã hóa, xóa nhiễu",
+          "yDoHinh": "Minh họa dòng code xử lý loại bỏ giá trị rác.",
+          "nguon": [
+            "t04"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t04",
+              "url": "https://itsystems.vn/huan-luyen-mo-hinh-ai-voi-du-lieu-thuc-te-huong-dan-chi-tiet",
+              "title": "Huấn Luyện Mô Hình AI Với Dữ Liệu Thực Tế: Hướng Dẫn Chi Tiết",
+              "excerpt": "### Bước 1: Thu Thập Dữ Liệu Thực Tế\n\nViệc thu thập dữ liệu thực tế có thể đến từ nhiều nguồn khác nhau như cảm biến, dữ liệu người dùng, hoặc hình ảnh/video. Khi thu thập, cần chú ý đến vấn đề bảo mật và quyền riêng tư dữ liệu. Bắt đầu bằng cách xác định mục tiêu của mô hình để có thể chọn nguồn dữ liệu phù hợp nhất.\n\n### Bước 2: Chuẩn Bị Dữ Liệu Huấn Luyện AI: Tiền Xử Lý và Làm Sạch\n\nTiền xử lý là một bước quan trọng không thể thiếu. Các kỹ thuật thường được áp dụng bao gồm chuẩn hóa, mã hóa và loại bỏ dữ liệu bị thiếu hoặc nhiễu. Điều này đảm bảo rằng dữ liệu đầu vào cho mô hình là chính xác và đáng tin cậy, từ đó giúp cải thiện hiệu suất của mô hình.\n\n### Bước 3: Gán Nhãn Dữ Liệu (Data Labeling): Bí Quyết Để Mô Hình Học Hiệu Quả [...] Huấn luyện mô hình AI với dữ liệu thực tế là một ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ví dụ bạn có thể kiểm tra giá trị thiếu bằng lệnh chấm i s n u l l.",
+          "chuTrenManHinh": "df.isnull().sum()",
+          "yDoHinh": "Đoạn mã Python kiểm tra giá trị rỗng.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": false,
+              "overlap_ratio": 0.5,
+              "reason": "Chỉ tìm thấy 50% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Giá trị thiếu ở cột tuổi có thể thay bằng trung vị bằng lệnh fill n a.",
+          "chuTrenManHinh": "df['Age'].fillna(df['Age'].median())",
+          "yDoHinh": "Đoạn mã Python điền giá trị trung vị vào cột tuổi.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": true,
+              "overlap_ratio": 0.75,
+              "reason": "Tìm thấy 75% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Hoặc bạn có thể xóa các dòng thiếu dữ liệu ở cột thu nhập bằng lệnh d r o p n a.",
+          "chuTrenManHinh": "df.dropna(subset=['Income'])",
+          "yDoHinh": "Đoạn mã Python xóa dòng thiếu thông tin thu nhập.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": true,
+              "overlap_ratio": 0.68,
+              "reason": "Tìm thấy 68% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 2,
+          "kieu": "nhan",
+          "loi": "Việc chuẩn hóa giúp đưa các giá trị đầu vào về cùng một khoảng để tránh thiên lệch.",
+          "chuTrenManHinh": "Chuẩn hóa để tránh thiên lệch",
+          "yDoHinh": "Biểu đồ so sánh dữ liệu trước và sau khi chuẩn hóa.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Công cụ Standard Scaler trong thư viện s k learn thường được áp dụng cho bước này.",
+          "chuTrenManHinh": "StandardScaler từ sklearn",
+          "yDoHinh": "Hình ảnh nhập thư viện sklearn trong môi trường lập trình.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": false,
+              "overlap_ratio": 0.59,
+              "reason": "Chỉ tìm thấy 59% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Kỹ thuật này rất quan trọng với các thuật toán như Logistic Regression hoặc S V M.",
+          "chuTrenManHinh": "Logistic Regression, SVM",
+          "yDoHinh": "Tên các thuật toán máy học xuất hiện trên màn hình.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": true,
+              "overlap_ratio": 0.69,
+              "reason": "Tìm thấy 69% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Ngoài ra bạn cũng cần xử lý các dữ liệu ngoại lai bất thường.",
+          "chuTrenManHinh": "Xử lý dữ liệu ngoại lai",
+          "yDoHinh": "Điểm dữ liệu nằm xa đám đông bị đánh dấu và loại bỏ.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://thuedoan.vn/huong-dan-tien-xu-ly-du-lieu-sach-de-huan-luyen-mo-hinh-tot-hon.html",
+              "title": "Hướng dẫn tiền xử lý dữ liệu sạch để huấn luyện mô hình tốt hơn",
+              "excerpt": "```\n# Kiểm tra số lượng giá trị thiếu df.isnull().sum() # Thay thế giá trị thiếu ở cột 'Age' bằng trung vị df['Age'].fillna(df['Age'].median(), inplace=True) # Xóa các dòng có giá trị thiếu ở cột 'Income' df.dropna(subset=['Income'], inplace=True)\n```\n\n## Chuẩn hóa dữ liệu\n\nĐể đảm bảo mô hình không bị thiên lệch, cần chuẩn hóa các giá trị đầu vào về cùng một khoảng. Đặc biệt quan trọng đối với các thuật toán như Logistic Regression hoặc SVM.\n\n```\nfrom sklearn.preprocessing import StandardScaler scaler = StandardScaler() df = scaler.fit_transform(df)\n```\n\n## Xử lý dữ liệu ngoại lai\n\nDữ liệu ngoại lai có thể làm méo mó phn phối và ảnh hưởng nghiêm trọng đến hiệu suất mô hình. Phát hiện và loại bỏ chúng là một bước quan trọng. [...] ## Tải và khám phá dữ liệu\n\nĐể thực hành, chúng ta sẽ sử dụn",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Dữ liệu huấn luyện giúp thuật toán nhận biết và hiểu các mẫu trong dữ liệu.",
+          "chuTrenManHinh": "Hỗ trợ nhận diện mẫu",
+          "yDoHinh": "Mô hình trí tuệ nhân tạo nối các điểm dữ liệu để tìm quy luật.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.flowhunt.io/vi/tu-dien/training-data",
+              "title": "Dữ Liệu Huấn Luyện | FlowHunt",
+              "excerpt": "Nhận Diện Mẫu: Hỗ trợ thuật toán nhận biết và hiểu các mẫu trong dữ liệu.\n Độ Chính Xác Mô Hình: Chất lượng và lượng dữ liệu huấn luyện tỷ lệ thuận với độ chính xác và độ tin cậy của mô hình.\n Giảm Thiên Lệch: Dữ liệu huấn luyện đa dạng, đại diện giúp giảm thiên lệch, đảm bảo hệ thống AI công bằng và bình đẳng.\n Cải Thiện Liên Tục: Dữ liệu huấn luyện cho phép cải tiến lặp đi lặp lại, khi các mô hình liên tục được cập nhật với dữ liệu mới để nng cao hiệu suất.\n\n### Tầm Quan Trọng Của Dữ Liệu Huấn Luyện Chất Lượng Cao\n\nDữ liệu huấn luyện chất lượng cao là không thể thiếu vì nhiều lý do: [...] Dữ liệu huấn luyện thường bao gồm:\n\n Ví dụ Được Gắn Nhãn: Mỗi điểm dữ liệu được chú thích với một nhãn mô tả nội dung hoặc phn loại của nó. Ví dụ, trong một tập dữ liệu hình ảnh, nhãn có thể chỉ ra các ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Chất lượng dữ liệu tỷ lệ thuận với độ chính xác và độ tin cậy của mô hình.",
+          "chuTrenManHinh": "Dữ liệu chất lượng = Độ chính xác cao",
+          "yDoHinh": "Biểu đồ đường thể hiện dữ liệu tốt làm tăng độ chính xác.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.flowhunt.io/vi/tu-dien/training-data",
+              "title": "Dữ Liệu Huấn Luyện | FlowHunt",
+              "excerpt": "Nhận Diện Mẫu: Hỗ trợ thuật toán nhận biết và hiểu các mẫu trong dữ liệu.\n Độ Chính Xác Mô Hình: Chất lượng và lượng dữ liệu huấn luyện tỷ lệ thuận với độ chính xác và độ tin cậy của mô hình.\n Giảm Thiên Lệch: Dữ liệu huấn luyện đa dạng, đại diện giúp giảm thiên lệch, đảm bảo hệ thống AI công bằng và bình đẳng.\n Cải Thiện Liên Tục: Dữ liệu huấn luyện cho phép cải tiến lặp đi lặp lại, khi các mô hình liên tục được cập nhật với dữ liệu mới để nng cao hiệu suất.\n\n### Tầm Quan Trọng Của Dữ Liệu Huấn Luyện Chất Lượng Cao\n\nDữ liệu huấn luyện chất lượng cao là không thể thiếu vì nhiều lý do: [...] Dữ liệu huấn luyện thường bao gồm:\n\n Ví dụ Được Gắn Nhãn: Mỗi điểm dữ liệu được chú thích với một nhãn mô tả nội dung hoặc phn loại của nó. Ví dụ, trong một tập dữ liệu hình ảnh, nhãn có thể chỉ ra các ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Dữ liệu đa dạng sẽ giúp giảm thiên lệch và đảm bảo sự công bằng.",
+          "chuTrenManHinh": "Đa dạng dữ liệu để giảm thiên lệch",
+          "yDoHinh": "Biểu tượng cán cân cân bằng đại diện cho sự công bằng.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.flowhunt.io/vi/tu-dien/training-data",
+              "title": "Dữ Liệu Huấn Luyện | FlowHunt",
+              "excerpt": "Nhận Diện Mẫu: Hỗ trợ thuật toán nhận biết và hiểu các mẫu trong dữ liệu.\n Độ Chính Xác Mô Hình: Chất lượng và lượng dữ liệu huấn luyện tỷ lệ thuận với độ chính xác và độ tin cậy của mô hình.\n Giảm Thiên Lệch: Dữ liệu huấn luyện đa dạng, đại diện giúp giảm thiên lệch, đảm bảo hệ thống AI công bằng và bình đẳng.\n Cải Thiện Liên Tục: Dữ liệu huấn luyện cho phép cải tiến lặp đi lặp lại, khi các mô hình liên tục được cập nhật với dữ liệu mới để nng cao hiệu suất.\n\n### Tầm Quan Trọng Của Dữ Liệu Huấn Luyện Chất Lượng Cao\n\nDữ liệu huấn luyện chất lượng cao là không thể thiếu vì nhiều lý do: [...] Dữ liệu huấn luyện thường bao gồm:\n\n Ví dụ Được Gắn Nhãn: Mỗi điểm dữ liệu được chú thích với một nhãn mô tả nội dung hoặc phn loại của nó. Ví dụ, trong một tập dữ liệu hình ảnh, nhãn có thể chỉ ra các ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Chúng ta có hai phương pháp chính là bán giám sát và tự giám sát.",
+          "chuTrenManHinh": "Bán giám sát và Tự giám sát",
+          "yDoHinh": "So sánh hai nhánh phương pháp học máy.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Học bán giám sát trộn một tập nhỏ có nhãn với một tập lớn không nhãn để huấn luyện.",
+          "chuTrenManHinh": "Bán giám sát: Tập có nhãn + Không nhãn",
+          "yDoHinh": "Minh họa sự kết hợp dữ liệu có nhãn và không nhãn.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Học tự giám sát tiền huấn luyện hoàn toàn trên dữ liệu không nhãn.",
+          "chuTrenManHinh": "Tự giám sát: Dữ liệu không nhãn",
+          "yDoHinh": "Hình ảnh tập dữ liệu thô không hề có nhãn phụ trợ.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 25,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Sau đó mô hình mới chuyển sang tập có nhãn để tinh chỉnh ở giai đoạn sau.",
+          "chuTrenManHinh": "Tinh chỉnh bằng nhãn ở giai đoạn sau",
+          "yDoHinh": "Mô hình tinh chỉnh trên một tập dữ liệu nhỏ có nhãn.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 26,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Học tự giám sát tự tạo sự giám sát từ cấu trúc dữ liệu thay vì con người gán nhãn.",
+          "chuTrenManHinh": "Tự tạo giám sát từ cấu trúc dữ liệu",
+          "yDoHinh": "Hình ảnh mô hình tự phân tích mối quan hệ bên trong dữ liệu.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 27,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Mẫu hình điển hình của phương pháp này là ẩn một từ hoặc dự đoán từ kế tiếp.",
+          "chuTrenManHinh": "Ẩn từ hoặc dự đoán token kế tiếp",
+          "yDoHinh": "Ví dụ đoạn văn có một từ bị ẩn đi để trí tuệ nhân tạo điền vào.",
+          "nguon": [
+            "t02"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t02",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn - DataCamp",
+              "excerpt": "### Tự giám sát so với bán giám sát\n\nHọc bán giám sát cố ý trộn một tập nhỏ có nhãn với một tập lớn không nhãn, dùng cả hai cùng lúc để cải thiện mô hình.\n\nTiền huấn luyện tự giám sát không cần bất kỳ nhãn nào để bắt đầu. Nó có thể tiền huấn luyện hoàn toàn trên dữ liệu không nhãn, rồi tùy chọn chuyển sang tập có nhãn sau đó để tinh chỉnh. Nhãn, nếu xuất hiện, đến sau giai đoạn tiền huấn luyện. [...] ## Kết Luận\n\nHọc tự giám sát tạo ra sự giám sát của chính nó từ cấu trúc của dữ liệu không nhãn thay vì các nhãn do con người viết. Mẫu hình điển hình là ẩn một từ hoặc dự đoán token kế tiếp. Dữ liệu tự trả lời câu hỏi của chính nó, và mô hình học bằng cách cố gắng trả lời đúng.\n\nCác cách tiếp cận chính đều xây trên cùng ý tưởng theo những cách khác nhau. Học tương phản kéo các ví dụ liên quan",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 28,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Ví dụ trong huấn luyện cờ vua, dữ liệu cá nhân của người chơi Nguyễn Văn A được dùng tạo podcast tóm tắt lỗi tàn cuộc.",
+          "chuTrenManHinh": "Tạo podcast tóm tắt lỗi tàn cuộc",
+          "yDoHinh": "Đồ họa tai nghe podcast kết hợp với bàn cờ vua.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 0.96,
+              "reason": "Tìm thấy 96% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 29,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Podcast này đi kèm với lời giải thích ngắn gọn từ lý thuyết chuyên môn.",
+          "chuTrenManHinh": "Giải thích ngắn gọn từ lý thuyết",
+          "yDoHinh": "Biểu tượng sóng âm podcast và cuốn sách lý thuyết.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 30,
+          "phan": 3,
+          "kieu": "ke",
+          "loi": "Hệ thống còn tạo sơ đồ tư duy về các nguyên tắc tàn cuộc Vua và Tốt.",
+          "chuTrenManHinh": "Sơ đồ tư duy tàn cuộc Vua và Tốt",
+          "yDoHinh": "Sơ đồ tư duy nhánh thể hiện kiến thức cờ vua.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 31,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Sơ đồ giúp người học dễ hình dung cấu trúc kiến thức một cách hệ thống.",
+          "chuTrenManHinh": "Hình dung cấu trúc kiến thức dễ dàng",
+          "yDoHinh": "Màn hình thể hiện cây thư mục kiến thức trực quan.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 32,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Bạn luôn cần kiểm tra độ chính xác của phân tích từ A I và tính hữu ích của bài tập.",
+          "chuTrenManHinh": "Kiểm tra độ chính xác phân tích AI",
+          "yDoHinh": "Dấu tích xanh đánh giá chất lượng kết quả đầu ra.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 33,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Kết quả đánh giá này sẽ được dùng để thiết kế buổi học tiếp theo hiệu quả hơn.",
+          "chuTrenManHinh": "Cải tiến cho buổi học tiếp theo",
+          "yDoHinh": "Lịch trình bài học tiếp theo được tối ưu hóa.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://vietnamchess.vn/index.php/experience-news/learn/chess-ai-trainer-5",
+              "title": "Ứng dụng trí tuệ nhân tạo trong huấn luyện cờ vua hiện đại ...",
+              "excerpt": "Tạo Podcast/Sơ đồ tư duy:\n  + Tạo podcast tóm tắt các lỗi tàn cuộc phổ biến mà Nguyễn Văn A gặp phải, kèm theo lời giải thích ngắn gọn từ lý thuyết.\n  + Tạo sơ đồ tư duy về các nguyên tắc quan trọng trong tàn cuộc Vua và Tốt để Nguyễn Văn A có thể hình dung cấu trúc kiến thức.\n Đánh giá:\n  + Kiểm tra độ chính xác của phn tích từ AI và tính hữu ích của các bài tập, podcast, sơ đồ tư duy đối với Nguyễn Văn A. Sử dụng các kết quả này để thiết kế buổi học tiếp theo.\n\n### 📌Ví dụ 2: Nghiên cứu một Khai cuộc mới (Phòng thủ Pháp)\n\nNghiên cứu su về Phòng thủ Pháp để chuẩn bị bài giảng hoặc tự nng cao kỹ năng. [...] #### ◾ Ứng dụng trong thực tế huấn luyện:\n\n Giáo trình chung: Huấn luyện viên chia sẻ Sổ tay khai cuộc hoặc bài tập cho học viên với quyền \"Người xem\". Khi không cần thiết, có thể thu hồ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 34,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Hy vọng bài học giúp bạn biết cách dùng dữ liệu cá nhân an toàn và hiệu quả.",
+          "chuTrenManHinh": "Sử dụng dữ liệu an toàn và hiệu quả",
+          "yDoHinh": "Lời cảm ơn và biểu tượng hoàn thành khóa học.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 31,
+        "verified_count": 28,
+        "unverified_count": 3,
+        "accuracy_rate": 0.9
+      }
+    },
+    "sources_used": [
+      "t02",
+      "t03",
+      "t06",
+      "t04",
+      "t07",
+      "t05",
+      "t01",
+      "t08"
+    ],
+    "created_at": "2026-09-18T08:29:20.595617"
+  }
+}

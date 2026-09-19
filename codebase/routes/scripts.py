@@ -12,6 +12,7 @@ from models import Session, Source, Script
 from schemas import ScriptResponse, RewriteRequest, CitationResponse
 from agents.script_agent import generate_script
 from agents.verify_agent import verify_citations
+from agents.safety import check_content_safety  
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/sessions", tags=["Scripts"])
@@ -78,6 +79,9 @@ def create_script(session_id: str, db: DBSession = Depends(get_db)):
     Kịch bản được lưu vào DB và trả về kèm kết quả soát trích dẫn.
     """
     session = _get_session_or_404(session_id, db)
+    safety_result = check_content_safety(session.topic, session.learning_goal)
+    if not safety_result["is_safe"]:
+        raise HTTPException(status_code=400, detail=safety_result["reason"])
     active = _active_sources(session_id, db)
 
     if not active:
@@ -139,6 +143,9 @@ def rewrite_script(
     Các câu khác giữ nguyên.
     """
     session = _get_session_or_404(session_id, db)
+    safety_result = check_content_safety(session.topic, session.learning_goal)
+    if not safety_result["is_safe"]:
+        raise HTTPException(status_code=400, detail=safety_result["reason"])
     last = _latest_script(session_id, db)
     if not last:
         raise HTTPException(status_code=404, detail="Chưa có kịch bản. Hãy chạy POST /script trước.")

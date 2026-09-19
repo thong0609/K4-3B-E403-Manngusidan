@@ -82,27 +82,19 @@ def _extract_date(result: dict) -> str | None:
     return result.get("published_date") or result.get("published") or None
 
 
-def search_sources(topic: str, learning_goal: str, max_sources: int = 8) -> list[dict]:
+def search_sources(topic: str, learning_goal: str, max_sources: int = 8, is_cancelled=None) -> list[dict]:
     """
     Tìm và trả về danh sách nguồn thô (chưa chấm tin cậy).
-
-    Mỗi phần tử:
-    {
-        code: str,         # "t01", "t02", ...
-        url: str,
-        title: str | None,
-        author: str | None,
-        published_date: str | None,
-        domain: str,
-        excerpt: str,      # đoạn trích từ Tavily
-        raw_content: str | None,  # nội dung trang đã scrape
-    }
+    Hỗ trợ is_cancelled callback để dừng ngay tức khắc khi người dùng bấm dừng.
     """
     queries = _build_queries(topic, learning_goal)
     seen_urls: set[str] = set()
     sources: list[dict] = []
 
     for query in queries:
+        if is_cancelled and is_cancelled():
+            logger.info("search_sources: detected cancellation, stopping immediately.")
+            break
         if len(sources) >= max_sources:
             break
 
@@ -115,6 +107,10 @@ def search_sources(topic: str, learning_goal: str, max_sources: int = 8) -> list
                 include_raw_content=True,
             )
             for r in results.get("results", []):
+                if is_cancelled and is_cancelled():
+                    logger.info("search_sources: detected cancellation during results processing.")
+                    return sources
+
                 url = r.get("url", "")
                 if not url or url in seen_urls or _is_blocked(url):
                     continue
@@ -122,7 +118,12 @@ def search_sources(topic: str, learning_goal: str, max_sources: int = 8) -> list
                 seen_urls.add(url)
 
                 # Dùng raw_content từ Tavily nếu có, nếu không thì scrape
-                raw = r.get("raw_content") or _scrape_content(url)
+                raw = r.get("raw_content")
+                if not raw:
+                    if is_cancelled and is_cancelled():
+                        return sources
+                    raw = _scrape_content(url)
+
                 if raw and len(raw) < _MIN_CONTENT_LENGTH:
                     raw = None
 

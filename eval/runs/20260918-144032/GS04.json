@@ -1,0 +1,563 @@
+{
+  "case": {
+    "case_id": "GS04",
+    "type": "thuong",
+    "topic": "Cach mot mo hinh hoc tu vi du",
+    "learning_goal": "Phan biet hoc tu du lieu voi quy tac viet san",
+    "audience": "Hoc sinh cap ba",
+    "duration_minutes": 3,
+    "source_refs": [
+      "data/studio-pack/c3-scriptscout/chu-de-goi-y.md",
+      "data/studio-pack/c3-scriptscout/vi-du/ho-so-nguon-mau.json"
+    ],
+    "expected": "Giai thich bang vi du thu rac; khong danh dong hoc du lieu voi quy tac viet san; co nguon."
+  },
+  "session_id": "491a33f0-9158-4a31-acbb-ea2fa5ef248f",
+  "result": {
+    "id": 2,
+    "session_id": "491a33f0-9158-4a31-acbb-ea2fa5ef248f",
+    "version": 1,
+    "json_content": {
+      "id": "491a33f0-9158-4a31-acbb-ea2fa5ef248f",
+      "tieuDe": "Cách một mô hình học từ ví dụ",
+      "phan": [
+        {
+          "so": 1,
+          "ten": "Đặt vấn đề và khái niệm mô hình"
+        },
+        {
+          "so": 2,
+          "ten": "Cách mô hình học từ dữ liệu ví dụ"
+        },
+        {
+          "so": 3,
+          "ten": "Ứng dụng và mục đích của mô hình"
+        }
+      ],
+      "cau": [
+        {
+          "n": 1,
+          "phan": 1,
+          "kieu": "nhe",
+          "loi": "Chào các bạn học sinh.",
+          "chuTrenManHinh": "Chào mừng các bạn",
+          "yDoHinh": "Hình ảnh chào mừng học sinh đến với bài giảng.",
+          "nguon": []
+        },
+        {
+          "n": 2,
+          "phan": 1,
+          "kieu": "hoi",
+          "loi": "Các bạn có bao giờ thắc mắc máy tính làm sao để nhận biết được các hình ảnh hay dữ liệu chưa?",
+          "chuTrenManHinh": "Máy tính nhận biết dữ liệu thế nào?",
+          "yDoHinh": "Hình ảnh máy tính xử lý hình ảnh và dữ liệu.",
+          "nguon": []
+        },
+        {
+          "n": 3,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Trong trí tuệ nhân tạo hệ thống máy tính sẽ mô phỏng lại trí thông minh của con người.",
+          "chuTrenManHinh": "Trí tuệ nhân tạo mô phỏng trí thông minh",
+          "yDoHinh": "Sơ đồ mô phỏng trí tuệ nhân tạo và trí thông minh con người.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vinuni.edu.vn/vi/su-khac-biet-giua-khoa-hoc-du-lieu-va-tri-tue-nhan-tao",
+              "title": "Phân biệt khoa học dữ liệu và trí tuệ nhân tạo",
+              "excerpt": "|  |  |  |\n --- \n| Tiêu chí | Khoa học Dữ liệu | Trí tuệ Nhn tạo |\n| Khái niệm | Sử dụng mô hình thống kê và thuật toán để khám phá thông tin từ dữ liệu. | Hệ thống máy tính mô phỏng trí thông minh con người. |\n| Nhiệm vụ chính | Trả lời các cu hỏi dựa trên dữ liệu. | Hoàn thành các nhiệm vụ phức tạp tương tự con người. |\n| Mục đích | Hiểu các đặc trưng của dữ liệu, đưa ra dự đoán chính xác. | Đào tạo máy tính thực hiện tác vụ thông minh. |\n| Phạm vi | Hẹp hơn, tập trung vào các mô hình thống kê và phn tích dữ liệu. | Rộng hơn, bao gồm nhiều bài toán phức tạp đòi hỏi sự suy luận và phn tích. |\n| Phương pháp | Sử dụng nhiều kỹ thuật như hồi quy tuyến tính, phn tích cụm, phát hiện bất thường. | Dựa trên các công nghệ như xử lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, học tăng cường. | [...] Tổ",
+              "verified": true,
+              "overlap_ratio": 0.94,
+              "reason": "Tìm thấy 94% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Hệ thống này được đào tạo để thực hiện các nhiệm vụ phức tạp tương tự như con người.",
+          "chuTrenManHinh": "Đào tạo máy tính thực hiện tác vụ phức tạp",
+          "yDoHinh": "Máy tính đang thực hiện các nhiệm vụ thông minh.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vinuni.edu.vn/vi/su-khac-biet-giua-khoa-hoc-du-lieu-va-tri-tue-nhan-tao",
+              "title": "Phân biệt khoa học dữ liệu và trí tuệ nhân tạo",
+              "excerpt": "|  |  |  |\n --- \n| Tiêu chí | Khoa học Dữ liệu | Trí tuệ Nhn tạo |\n| Khái niệm | Sử dụng mô hình thống kê và thuật toán để khám phá thông tin từ dữ liệu. | Hệ thống máy tính mô phỏng trí thông minh con người. |\n| Nhiệm vụ chính | Trả lời các cu hỏi dựa trên dữ liệu. | Hoàn thành các nhiệm vụ phức tạp tương tự con người. |\n| Mục đích | Hiểu các đặc trưng của dữ liệu, đưa ra dự đoán chính xác. | Đào tạo máy tính thực hiện tác vụ thông minh. |\n| Phạm vi | Hẹp hơn, tập trung vào các mô hình thống kê và phn tích dữ liệu. | Rộng hơn, bao gồm nhiều bài toán phức tạp đòi hỏi sự suy luận và phn tích. |\n| Phương pháp | Sử dụng nhiều kỹ thuật như hồi quy tuyến tính, phn tích cụm, phát hiện bất thường. | Dựa trên các công nghệ như xử lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, học tăng cường. | [...] Tổ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "phan": 1,
+          "kieu": "giang",
+          "loi": "Để làm được điều đó mô hình học máy cần nhận diện các đặc điểm mẫu trong dữ liệu.",
+          "chuTrenManHinh": "Nhận diện đặc điểm mẫu trong dữ liệu",
+          "yDoHinh": "Mô hình quét qua dữ liệu và tìm các mẫu.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vi.khanacademy.org/khan-for-educators/khanmigo-for-educators/x6ac3038eb35166b0:hieu-ve-tri-tue-nhan-tao-ai/x6ac3038eb35166b0:tong-quan-ve-ai/v/ai-what-is-machine-learning",
+              "title": "Mô hình học máy là gì? (video)",
+              "excerpt": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu, mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học. Ví dụ, mô hình có thể tìm",
+              "verified": false,
+              "overlap_ratio": 0.0,
+              "reason": "Chỉ tìm thấy 0% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Một khi đã nhận diện được các đặc điểm mẫu mô hình có thể học cách đưa ra dự đoán.",
+          "chuTrenManHinh": "Dự đoán dựa trên đặc điểm đã học",
+          "yDoHinh": "Mô hình đưa ra kết quả dự đoán từ mẫu dữ liệu.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vi.khanacademy.org/khan-for-educators/khanmigo-for-educators/x6ac3038eb35166b0:hieu-ve-tri-tue-nhan-tao-ai/x6ac3038eb35166b0:tong-quan-ve-ai/v/ai-what-is-machine-learning",
+              "title": "Mô hình học máy là gì? (video)",
+              "excerpt": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu, mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học. Ví dụ, mô hình có thể tìm",
+              "verified": false,
+              "overlap_ratio": 0.0,
+              "reason": "Chỉ tìm thấy 0% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Điểm đặc biệt là quá trình này có thể thực hiện thông qua phương pháp học tự giám sát.",
+          "chuTrenManHinh": "Phương pháp học tự giám sát",
+          "yDoHinh": "Khái niệm học tự giám sát trên màn hình.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn | DataCamp",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Kế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Với học tự giám sát mô hình không cần đến bước gán nhãn thủ công từ con người.",
+          "chuTrenManHinh": "Không cần gán nhãn thủ công",
+          "yDoHinh": "So sánh giữa dữ liệu gán nhãn và dữ liệu tự do.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn | DataCamp",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Kế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 9,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Phương pháp này biến chính cấu trúc của dữ liệu thành thông tin dùng để huấn luyện.",
+          "chuTrenManHinh": "Dùng cấu trúc dữ liệu để huấn luyện",
+          "yDoHinh": "Hình ảnh mô tả cấu trúc dữ liệu biến thành nhãn huấn luyện.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn | DataCamp",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Kế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Thay vì phải trả tiền cho con người gán nhãn từng bức ảnh bạn có thể thiết lập tác vụ tự động.",
+          "chuTrenManHinh": "Tối ưu chi phí gán nhãn",
+          "yDoHinh": "Minh họa tác vụ gán nhãn tự động.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn | DataCamp",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Kế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 11,
+          "phan": 2,
+          "kieu": "ke",
+          "loi": "Ví dụ như ẩn một từ trong câu và để mô hình tự đoán từ đó dựa vào các từ xung quanh.",
+          "chuTrenManHinh": "Ví dụ: Ẩn từ và đoán từ xung quanh",
+          "yDoHinh": "Một câu văn bị ẩn một từ và mô hình đoán từ thiếu.",
+          "nguon": [
+            "t08"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t08",
+              "url": "https://www.datacamp.com/vi/tutorial/self-supervised-learning",
+              "title": "Học Tự Giám Sát: Mô hình học mà không cần nhãn | DataCamp",
+              "excerpt": "Học tự giám sát không cần bước gán nhãn. Nó biến chính cấu trúc của dữ liệu thành thông tin huấn luyện. Thay vì trả tiền cho con người để nói trong ảnh có gì hay một câu có nghĩa gì, bạn thiết lập một tác vụ mà dữ liệu đã có thể tự trả lời — như ẩn một từ và để mô hình đoán từ các từ xung quanh.\n\nTrong bài viết này, tôi sẽ phân tích cách học tự giám sát hoạt động, điểm qua các kỹ thuật chính, và cho thấy nó so với học có giám sát, không giám sát, và bán giám sát như thế nào.\n\n## Học Tự Giám Sát Là Gì?\n\nHọc tự giám sát là một cách huấn luyện mô hình mà không cần ai gán nhãn dữ liệu thủ công trước.\n\nThay vì một người gắn thẻ cho từng ví dụ, dữ liệu tự có “đáp án”. Mô hình nhìn một phần đầu vào, ẩn phần khác, và học bằng cách cố lấp đầy khoảng trống. Không cần con người can thiệp. [...] ## Kế",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Trong khi đó khoa học dữ liệu lại tập trung sử dụng mô hình thống kê và thuật toán.",
+          "chuTrenManHinh": "Khoa học dữ liệu dùng thống kê và thuật toán",
+          "yDoHinh": "Sơ đồ biểu diễn thuật toán thống kê.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vinuni.edu.vn/vi/su-khac-biet-giua-khoa-hoc-du-lieu-va-tri-tue-nhan-tao",
+              "title": "Phân biệt khoa học dữ liệu và trí tuệ nhân tạo",
+              "excerpt": "|  |  |  |\n --- \n| Tiêu chí | Khoa học Dữ liệu | Trí tuệ Nhn tạo |\n| Khái niệm | Sử dụng mô hình thống kê và thuật toán để khám phá thông tin từ dữ liệu. | Hệ thống máy tính mô phỏng trí thông minh con người. |\n| Nhiệm vụ chính | Trả lời các cu hỏi dựa trên dữ liệu. | Hoàn thành các nhiệm vụ phức tạp tương tự con người. |\n| Mục đích | Hiểu các đặc trưng của dữ liệu, đưa ra dự đoán chính xác. | Đào tạo máy tính thực hiện tác vụ thông minh. |\n| Phạm vi | Hẹp hơn, tập trung vào các mô hình thống kê và phn tích dữ liệu. | Rộng hơn, bao gồm nhiều bài toán phức tạp đòi hỏi sự suy luận và phn tích. |\n| Phương pháp | Sử dụng nhiều kỹ thuật như hồi quy tuyến tính, phn tích cụm, phát hiện bất thường. | Dựa trên các công nghệ như xử lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, học tăng cường. | [...] Tổ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 13,
+          "phan": 2,
+          "kieu": "giang",
+          "loi": "Mục đích chính của khoa học dữ liệu là hiểu đặc trưng dữ liệu và đưa ra dự đoán.",
+          "chuTrenManHinh": "Hiểu đặc trưng dữ liệu và dự đoán",
+          "yDoHinh": "Biểu đồ phân tích đặc trưng dữ liệu.",
+          "nguon": [
+            "t06"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t06",
+              "url": "https://vinuni.edu.vn/vi/su-khac-biet-giua-khoa-hoc-du-lieu-va-tri-tue-nhan-tao",
+              "title": "Phân biệt khoa học dữ liệu và trí tuệ nhân tạo",
+              "excerpt": "|  |  |  |\n --- \n| Tiêu chí | Khoa học Dữ liệu | Trí tuệ Nhn tạo |\n| Khái niệm | Sử dụng mô hình thống kê và thuật toán để khám phá thông tin từ dữ liệu. | Hệ thống máy tính mô phỏng trí thông minh con người. |\n| Nhiệm vụ chính | Trả lời các cu hỏi dựa trên dữ liệu. | Hoàn thành các nhiệm vụ phức tạp tương tự con người. |\n| Mục đích | Hiểu các đặc trưng của dữ liệu, đưa ra dự đoán chính xác. | Đào tạo máy tính thực hiện tác vụ thông minh. |\n| Phạm vi | Hẹp hơn, tập trung vào các mô hình thống kê và phn tích dữ liệu. | Rộng hơn, bao gồm nhiều bài toán phức tạp đòi hỏi sự suy luận và phn tích. |\n| Phương pháp | Sử dụng nhiều kỹ thuật như hồi quy tuyến tính, phn tích cụm, phát hiện bất thường. | Dựa trên các công nghệ như xử lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, học tăng cường. | [...] Tổ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Khi so sánh hai lĩnh vực mục đích của khoa học dữ liệu là trình bày kết quả phân tích.",
+          "chuTrenManHinh": "Khoa học dữ liệu: Trình bày kết quả phân tích",
+          "yDoHinh": "Báo cáo kết quả phân tích dữ liệu.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 15,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Còn mục đích của học máy là triển khai theo dõi và duy trì mô hình trong sản xuất.",
+          "chuTrenManHinh": "Học máy: Triển khai và duy trì mô hình",
+          "yDoHinh": "Quy trình triển khai mô hình học máy vào thực tế.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Quá trình triển khai và theo dõi mô hình học máy này gọi là quản lý học máy.",
+          "chuTrenManHinh": "Quản lý học máy (MLOps)",
+          "yDoHinh": "Chữ MLOps xuất hiện cùng các chu kỳ vận hành.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 17,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Để mô hình hoạt động chúng ta cần tích hợp mô hình vào ứng dụng hoặc phần mềm sản xuất.",
+          "chuTrenManHinh": "Tích hợp mô hình vào phần mềm",
+          "yDoHinh": "Mô hình được kết nối vào ứng dụng phần mềm.",
+          "nguon": [
+            "t07"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t07",
+              "url": "https://www.elcom.com.vn/phan-biet-khoa-hoc-du-lieu-va-may-hoc-linh-vuc-ung-dung-1694397717",
+              "title": "phân biệt hai công nghệ khoa học dữ liệu và máy học",
+              "excerpt": "Tuy những bước này có vẻ đều rất quen thuộc trong quy trình khoa học dữ liệu, nhưng điểm khác biệt ở đy chính là: Mục đích của khoa học dữ liệu là trình bày kết quả của phn tích cho các bên yêu cầu, trong khi đó mục đích của học máy là triển khai, theo dõi, duy trì mô hình trong quá trình sản xuất.  \n\nGiai đoạn triển khai và theo dõi mô hình này tương tự với chu kỳ DevOps cho phần mềm truyền thống. Do đó chúng ta có thuật ngữ \"MLOps\" (Machine Learning Operations - Quản lý học máy).\n\nĐể triển khai một mô hình học máy, cần tích hợp nó vào ứng dụng, phần mềm sản xuất. Trong đó, việc theo dõi, gỡ lỗi, duy trì mô hình sau khi triển khai cần được chú trọng. [...] # 1. Khoa học dữ liệu là gì?\n\nKhoa học dữ liệu (Data science) là một lĩnh vực liên ngành tích hợp nhiều khái niệm và phương pháp từ ph",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Việc học qua mô hình hóa thực tế cũng giúp phát triển năng lực giải quyết vấn đề cho các bạn.",
+          "chuTrenManHinh": "Phát triển năng lực giải quyết vấn đề",
+          "yDoHinh": "Học sinh làm việc nhóm giải quyết bài toán.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://kmtkhtn.duytan.edu.vn/tin-tuc/phuong-phap-day-hoc-toan-bang-mo-hinh-hoa-tu--tvt6d",
+              "title": "PHƯƠNG PHÁP DẠY HỌC TOÁN BẰNG MÔ HÌNH HÓA: TỪ LÝ THUYẾT ĐẾN ỨNG DỤNG THỰC TIỄN",
+              "excerpt": "4. HIỆU QUẢ VÀ ĐỀ XUẤT\n\n4.1. Hiệu quả Đạt được\n\nPhương pháp mô hình hóa mang lại nhiều lợi ích vượt trội so với giảng dạy truyền thống:\n\nPhát triển Năng lực cốt lõi: Kỹ năng giải quyết vấn đề, tư duy logic, làm việc nhóm và giao tiếp được cải thiện rõ rệt.\n\nTăng cường Động lực học tập: Học sinh hiểu được \"toán học dùng để làm gì\", từ đó tăng hứng thú và chủ động tiếp cận kiến thức.\n\nChuẩn bị cho tương lai: Phương pháp này mô phỏng sát nhất quá trình giải quyết vấn đề trong môi trường công việc thực tế (kỹ sư, nhà khoa học, nhà kinh tế).\n\n4.2. Đề xuất Giảng dạy\n\nĐể triển khai hiệu quả, các trường học cần:\n\nTăng cường Tài liệu hóa: Xy dựng ngn hàng các bài toán mô hình hóa phù hợp với từng cấp học. [...] Giai đoạn 3: Diễn giải Kết quả (Interpreting the Result)  \n Chuyển kết quả toán học (ví ",
+              "verified": true,
+              "overlap_ratio": 0.9,
+              "reason": "Tìm thấy 90% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 19,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Nó giúp rèn luyện tư duy logic và tăng cường động lực học tập cho học sinh.",
+          "chuTrenManHinh": "Tăng cường tư duy logic và động lực",
+          "yDoHinh": "Biểu tượng tư duy logic và học tập chủ động.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://kmtkhtn.duytan.edu.vn/tin-tuc/phuong-phap-day-hoc-toan-bang-mo-hinh-hoa-tu--tvt6d",
+              "title": "PHƯƠNG PHÁP DẠY HỌC TOÁN BẰNG MÔ HÌNH HÓA: TỪ LÝ THUYẾT ĐẾN ỨNG DỤNG THỰC TIỄN",
+              "excerpt": "4. HIỆU QUẢ VÀ ĐỀ XUẤT\n\n4.1. Hiệu quả Đạt được\n\nPhương pháp mô hình hóa mang lại nhiều lợi ích vượt trội so với giảng dạy truyền thống:\n\nPhát triển Năng lực cốt lõi: Kỹ năng giải quyết vấn đề, tư duy logic, làm việc nhóm và giao tiếp được cải thiện rõ rệt.\n\nTăng cường Động lực học tập: Học sinh hiểu được \"toán học dùng để làm gì\", từ đó tăng hứng thú và chủ động tiếp cận kiến thức.\n\nChuẩn bị cho tương lai: Phương pháp này mô phỏng sát nhất quá trình giải quyết vấn đề trong môi trường công việc thực tế (kỹ sư, nhà khoa học, nhà kinh tế).\n\n4.2. Đề xuất Giảng dạy\n\nĐể triển khai hiệu quả, các trường học cần:\n\nTăng cường Tài liệu hóa: Xy dựng ngn hàng các bài toán mô hình hóa phù hợp với từng cấp học. [...] Giai đoạn 3: Diễn giải Kết quả (Interpreting the Result)  \n Chuyển kết quả toán học (ví ",
+              "verified": true,
+              "overlap_ratio": 1.0,
+              "reason": "Tìm thấy 100% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Phương pháp này mô phỏng sát nhất quá trình giải quyết công việc thực tế của kỹ sư hay nhà khoa học.",
+          "chuTrenManHinh": "Mô phỏng công việc thực tế",
+          "yDoHinh": "Hình ảnh kỹ sư và nhà khoa học đang làm việc.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://kmtkhtn.duytan.edu.vn/tin-tuc/phuong-phap-day-hoc-toan-bang-mo-hinh-hoa-tu--tvt6d",
+              "title": "PHƯƠNG PHÁP DẠY HỌC TOÁN BẰNG MÔ HÌNH HÓA: TỪ LÝ THUYẾT ĐẾN ỨNG DỤNG THỰC TIỄN",
+              "excerpt": "4. HIỆU QUẢ VÀ ĐỀ XUẤT\n\n4.1. Hiệu quả Đạt được\n\nPhương pháp mô hình hóa mang lại nhiều lợi ích vượt trội so với giảng dạy truyền thống:\n\nPhát triển Năng lực cốt lõi: Kỹ năng giải quyết vấn đề, tư duy logic, làm việc nhóm và giao tiếp được cải thiện rõ rệt.\n\nTăng cường Động lực học tập: Học sinh hiểu được \"toán học dùng để làm gì\", từ đó tăng hứng thú và chủ động tiếp cận kiến thức.\n\nChuẩn bị cho tương lai: Phương pháp này mô phỏng sát nhất quá trình giải quyết vấn đề trong môi trường công việc thực tế (kỹ sư, nhà khoa học, nhà kinh tế).\n\n4.2. Đề xuất Giảng dạy\n\nĐể triển khai hiệu quả, các trường học cần:\n\nTăng cường Tài liệu hóa: Xy dựng ngn hàng các bài toán mô hình hóa phù hợp với từng cấp học. [...] Giai đoạn 3: Diễn giải Kết quả (Interpreting the Result)  \n Chuyển kết quả toán học (ví ",
+              "verified": true,
+              "overlap_ratio": 0.95,
+              "reason": "Tìm thấy 95% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 21,
+          "phan": 3,
+          "kieu": "nhan",
+          "loi": "Tóm lại mô hình học từ ví dụ bằng cách tự tìm ra các mẫu đặc trưng trong dữ liệu.",
+          "chuTrenManHinh": "Mô hình tự tìm mẫu từ dữ liệu ví dụ",
+          "yDoHinh": "Tóm tắt cốt lõi của bài học.",
+          "nguon": [
+            "t05"
+          ],
+          "citation_verified": false,
+          "citation_details": [
+            {
+              "code": "t05",
+              "url": "https://vi.khanacademy.org/khan-for-educators/khanmigo-for-educators/x6ac3038eb35166b0:hieu-ve-tri-tue-nhan-tao-ai/x6ac3038eb35166b0:tong-quan-ve-ai/v/ai-what-is-machine-learning",
+              "title": "Mô hình học máy là gì? (video)",
+              "excerpt": "Một khi nhận diện được các đặc điểm mẫu trong dữ liệu, mô hình học máy có thể học cách dự đoán dựa trên những đặc điểm mẫu đã học. Ví dụ, mô hình có thể tìm",
+              "verified": false,
+              "overlap_ratio": 0.0,
+              "reason": "Chỉ tìm thấy 0% từ — có thể AI tự thêm thông tin"
+            }
+          ]
+        },
+        {
+          "n": 22,
+          "phan": 3,
+          "kieu": "giang",
+          "loi": "Những hiểu biết này sẽ giúp các bạn chuẩn bị tốt hơn cho các ngành nghề trong tương lai.",
+          "chuTrenManHinh": "Chuẩn bị cho nghề nghiệp tương lai",
+          "yDoHinh": "Hình ảnh hướng tới tương lai công nghệ.",
+          "nguon": [
+            "t03"
+          ],
+          "citation_verified": true,
+          "citation_details": [
+            {
+              "code": "t03",
+              "url": "https://kmtkhtn.duytan.edu.vn/tin-tuc/phuong-phap-day-hoc-toan-bang-mo-hinh-hoa-tu--tvt6d",
+              "title": "PHƯƠNG PHÁP DẠY HỌC TOÁN BẰNG MÔ HÌNH HÓA: TỪ LÝ THUYẾT ĐẾN ỨNG DỤNG THỰC TIỄN",
+              "excerpt": "4. HIỆU QUẢ VÀ ĐỀ XUẤT\n\n4.1. Hiệu quả Đạt được\n\nPhương pháp mô hình hóa mang lại nhiều lợi ích vượt trội so với giảng dạy truyền thống:\n\nPhát triển Năng lực cốt lõi: Kỹ năng giải quyết vấn đề, tư duy logic, làm việc nhóm và giao tiếp được cải thiện rõ rệt.\n\nTăng cường Động lực học tập: Học sinh hiểu được \"toán học dùng để làm gì\", từ đó tăng hứng thú và chủ động tiếp cận kiến thức.\n\nChuẩn bị cho tương lai: Phương pháp này mô phỏng sát nhất quá trình giải quyết vấn đề trong môi trường công việc thực tế (kỹ sư, nhà khoa học, nhà kinh tế).\n\n4.2. Đề xuất Giảng dạy\n\nĐể triển khai hiệu quả, các trường học cần:\n\nTăng cường Tài liệu hóa: Xy dựng ngn hàng các bài toán mô hình hóa phù hợp với từng cấp học. [...] Giai đoạn 3: Diễn giải Kết quả (Interpreting the Result)  \n Chuyển kết quả toán học (ví ",
+              "verified": true,
+              "overlap_ratio": 0.67,
+              "reason": "Tìm thấy 67% từ trong nội dung trang"
+            }
+          ]
+        },
+        {
+          "n": 23,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Bài học của chúng ta hôm nay đến đây là kết thúc.",
+          "chuTrenManHinh": "Bài học kết thúc",
+          "yDoHinh": "Màn hình thông báo kết thúc bài học.",
+          "nguon": []
+        },
+        {
+          "n": 24,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Cảm ơn các bạn đã chú ý theo dõi.",
+          "chuTrenManHinh": "Cảm ơn các bạn",
+          "yDoHinh": "Lời cảm ơn trên màn hình.",
+          "nguon": []
+        },
+        {
+          "n": 25,
+          "phan": 3,
+          "kieu": "nhe",
+          "loi": "Hẹn gặp lại các bạn trong những bài giảng tiếp theo.",
+          "chuTrenManHinh": "Hẹn gặp lại",
+          "yDoHinh": "Hình ảnh chào tạm biệt.",
+          "nguon": []
+        }
+      ],
+      "_verification_summary": {
+        "total_sentences_with_source": 20,
+        "verified_count": 17,
+        "unverified_count": 3,
+        "accuracy_rate": 0.85
+      }
+    },
+    "sources_used": [
+      "t05",
+      "t03",
+      "t04",
+      "t06",
+      "t08",
+      "t07",
+      "t02",
+      "t01"
+    ],
+    "created_at": "2026-09-18T07:51:54.650389"
+  }
+}
